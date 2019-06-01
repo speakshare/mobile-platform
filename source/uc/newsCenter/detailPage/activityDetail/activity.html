@@ -1,0 +1,10 @@
+<div class="activityDetail noticeDetail">
+	<p class="title"><%=activity?activity.title:''%></p>
+	<p class="content" id="content"><%=(activity?activity.content:'').replace(/\r\n|\n/ig,'<br/>')%></p>
+	<%if(activity?activity.linkStatus==1:''){%>
+	<div class="entryBtn" data-link="<%=activity.link%>">进入活动</div>
+	<%}else{%>
+	<div class="entryBtn invalid">进入活动</div>
+	<%}%>
+	<p class="noticeDate"><%=activity?activity.createTime:''%></p>
+</div>

@@ -1,0 +1,43 @@
+.top-status{background:url(../images/top.png) no-repeat;background-size:100% auto;padding-top:100%;text-align:center;}
+
+.un-login-tip{font-size:17px;line-height:25px;margin-bottom:10px;color:#9b7050;}
+.login-btn{height:25px;background:url(../images/btn_3.png) no-repeat center;background-size:auto 100%;}
+
+.my-value{position:relative;float:left;width:50%}
+.my-value .title{font-size:16px;color:#8B582C;}
+/*.my-value .title:before{content:'';display:inline-block;vertical-align:-4px;margin-right:5px;width:30px;height:23px;background:url(../images/icon_1.png) no-repeat;background-size:100% auto}*/
+/*.my-invite .title:before{width:38px;height:24px;background:url(../images/icon_2.png) no-repeat;background-size:100% auto}*/
+.my-value .title:after{content:'';display:inline-block;vertical-align:-3px;margin-left:5px;width:18px;height:18px;background:url(../images/icon_wenhao.png) no-repeat;background-size:100% auto}
+.my-value .num{display:block;height:18px;line-height:18px;font-size:15px;color:#891B2D;font-weight: bold;}
+.my-value .tip-txt{display:none;position:absolute;z-index:1;top:25px;left:0;width:200px;font-size:13px;background:url(../images/bg1.png) no-repeat;background-size:100% auto;color:#fff;padding:25px 17px}
+.my-invite .tip-txt{left:-52px;width:210px;background-image:url(../images/bg2.png);padding:20px 23px}
+
+.my-invite .tip-txt .grey{font-size:10px;display: block;color: #999;}
+
+.go-product-btn{height:25px;background:url(../images/btn_4.png) center center no-repeat;background-size:auto 100%}
+.go-invite-btn{height:25px;background:url(../images/btn_6.png) center center no-repeat;background-size:auto 100%}
+
+.share{position:absolute;top:10px;right:10px;height:20px;line-height:20px;padding:0 10px 0 30px;font-size:12px;color:#fff;background:rgba(0,0,0,.7);border-radius:10px;}
+.share:before{content:'';position:absolute;margin:3px 0 0 -20px;width:15px;height:13px;background:url(../images/icon_share.png) no-repeat;background-size:100% auto}
+
+.popcontent {font-size:14px;}
+.popcontent span{color:#FF6B53;}
+.share_mask{display:none;position:fixed;z-index:9;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(../images/mask.png) no-repeat 90% 20px;background-size:160px auto}
+
+@media all and (min-width:360px) {
+	.login-btn{height:30px;}
+    .go-product-btn,
+    .go-invite-btn{height:30px}
+    .my-value .num{height:22px;line-height:22px}
+    .my-value .tip-txt{left:10px;padding:24px 17px}
+    .my-invite .tip-txt{left:-32px;padding:22px}
+
+}
+
+@media all and (min-width:375px) {
+   .login-btn{height:35px;}
+}
+@media all and (min-width:414px) {
+    .my-value .num{height:30px;line-height:30px}
+    .my-invite .tip-txt{left:-14px}
+}

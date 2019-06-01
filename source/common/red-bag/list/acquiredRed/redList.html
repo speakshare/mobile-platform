@@ -1,0 +1,12 @@
+<% _.each(redList,function(n){ %>
+<li>
+	<div class="left">
+		<p><%=n.amount%>元</p>
+		<p class="fgrey"><%=n.ruleName%></p>
+	</div>
+	<div class="right">
+		<p class="fgrey"><%=n.isUsed%></p>
+		<p class="fgrey"><%=n.sendTime%></p>
+	</div>
+</li>
+<%})%>

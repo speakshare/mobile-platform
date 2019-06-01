@@ -1,0 +1,9 @@
+.goods-banner{display:block;width:100%;margin-bottom:20px}
+.goods-detail .to-goods,
+.goods-detail .d-info{height:100px;line-height:100px;font-size:30px;border-top:1px solid #ccc;padding:0 30px;background:#fff}
+.goods-detail .d-info:first-child{border-top:none}
+.goods-detail .d-info .d-t-info{float:right}
+.goods-detail .d-info .d-t-coupon{color:#999;padding-right:30px}
+
+.common-btn { text-align: center; font-size: 30px; color: #fff; height: 90px; line-height: 90px; margin: 40px; background-color: #ff6046; }
+

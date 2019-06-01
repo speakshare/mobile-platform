@@ -1,0 +1,171 @@
+<%if(pro.tradeType==0 || pro.tradeType==1){%>
+    <div class="htpanel">
+        <label>受托方</label>
+        <p> <%=pro['01zrfShortName']%> <%if(pro['01zrfShortName'] !=''){%> ; <%}%>
+            公司地址： <%=pro['01zrfCompAddrProvice']%><%=pro['01zrfCompAddrCity']%> <%if(pro['01zrfCompAddrProvice'] !='' || pro['01zrfCompAddrCity'] !='' ){%> ; <%}%>
+            经营范围： <%=pro['01zrfBusinessScope']%>
+        </p>
+    </div>
+    <div class="htpanel">
+        <label>合作机构</label>
+        <p>
+            <%=pro['01hzfShortName']%>
+            <%if(pro['01hzfShortName'] !=''){%> ; <%}%>
+            公司地址： <%=pro['01hzfCompAddrProvice']%><%=pro['01hzfCompAddrCity']%>
+            <%if(pro['01hzfCompAddrProvice'] !='' || pro['01hzfCompAddrCity'] !='' ){%> ; <%}%>
+            经营范围： <%=pro['01hzfBusinessScope']%>
+        </p>
+    </div>
+    <div class="htpanel">
+        <label>项目简介</label>
+        <p>本产品为定向委托投资项目，由委托人将其合法所有的现金资产委托给受托方进行定向投资；</p>
+        <p><%=pro['01hzfInvestTargetBrief']%></p>
+    </div>
+    <div class="htpanel">
+        <label>风险提示</label>
+        <p>理财有风险，投资需谨慎；</p>
+    </div>
+<%}%>
+
+<%if(pro.tradeType==2){%>
+    <div class="htpanel">
+        <label>项目编号</label>
+        <p><%=pro['2manualAssetNumber']%></p>
+    </div>
+    <div class="htpanel">
+        <label>受托方</label>
+        <p>
+            <%=pro['2zrfShortName']%>
+            <%if(pro['2zrfShortName'] !=''){%> ; <%}%>
+            注册地址： <%=pro['2zrfRegistAddrProvice']%><%=pro['2zrfRegistAddrCity']%>
+            <%if(pro['2zrfRegistAddrProvice'] !='' || pro['2zrfRegistAddrCity'] !='' ){%> ; <%}%>
+            经营范围： <%=pro['2zrfBusinessScope']%>
+        </p>
+    </div>
+    <div class="htpanel">
+        <label>发行方</label>
+        <p>
+            <%=pro['2hzfShortName']%>
+            <%if(pro['2hzfShortName'] !=''){%> ; <%}%>
+            经营范围： <%=pro['2hzfBusinessScope']%>
+            <%if(pro['2hzfBusinessScope'] !=''){%> ; <%}%>
+            企业介绍： <%=pro['2hzfCompIntroduce']%>
+        </p>
+    </div>
+    <div class="htpanel">
+        <label>交易所</label>
+        <p>
+            <%=pro['2jysShortName']%>
+            <%if(pro['2jysShortName'] !=''){%> ; <%}%>
+            成立时间： <%=$.dateFormat(pro['2jysRegistTime'], 'yyyy年MM月dd')%>
+            <%if(pro['2jysRegistTime'] !=''){%> ; <%}%>
+            经营范围： <%=pro['2jysBusinessScope']%>
+        </p>
+    </div>
+    <div class="htpanel">
+        <label>项目简介</label>
+        <p>本产品为定向委托投资项目，由委托人将其合法所有的现金资产委托给受托人进行定向投资，投资于<%=pro['2hzfShortName']%>在<%=pro['2jysShortName']%>备案登记的<%=pro['2assetTypeName']%>产品。</p>
+        <p>
+            <%if(pro['2underlyingAssetDebtorInfoList'][0]['2debtorType'] == 0){%>
+                姓名：<%=pro['2underlyingAssetDebtorInfoList'][0]['2grName']%>;
+                证件号码：<%=pro['2underlyingAssetDebtorInfoList'][0]['2grIdentNo']%>;
+                借款金额：<%=$.amountFormat(pro['2underlyingAssetDebtorInfoList'][0]['2grSourceAmount'])%>;
+                借款用途：<%=pro['2underlyingAssetDebtorInfoList'][0]['2grBorrowUse']%>;
+                增信措施：<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyTrustGuard']%>;
+            <%} else{%>
+                企业名称：<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyShortName']%>;
+                法定代表人:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyPersonName']%>;
+                注册地址:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyRegistAddrProvice']%><%=pro['2underlyingAssetDebtorInfoList'][0]['2qyRegistAddrCity']%>;
+                成立时间:<%=$.dateFormat(pro['2underlyingAssetDebtorInfoList'][0]['2qyRegistTime'],'yyyy年MM月dd日')%>;
+                注册资本:<%=$.amountFormat(pro['2underlyingAssetDebtorInfoList'][0]['2qyRegistAmount'])%>;
+                经营范围:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyBusinessScope']%>;
+                公司规模:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyCompScale']%>;
+                资金用途:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyUseMemo']%>;
+                还款来源:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyRepaySource']%>;
+                增信措施:<%=pro['2underlyingAssetDebtorInfoList'][0]['2qyTrustGuard']%>;
+            <%}%>
+        </p>
+        <div class="fixed-more">更多</div>
+    </div>
+
+    <div class="htpanel">
+        <label>风险提示</label>
+        <p>理财有风险，投资需谨慎；</p>
+    </div>
+<%}%>
+
+<div class="fixed-pop">
+    <div class="ui-pro-list">
+        <h2>资产信息</h2>
+        <div class="ux-shutdown">&times;</div>
+        <div class="ui-scroll-box">
+            <% _.each(pro['2underlyingAssetDebtorInfoList'],function(item){ %>
+                <%if(item['2debtorType'] == 0){%>
+                    <table class="ui-table">
+                        <caption><%=item['2grName']%><span>(债务人)</span></caption>
+                        <tbody>
+                            <tr>
+                                <th>证件号码</th>
+                                <td><%=item['2grIdentNo']%></td>
+                            </tr>
+                            <tr>
+                                <th>借款金额</th>
+                                <td><%=$.amountFormat(item['2grSourceAmount'])%></td>
+                            </tr>
+                            <tr>
+                                <th>借款用途</th>
+                                <td><%=item['2grBorrowUse']%></td>
+                            </tr>
+                            <tr>
+                                <th>增信措施</th>
+                                <td><%=item['2qyTrustGuard']%></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                <%} else{%>
+                    <table class="ui-table">
+                        <caption><%=item['2qyShortName']%><span>(债务人)</span></caption>
+                        <tbody>
+                        <tr>
+                            <th>法定代表人</th>
+                            <td><%=item['2qyPersonName']%></td>
+                        </tr>
+                        <tr>
+                            <th>成立时间</th>
+                            <td><%=$.dateFormat(item['2qyRegistTime'],'yyyy年MM月dd日')%></td>
+                        </tr>
+                        <tr>
+                            <th>注册地址</th>
+                            <td><%=item['2qyRegistAddrProvice']%><%=item['2qyRegistAddrCity']%></td>
+                        </tr>
+                        <tr>
+                            <th>注册资本</th>
+                            <td><%=$.amountFormat(item['2qyRegistAmount'])%></td>
+                        </tr>
+                        <tr>
+                            <th>主营业务</th>
+                            <td><%=item['2qyBusinessScope']%></td>
+                        </tr>
+                        <tr>
+                            <th>公司规模</th>
+                            <td><%=item['2qyCompScale']%></td>
+                        </tr>
+                        <tr>
+                            <th>还款来源</th>
+                            <td><%=item['2qyRepaySource']%></td>
+                        </tr>
+                        <tr>
+                            <th>资金用途</th>
+                            <td><%=item['2qyUseMemo']%></td>
+                        </tr>
+                        <tr>
+                            <th>增信措施</th>
+                            <td><%=item['2qyTrustGuard']%></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                <%}%>
+            <%})%>
+        </div>
+    </div>
+</div>

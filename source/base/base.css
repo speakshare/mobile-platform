@@ -1,0 +1,235 @@
+﻿body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,span{margin:0;padding:0;-webkit-font-smoothing:antialiased;box-sizing:border-box}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+strong,em{font-style:normal}
+ol,ul{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+html,body{height:100%;-webkit-tap-highlight-color:transparent}
+input,textarea{outline:0;font-size:14px}
+input:-webkit-autofill,textarea:-webkit-autofill,select:-webkit-autofill{background-color:#fff !important;}
+body{width:100%;min-width:320px;background-color:#f2f2f2;font-size:14px;color:#444;line-height:1;
+  font-family:"PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,SimSun;
+  overflow-x:hidden;-webkit-user-select: none;-moz-user-select: none;-o-user-select: none;}
+  input::-webkit-input-placeholder,
+  textarea::-webkit-input-placeholder,
+  input:-moz-placeholder,
+  textarea:-moz-placeholder {color:#999;font-size:12px}
+  a{text-decoration:none;-webkit-tap-highlight-color:transparent}
+  p{margin: 0;padding: 0;font-weight: normal}
+  img{display:block;width:100%}
+
+  .f12{font-size: 12px!important}
+  .f14{font-size: 14px!important}
+  .f16{font-size: 16px!important}
+  .f17{font-size: 17px!important}
+  .f18{font-size: 18px!important}
+
+  .mt5{margin-top: 5px!important}
+  .mt10{margin-top: 10px!important}
+  .mt15{margin-top: 15px!important}
+  .mt20{margin-top: 20px!important}
+  .mt25{margin-top: 25px!important}
+  .mt30{margin-top: 30px!important}
+
+  .mb5{margin-bottom: 5px!important}
+  .mb10{margin-bottom: 10px!important}
+  .mb15{margin-bottom: 15px!important}
+  .mb20{margin-bottom: 20px!important}
+  .mb25{margin-bottom: 25px!important}
+  .mb30{margin-bottom: 30px!important}
+
+  .ml5{margin-left: 5px!important}
+  .ml10{margin-left: 10px!important}
+  .ml15{margin-left: 15px!important}
+  .ml20{margin-left: 20px!important}
+  .ml25{margin-left: 25px!important}
+  .ml30{margin-left: 30px!important}
+
+  .mr5{margin-right: 5px!important}
+  .mr10{margin-right: 10px!important}
+  .mr15{margin-right: 15px!important}
+  .mr20{margin-right: 20px!important}
+  .mr25{margin-right: 25px!important}
+  .mr30{margin-right: 30px!important}
+
+  .red{color:#ff6046}
+  .hide{display:none}
+
+  .fl{float: left;}
+  .fr{float: right;}
+  .clearf{clear: both}
+  .text-ind{text-indent: 2em}
+  .bor-top{border-top: 1px solid #eee;}
+  .bor_bot1{border-bottom: 1px solid #666;padding: 0 10px;}
+  .clearfix{*zoom:1;}
+  .clearfix:after{display:block;content:"clear";height:0;clear:both;overflow:hidden;visibility:hidden;}
+  /*loading*/
+  .loading{position: absolute;top: 50%;left: 50%;background:rgba(0,0,0,0.4);width: 60px;height: 60px;margin: -30px 0 0 -30px;border-radius: 10px;}
+  .loading .loading-icon{position: relative;width: 40px;height: 40px;background: url(loading.gif) no-repeat;background-size: 100%;margin: 10px}
+
+  .loading-refresh{display: none;position: absolute;top: 50%;left: 50%;background:rgba(0,0,0,0.4);width: 60px;height: 60px;margin: -30px 0 0 -30px;border-radius: 10px;z-index:99999;}
+  .loading-refresh .loading-icon{position: relative;width: 40px;height: 40px;background: url(loading.gif) no-repeat;background-size: 100%;margin: 10px}
+
+  /*index*/
+  .main-page{width: 100%;height: auto;padding: 0;margin: 0}
+  .content{width: 100%;height: auto;}
+
+  /*icons*/
+  .icons:before{content:'';display: inline-block;background:url(icons.png) no-repeat;background-size: 300px auto}
+  .iconsa:after{content:'';display: inline-block;background:url(icons.png) no-repeat;background-size: 300px auto}
+  .bank-icons:before {content: '';display: inline-block;background: url(bank_logo.png) no-repeat; background-size:300px auto;}
+
+
+  /*按钮*/
+  .btn1{text-align: center;margin-top: 30px}
+  .btn1 .btn-word1{display: inline-block;width: 89%;background-color: #dad7d6;border-radius: 5px;font-size: 16px;color: #fff;padding: 15px 0}
+  .btn2{text-align: center;margin-top: 30px}
+  .btn2 .btn-word1{display: inline-block;width: 90%;background-color: #ff6046;border-radius: 5px;font-size: 16px;color: #fff;padding: 15px 0}
+
+  .common-btn1{background-color: #d8d8d8;text-align: center;font-size: 16px;color: #fff;height: 45px;line-height: 45px;margin: 20px;}
+  .common-btn2{background-color: #ff6046;text-align: center;font-size: 16px;color: #fff;height: 45px;line-height: 45px;margin: 20px;}
+  .common-btn3{background-color: #d8d8d8;text-align: center;font-size: 16px;color: #fff;height: 45px;line-height: 45px;margin: 20px;}
+
+  /*清楚按钮*/
+  .clear{display: none;float: right;height: 100%}
+  .clear:before{background-position:-241px -72px;width: 15px;height: 15px;margin-bottom: -3px}
+
+  /*更多按钮*/
+  /*.more-btn{float: left;}*/
+  /*.more-btn:before{background-position:-241px -72px;width: 15px;height: 15px;margin-bottom: -3px}*/
+
+  /*更多按钮*/
+  .more-btn{float: right;height: 100%}
+  .more-btn:before{background-position:-256px -72px;width: 15px;height: 15px;margin-bottom: -3px}
+
+  /*显示隐藏按钮*/
+  .non-enumerable,.enumerable{float: right;height: 100%}
+  .non-enumerable:before{background-position:-277px -38px;width: 20px;height: 15px;margin-bottom: -3px}
+  .enumerable:before{background-position:-277px -25px;width: 20px;height: 15px;margin-bottom: -3px}
+  .home-enumerable:before{background-position:-277px -25px;width: 20px;height: 15px;margin-bottom: -4px;margin-left: 10px}
+  .homes-enumerable:before{background-position:-277px -38px;width: 20px;height: 15px;margin-bottom: -4px;margin-left: 10px}
+
+  /*底部安全提示*/
+  .safety-wordHint{clearposition: relative;text-align:center;padding:20px 0;font-size: 12px;color: #999}
+  .safety-wordHint:before{background-position:-242px -52px;width: 14px;height: 16px;margin-bottom: -2px}
+
+  .arrow-right,
+  .arrow-down,
+  .arrow-up{position:relative}
+  .arrow-right:after,
+  .arrow-down:after,
+  .arrow-right:after{content:'';position:absolute;top:18px;right:20px;width:8px;height:8px;border-top:1px solid #999;border-right:1px solid #999;
+  -webkit-transform: rotate(45deg);transform: rotate(45deg)}
+  .arrow-down:after{-webkit-transform: rotate(135deg);transform: rotate(135deg)}
+  .arrow-up:after{-webkit-transform: rotate(-45deg);transform: rotate(-45deg)}
+
+  /*键盘*/
+  .keyboard-bg{display:none;z-index:999;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6)}
+  .keyboard{display:none;z-index:1000;position:fixed;bottom:0;left:0;width:100%;height:auto;background-color: #fff;animation: xian 500ms ease-out;-webkit-animation: xian 500ms ease-out;}
+  .keyboard .title{padding:15px 15px 30px;font-size:16px;color:#4f4f4f}
+  .keyboard .title span:last-of-type{float:right;display:inline-block;background:url(icon-password-close@2x.png) no-repeat;background-size:100%;width:15px;height:15px}
+  .keyboard .password-box{margin:0 15px;height:50px;line-height:50px;border:1px solid #ccc;}
+  .keyboard .password-box span{float:left;text-align:center;width:48px;height:50px;font-size:24px;border-left:1px solid #ccc;}
+  .keyboard .password-box span:first-child{border-left:0}
+  .keyboard .hint-word{text-align:right;padding:20px 15px 30px 0;font-size:15px;color:#3b8beb}
+
+  .keyboard .keyboard-tab{width: 100%;font-size: 20px;color: #666}
+  .keyboard .keyboard-tab tr{height: 50px;border-top: 1px solid #ccc;}
+  .keyboard .keyboard-tab td{text-align: center}
+  .keyboard .keyboard-tab td:active{background-color: #f0f0f0;}
+  .keyboard .keyboard-tab tr td:nth-of-type(2){border-left:1px solid #ccc;border-right:1px solid #ccc}
+  .keyboard .bg{background-color: #ccc;font-size:24px}
+
+  @-webkit-keyframes xian {
+    from{bottom: -100%}
+    to{bottom:0}
+  }
+  @keyframes xian {
+    from{bottom: -100%}
+    to{bottom:0}
+  }
+  @media screen and (min-width:320px){
+    .keyboard .keyboard-tab tr{height: 50px;}
+  }
+  @media screen and (min-width:360px){
+    .keyboard .keyboard-tab tr{height: 54px;}
+  }
+  @media screen and (min-width:414px){
+    .keyboard .keyboard-tab tr{height: 58px;}
+  }
+
+  /*new 背景色*/
+  .bgcolor_eef3f9{background:#EEF3F9;width:100%;height:100%;position: absolute;}
+
+  .password-mask {z-index: 3; }
+  .password-mask{position:fixed;z-index:11;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5)}
+  .password-mask .icons:before{content:'';display: inline-block;background:url(icons1.png) no-repeat;background-size: 250px auto}
+
+  .trade-password{position:absolute;bottom:200px;left:10%;right:10%;background:#fff;border-radius:6px}
+  .trade-password .trade-password-title{padding:20px 0 15px;text-align:center;font-size:16px;font-weight:bold}
+  .trade-password .trade-tip{text-align:center;font-size:14px}
+  .trade-password .trade-num{color:#ff6046}
+  .trade-password .key-value{float:left;width:40px;height:40px;text-align:center;line-height:40px;font-size:20px;border-left:1px solid #eee;background-color: #fff}
+  .trade-password .key-value:first-child{border-left:none}
+  .trade-password .trade-box{margin:15px auto 0;width:244px;border:1px solid #eee;height:42px}
+  .trade-password .forgot-password-btn{float:right;font-size:12px;line-height:15px;margin:15px;color:#666}
+  .trade-password .cancel-btn{clear:both;height:46px;line-height:46px;border-top:1px solid #eee;text-align:center;font-size:15px;margin-top:15px;color:#ff6046}
+
+  /*交易密码框样式重置*/
+  .password-box .trade-password{position: fixed;bottom:160px;left:0;width:100%;border-radius:0px;padding: 16px;animation: popup 500ms ease-out;
+    -webkit-animation: popup 500ms ease-out;}
+    .password-box .trade-password-title{font-size:18px;color:#4f4f4f;text-align:left;font-weight: normal;padding:0;}
+    .password-box .cancel-btn{width:15px;height:15px;border: none;margin:0px;float:right;}
+    .password-box .cancel-btn:before{width:20px;height:20px;background-position: -56px -246px;float:right;}
+    .password-box .trade-box{width:100%;height:48px;border:1px solid #ccc;margin:25px auto 0;}
+    .password-box .key-value{width:16.6%;height:46px;border-left:1px solid #ccc;}
+    .password-box .forgot-password-btn{font-size: 15px;color: #3B8BE8;}
+    .password-box .smstips{font-size:14px;color:#959595;margin-top:10px;margin-bottom:25px;}
+    .password-box .smsbox{position: relative; width:98%;height:48px;border:1px solid #D0D0D0;margin:0 auto;border-radius:3px;}
+    .password-box .smsbox input{height:30px;line-height:30px;border: none;outline: none;margin-top:8px;color:#4f4f4f;width:100%;font-size:15px;padding-left:10px;}
+    .password-box .smsbox span{position: absolute;right:10px;top:15px;color:#FCA032;}
+    .password-box .smsbox span.resent{color:#3B8AE6;}
+    .password-box .conformbtn{width:98%;height:48px;line-height:48px;text-align:center;font-size:18px;color:#ffffff;margin: 30px auto;}
+    .password-box .canbtn{background: #FF5532;}
+    .password-box .disablebtn{background: #D5D5D5;} 
+    .fixedbox  .trade-password .forgot-password-btn{margin:15px 0px 15px 15px;}
+    .fixedbox .keyboard-box .key-one{ border-left: 1px solid #ccc;border-bottom: 1px solid #ccc;color:#666;}
+    .fixedbox .keyboard-box {border-top:1px solid #ccc;}
+    .fixedbox .keyboard-box .backspace,.fixedbox .keyboard-box .reset{background:#ccc;}
+
+    @media screen and (min-width:360px){
+      .trade-password .forgot-password-btn{margin-right:10%}
+    }
+
+    @media screen and (min-width:414px){
+      .trade-password .forgot-password-btn{margin-right:13%}
+    }
+
+    .keyboard-box{position:fixed;bottom:0;left:0;width:100%;height:160px;background:#fff;}
+    .keyboard-box .key-one{float:left;width:33.33%;height:40px;line-height:40px;text-align:center;border-left:1px solid #eee;border-bottom:1px solid #eee;font-size:20px}
+    .keyboard-box .key-one:nth-child(3n+1){border-left:0}
+    .keyboard-box .key-one:hover{background: #f0f0f0}
+    .keyboard-box .reset:before{display:none;background-position:0 -18px;width:20px;height:23px;margin-top:7px}
+    .keyboard-box .backspace:before{background-position:-22px -19px;width:30px;height:19px;margin-top:3px}
+
+    @media screen and (min-width:375px){
+      .trade-password{bottom:260px}
+      .keyboard-box{height:200px}
+      .keyboard-box .key-one{height:50px;line-height:50px}
+
+      .password-box .trade-password{bottom:200px;}
+    }
+
+    @media screen and (min-width:414px){
+      .trade-password{bottom:300px}
+      .keyboard-box{height:240px}
+      .keyboard-box .key-one{height:60px;line-height:60px}
+
+      .password-box .trade-password{bottom:240px;}
+    }
+
+    .share_mask{display:none;position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(mask.png) no-repeat 90% 20px;background-size:160px auto}
+
+.right{
+  float:right;
+}

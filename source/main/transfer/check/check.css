@@ -1,0 +1,65 @@
+﻿/*.transfer-buyying{padding-bottom:10px;}*/
+/*.transfer-buyying .transfer-content{padding: 13px 16px;background:#ffffff;}*/
+/*.transfer-buyying .transfer-content .title{font-size: 14px;color:#444444;}*/
+/*.transfer-buyying .transfer-content .title:after{content: '';width: 6px;height: 6px;border-top: 1px solid #999;border-right: 1px solid #999;-webkit-transform: rotate(45deg);transform: rotate(45deg);display: inline-block;margin: 2px 4px;}*/
+/*.transfer-buyying .prd-info{display: flex;flex-direction: row;}*/
+/*.transfer-buyying .prd-info .item{flex-grow:1;font-size:12px;color:#999;line-height:33px;margin-top:10px;}*/
+/*.transfer-buyying .prd-info .item p{font-size:12px;color:#999;line-height:20px;}*/
+/*.transfer-buyying .interest{font-size:28px;color:#EB3F30;}*/
+/*.transfer-buyying .sign{position: relative;font-size:13px;color:#EB3F30;}*/
+/*.transfer-buyying .sign:after{content:"";display: inline-block;width: 12px;height: 12px;position:absolute;top: 0;background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi/L+0g4FcwMRAAaCdZkVtBk1zPPIsOGVEZRjMPRkYmRg+vWF4epcUm3kFGewCGZiYGRgZGax8GfhFiNbMys5gG8jAzoXg2gUxsHMSoRlolY0/g4AoukOAgkxMhDSbuDJIKmJxjrg8g7ELukX4EklUOYhc1jnEEsmo5mGjGSDAANUgEPXdhVZIAAAAAElFTkSuQmCC) no-repeat;background-size: 100%;}*/
+/*.transfer-buyying .num{font-size:21px;color:#666;}*/
+/*.transfer-buyying .right{text-align:right;}*/
+/*.transfer-buyying .center{text-align:center;}*/
+/*.transfer-buyying .transfer-content .tab{width:100%;!*height:45px;*!line-height:45px;border-bottom:1px solid #e4e4e4;font-size:16px;color:#666666;}*/
+/*.transfer-buyying .transfer-content .tab:last-child{border: none;}*/
+/*.transfer-buyying .transfer-content .tab .frtxt{float:right;position: relative;color:#444444;margin-right:20px;}*/
+/*.transfer-buyying .transfer-content .tab .askicon:after{content: "";display: inline-block;width: 25px;height: 32px; position: absolute; right: -23px;top: 6px;background: url(images/askicon.png) center center no-repeat;background-size:16px auto;}*/
+/*.transfer-buyying .transfer-content .tab .tips{display:none;font-size:11px;color:#999999;line-height: 16px;padding: 0px 7px;position: relative;top: -6px;}*/
+/*.transfer-buyying .tipbar{height:25px;line-height:20px;padding:10px 16px;font-size:12px;color:#666666;}*/
+/*.transfer-buyying .tipbar span{color:#5596ce;}*/
+/*.transfer-buyying .fixed-tips{position:fixed;bottom:45px;width:100%;text-align:center;}*/
+/*.transfer-buyying .fixed-bottom{position: fixed; bottom:0px;width:100%;height:45px;line-height:45px;text-align:center;color:#ffffff;font-size:18px;}*/
+/*.transfer-buyying .investbtn{background:#ff6046;}*/
+/*.transfer-buyying .transferout{background:#aaa;}*/
+/*.transfer-buyying .resettradepsw{background:#DAD7D6;}*/
+
+.transfer-buy{margin:0}
+.transfer-buy .head-pic{background:url(img-topBg@2x.png) no-repeat;background-size:100% 90px;width:100%;height:90px;margin-bottom:10px}
+.transfer-buy .title{font-size:16px;color:#4f4f4f;padding:20px 15px}
+.transfer-buy .data-mod{display:flex;padding:0 15px;font-size:13px}
+.transfer-buy .time-limit{flex:1.2;}
+.transfer-buy .time-year{flex:1;}
+.transfer-buy .data-mod .word1{background:-webkit-linear-gradient(left,#FF8E61,#FF5532);background:linear-gradient(to right,#FF8E61,#FF5532);color:#fff;padding:3px 5px;opacity:0.8}
+.transfer-buy .data-mod .word2{border:1px solid #fd7559;padding:2px 5px;color:#FF5532}
+.transfer-buy .transfer-item{background-color:#fff;height:50px;line-height:50px;padding:0 15px;color:#4f4f4f}
+.transfer-buy .transfer-item span:nth-of-type(1){font-size:15px}
+.transfer-buy .transfer-item span:nth-of-type(2){font-size:14px;padding-left:20px}
+.transfer-buy .transfer-buy-hint{padding:15px;}
+.transfer-buy .transfer-buy-hint span{color:#FF5532}
+.transfer-buy .agr{padding:0 20px;font-size:13px;color:#4f4f4f}
+.transfer-buy .agr span{color:#3b8be8}
+.transfer-buy .agr i,
+.transfer-buy .agr .no-agr{display:inline-block;width:13px;height:13px;margin:0 5px -1px 0}
+.transfer-buy .agr i{background:url(btn-select@2x.png) no-repeat;background-size:13px;}
+.transfer-buy .agr .no-agr{background:url(btn-not-select@2x.png) no-repeat;background-size:13px;}
+.transfer-buy .invest-btn{background-color:#FF5532}
+/*支付提示窗口*/
+.transfer-buy .account-stock-wrap{position:fixed;z-index:2;top:0;left:0;bottom:0;width:100%;background:rgba(0,0,0,0.5);display:none;}
+.transfer-buy .account-stock{position:absolute;bottom:0;width:100%;line-height:47px;background:#fff;margin-top: 9px;-webkit-transition:all 0.5s ease-in;transition:all 0.5s ease-in;-webkit-transform:translate3d(0,200px,0);transform:translate3d(0,200px,0);}
+.transfer-buy .account-stock-show{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);}
+.transfer-buy .account-stock div{width:100%;height:47px;font-size:15px;color:#333333;padding-left:17px;border-bottom:1px solid #eee;}
+.transfer-buy .account-stock .txt-right{float:right;color:#FF5532;padding-right:17px;display:inline-block;*display:inline;*zoom:1;}
+.transfer-buy .account-stock .redio.txt-right{color:#333;padding-right:6px;}
+.transfer-buy .account-stock .redio:after{float:right;content: "";display: inline-block;background:url(images/redio.png) center center no-repeat;width: 20px;height: 20px;vertical-align: -4px;margin: 13px 5px 0 5px;background-size: 100%;}
+.transfer-buy .account-stock .redio.checked:after{float:right;background:url(images/redio_checked.png) center center no-repeat;background-size: 100%;}
+.transfer-buy .account-btn{height:45px;line-height:45px;text-align:center;font-size:16px;color:#fff}
+
+@media screen and (min-width:320px){
+    .transfer-buy .transfer-buy-hint{font-size:12px}
+}
+
+@media screen and (min-width:360px){
+    .transfer-buy .transfer-buy-hint{font-size:13px}
+}
+

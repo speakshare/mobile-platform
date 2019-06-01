@@ -1,0 +1,25 @@
+<div class="pickZone">
+	<span class="curRed">当月红包 <span class="figure"><%=monthRedPacket%></span></span>
+	<div class="datebox">
+		<span class="filter-date"><%= seletedDate.replace('-','年')+'月' %></span><span class="btnTriangle"></span>
+	</div>
+</div>
+<div class="content">
+	<ul class="ullist">	
+		<% if(!_.isEmpty(redPacketList)){%>
+		<% _.each(redPacketList,function(item){ %>
+		<li> 
+			<span class="progress other <%=item.redPacketAmount==MostRed?'most':''%>" style="width:<%= 20+((item.redPacketAmount/monthRedPacket)*55)%>%"><span class="date"><%=$.dateFormat(item.grantTime*1000,'yyyy-MM-dd')==($.currentDate().year+'-'+$.currentDate().month+'-'+$.currentDate().day)?'今日':($.dateFormat(item.grantTime*1000,'MM/dd'))%></span></span>
+			<span class="figure"><%=item.redPacketAmount%></span>
+		</li>
+		<%})%>
+		<%}else{%>
+		<div class="noRed">
+			<div class="iconNoRed"></div>
+			<p class="tips">当月无红包奖励哦！</p>
+		</div>
+		<%}%>
+	</ul>
+</div>
+
+

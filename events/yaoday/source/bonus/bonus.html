@@ -1,0 +1,17 @@
+<div class="ui-bonus">
+    <div class="ui-bonus-header">
+        <div class="ui-bonus-title">累计获取(元)</div>
+        <div class="ui-bonus-number"><%=totalRewardAmt%></div>
+    </div>
+</div>
+<%if(!isShowList){%>
+    <div class="ui-bonus-body">
+        <img src="images/img-yd-no-reward.png" alt="">
+    </div>
+<%} else {%>
+<ul class="ui-bonus-list"> </ul>
+<%}%>
+
+<div class="ui-button ui-red-button">
+    查看我的礼券
+</div>

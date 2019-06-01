@@ -1,0 +1,32 @@
+.compact{margin:0;padding:0}
+.compact .compact-hint{height:30px;line-height:30px;padding:0 15px;background-color:#ff6046;font-size:14px;color:#fff}
+.compact .compact-box{clear:both;display:flex;padding:15px;border-top:1px solid #ccc;border-bottom:1px dashed #ccc}
+.compact .compact-box2{height:100px;line-height:100px;text-align:center;background-color:#eee;font-size:15px}
+.compact .compact-word{flex-grow:7;font-size:13px;color:#4f4f4f}
+.compact .compact-word p:first-child{padding-bottom:15px}
+.compact .compact-icon{flex-grow:1}
+.compact .compact-icon .icon-more:before{float:right;background-position:-255px -69px;width:16px;height:20px;margin-top:11px}
+.compact .download-box{float:right;margin:15px 15px 100px 0;background-color:#fff}
+.compact .download-word{display:inline-block;padding:8px 15px;border:1px solid #444;border-radius:5px;font-size:15px}
+.compact .rig{float:right}
+.compact .col{color:#999}
+.compact .col2{color:#ff6046}
+
+/*定向委托投资协议*/
+.compactDetail{margin:0;padding:15px;font-size:13px;color:#666}
+.compactDetail .title{text-align:center;font-size:18px;color:#ff6046}
+.compactDetail .com-num{text-align:right;padding:15px 0 20px;font-size:14px;color:#666}
+.compactDetail .com-head,
+.compactDetail .com-content{padding-bottom:15px}
+.compactDetail .com-head p{line-height:24px;font-size:14px;color:#444}
+.compactDetail .com-content h3{padding-bottom:10px;font-size:15px;color:#444}
+.compactDetail .com-content p{line-height:22px;padding-bottom:5px}
+.compactDetail .com-box{width:100%;border:1px solid #666;color:#666}
+.compactDetail .com-box span{padding:10px 5px}
+.compactDetail .com-title{padding:10px 5px}
+.compactDetail .com-title p{line-height:22px;padding-bottom:5px}
+.compactDetail .bor-top{border-top:1px solid #666}
+.compactDetail .com-tab{display:flex;}
+.compactDetail .com-tab span{flex:1;}
+.compactDetail .com-tab .bor-rig{border-right:1px solid #666;}
+.compactDetail .col{color:#ff6046}

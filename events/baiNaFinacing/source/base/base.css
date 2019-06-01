@@ -1,0 +1,250 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, span {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img {
+  border: 0
+}
+
+strong, em {
+  font-style: normal
+}
+
+ol, ul {
+  list-style: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+
+html, body {
+  height: 100%;
+  -webkit-tap-highlight-color: transparent
+}
+
+input, textarea,button {
+  outline: 0;
+  /*-webkit-appearance: none;*/
+}
+
+body {
+  background: #eef3f9;
+  font-size: 28px;
+  line-height: 1.5;
+  font-family: "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif, "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, SimSun;
+  width: 100%;
+  overflow-x: hidden
+}
+
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent
+}
+
+img {
+  display: block;
+  width: 100%
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: ' ';
+  display: block;
+  clear: both
+}
+.center{
+  text-align:center;
+}
+.hide {
+  display: none
+}
+
+.green {
+  color: #73b36b !important
+}
+
+.grey {
+  color: #999 !important
+}
+
+.white {
+  color: #fff !important
+}
+
+.darkGrey {
+  color: #666
+}
+
+.yellow {
+  color: #ff9600
+}
+
+.red {
+  color: #FF5A57
+}
+
+/* 改变placeholder的样式 */
+input::-webkit-input-placeholder {
+  color: #888;
+}
+
+input:-moz-placeholder {
+  color: #888;
+}
+
+input::-moz-placeholder {
+  color: #888;
+}
+
+input:-ms-input-placeholder {
+  color: #888;
+}
+
+/*noinspection ALL*/
+input:placeholder {
+  color: #888;
+}
+
+/* 修改chrome记住密码后自动填充表单的黄色背景 */
+input:-webkit-autofill {
+  background: none;
+  color: #fff
+}
+
+.animate {
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out
+}
+.loading {
+  margin: 15px auto;
+  font-size: 4px;
+  position: relative;
+  text-indent: -9999em;
+  border: 0.5em solid rgba(0, 0, 0, 0.1);
+  border-left-color: #ccc;
+  -webkit-animation: empty_loading 1.1s infinite linear;
+  animation: empty_loading 1.1s infinite linear
+}
+
+.loading,
+.loading:after {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px
+}
+
+.change_page_loading {
+  display: none;
+  position: fixed;
+  background: #fff;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 50%
+}
+
+.change_page_loading .page_loading {
+  margin: 15px auto;
+  font-size: 4px;
+  position: relative;
+  text-indent: -9999em;
+  border: 0.5em solid #44b336;
+  border-left-color: #ccc;
+  -webkit-animation: empty_loading 1.1s infinite linear;
+  animation: empty_loading 1.1s infinite linear
+}
+
+.change_page_loading .page_loading,
+.change_page_loading .page_loading:after {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px
+}
+
+@-webkit-keyframes empty_loading {
+  0% {
+    -webkit-transform: rotate(0deg)
+  }
+  100% {
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@keyframes empty_loading {
+  0% {
+    transform: rotate(0deg)
+  }
+  100% {
+    transform: rotate(360deg)
+  }
+}
+
+.loading-refresh {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.4);
+  width: 120px;
+  height: 120px;
+  margin: -60px 0 0 -60px;
+  border-radius: 10px;
+  z-index: 99999;
+}
+
+.loading-refresh .loading-icon {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: url(loading.gif) no-repeat;
+  background-size: 100%;
+  margin: 20px
+}
+
+.arrow-right,
+.arrow-down,
+.arrow-up{position:relative}
+.arrow-right:after,
+.arrow-down:after,
+.arrow-right:after{content:'';position:absolute;top:39px;right:40px;width:16px;height:16px;border-top:2px solid #999;border-right:2px solid #999;
+  -webkit-transform: rotate(45deg);transform: rotate(45deg)}
+.arrow-down:after{-webkit-transform: rotate(135deg);transform: rotate(135deg)}
+.arrow-up:after{-webkit-transform: rotate(-45deg);transform: rotate(-45deg)}
+
+
+.password-mask {z-index: 3; }
+.password-mask{position:fixed;z-index:11;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5)}
+/*.password-mask .icons:before{content:'';display: inline-block;background:url(icons1.png) no-repeat;background-size: 250px auto}*/
+
+.trade-password{position:absolute;bottom:520px;left:10%;right:10%;background:#fff;border-radius:6px}
+.trade-password .trade-password-title{padding:40px 0 30px;text-align:center;font-size:32px;font-weight:bold}
+.trade-password .trade-tip{text-align:center;font-size:28px}
+.trade-password .trade-num{color:#ff6046}
+.trade-password .key-value{float:left;width:80px;height:80px;text-align:center;line-height:80px;font-size:40px;border-left:1px solid #eee;background-color: #fff}
+.trade-password .key-value:first-child{border-left:none}
+.trade-password .trade-box{margin:30px auto 0;width:488px;border:1px solid #eee;height:84px}
+.trade-password .forgot-password-btn{float:right;font-size:24px;line-height:30px;margin:30px;color:#666}
+.trade-password .cancel-btn{clear:both;height:92px;line-height:92px;border-top:1px solid #eee;text-align:center;font-size:30px;margin-top:15px;color:#ff6046}
+
+.keyboard-box{position:fixed;bottom:0;left:0;width:100%;height:400px;background:#fff;}
+.keyboard-box .key-one{float:left;width:33.33%;height:100px;line-height:100px;text-align:center;border-left:1px solid #eee;border-bottom:1px solid #eee;font-size:40px}
+.keyboard-box .key-one:nth-child(3n+1){border-left:0}
+.keyboard-box .key-one:hover{background: #f0f0f0}
+.keyboard-box .reset{background:url(b1.png) no-repeat center center}
+.keyboard-box .backspace{background:url(b2.png) no-repeat center center}
+
+.share_mask { display: none; position: fixed; z-index: 999999; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.6) url(mask.png) no-repeat 90% 20px; background-size: 281px auto
+}

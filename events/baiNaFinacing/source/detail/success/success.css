@@ -1,0 +1,30 @@
+.product-success{margin:0;}
+.product-success .success-pro{display:flex;}
+.product-success .success-type{margin-bottom:10px; background-color:#fff;padding-top:40px;}
+.product-success .fix-type{background-color:#fff;padding:40px 0;}
+.product-success .suc-icon{flex:1;text-align:center}
+.product-success .suc-icon .trim { display: inline-block; background: url(images/icon-quanyichenggong@2x.png) no-repeat; background-size: 100%; width: 120px; height: 120px }
+.product-success .suc-icon .trim1{display:inline-block;background:url(images/icon-success@2x.png) no-repeat;background-size:100%;width:40px;height:40px}
+.product-success .suc-icon .trim2{display:inline-block;width:24px;height:24px;border:2px solid #ccc;border-radius:50%;margin-top:4px}
+.product-success .suc-icon span{display:block;border-left:2px solid #ccc;height:80px;margin-left:50%}
+.product-success .suc-icon span.fixed-height{display:block;border-left:2px solid #ccc;height:130px;margin-left:50%}
+.product-success .suc-icon em.fixed-height{display:block;height:130px;margin-left:50%}
+.product-success .suc-word{flex:3;line-height:44px;padding-right:20px;}
+.product-success .suc-word .col{font-size:26px;color:#959595; }
+.product-success .fix-word .col.first{font-size:34px;color:#4f4f4f; font-weight:bold; }
+.product-success .fix-word .col.middle{font-size:30px;color:#4f4f4f; line-height: 60px;}
+.product-success .fix-word .col.last{font-size:26px;color:#959595;}
+.product-success .fix-word .col.last span{color:#fca032;}
+
+.product-success .suc-word .col1{font-size:30px;color:#fca032}
+.product-success .suc-word .col2{font-size:30px;color:#959595}
+.product-success .suc-word .col3{font-size:26px;color:#9fa7b4}
+.product-success .suc-word .col4{font-size:32px;color:#4f4f4f;font-weight:bold}
+.product-success .success-dou{display:flex;background-color:#fff;margin:80px 40px;padding:30px 40px}
+.product-success .success-dou .dou-word{flex:2;line-height:56px;padding-top:20px}
+.product-success .success-dou .dou-word p:nth-of-type(1){font-size:32px;color:#4f4f4f;font-weight:bold}
+.product-success .success-dou .dou-word p:nth-of-type(2){font-size:26px;color:#999;}
+.product-success .success-dou .col1{color:#ff6046}
+.product-success .success-dou .dou-pic{flex:1;background:url(images/img-wangdou_chest@2x.png) no-repeat;background-size:100%;width:164px;height:146px}
+.common-btn{ text-align: center; font-size: 30px; color: #fff; height: 90px; line-height: 90px; margin: 40px; background-color:#ff6046; }
+.ux-tips{ text-align:left; padding:0 40px; color:#959595; }

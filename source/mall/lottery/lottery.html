@@ -1,0 +1,79 @@
+<div class="mall-lottery">
+	<div class="mall-lottery-center">
+		<!-- 旺豆余额 -->
+		<div class="peasbalence peas_box">旺豆余额<span class="peasnum mybalance"><%=$.strHtml(total)%></span></div>
+		<!-- 转动窗 -->
+		<div class="lottery-box light1">
+			<div class="runbox">
+				<div class="lhjbox">
+					<div class="lhj">
+						<div class="lhj-con">
+							<div class="lhj-pos lhj-pos1">
+								<div class="lhj-img"></div>
+								<div class="lhj-img"></div>
+							</div>
+						</div>
+					</div>
+					<div class="lhj">
+						<div class="lhj-con">
+							<div class="lhj-pos lhj-pos2"><div class="lhj-img"></div>
+							<div class="lhj-img"></div>
+						</div>
+					</div>
+				</div>
+				<div class="lhj">
+					<div class="lhj-con">
+						<div class="lhj-pos lhj-pos3">
+							<div class="lhj-img"></div>
+							<div class="lhj-img"></div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 投注框 -->
+	<div class="betbox">
+		<div class="reduce"></div>
+		<div class="peasbet peas_box">投注旺豆<span class="peasnum mr10 gamblefund"><%=$.strHtml(gambleFund)%></span></div>
+		<div class="add"></div>
+	</div>
+	<!-- 按钮区 -->
+	<div class="buttonbox">
+		<div class="minbtn"></div>
+		<div class="gobtn"></div>
+		<div class="maxbtn"></div>
+	</div>
+	<!-- 获奖规则 -->
+	<div class="lotteryrole">
+		<div class="lotterytitle">获奖规则</div>
+		<div class="flexbox">
+			<div class="flex"><div class="top logo"></div><div class="bottom">10 倍旺豆</div></div>
+			<div class="flex"><div class="top">三个相同水果</div><div class="bottom">3 倍旺豆</div></div>
+			<div class="flex"><div class="top">两个相同图片</div><div class="bottom">1 倍旺豆</div></div>
+		</div>
+	</div>
+	<!-- 中奖名单 -->
+	<div class="winnerslist">
+		<div class="lotterytitle">中奖名单</div>
+		<% if(!_.isEmpty(list)){%>
+		<% _.each(list,function(item){%>
+		<div class="winnerinfo">
+			<%= item.mobile%>
+			<span class="right">获得 <em><%= item.win%></em> 旺豆</span>
+		</div>
+		<%})}%>
+	</div>
+	<div class="gamerole">
+		<div class="lotterytitle">游戏规则</div>
+		<p class="cricle">最低下注10旺豆即可得到一次游戏机会</p>
+		<p class="cricle">下注旺豆以10的倍数递增，最高每次下注100旺豆</p>
+		<p class="cricle">每个用户游戏次数不限</p>
+		<p class="cricle">旺豆奖品将直接发放到旺豆账户</p>
+		<%if($.isIOS()){%>
+		<p class="cricle">该活动与苹果公司无关</p>
+		<%}%>
+	</div>
+</div>
+</div>
+<audio id="Music" src="<%= $.getStaticOrgin()%>/yaowang/dist/music.mp3" style="display: none;"></audio>

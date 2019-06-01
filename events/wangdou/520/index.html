@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>520表白日</title>
+    <meta name="keywords" content="旺豆＋兑换＋好礼"/>
+    <meta name="description" content="旺豆＋兑换＋好礼"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+</head>
+<style>
+    body{margin:0;padding:0;width:100%;min-width:320px;background:#fff;font-size:14px;line-height:1.5;
+        font-family:"PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,SimSun}
+        .share-btn{position:absolute;right:15px;top:10px;width:61px;height:20px;background:url(https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/icon_share.png);background-size:100% auto}
+        .event img{width:100%;display: block;}
+        .event{position: relative;font-size: 0; line-height: 0;}
+        .btn{height: 43px;text-align: center; position: absolute;width: 100%; bottom: 35px;}
+        .btn img{height:100%;width: auto; margin: 0 auto;}
+        .event .fn-hide{display:none;}
+        .share_mask{display:none;position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(https://file.91yaowang.com/yaowang/events/mask.png) no-repeat 90% 20px;background-size:140px auto}
+        @media screen and (max-width:320px){
+           .btn{ height:35px; }
+       }
+       @media screen and (max-width:375px){
+           .btn{ height:40px; }
+       }
+   </style>
+   <body>
+    <div class="event">
+        <div class="share-btn"></div>
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_01.jpg">
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_02.jpg">
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_03.jpg">
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_04.jpg">
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_05.jpg">
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_06.jpg">
+        <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_07.jpg">
+        <div class="J_img"> 
+            <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_h5_ios_08.jpg" class="fn-hide h5 ios">
+            <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_h5_and_08.jpg" class="fn-hide h5 and">
+            <img  src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_app_ios_08.jpg" class="fn-hide app ios">
+            <img  src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/pg_app_and_08.jpg" class="fn-hide  app and">
+            <div class="btn"> <img src="https://file.91yaowang.com/yaowang/events/wangdou/520/imgs/btn.png"></div>
+        </div>
+
+    </div>
+    <script src="https://file.91yaowang.com/yaowang/events/jquery-2.1.4.min.js"></script>
+    <script src="https://file.91yaowang.com/yaowang/events/jsBridge.js"></script>
+    <script src="https://file.91yaowang.com/yaowang/events/weChat.js"></script>
+    <script>
+        $(function(){
+            jsb.setShareInfo({
+                title:'520表白日，摇旺替你说爱',
+                desc:'用520旺豆送TA爱的礼物',
+                icon:location.origin+'/events/wangdou/520/imgs/share.jpg',
+                link:location.href
+            });
+            $('.share-btn').on('click',function(){
+                jsb.share();
+            });
+
+            var params= getParamsObj();
+            if(!params.isapp){
+                if(isIOS()){
+                    $('.h5.ios').show(); 
+                }else{
+                    $('.h5.and').show();  
+                }    
+            }else{
+                if(isIOS()){
+                    $('.app.ios').show(); 
+                }else{
+                    $('.app.and').show();  
+                }   
+
+            }
+            $('.btn').on('click',function(){
+               jsb.mall();
+            });
+        });
+
+        function getParamsObj() {
+            var ret = {};
+            var str = location.search.substring(1);
+            if (str && str.length > 0) {
+                var itemArr = str.split('&');
+                itemArr.forEach(function (item) {
+                    var pair = item.split('=');
+                    if (pair && pair.length === 2) {
+                        ret[pair[0]] = pair[1];
+                    }
+                })
+            }
+            return ret;
+        }
+
+        function isIOS () {
+            return /ipad|iphone|iPod|Macintosh|mac os/i.test(navigator.userAgent);
+        }
+
+
+    </script>
+</body>
+</html>

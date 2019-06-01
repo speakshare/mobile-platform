@@ -1,0 +1,62 @@
+.user-auth{margin:0}
+.user-auth .user-auth-box{display:flex;height:50px;line-height:50px;padding:0 20px;background-color:#fff;border-bottom:1px solid #eee}
+.user-auth .user-auth-word{flex:1;font-size:15px;color:#4f4f4f;padding-right:5px}
+.user-auth .user-auth-inp{flex:3;border:none}
+.user-auth .user-auth-tips{padding:0 20px; position:relative;}
+.user-auth .fixed-btn{
+    margin-top:30px;
+}
+
+.ui-checkbox {
+    width: 17px;
+    height:17px;
+    position: relative;
+}
+
+.ui-checkbox label {
+    cursor: pointer;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background: #eef3f9;
+    border: 1px solid #3b8ae6;
+}
+
+.ui-checkbox label:after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 3px;
+    background: transparent;
+    top: 4px;
+    left: 4px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.ui-checkbox label:hover::after {
+    opacity: 0;
+}
+
+.ui-checkbox input[type=checkbox]:checked + label{
+    background-color:#3b8ae6;
+}
+.ui-checkbox input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
+.ui-checkbox-text{
+    position:absolute;
+    top:2px;
+    left:40px;
+    color:#4f4f4f;
+    font-size:14px;
+}
+.user-auth .user-auth-tips span{
+    color:#3B8BE8;
+}

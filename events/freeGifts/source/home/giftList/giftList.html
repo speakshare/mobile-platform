@@ -1,0 +1,11 @@
+<% _.each(pdInfo,function(n,i){ %>
+<%if(i<4){%>
+<div class="gift-one" style="height:<%=422*$(window).width()/750%>px" data-id="<%=i%>">
+	<% if(user.investAmt>=n.investVal && user.inviteNum>=n.inviteVal){ %>
+	<div class="exchange-btn btn-idx<%=i%>"></div>
+	<% }else{ %>
+	<div class="gift-btn btn-idx<%=i%>"></div>
+	<% } %>
+</div>
+<%}%>
+<% }) %>

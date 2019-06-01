@@ -1,0 +1,93 @@
+<div class="product_detail_inner">
+	<div class="product_pic">
+		<img src="<%=good.headImg%>" alt="商品图片">
+		<% if(good.currentStock==0){%>
+		<div class="soldoutmask"><span class="soldout">已兑完</span></div>
+		<%}%>
+	</div>
+	<div class="product_detail_list">
+		<div class="product_property ">
+			<div class="maintitle">
+				<p class="product_name">
+					<%=good.itemName%>
+					<%if(good.isActivity){%>
+						<span class="activity">活动</span>
+					<%}%>
+					<%if(good.isMember == 1 && good.level>1){%>
+					<span class="zhe0">会员<%=good.pointDiscount*100%10 != 0?good.pointDiscount*100:good.pointDiscount*10%>折</span>
+					<%}%>
+				</p>
+			</div>
+			<p class="product_feature"><%=good.subTitle%></p>
+			<p class="product_info">
+				<span class="icon_wandou"></span>
+				<span class="current_price" id="needPoints"><%=good.needPoints%></span>
+				<span class="origin_price">￥<%=good.itemPrice%></span>
+				<span class="currentstock">剩余库存：<%=good.currentStock%></span>
+				<span class="number_of_peple"><%=good.exchangeCount%>人已兑</span>
+			</p>
+			<input type="hidden" value="<%=good.memberPoints %>" id="ownPoints" />
+		</div>
+		<div class="exchange_property">
+			<h3 class="exchange_process">兑换流程</h3>
+			<ul>
+				<% _.each(exchangeDesc,function(item){  %>
+				<li><%=item%></li>
+				<%})%>
+			</ul>
+		</div>
+		<h3 class="detail_btn">产品详情</h3>
+		<div class="detail_play">
+			<%=good.detail%> 
+		</div>
+	</div>
+	<%if($.getLogin()){%>
+	<%if(good.currentStock==0){%>
+	<div class="exchange_btn  timeout" data-id="<%=good.id%>">
+		已兑完
+	</div>
+	<%} else if(good.isActivity){%> <!-- 活动商品 -->
+	<%if(good.actiStatus=='2'){%> <!-- 兑换已过期 -->
+	<div class="exchange_btn  timeout" data-id="<%=good.id%>">
+		很抱歉，您的兑换权限已过期
+	</div>
+	<%}else if(good.actiStatus=='1'){%><!-- 去完成活动 -->
+	<div class="exchange_btn f18 togoactivity" data-id="<%=good.id%>" data-url="<%=good.actiUrl%>">
+		去完成
+		<p class="tips f12">完成活动任务可购买</p>
+	</div>
+	<%}else if(good.actiStatus=='4'){%><!-- 已兑换 -->
+	<div class="exchange_btn  timeout" data-id="<%=good.id%>">
+		已兑换
+	</div>
+	<%}else if(good.memberPoints>=good.needPoints){%>
+	<div class="exchange_btn  exchangeconfirm" data-id="<%=good.id%>">
+		去换购
+		<p class="tips f12">您已完成活动任务</p>
+	</div>
+	<% }else{ %>
+	<div class="exchange_btn invalid">
+		旺豆不足
+		<p class="tips f12">您共有<span class="own_wangdou"><%=good.memberPoints%></span>旺豆</p>
+	</div>
+	<%}%>
+	<%}else{%>
+	<% if(good.memberPoints>=good.needPoints){ %>
+	<div class="exchange_btn  exchangeconfirm" data-id="<%=good.id%>">
+		立即兑换
+		<p class="tips f12">您共有<span class="own_wangdou"><%=good.memberPoints%></span>旺豆</p>
+	</div>
+	<% }else{ %>
+	<div class="exchange_btn invalid">
+		旺豆不足
+		<p class="tips f12">您共有<span class="own_wangdou"><%=good.memberPoints%></span>旺豆</p>
+	</div>
+	<%}%>
+	<%}%>
+	<%}else{%>
+	<div class="loginbtn">
+		去登录
+	</div>
+	<% }%>
+</div>
+

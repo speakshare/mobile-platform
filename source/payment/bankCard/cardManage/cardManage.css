@@ -1,0 +1,95 @@
+.bank-manage{margin:0}
+.bank-manage .bank-card-tab{text-align:center;width:100%;height:50px;line-height:48px;background-color:#fff;border-bottom:1px solid #d0d0d0}
+.bank-manage .car-tab{float:left;width:50%;font-size:16px;color:#4f4f4f}
+.bank-manage .tab-state{color:#ff5532;border-bottom:2px solid #ff5532}
+
+.bank-manage .bank-box{margin:0 10px;}
+.bank-manage .bank-con{display:flex;width:100%;height:110px;color:#fff;border-radius:5px 5px 0 0}
+.bank-manage .bank-con .bank-icon{flex:1;text-align:center;margin:auto}
+.bank-manage .bank-con .bank-word{flex:3;padding-top:30px}
+.bank-manage .bank-con .bank-name{padding-bottom:13px;font-size:18px;font-family:PingFang-SC-Regular;font-weight:bold}
+.bank-manage .bank-con .bank-card-number{font-size:18px;}
+.bank-manage .bank-con .bank-mak{position:absolute;right:0;margin:10px 20px 0 0;background-color:rgba(255,255,255,0.4);opacity:0.9;border-radius:3px;padding:5px;font-size:12px}
+.bank-manage .bank-hint{height:35px;line-height:35px;background-color:#fff;padding-left:5%;font-size:13px;color:#959595;border-radius:0 0 5px 5px}
+.bank-manage .add-bank{display:flex;text-align:center;height:110px;margin:0 10px;background-color:#fff;border-radius:5px;font-size:18px;color:#b5b5b5}
+.bank-manage .add-bank span{margin:auto;}
+.bank-manage .add-bank span:before{content:'';display:inline-block;background:url(icon-add_card@2x.png) no-repeat;background-size:100%;width:20px;height:20px;margin:0 5px -4px 0}
+.common-suc-icon{font-size:15px;}
+.common-suc-icon i{content:'';display:inline-block;background:url(icon-white_success@2x.png) no-repeat;background-size:100%;width:30px;height:30px}
+
+.bank-manage .bank-card,
+.bank-manage .bank-fund{margin-top:15px}
+.bank-manage .unbind-bank,
+.bank-manage .look-limit{text-align:right;padding:20px 10px 0 0;font-size:14px;color:#4a90e2}
+.bank-manage .bank-fund{display: none}
+
+.bank-manage .bank-CIB, /* 中国兴业银行 */
+.bank-manage .bank-CMBC, /* 中国民生银行 */
+.bank-manage .bank-CCB, /* 中国建设银行 */
+.bank-manage .bank-SPDB, /* 中国浦发银行 */
+.bank-manage .bank-CEB, /* 中国光大银行 */
+.bank-manage .bank-BCOM, /* 中国交通银行 */
+.bank-manage .bank-ABC, /* 中国农业银行 */
+.bank-manage .bank-PSBC /* 中国邮储银行 */{
+    background:-webkit-linear-gradient(left,#5c97d4,#4b79c9);
+    background:linear-gradient(to right,#5c97d4,#4b79c9)
+}
+.bank-manage .bank-ICBC,/* 工商银行 */
+.bank-manage .bank-CMB,/* 招商银行 */
+.bank-manage .bank-BOC,/* 中国银行 */
+.bank-manage .bank-CITIC,/* 中信银行 */
+.bank-manage .bank-HXB,/* 中国华夏银行 */
+.bank-manage .bank-PAB,/* 中国平安银行 */
+.bank-manage .bank-CGB/* 中国广发银行 */{
+    background:-webkit-linear-gradient(left,#ff8587,#f25c61);
+    background:linear-gradient(to right,#ff8587,#f25c61)
+}
+
+.bank-manage .bank-icon-box:before{content:'';border-radius:50%;display:inline-block;width:50px;height:50px;background:url(bank_logo.png) rgba(255,255,255,0.8) no-repeat;background-size:300px auto;}
+.bank-manage .bank-name-BOC:before{background-position:-100px -100px}
+.bank-manage .bank-name-ICBC:before{background-position:1px 0}
+.bank-manage .bank-name-CMB:before{background-position:-100px -50px}
+.bank-manage .bank-name-CITIC:before{background-position:-200px 0}
+.bank-manage .bank-name-PAB:before{background-position:-251px 0}
+.bank-manage .bank-name-HXB:before{background-position:-51px 0}
+.bank-manage .bank-name-CGB:before{background-position:-100px -1px}
+.bank-manage .bank-name-ABC:before{background-position:-149px -51px}
+.bank-manage .bank-name-CMBC:before{background-position:-199px -50px}
+.bank-manage .bank-name-PSBC:before{background-position:-1px -50px}
+.bank-manage .bank-name-CCB:before{background-position:-250px -50px}
+.bank-manage .bank-name-BCOM:before{background-position:-49px -100px}
+.bank-manage .bank-name-CIB:before{background-position:0 -100px}
+.bank-manage .bank-name-SPDB:before{background-position:-150px 0}
+.bank-manage .bank-name-CEB:before{background-position:-50px -50px}
+
+/*.bank-info{margin-top:10px;height:123px;padding:30px 17px;color:#fff}*/
+/*.bank-info .bank-img{float:left;margin-right:17px;width:50px;height:50px;background:rgba(255,255,255,0.5) url(bank_logo.png) no-repeat;background-size:300px auto;border-radius:50%}*/
+/*.bank-BOC .bank-img{background-position:-100px -100px}*/
+/*.bank-ICBC .bank-img{background-position:1px 0}*/
+/*.bank-CMB .bank-img{background-position:-100px -50px}*/
+/*.bank-CITIC .bank-img{background-position:-200px 0}*/
+/*.bank-PAB .bank-img{background-position:-251px 0}*/
+/*.bank-HXB .bank-img{background-position:-51px 0}*/
+/*.bank-CGB .bank-img{background-position:-100px -1px}*/
+
+/*.bank-ABC .bank-img{background-position:-149px -51px}*/
+/*.bank-CMBC .bank-img{background-position:-199px -50px}*/
+/*.bank-PSBC .bank-img{background-position:-1px -50px}*/
+
+/*.bank-CCB .bank-img{background-position:-250px -50px}*/
+/*.bank-BCOM .bank-img{background-position:-49px -101px}*/
+/*.bank-CIB .bank-img{background-position:-200px -49px}*/
+/*.bank-SPDB .bank-img{background-position:-150px 0}*/
+/*.bank-CEB .bank-img{background-position:-50px -50px}*/
+
+
+/*.bank-info .bank-name{font-size:16px;margin:8px 0 9px 0}*/
+/*.bank-info .bank-type{font-size:14px;margin-bottom:11px}*/
+/*.bank-info .card-name{float:right;font-size:18px}*/
+/*.bank-info .bank-quota{font-size:12px;text-align:right;color:rgba(255,255,255,0.6)}*/
+
+/*.bind-card,*/
+/*.unbind-card{padding-left:17px;height:45px;line-height:45px;margin:10px 0;background:#fff}*/
+/*.bind-card:before{width:16px;height:16px;background-position:-233px -112px;vertical-align:-3px;margin:0 10px 0 17px;}*/
+/*.unbind-card:before{width:16px;height:16px;background-position: -233px -112px;vertical-align:-3px;margin:0 10px 0 17px;}*/
+/*.bind-card-tip-txt{padding:0 17px;line-height:1.5;color:#666}*/

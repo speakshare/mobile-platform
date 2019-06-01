@@ -1,0 +1,20 @@
+<% if(!_.isEmpty(record)){%>
+<% _.each(record,function(item){ %>
+	<li class="orderInfo" data-item='<%=item.orderNo%>' data-flag='<%=item.flag%>' data-id='<%=item.customerId%>'>
+		<div class="invester">
+			<div class="info"><%=item.customerName%><span><%=$.dateFormat(item.buyTime,'yyyy-MM-dd')%></span></div>
+			<div class="investInfo"><%=item.productName%>
+				<%if(item.buyType=='1'){%>
+				<span class="buyType">预约</span>
+				<%}else if(item.buyType=='2'){%>
+				<span class="buyType">变现</span>
+				<%}%>
+			</div>
+		</div>
+		<div class="investMoney">
+			<div class="sum"><%=parseFloat(item.amount1).toFixed(2)%></div>
+			<div class="redEnvelope"><span></span><%=parseFloat(item.amount3).toFixed(2)%></div>
+		</div>
+	</li>
+<% }) %>
+<%}%>

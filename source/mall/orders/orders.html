@@ -1,0 +1,84 @@
+﻿<div class="mall-orders-wrapper redbag">
+	<% if(_.isEmpty(orders.list)) {%>
+	<div class="withoutorders">
+		<div class="withoutordersicon"></div>
+		<p class="exchangetips">你没有任何订单，快去兑换吧！</p>
+		<div class="exchangebtn">立即兑换</div>
+	</div>
+	<% }else{%>
+	<div class="orderlist">
+		<%_.each(orders.list,function(item){%>
+		<div class="orderitem">
+			<div class="orderitemtop clearfix">
+				<!--商品-->
+				<%if(item.exchangeType=='1'){%>
+				<div class="goodimg">
+					<img src="<%=item.imgUrl%>" />
+				</div>
+				<!--红包-->
+				<%}else if(item.exchangeType=='2'){%>
+				<%if(item.couponType=='2'){%>
+				<div class="goodimg jximg"></div> <!-- 加息券 -->
+				<%}else if(item.couponType=='1'){%>
+				<div class="goodimg fximg"></div>  <!-- 返现券 -->
+				<%}else if(item.couponType=='4'){%>
+				<div class="goodimg djimg"></div>  <!-- 代金券 -->
+				<%}%>
+				<!--摇旺电话-->
+				<%}else if(item.exchangeType=='3'){%>
+				<div class="goodimg phonefeeimg"></div> 
+				<!--正常电话  exchangeType:4 或5 -->
+				<%}else {%>
+				<!--移动-->
+				<%if($.checkPhoneNumberOperator(item.rechargePhone)==1){%>
+				<div class="goodimg phone_yd"></div> 
+				<!--联通-->
+				<%}else if($.checkPhoneNumberOperator(item.rechargePhone)==2){%>
+				<div class="goodimg phone_lt"></div> 
+				<!--电信-->
+				<%}else if($.checkPhoneNumberOperator(item.rechargePhone)==3){%>
+				<div class="goodimg phone_dx"></div>
+				<%}%>
+				<%}%>
+				<div class="orderinfo">
+					<p class="goodtitle ell mt5"><%=item.itemName%> </p>
+					<p class="orderid ell mt10">订单号码：<%=item.orderNo%> </p>
+					<p class="needPoints ell mt10">支付旺豆：<%=item.needPoints%></p>
+				</div>
+			</div>
+			<div class="orderitembottom clearfix">
+				<span class='exchangetime'><%=item.exchangeTime%></span>
+				<!--商品-->
+				<% if(item.exchangeType=='1'){%>
+				<span class="leadopr viewlogistics" data-id="<%=item.id%>">查看物流</span>
+				<!--红包-->
+				<%} else if(item.exchangeType=='2'){%>
+				<%if(item.couponStatus==0){%>
+				<span class="leadopr toinvestproduct" data-id="<%=item.itemId%>"  data-bagid="<%=item.sendRewardId%>">马上投资</span>
+				<%}else if(item.couponStatus==1){%>
+				<span class="leadopr usedout">已使用</span>
+				<%}else if(item.couponStatus==2) {%> 
+				<span class="leadopr usedout">已过期</span>
+				<%}%>
+				<!--话费-->
+				<%}else if(item.exchangeType=='3'){%>
+				<%if($.isApp()){%>
+				<span class="leadopr tousephonefee">马上使用</span>
+				<%}%>
+				<!--流米电话-->
+				<%}else{%>
+				<%if(item.status=='0'){%>
+				<span class="leadopr suc" data-type="<%=item.couponType %>">充值成功</span>
+				<%}else if(item.status=='1'){%>
+				<span class="leadopr fail">充值失败</span>
+				<%}else if(item.status=='2') {%> 
+				<span class="leadopr processing">充值中</span>
+				<%}%>
+				<%}%>
+			</div>
+		</div>
+		<%})%>
+	</div>
+	<%}%>
+</div>
+

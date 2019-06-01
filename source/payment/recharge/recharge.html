@@ -1,0 +1,59 @@
+<section class="recharges-box">
+	<section class="recharge">
+		<section class="bank-cards">
+			<p class="bank-name"><i class="icon-bank bank-type-<%=list.bankCode%>"></i><span><%=list.bankName%>(<%=list.bankNum.substr(list.bankNum.length-4)%>)</span></p>
+			<p class="limit"><%=list.singleQuotaStr%>，<%=list.samedayQuotaStr%></p>
+		</section>
+		<section class="recharge-box">
+			<span class="inp-word">充值金额</span><input type="number" class="recharge-inp" id="rechargeInp" placeholder="不少于1元" required="required" value="<%=money?money:''%>"/>
+		</section>
+		<section class="recharge-verify">
+			<span class="inp-word">验 &nbsp;证 &nbsp;码</span><input type="number" class="recharge-inp verify-word" id="verifyCon" placeholder="请输入短信验证码" required="required"/><span class="verify-bot">获取验证码</span>
+		</section>
+	</section>
+	<p class="hint-verify">短信验证码已发送到<span id="telNum"></span></p>
+
+	<section class="yaoBao-auto">
+		<label class="word">余额自动转入摇宝</label>
+		<section class="tab-box off"><section class="roll"></section></section>
+	</section>
+	<p class="yaoBao-auto-word">开启后账户余额将在每月凌晨自动转入摇宝</p>
+
+	<section class="common-btn3 go-recharge">确定</section>
+	<section class="yaoBao-auto-agr"><i class="agr"></i>我已阅读并同意<span class="hint-word auto-agr">《资金自动转入及摇宝代扣服务协议》</span></section>
+	<section class="keyboard-bg"></section>
+	<section class="keyboard">
+		<section class="title"><span>交易密码</span><span id="close"></span></section>
+		<section class="password-box" id="passWord">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</section>
+		<p class="hint-word"><a id="forgetPass">忘记密码？</a></p>
+		<table class="keyboard-tab">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<td class="bg"></td>
+				<td>0</td>
+				<td class="bg" id="clearPass">x</td>
+			</tr>
+		</table>
+	</section>
+</section>

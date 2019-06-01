@@ -1,0 +1,309 @@
+.ui-section{
+    background-color: #be2c39;
+}
+.my-bonus{
+    position: absolute;
+    left: 0.2rem;
+    top: -0.04rem;
+    width: 1.34rem;
+    height: 0.94rem;
+    overflow:hidden;
+    background: url(images/btn-yd-mybonus.png);
+    background-size: 100% auto;
+    font-size: 0;
+    z-index:1000;
+}
+.share-btn {
+    position: absolute;
+    right: 0.15rem;
+    top: 0.2rem;
+    width: 1.14rem;
+    height: 0.59rem;
+    background: url(images/btn-yd-share.png);
+    background-size: 100% auto;
+    font-size:0;
+    z-index:1000;
+}
+.ui-header{
+    position:relative;
+    height:12.06rem;
+}
+.ui-header-bgc{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.ui-header-bgc img{
+    width: 100%;
+    max-width: 100%;
+}
+
+.ui-header-title{
+    position:absolute;
+    top:1.5rem;
+    left:0;
+    width:100%;
+    text-align:center;
+}
+
+.ui-header-title img {
+    display: block;
+    width: 5.43rem;
+    height: 0.55rem;
+    margin:0 auto;
+}
+.ui-header-bonus{
+    position:absolute;
+    top:2.2rem;
+    left:50%;
+    margin-left:-3.09rem;
+    text-align:center;
+    width: 6.18rem;
+    height: 1.58rem;
+}
+.my-bonus-total{
+    position: relative;
+    top:0.36rem;
+    left:0;
+    right:0;
+    font-size: 18px;
+    color: #FFCD52;
+    line-height: 1.15rem;
+    vertical-align: middle;
+}
+
+.my-bonus-total span{
+    font-weight:bold;
+    font-size: 32px;
+    font-family: 'PingFangSC-Regular', "Times New Roman", Times, serif;
+    letter-spacing: 0.04rem;
+    vertical-align:-6%;
+}
+.ui-header-bonus img{
+    position:absolute;
+    top:0;
+    left:0;
+    display:block;
+    width:6.18rem;
+    height:1.58rem;
+}
+
+.sub-title1,
+.sub-title2,
+.sub-title3,
+.sub-title4,
+.sub-title5,
+.sub-title6 {
+    width:4.53rem;
+    height:0.62rem;
+    margin:0 auto;
+}
+.text-center{
+    text-align:center;
+}
+.sub-title1{
+    background: url("images/img-yd-subtitle1.png") 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.sub-title2{
+    background: url("images/img-yd-subtitle2.png") 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.sub-title3{
+    background: url("images/img-yd-subtitle3.png") 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.sub-title4{
+    background: url("images/img-yd-subtitle4.png") 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.sub-title5{
+    background: url("images/img-yd-subtitle5.png") 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.sub-title6{
+    background: url("images/img-yd-subtitle6.png") 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+
+.ui-header-down{
+    position:absolute;
+    top:10.2rem;
+    left: 50%;
+    margin-left: -2.8rem;
+    text-align: center;
+    width: 5.6rem;
+    height: 1rem;
+}
+.ui-audio{
+    display:none;
+}
+.ui-peas-text{
+    color: #FFCB4E;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 1.5;
+}
+.ui-no-free img, .ui-free img {
+    margin-bottom:0.2rem;
+}
+
+.ui-peas-text span{
+    font-family: 'PingFangSC-Regular', "Times New Roman", Times, serif;
+    font-size: 18px;
+}
+
+
+.ui-footer{
+    width:100%;
+    background:url('images/img-yd-bg2.jpg') 0 0 no-repeat transparent;
+    background-size:100% 100%;
+    font-size:14px;
+    color:#fff;
+    padding:0.5rem 0 1rem 0;
+}
+
+
+.ui-winner{
+    margin:0 auto .5rem;
+    background:url('images/img-yd-list.png') center 0 no-repeat transparent;
+    background-size:100% 100%;
+    width:6.5rem;
+    padding:1rem 0.4rem 0.2rem 0.4rem;
+    height:4.03rem;
+ 
+}
+.ui-slider{
+    overflow: hidden;
+    height: 2.75rem;
+}
+.ui-winner-list{
+    width:100%;
+    overflow: hidden;
+}
+.ui-winner-list .float-left {
+    float: left;
+    display: inline;
+    text-align: left;
+}
+
+.ui-winner-list .float-right {
+    float: right;
+    display: inline;
+    text-align: right;
+}
+.ui-winner-list li{
+    height:0.55rem;
+    line-height:0.55rem;
+}
+
+.ui-rule-box{
+    margin: 0 auto;
+}
+
+.ui-rule-header{
+    background: url('images/img-yd-rules-header.png') center 0 no-repeat transparent;
+    background-size: 100% 100%;
+    width: 6.34rem;
+    height: 0.78rem;
+    margin: 0 auto;
+}
+.ui-rule-body{
+    width: 6.34rem;
+    padding:0 0.2rem 0 0.4rem;
+    margin: 0 auto;
+    background:url('images/img-yd-rules-body.png') 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.ui-rule-footer{
+    background: url('images/img-yd-rules-footer.png') center 0 no-repeat transparent;
+    background-size: 100% 100%;
+    width: 6.34rem;
+    height: 0.36rem;
+    margin: 0 auto;
+}
+.ui-rule-box li{
+    text-indent:-0.2rem;
+    line-height:1.2;
+}
+.ui-rule-box li span{
+    font-size:20px;
+    color:#fde133;
+    vertical-align:middle;
+    padding:0 .08rem 0 0;
+}
+
+/* toast confirm-window*/
+.toast-title,
+.pop-title{
+    font-size:18px;
+    color:#ffe036;
+}
+
+.confirm-window,.alert-window{
+    background-color:transparent;
+    color:#fff;
+}
+
+.confirm-window .pop_content,
+.alert-window .pop_content{
+    color:#fff;
+}
+
+.alert-window .pop-title{
+    color:#fff;
+}
+.confirm-window .pop-header,
+.alert-window .pop-header{
+    width:3.08rem;
+    height:2.98rem;
+    margin:0 auto;
+    font-size:0;
+}
+
+.confirm-window .pop-header{
+    width: 3.08rem;
+    height: 2.98rem;
+    background: url('images/img-yd-winner.png') 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.alert-window .pop-header {
+    background: url('images/img-yd-cishu.png') 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+    width: 2.47rem;
+    height: 3.16rem;
+}
+.confirm-window .yes_btn,
+.confirm-window .no_btn,
+.alert-window .yes_btn,
+.alert-window .no_btn{
+    background-color:transparent;
+    border: 0 none;
+    font-size: 0;
+    width: 2.8rem;
+    height: 0.9rem;
+}
+
+.confirm-window .no_btn,
+.alert-window .no_btn{
+    background:url('images/btn-yd-chakan.png') 0 0 no-repeat transparent;
+    background-size:100% 100%;
+}
+
+.confirm-window .yes_btn,
+.alert-window .yes_btn{
+    background: url('images/btn-yd-yao.png') 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+}
+.alert-window .yes_btn_all,
+.confirm-window .yes_btn_all{
+    float:none;
+    width:4rem;
+    height:0.93rem;
+    margin:0 auto;
+    background: url('images/btn-yd-zhidao.png') 0 0 no-repeat transparent;
+    background-size: 100% 100%;
+    display:block;
+}

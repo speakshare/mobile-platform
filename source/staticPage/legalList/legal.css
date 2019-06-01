@@ -1,0 +1,15 @@
+.legalList div{height: 46px;background: #fff;display: table;width: 100%;margin-top:10px;}
+.legalList div span{display: inline-block;vertical-align: top;margin-top: 18px}
+.legalList div:before{width: 28px;height: 28px;background-position: -23px 3px;margin: 9px 5px;}
+.legalList div:after{width: 18px;height: 18px;background-position: -260px -68px;margin: 14px 5px;float: right;}
+.legalList div span:before{width: 28px;height: 28px;background-position: -23px 3px;margin: 9px 5px;}
+
+.legalDoc{font-size: 14px;color:#666;padding:0 17px;}
+.legalDoc .hide{display: none}
+.legalDoc .show{display: block;}
+.legalDoc .at{text-align:center;font-size:20px;color:#ff6432;font-weight:bold;padding:10px 20px}
+.legalDoc div{margin-top: 15px}
+.legalDoc p{margin-top: 10px;text-indent:25px;line-height: 20px}
+.legalDoc h2{color:#666;font-weight: bold;margin-top: 10px}
+.legalDoc table tr{width: 100%;}
+.legalDoc table td{border:1px solid #666;width: 25%;padding:10px;}

@@ -1,0 +1,63 @@
+﻿<div class="redwarp redwarpnew">
+	<div class="descinfo clearfix">
+		<div class="imgcontent <%=coupon.couponType=='1'?'img_fx': (coupon.couponType=='2'?'img_jx':'img_dj') %>">  
+			<%if(coupon.couponType=='1'){%>
+			<p class="fullinfo">满<%= coupon.amountMin %>可返</p>
+			<p class="denomination">￥<span><%= coupon.amount %></span></p>
+			<%}else if(coupon.couponType=='2'){%>
+			<p class="fullinfo">满<%= coupon.amountMin %>可用</p>
+			<p class="denomination">+<span><%= coupon.interestAddVal %>%</span></p>
+			<%}else if(coupon.couponType=='4'){%>
+			<p class="fullinfo">满<%= coupon.amountMin %>可减</p>
+			<p class="denomination">￥<span><%= coupon.amount %></span></p>
+			<%}%>
+			<p class="costpeasnum"><%= coupon.isMember == 1 && coupon.level>1? '<i class="zhe"></i>':''%><i class="dou"></i><%= coupon.needPoints %></p>
+			<% if(coupon.currentStock==0){%>
+			<div class="soldoutmask"><span class="soldout">已兑完</span></div>
+			<%}%>
+		</div>
+		<div class="textdesc">
+			<p class="textdesctitle"><%= coupon.name %></p>
+			<p class="zhe-kou"></p>
+			<p class="userinfo">适用产品：<br/><%= coupon.itemRange%></p>
+		</div> 	
+		<%if(coupon.couponType=='2'){%>
+		<p class="jxdesc">最长加息<%=coupon.interestAddDays%>天</p>
+		<p class="jxdesc">最高加息本金<%=coupon.maxAddInterestBase%>元</p>
+		<%}%>
+	</div>
+	<div class="exchangestep">
+		<% _.each(exchangeDesc,function(item){  %>
+		<p class="stepinfo"><%=item%></p>
+		<%})%>
+
+		<%if($.getLogin() ){%>
+
+		<% if(coupon.currentStock==0){%>
+		<div class="exchange_btn  soldout">
+			已兑完
+		</div>
+		<%}else if(coupon.memberPoints< coupon.needPoints) {%>
+		<div class="exchange_btn peasout">
+			旺豆不足
+			<p class="tips f12">您共有<span class="own_wangdou"><%=coupon.memberPoints%></span>旺豆</p>
+		</div>
+		<%}else{%>
+		<div class="exchange_btn canExchange" data-ruleId="<%= coupon.ruleId %>" data-exId="2" data-redid="<%= coupon.id%>">
+			立即兑换
+			<p class="tips f12">您共有<span class="own_wangdou"><%= coupon.memberPoints %></span>旺豆</p>
+		</div>
+		<%}%>
+		<%}else{%>
+		<div class="exchange_btn tologinbtn">
+			去登录
+		</div>
+		<%}%>		
+	</div>
+</div>
+
+
+
+
+
+

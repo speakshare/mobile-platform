@@ -1,0 +1,60 @@
+<div class="redbag indexRed">
+    <header>
+        <span class="title">我的礼券</span>
+        <span class="questions"></span>
+    </header>
+    <div class="title redTitle">
+        <span>红包</span>
+        <span class="aquiredRed fgrey">已领红包</span><span class="arrow"></span>
+    </div>
+    <div class="list redList">
+        <ul>
+        <%if((red.rewardByPar.list==''||red.rewardByPar.list.length==0) && (red.redReward.redRewardReceiveTotalAmount - 0 <= 0)){%>
+            <!-- 无现金红包 -->
+            <li class="noRedBag" style="height: <%=$(window).width()/750*350 %>px">
+                <div>
+                    <span class="nullPic"></span>
+                    <p class="numOfPeople">您还没有获取红包哦!</p>
+                    <% if(red.redReward.isInvite==1){%>
+                    <div class="investFrd">邀请好友拿现金红包</div>
+                    <%}%>
+                </div>
+            </li>
+        <%}else{%>
+            <!-- 红包全部领取 -->
+            <li class="tip">
+                <div>
+                    <p class="title">已拿<span><%=red.redReward.redRewardReceiveTotalCount%></span>个红包</p>
+                    <p class="amount stress"><%=red.redReward.redRewardReceiveTotalAmount%>元</p>
+                </div>
+            </li>
+            <!-- 红包未领取 -->
+            <% _.each(red.redReward.list,function(item){ %>
+            <li>
+                <span class="redIcon"></span>
+                <span class="fontDes">
+                    <span><span class="amount"><%=item.amount%></span>元现金</span>
+                    <p class="tips"><%=item.ruleName%><span class="fgrey"><%=item.sendTime%>发放</span></p>
+                </span>
+                <span class="getBtn" data-id='<%=item.sendRewardId%>'>点击领取</span>
+            </li>
+            <%})%>
+        <%}%>
+        </ul>
+        <div class="success hide">领取成功</div>
+    </div>
+    <div class="title redTitle">
+        <span>礼券</span>
+        <span class="aquiredCoupon fgrey">已用礼券</span><span class="arrow"></span>
+    </div>
+    <!-- 产品购买 使用礼券 -->
+    <div class="list giftList">
+        <ul>
+        
+        </ul>
+    </div>
+    <div class="bottomLine hide">
+        <div class="line"></div>
+        <span class="title">没有更多结果了</span>
+    </div>
+</div>

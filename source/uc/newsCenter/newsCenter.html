@@ -1,0 +1,10 @@
+<%_.each(list, function(item){%>
+<li class="item-li <%=item.isRead==0?'unviewTitle':'hasViewed'%>" data-cate="<%=item.category%>" data-id="<%=item.id%>">
+	<p class="title"><%=item.title%></p>
+	<p class="content"><%=(item.content).replace(/\r\n|\n/ig,'<br/>')%></p>
+	<p>
+		<span class="date"><%=item.createTime%></span>
+		<span class="detailBtn" >查看详情</span>
+	</p>
+</li>
+<% }) %>

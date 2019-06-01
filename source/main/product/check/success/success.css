@@ -1,0 +1,46 @@
+.product-success{margin:0;padding-top:20px}
+.product-success .success-pro{display:flex}
+.product-success .suc-icon{flex:1;text-align:center}
+.product-success .suc-icon .trim1{display:inline-block;background:url(icon-success@2x.png) no-repeat;background-size:100%;width:24px;height:24px}
+.product-success .suc-icon .trim2{display:inline-block;width:12px;height:12px;border:1px solid #ccc;border-radius:50%;margin-top:2px}
+.product-success .suc-icon span{display:block;border-left:1px solid #ccc;height:80px;margin-left:50%}
+.product-success .suc-word{flex:3;line-height:22px;}
+.product-success .suc-word .col1{font-size:15px;color:#fca032}
+.product-success .suc-word .col2{font-size:15px;color:#959595}
+.product-success .suc-word .col3{font-size:13px;color:#9fa7b4}
+.product-success .suc-word .col4{font-size:16px;color:#4f4f4f;font-weight:bold}
+.product-success .success-dou{display:flex;background-color:#fff;margin:40px 20px;padding:15px 20px}
+.product-success .success-dou .dou-word{flex:2;line-height:28px;padding-top:10px}
+.product-success .success-dou .dou-word p:nth-of-type(1){font-size:16px;color:#4f4f4f;font-weight:bold}
+.product-success .success-dou .dou-word p:nth-of-type(2){font-size:13px;color:#999;}
+.product-success .success-dou .col1{color:#ff6046}
+.product-success .success-dou .dou-pic{flex:1;background:url(img-wangdou_chest@2x.png) no-repeat;background-size:100%;width:83px;height:73px}
+
+
+/*.invest-lines{padding-left:0.768rem;padding-top:0.896rem;padding-bottom: 0.91rem;background-color: #fff;box-shadow: 0px 1px #D0D0D0;}*/
+/*.invest-lines:after{content: "";display: block;clear: both;}*/
+
+/*.invest-left{padding-right: 0.618rem;float: left;}*/
+/*.invest-right{float: left;}*/
+
+/*.timeline .ball{width: 0.8rem;height: 0.8rem;border-radius:0.5rem; background: url(invest_circles.png) center center no-repeat;background-size:0.853rem;}*/
+/*.timeline .line{width: 0.085rem;height: 1.28rem;background-color: #D0D0D0;-webkit-transform:translate(0.38rem, 0px);transform:translate(0.38rem, 0px);}*/
+/*.timeline .active .ball{background-position: 0 0;}*/
+/*.timeline .active .line{background-color: #FF6046;}*/
+
+/*.timedesc{color: #444;font-size: 0.512rem;}*/
+/*.timedesc li{height: 3.45rem;}*/
+/*.timedesc p{margin-top: 0.341rem;}*/
+/*.timedesc  h3{font-size: 0.6826rem;font-weight: 600;color: #444;}*/
+/*.timedesc .active h3{color: #FF6046;}*/
+
+/*.investment-box{position:relative;}*/
+/*.investment-box .red{color: #FF6046;font-weight: normal;padding: 0 2px;}*/
+/*.investment-box .gray{color: #999;}*/
+/*.investment-box .finish{position:absolute;top:0.8rem;right:0.6rem;font-size:0.6826rem;color: #FF6046;width:2.28rem;height:1.853rem;text-align:right;}*/
+
+
+/*.wangdou{height: 1.877rem;background-color: #fff;border: 1px solid #D0D0D0;border-left: none;border-right: none;box-sizing: border-box;padding-left: 0.746rem;padding-top: 0.6rem;font-size: 0.554rem;}*/
+/*.wang-prize{float: left;font-size: 0.64rem;padding-left: 1.16rem;height: 0.853rem;line-height: 0.853rem;background: url(invest_circles.png) 0 bottom no-repeat;background-size:0.853rem;}*/
+/*.wang-pre{float: right;padding-right: 0.832rem;height: 0.853rem;line-height: 0.853rem;}*/
+/*.wang-pre b{color: #FF6046;padding: 0 2px;}*/

@@ -1,0 +1,43 @@
+<div class="acty214-couplecard">
+	<div class="rightlead <%= isFromShare?'joinbtn':'sharebtn' %>"></div>
+	<div class="acty214-wrap">
+		<div class="headimg" style="height:<%= $(window).width()*0.25 %>px"></div>
+		<div class="innerwarp" style="height:<%= $(window).width()*1.35 %>px">
+			<div class="content">
+				<p class="headtitle">情侣证</p>
+				<div class="facebox clearfix">
+				<div class="lovestamp"></div>
+					<div class="mainface">
+						<div class="face"><img src="<%= cardinfo.masterHeadImg%>" /></div>
+						<p class="name"><%= cardinfo.masterNickname%></p>
+					</div>
+					<div class="subface">
+						<div class="face"><img src="<%= cardinfo.slaveHeadImg%>" /></div>
+						<p class="name"><%= cardinfo.slaveNiceName%></p>
+					</div>	
+				</div>
+				<div class="carddesc">经摇旺专业恋爱认证协会审核通过：<br/><span class="username"><%= cardinfo.masterNickname%></span> 和 <span class="username"><%= cardinfo.slaveNiceName%></span> 正式成为情侣<br/>特发此证！</div>
+				<p class="source">摇旺专业恋爱认证协会监制</p>
+			</div>
+			<div class="doshedline"></div>
+			<div class="blessbox">
+				<div class="content">
+					<div class="blesstitle">亲友祝福 <%if(isFromShare){%><span id="blesscount"><%=list.count%></span> 条<%}%></div>
+					<%if(!isFromShare && cardinfo.masterFxq=='0'){%>
+						<p class="sharetips">点击右上角“分享”按钮，求祝福可获300元返现券</p>
+					<%}else{%>
+						<div class="blesslist">
+							<% _.each(list.hdLoverWishs,function(item){  %>
+							<p class="blessinfo"><%= item.wishContent%></p>
+							<%})%>
+						</div>
+					<%}%>
+				</div>
+			</div>
+			<%if(isFromShare){%>
+				<div class="blessbtn"></div>
+			<%}%>
+		</div>
+	</div>
+	<div class="share_mask"></div>
+</div>

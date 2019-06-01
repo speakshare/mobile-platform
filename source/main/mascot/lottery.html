@@ -1,0 +1,19 @@
+<div class="mascot-lottery">
+   <span class="close"></span>
+    <div id="lottery-content">
+        <img src="./img/find_dog.png" class="find-dog">
+        <div class="note-frame">
+            <h1>小旺掉落的小纸条</h1>
+            <ul class="note">
+                <li>1、运气好的日子才会抓到我哦</li>
+                <li>2、抓到我摇一摇有机会获得奖励</li>
+                <li>3、掉落的奖励可能用法不同，以说明为准哦</li>
+                <%if(isIOS){%>
+                <li>4、本活动与苹果公司无关</li>
+                <%}%>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<audio id="shakeMusic" src="<%=$.getStaticOrgin()%>/yaowang/dist/audio/red-01.mp3" style="display: none;"></audio>

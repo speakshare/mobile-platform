@@ -1,0 +1,27 @@
+<div class="my-gift-wrap">
+    <% if(list.length==0){ %>
+    <div class="empty-list">
+        您还没有换取任何商品快去0元换购吧！
+    </div>
+    <% }else{
+    _.each(list,function(n){ %>
+    <div class="my-gift-one">
+        <div class="pd-<%=n.goodsNo%> pd-content clearfix">
+                <h3><%=n.goodsName%></h3>
+                <p>市场价：<%=n.marketAmt%></p>
+                <p>消耗投资值：<%=n.investVal%></p>
+                <p>消耗邀请值：<%=n.inviteVal%></p>
+                <div class="img-box">
+                    <img src="https://file.91yaowang.com/uploadFiles/activity/nsjhd/nsjhd_<%=n.goodsNo%>.jpg">
+                </div>
+        </div>
+        <div class="addr-box">
+            <p>收件人：<%=n.consignee%><span class="fr">手机号：<%=n.mobile%></span></p>
+            <p>详细地址：<%=n.address%></p>
+        </div>
+    </div>
+    <% }) %>
+    <p class="tip-text">您的奖品将于活动结束后30-60日内发放详见规则说明</p>
+    <% } %>
+    <div class="back-btn">返回活动页</div>
+</div>

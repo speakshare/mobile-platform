@@ -1,0 +1,7 @@
+.risk-start{position: absolute; width:100%;height:100%;background:#FFFFFF url(../question/bg_evaluate.jpg) bottom center no-repeat;background-size:cover;}
+.risk-start .maintitle{font-size: 23px;color: #4F4F4F;padding-top:50px;text-align:center;}
+.risk-start .startimg{width:110px;height:110px;margin:25px auto;background:url(./img_evaluate.png) center center no-repeat;background-size:100%;}
+.risk-start .subtext{font-size:13px;color: #7A7A7A;text-align: center;line-height: 22px;}
+.risk-start .button{width:90%;height:48px;line-height:48px;text-align:center;margin:50px auto 20px;background:#FF5532;color:#ffffff;font-size:16px;}
+.risk-start .popwindowbtn{margin-top:20px;padding:10px 0;font-size: 13px;color: #3B8BE8;text-align:center;}
+.contentdesc{font-size:16px;color: #4F4F4F;line-height: 32px;}

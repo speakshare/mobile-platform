@@ -1,0 +1,25 @@
+.investFriends{background-color: #fff2d0 !important;}
+.appdownload {text-align:center;}
+.appdownload .downloadtitle{font-size:20px;color: #FF5532;margin:20px;}
+.appdownload .ewmdiv {max-width:760px;margin:0 auto;}
+.appdownload .ewmdiv .ewm{display:inline-block;width:155px;text-align:center;margin:10px auto;}
+.appdownload .ewmdiv .ewm .wx{width:100px;height:100px; background:url(./two_code_publicnumber.png)center center no-repeat;background-size:100%;margin:0 auto;}
+.appdownload .ewmdiv .ewm .app{width:100px;height:100px;background:url(./two_code_app.png)center center no-repeat;background-size:100%;margin:0 auto;}
+.appdownload .ewmdiv .ewmtext{font-size:14px;color:#666666;text-align:center;margin: 10px auto;}
+
+.footer_pic{padding: 5px;text-align:center;}
+.footer_content{background: url(../landingPage/pic_welfare.png) no-repeat;background-size: 100%;width: 100%;max-width: 760px;margin: 0 auto;}
+
+.bannerredbag{width:100%;background:#22222E;position: relative;text-align:center;}
+/*.bannerredbag:before{width:14%;height:11%;position: absolute; content: '';clear:both;background:url(./ywlogo.png) center center no-repeat;background-size:100%;top:10px;left:10px;}*/
+.bannerredbag:after{position: absolute; content: '';clear:both;background:url(../landingPage/banner_cloud.png) center bottom no-repeat;background-size:100%;width:100%;height:100%;bottom:0px;left:0px;}
+.bannerredbag img{max-width:760px;margin:0 auto;}
+
+/*兼容pc*/
+@media all and (min-width:760px){
+	/*.bannerredbag:before{width:80px;height:60px;top:10px;left:calc((100% - 760px)/2);}*/
+	.appdownload .downloadtitle{font-size:40px;}
+	.appdownload .ewmdiv .ewm{width:370px;}
+	.appdownload .ewmdiv .ewm .wx,.appdownload .ewmdiv .ewm .app{width:200px;height:200px;}
+	.appdownload .ewmdiv .ewmtext{font-size:25px;margin: 20px auto;}
+}

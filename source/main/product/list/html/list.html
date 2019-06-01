@@ -1,0 +1,44 @@
+<% _.each(list,function(item){ %>
+	<div class="product" data-id="<%=item.productNo%>">
+		<div class="pd-name limit">
+			<span><%=item.productName%></span>
+			<%if(item.payType=='1'){%><span class="tip">仅限摇宝购买</span><%}%>
+		</div>
+		<div class="pd-rate">
+			<div class="rate">
+				<div class="number">
+					<span class="rate-data"><%=item.annualizedRate%></span>
+					<%if(item.productAddonRate!='0.00'){%><span class="f14 ml5"><%='+'+item.productAddonRate%>%</span><% } %>
+				</div>
+				<div class="rate-t">预期年化</div>
+				<% if(item.currentActivity){%>
+					<div class="activity-icon"><%=item.currentActivity%></div>
+				<%}%>
+			</div>
+			<div class="date">
+				<div class="rate-term"><%=item.productDay%>天</div>
+				<div class="rate-t">理财期限</div>
+				<!--几点开抢 -->
+				<% if(item.productSaletime){
+					if(new Date().getTime()+3600000 < item.productSaletime){ %>
+					<span class="grab-icon"><%=new Date(item.productSaletime).getHours()%>点开抢</span>
+					<!--倒计时 -->
+					<% }else if(new Date().getTime()+3600000 >= item.productSaletime){ %>
+							<span class="countdown-icon timer" data-time="<%=item.productSaletime%>">
+								<span class="min"></span>
+								<span class="sec"></span>
+							</span>
+					<% }
+				} %>
+			</div>
+		</div>
+		<div class="pd-process">
+			<div class="process">
+				<div class="process-bg">
+					<div class="cur" style="width:<%=item.investPercent%>%"></div>
+				</div>
+			</div>
+			<div class="cur-t"><%=item.investPercent%>%</div>
+		</div>
+	</div>
+<% }) %>

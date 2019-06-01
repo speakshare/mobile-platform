@@ -1,0 +1,35 @@
+/*订单*/
+.mall-orders-wrapper .peastotal{width:100%;height:85px;background:#FFA588;text-align:center;color:#ffffff;}
+.mall-orders-wrapper .peastotal .peastext{font-size:14px;padding-top:20px;margin-bottom:11px;}
+.mall-orders-wrapper .peastotal .peasnum{font-size:30px;}
+.mall-orders-wrapper .orderlist{margin-top:10px;width:100%;}
+.mall-orders-wrapper .orderlist .orderitem{background:#ffffff;padding:10px 17px;margin-bottom:10px;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .goodimg{float:left;width:70px;height:70px;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .fximg{background:url(../imgs/img_fx.png) center center no-repeat;background-size:100%;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .jximg{background:url(../imgs/img_jx.png) center center no-repeat;background-size:100%;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .djimg{background:url(../imgs/img_dj.png) center center no-repeat;background-size:100%;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .phonefeeimg{background:url(../imgnew/img_yaowangdianhua.png) center center no-repeat;background-size:100%;}
+
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .phone_yd{background:url(../imgnew/img_zhongguoyidong.png) center center no-repeat;background-size:100%;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .phone_lt{background:url(../imgnew/img_zhongguoliantong.png) center center no-repeat;background-size:100%;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .phone_dx{background:url(../imgnew/img_zhongguodianxin.png) center center no-repeat;background-size:100%;}
+
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .orderinfo{float:left;padding-left:15px;font-size:14px;color:#333333;max-width:75%;}
+.mall-orders-wrapper .orderlist .orderitem .orderitemtop .orderinfo .orderid ,.mall-orders-wrapper .orderlist .orderitem .orderitemtop .orderinfo .needPoints{font-size:13px;color:#666666;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom{line-height:25px;color:#444444;font-size:14px;border-top:1px solid #E7E7E7;padding-top:10px;margin-top: 8px;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .exchangetime{margin-left:14px;margin-right:28px;font-size:13px;color:#999999;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .peascost{color: #FF6046;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .peascost:before{content: "";display:inline-block;width:12px;height:12px;background:url(../images/pea_s.png) center center no-repeat;background-size: 100% auto;margin-right: 3px;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr{float:right;width:70px;height:25px;line-height:23px;text-align:center;border-radius: 6px;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.viewlogistics{border:1px solid #999999;color: #666666;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.toinvestproduct,.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.tousephonefee{border:1px solid #ff6046;color: #ff6046;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.usedout{border:1px solid #d0d0d0;color: #d0d0d0;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.suc{color:#d0d0d0;font-size:13px;}
+.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.fail,.mall-orders-wrapper .orderlist .orderitem .orderitembottom .leadopr.processing{font-size:13px;color:#FF5532;}
+
+/* 无订单 */
+.mall-orders-wrapper .withoutorders {padding: 34% 24px 94%;background-color: #f2f2f2;}
+.mall-orders-wrapper .withoutordersicon {width: 77px;height: 76px;background: url(../images/pea_g.png) no-repeat;background-size: 100%;margin: 0 auto 20px;}
+.mall-orders-wrapper .exchangetips {text-align: center;font-size: 16px;color: #999;}
+.mall-orders-wrapper .exchangebtn {height: 40px;line-height: 41px;margin-top: 25px;text-align: center;border-radius: 6px;font-size: 16px;color: #fff;background-color: #ff6046;}
+

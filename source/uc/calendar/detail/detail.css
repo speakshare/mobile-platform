@@ -1,0 +1,20 @@
+.calendar-detail{position:absolute;width:100%;background:#eef3f9 url(bg_record.jpg) no-repeat;background-size:100% auto;min-height:100%}
+.calendar-detail .c-d-menu{min-height:66px;padding-top:30px;font-size:15px;color:#fff}
+.calendar-detail .c-d-m{float:left;width:33.333%;text-align: center}
+.calendar-detail .c-d-m-t{display:inline-block;line-height:26px;border-bottom:2px solid transparent}
+.calendar-detail .active .c-d-m-t{border-bottom-color:#fff}
+
+.c-d-box{margin:0 10px 10px}
+.c-d-box .c-d-l-t{display:none;font-size:15px;line-height:36px;color:#9FA7B4}
+.c-d-box .c-order-row{margin-bottom:5px;background:#fff;border-radius:8px}
+.c-d-box .c-o-title{font-size:13px;color:#4f4f4f;padding:13px 12px;border-bottom:1px solid #eee}
+.c-d-box .profit-title{font-size:27px;font-weight:bold;color:#FF5532;padding:10px 12px}
+.c-d-box .profit-t{display:block;font-size:12px;color:#959595;padding-bottom:8px;font-weight:normal}
+.c-d-box .p-o{padding:0 15px}
+.c-d-box .c-o-r{float:left;width:33.33%;font-size:13px;color:#4f4f4f;padding-bottom:15px;text-align:center}
+.c-d-box .c-o-t{display:block;color:#959595;padding-bottom:5px}
+.c-d-box .c-o-r:first-child{text-align:left}
+.c-d-box .c-o-r:last-child{text-align:right}
+.c-d-box .transfer-product{display:inline-block;margin-left:5px;width:30px;height:16px;background:url(tag_record_realize.png) no-repeat;background-size:30px auto;vertical-align:-3px}
+
+.c-d-box .has-no-data{background:url(img_record_no.png) no-repeat center 50px;background-size:100px auto;text-align:center;font-size:15px;color:#b5b5b5;padding:160px 0 20px}

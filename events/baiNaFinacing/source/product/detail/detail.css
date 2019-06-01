@@ -1,0 +1,188 @@
+﻿.productdetail{background-color:#f2f2f2;}
+.productdetail .pd-info-box{background:#fff;margin-bottom:10px;}
+.productdetail .section{padding-bottom: 15px}
+.productdetail .detail-data{display:table;width:100%;text-align:center;margin-top: 20px;padding-bottom: 20px}
+.productdetail .detail-data span{display: table-cell}
+.productdetail .arrow:after{content:''; width: 8px;height: 8px;border-top: 1px solid #999;border-right: 1px solid #999;-webkit-transform: rotate(45deg); transform: rotate(45deg);float: right;margin: -20px 17px 0 0;}
+.productdetail .detail-data span div:nth-child(1){color:#fa623c;font-size:12px}
+.productdetail .detail-data span div:nth-child(2){color: #999999;margin-top: 7px;font-size: 12px;}
+.productdetail .pd-info-list{background: #f2f2f2}
+.productdetail .pd-info-list p{font-size: 28px;color: #999; margin-top: 20px;line-height: 40px;}
+.productdetail .progress-ring{text-align: center;position: relative ;margin: 0 auto}
+.productdetail .pd-rate{width: 50%;position: absolute;left: 25%;font-size: 38px;text-align: center;color: #fc1d18;top:60px;}
+.productdetail .pd-title{display: block;margin: 10px auto;font-size: 12px;color: #999;}
+.productdetail .progress-ring canvas{width: 185px;height: 185px;padding-top: 20px}
+.productdetail .dq,.productdetail .dk,.productdetail .zr{position: relative;padding:15px 17px 15px 45px;}
+.productdetail .dk{border-top:1px solid #eee;border-bottom:1px solid #eee }
+.productdetail .dq.icons:before{width: 25px;height: 25px;background-position:-190px -25px;position: absolute;left:10px;top:12px;}
+.productdetail .dk.icons:before{width: 25px;height: 25px;background-position:-167px -25px;position: absolute;left:10px;top:12px;}
+.productdetail .zr.icons:before{width: 25px;height: 25px;background-position:-142px -25px;position: absolute;left:10px;top:12px;}
+.productdetail .more-page{height: 50px;background-size: 15px auto;margin-top: 50px;text-align: center;font-size: 12px;color: #999999;line-height: 50px;}
+.productdetail .law.arrow:after{margin: 0}
+
+.pd-tabs .tabs {display: table;width: 100%;background: #fff;position: relative;z-index: 10;border-bottom:1px solid #eee;font-size:32px;}
+.pd-tabs .tabs .active{color: #ff6046;}
+.pd-tabs .tabs li{display: table-cell;height: 86px;line-height: 86px;border-bottom: 4px solid #fff;text-align: center;}
+.pd-tabs .tabline{background: #ff6046;height:4px;width:33%;margin-top:-4px;position: relative;z-index: 11}
+
+.pd-infos .htpanel{background: #fff;padding: 30px 34px;margin-top: 20px;}
+.pd-infos .htpanel label{color:#444;font-size:30px;}
+.pd-infos .htpanel p{font-size: 28px;padding-top:20px;line-height: 36px;color: #999;}
+.pd-infos .htpanel:nth-child(1){margin-top: 0px;border-top:2px solid #eee;}
+
+.pd-infos .pd-info-p{clear:both;height:88px;line-height:86px;border-top:2px solid #eee;background:#fff}
+.pd-infos .pd-info-p:first-child{border-top:none}
+.pd-infos .pd-info-p:after{top:32px}
+.pd-infos .pd-info-label{float:left;width:190px;font-size:28px;padding-left:34px;color:#999}
+.pd-infos .pd-info-text{float:left;width:510px;font-size:28px;color:#444;}
+.pd-infos .pd-info-text2{font-size:28px;line-height:32px;padding:10px 0}
+.pd-infos .bank-icons{float:left;margin-left:24px;height:86px;line-height:86px}
+.pd-infos .bank-icons:before{vertical-align:-36px;margin-right:40px;zoom:0.6;width:100px;height:100px}
+.pd-infos .pd-level{padding:2px 6px;border:2px solid #ff6046;color:#ff6046;margin-right:-2px;border-radius:6px}
+.pd-infos .pd-level:last-child{margin-right:10px}
+.pd-infos .pd-title{margin:0;font-size:30px;color:#666;padding:20px 0 20px 34px;background:#fff}
+.pd-infos .pd-title:first-child{margin-top:0}
+.pd-infos .pd-title-text{height:100%;font-size:28px;padding:0 30px 20px 34px;line-height:36px;color:#999;background:#fff}
+.pd-infos .pd-imgs-c{margin-bottom:60px;text-align:center;padding:10px 34px;background: #fff}
+.pd-infos .pd-imgs-i{margin:0 auto}
+
+.pd-bank-list{margin-top:20px;background:#fff;margin-bottom:60px}
+.pd-bank-list .pd-info-text{float:right;text-align:right;padding-right:34px;font-size:24px;color:#999;width:auto;padding-top:6px;line-height:80px}
+.pd-bank-list .pd-info-text2{float:none;padding:0 17px}
+
+.action-btn-box .purchase{position:fixed;bottom:0;width:100%;height:112px;z-index: 100}
+.action-btn-box .purchase .btn{background:#f2553c;width:100%;height:112px;border:none;font-family: "PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB","STHeiti,SimSun";}
+.action-btn-box .purchase .btn-content{color:#fff;text-align:center}
+.action-btn-box .purchase .btn[ disabled=disabled]{background: #aaa}
+.action-btn-box .purchase .grabTitle {line-height: 40px;}
+
+
+.detail-infos{padding-bottom:120px}
+
+
+.pd-ad{height:264px}
+.detail-banner-box{clear:both}
+
+.card-limit {
+    background-color: #fff
+}
+
+.card-limit .card-limit-hint {
+    background-color: #fff9c9;
+    padding: 16px 30px;
+    line-height: 40px;
+    font-size: 26px;
+    color: #ff5532
+}
+
+.card-limit .card-limit-list {
+    height: 92px;
+    line-height: 92px;
+    padding: 0 30px;
+    border-bottom: 2px solid #eee
+}
+
+.card-limit .card-limit-list .lef {
+    font-size: 30px;
+    color: #4f4f4f
+}
+
+.card-limit .card-limit-list .rig {
+    float: right;
+    font-size: 26px;
+    color: #999
+}
+
+.card-limit .card-limit-list .rig span {
+    color: #4f4f4f
+}
+
+.card-limit .icon-bank {
+    display: inline-block;
+    background: url(images/bank_logo.png) no-repeat;
+    background-size: 440px auto;
+    width: 64px;
+    height: 64px;
+    margin: 0 10px -22px 0
+}
+
+.card-limit .bank-type-CIB {
+    background-position: -4px -150px;
+}
+
+.card-limit .bank-type-CMBC {
+    background-position: -295px -80px;
+}
+
+.card-limit .bank-type-CMB {
+    background-position: -152px -80px;
+}
+
+.card-limit .bank-type-BOC {
+    background-position: -152px -150px;
+}
+
+.card-limit .bank-type-CCB {
+    background-position: -370px -80px;
+}
+
+.card-limit .bank-type-ICBC {
+    background-position: -4px -4px;
+}
+
+.card-limit .bank-type-CITIC {
+    background-position: -295px -4px;
+}
+
+.card-limit .bank-type-SPDB {
+    background-position: -225px -4px
+}
+
+.card-limit .bank-type-CEB {
+    background-position: -80px -80px;
+}
+
+.card-limit .bank-type-BCOM {
+    background-position: -80px -155px;
+}
+
+.card-limit .bank-type-ABC {
+    background-position: -225px -80px;
+}
+
+.card-limit .bank-type-PAB {
+    background-position: -370px -4px;
+}
+
+.card-limit .bank-type-HXB {
+    background-position: -80px -4px;
+}
+
+/*广发、邮政*/
+.card-limit .bank-type-CGB {
+    background-position: -84px -4px
+}
+
+.card-limit .bank-type-PSBC {
+    background-position: -4px -44px
+}
+
+.info-item-last{
+    margin-bottom:10px;
+}
+
+.arrow-right{
+    position: relative
+}
+.arrow-right:after {
+    content: '';
+    position: absolute;
+    /*top: 18px;*/
+    /*right: 20px;*/
+    /*width: 8px;*/
+    /*height: 8px;*/
+    /*border-top: 1px solid #999;*/
+    /*border-right: 1px solid #999;*/
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}

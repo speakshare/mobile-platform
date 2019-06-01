@@ -1,0 +1,9 @@
+.exchangeresultoutter .succicon{width:64px;height:64px;background:url(../images/succicon.png) center center no-repeat;background-size:100%;margin:58px auto 24px;}
+.exchangeresultoutter .succtext{text-align:center;font-size:20px;color:#444444;}
+.exchangeresultoutter .succtips{margin-top:12px;font-size:13px;color:#999999;text-align:center;line-height: 24px;letter-spacing: 0.24px;}
+.exchangeresultoutter .succtips span{color: #ff6046;}
+.exchangeresultoutter .btnbox{margin:64px auto 0px;text-align:center;}
+.singlebtn{width:90%;height:45px;line-height:45px;text-align:center;margin:0 auto;background:#ff6046;color:#ffffff;font-size:16px;border-radius:6px;}
+.leftbtn,.rightbtn{width:35%;height:40px;line-height:40px;margin:0 3%;text-align:center;display: inline-block;border-radius:3px;}
+.leftbtn{border:1px solid #ff6046;background:#ffffff;color:#ff6046;}
+.rightbtn{border:1px solid #ff6046;background:#ff6046;color:#ffffff;}

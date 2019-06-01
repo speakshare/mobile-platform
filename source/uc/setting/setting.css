@@ -1,0 +1,5 @@
+
+.uc-setting .arrow-right{height:53px;font-size:15px;padding:0 20px;line-height:53px;border-top:1px solid #eee;background:#fff}
+.uc-setting .arrow-right:first-child{margin:10px 0;border:none}
+.uc-setting .arrow-right:after{top:22px}
+.uc-setting .logout-btn{margin:20px 20px;height:48px;line-height:48px;background:#FF775B;border-radius:3px;color:#fff;font-size:15px;text-align:center}

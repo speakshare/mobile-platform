@@ -1,0 +1,43 @@
+<%_.each(list1, function(item){%>
+<li>
+    <div class="wrap">
+    	<%if(item.ruleType == 1){%>
+        <div class="left">
+            <p class="amount failure">￥<span class="amount"><%=item.amount%></span></p>
+            <p class="tips">满<%=item.limitAmount%>元返</p>
+            <p class="bar bluebg"></p>
+        </div>
+        <div class="right">
+            <p><span class="title failurebg">返现券</span><%=item.ruleName%></p>
+            <p class="tips fgrey f12">适用产品></p>
+            <p class="f12 deadline failure"><%=item.validDesc%></p>
+        </div>
+        <%}else if(item.ruleType == 2){%>
+        <div class="left">
+            <p class="amount failure"><span class="amount"><%=item.interestAddVal%></span>%</p>
+            <p class="tips">满<%=item.limitAmount%>元用</p>
+            <p class="bar deepYellowBg"></p>
+        </div>
+        <div class="right">
+            <p><span class="title failurebg">加息券</span><%=item.ruleName%></p>
+            <p class="introduce raise">最高加息<%=item.interestAddMaxPrincipal%>元，<%=item.interestAddDays%>天</p>
+            <p class="tips fgrey f12">适用产品></p>
+            <p class="f12 deadline failure"><%=item.validDesc%></p>
+        </div>
+        <%}else{%>
+        <div class="left">
+            <p class="amount failure">￥<span class="amount"><%=item.amount%></span></p>
+            <p class="tips">满<%=item.limitAmount%>元减</p>
+            <p class="bar bluebg"></p>
+        </div>
+        <div class="right">
+            <p><span class="title failurebg">代金券</span><%=item.ruleName%></p>
+            <p class="tips fgrey f12">适用产品></p>
+            <p class="f12 deadline failure"><%=item.validDesc%></p>
+        </div>
+        <%}%>
+    </div>
+    <span class="invalid iconUsed"></span>
+    <div class="tigbar failurebg"></div>
+</li>
+<%})%>

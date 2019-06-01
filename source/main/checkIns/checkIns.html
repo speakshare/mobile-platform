@@ -1,0 +1,20 @@
+<div class="sign-page">
+	<ul class="sign-ul">
+		<%_.each(signedlist,function(item,index){
+		var signStatus = Number(item.signStatus)==1? "signed":"",
+		signDay = Number(item.signDate.split('-')[2]);
+		if(signDay==new Date().getDate()){ %>
+		<li class="icons sign-li <%= signStatus%> active" ><span class="week-day">今</span><span class="sign-day"><%= signDay %></span></li>
+		<% }else{ %>
+		<li class="icons sign-li <%= signStatus%> " ><span class="week-day"><%= weekDays[index] %></span><span class="sign-day"><%= signDay %></span></li>
+		<%}}) %>
+	</ul>
+	<% if(todayIsSign){  %>
+	<p class="sign"><span class="word1" id="signTip">您今日已签到</span><span class="word2" id="signHint">签到攻略</span></p>
+	<% }else{ %>
+	<p class="sign"><span class="word1" id="signTip">您今日还未签到</span><span class="word2" id="signHint">签到攻略</span></p>
+	<% }%>
+	<section class="handshake"><div id="hand" class='handimg'></div></section>
+</div>
+<audio id="shakeMusic" src="<%=$.getStaticOrgin()%>/yaowang/dist/audio/red-01.mp3" style="display: none;"></audio>
+<audio id="openMusic" src="<%=$.getStaticOrgin()%>/yaowang/dist/audio/red-02.mp3" style="display: none;"></audio>

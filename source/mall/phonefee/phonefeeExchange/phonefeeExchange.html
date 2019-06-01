@@ -1,0 +1,31 @@
+<div class="phonefeewarp">
+	<div class="descinfo clearfix">
+		<div class="imgcontent">
+			<p class="perfer"><span><em>￥</em><%= phonefee.amount %></span> 约<%= phonefee.longTime%>分钟</p>
+			<p class="limittime">国内通话时长</p>
+			<p class="costpeanum"><%= phonefee.needPoints%> 旺豆兑换</p>
+		</div>
+		<div class="textdesc">
+			<p class="textdesctitle"><%= phonefee.amount%>元摇旺电话话费</p>
+			<p class="userinfo">话费仅可以在摇旺网络电话中使用，此话费并非移动、联通和电信的话费，请用户知悉</p>
+		</div> 	
+	</div>
+	<div class="needpeasnum">
+		所需旺豆<span class="frnum"><%= phonefee.needPoints%> 旺豆</span>
+	</div>
+	<div class="exchangestep">
+		<p class="stepinfo">
+			兑换流程：<br/>1、点击“立即兑换”并成功后,话费会自动充入摇旺电话中；<br/> 2、可在“订单”中查看兑换情况；<br/>3、所有商品一经兑换一律不退还旺豆。
+		</p>
+		<%if(islogin){%>
+		<p class="currpeas">您共有<span class="currpeasnum"><%= phonefee.memberPoints %></span>旺豆</p>
+		<% if(parseInt(phonefee.memberPoints)< parseInt(phonefee.needPoints)) {%>
+		<div class="exchangebtn peasout">旺豆不足</div>
+		<%}else{%>
+		<div class="exchangebtn canExchange" data-ruleId="<%= phonefee.ruleId %>"  data-exId="3" date-pid="<%= phonefee.id %>">立即兑换</div>
+		<%}%>
+		<%}else{%>	
+		<div class="exchangebtn tologinbtn mt30" >去登录</div>
+		<%}%>	
+	</div>
+</div>

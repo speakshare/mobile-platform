@@ -1,0 +1,18 @@
+.detail_banner{background:#edfbff url(banner1.png) no-repeat;background-size:100% auto;line-height:100%;padding-left:26%}
+.detail_banner_ads{background:#edfbff url(banner2.png) no-repeat;background-size:100% auto;line-height:100%}
+.detail_banner .t1{font-size:12px;color:#ff5532}
+.detail_banner .t2{font-size:12px;color:#8E5006}
+.detail_banner .t2 b{font-size:15px}
+
+@media all and (min-width:360px) {
+    .detail_banner,
+    .detail_banner_ads{padding-left:28%}
+    .detail_banner .t1,
+    .detail_banner .t2{font-size:13px}
+}
+
+@media all and (min-width:414px) {
+    .detail_banner .t1,
+    .detail_banner .t2{font-size:14px}
+}
+.detail_banner_ads{padding-left:0;text-align:center}

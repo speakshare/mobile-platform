@@ -1,0 +1,9 @@
+<% _.each(months,function(m){ %>
+    <div class="month-days" data-id="<%=m[10].year+'-'+m[10].month%>">
+        <% _.each(m,function(n){ %>
+            <span class="month-days-one" data-year="<%=n.year%>" data-month="<%=n.month%>" data-day="<%=n.day%>">
+                <span class="<%=(n.month==month && n.day==day && n.year==year)?'today':''%>"><%=n.day!=0?n.day:''%></span>
+            </span>
+        <% }) %>
+    </div>
+<% }) %>

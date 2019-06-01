@@ -1,0 +1,37 @@
+<div class="goodsconfrim">
+	<% if(_.isEmpty(addr)) { %>
+	<div class="addaddrwrap addaddrbtn">
+		<p class="addicon setaddr" data-id="2"><span class="toaddicon"></span>添加收货地址</p>
+	</div>
+	<input type="hidden" id="addrid" value="-1">
+	<% }else{ %>
+	<div class="editaddrwrap">
+	<p class="addruser"><%= addr.memberName %><span class="userTel"><%= addr.telephone %></span></p>
+		<p class="addrdetail">收货地址：<%= addr.address %><span class="editaddrbtn setaddr" data-id="1"></span></p>
+	</div>
+	<input type="hidden" id="addrid" value="<%= addr.id%>">
+	<% } %>
+
+
+	<div class="goods-show clearfix">
+		<div class="goodsimg">
+			<img src="<%= good.coverImg %>" />
+		</div>
+		<div class="goodsinfo">
+			<p class="goodstitle ell"><%= good.itemName %> </p>
+			<p class="goodsdesc ell"><%= good.subTitle %> </p>
+			<p class="goodsprice ell"><span class="peaprice"><%= good.needPoints %></span><span class="realprice ml15">￥<%= good.itemPrice %></span></p>
+		</div>
+	</div>
+
+	<div class="requiredpea">所需旺豆
+		<span class="requiredpeanum"><%=good.isMember == 1 && good.level>1? parseInt(good.needPoints * good.pointDiscount):good.needPoints%> 旺豆</span>
+		<p class="hui-yuan"></p>
+	</div>
+	<div class="remark">
+		<span class="remaktext">备注<u>(选项)</u></span><input type="text" placeholder="如颜色、型号等要求，默认随机。" id="remark"  maxlength="50" />
+	</div>
+	<p class="tips">兑换产品会在<span>3个工作日</span>寄出</p>
+	<div class="currpeatotal">您共有<span><%= good.memberPoints %></span>旺豆</div>
+	<div class="confrimexchange" data-ruleId="<%=good.ruleId%>"  data-exId="1">确认兑换</div> 
+</div>

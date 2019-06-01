@@ -1,0 +1,17 @@
+<section class="card-limit">
+    <section class="card-limit-hint">为保障您的资金安全，所有投资资金保持同卡进出原则，且只可以绑定一张银行卡，建议您选择 限额较高 的银行卡。</section>
+    <% _.each(list,function(n){ %>
+    <section class="card-limit-list" bank-code="<%=n.bankCode%>" bank-name="<%=n.bankName%>">
+        <span class="lef"><i class="icon-bank bank-type-<%=n.bankCode%>"></i><%=n.bankName%></span>
+        <span class="rig"><span><%=n.singleQuotaStr%></span>，<span><%=n.samedayQuotaStr%></span>
+        </span>
+    </section>
+    <% }) %>
+</section>
+
+<!--<% _.each(list,function(n){ %>-->
+<!--<p class="card-limit">-->
+    <!--<label class="bank-icons bank-name-<%=n.bankCode%>"><%=n.bankName%></label>-->
+    <!--<span class="pd-info-text">单笔<%=n.singleQuota>=10000?(n.singleQuota/10000).toFixed(0)+'万':(+n.singleQuota).toFixed(0)%>，日累计<%=n.samedayQuota>=10000?(n.samedayQuota/10000).toFixed(0)+'万':(+n.samedayQuota).toFixed(0)%></span>-->
+<!--</p>-->
+<!--<% }) %>-->

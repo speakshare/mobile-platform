@@ -1,0 +1,42 @@
+<div class="info-box clearfix">
+    <div class="info-top">
+        <dl class="dl-first">
+            <dt><span><%=$.amountFormat(pd.annualizedRate) %></span>%</dt>
+            <dd>预期年化收益率</dd>
+        </dl>
+        <dl class="dl-last">
+            <dt><span><%=pd.surplusDay %></span>天</dt>
+            <dd>期限</dd>
+        </dl>
+        <%if(pd.productAddonRate!='0.00'){%>
+        <div class="dl-fixed">
+            <em>加息<%=pd.productAddonRate%></em>%
+        </div>
+        <% } %>
+    </div>
+    <div class="info-pro">
+        <div class="pro-bar">
+            <%if(pd.isSaleOff==2){%>
+            <div class="pro-bar-inner" style="width:100%;">
+                <span class="pro-digital" style="left:<%=($(window).width()-50)-20%>px;">满标</span>
+                <%} else {%>
+                <div class="pro-bar-inner" style="width:<%=pd.investPercent %>%;">
+                    <%if(pd.investPercent==0){%>
+                    <span class="pro-digital disabled" style="left:<%=($(window).width()-50)*pd.investPercent/100-20%>px;"><%=pd.investPercent %>%</span>
+                    <%}else if(pd.investPercent==100){%>
+                    <span class="pro-digital" style="left:<%=($(window).width()-50)*pd.investPercent/100-20%>px;">满标</span>
+                    <%}else{%>
+                    <span class="pro-digital" style="left:<%=($(window).width()-50)*pd.investPercent/100-20%>px;"><%=pd.investPercent %>%</span>
+                    <%}%>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+        <div class="info-tag">
+            <span class="first"><%=pd.minPurchaseAmount%>起投</span><%if(pd.activity!=null){%><span class="middle"><%=pd.activity.currentActivity%></span><%}%><%if(pd.isTransfer==0){%> <%if( pd.closePeriod!='' || pd.closePeriod==0 ){%><span class="last">满<%=pd.closePeriod%>天可变现</span><%}%> <%}else{%><span class="last">不可变现</span><%}%>
+        </div>
+        <div class="info-bottom">
+            <%=pd.purchaseCount %>人已购买<span class="ux-arrow-right"></span>
+        </div>
+    </div>
+</div>

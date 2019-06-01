@@ -1,0 +1,62 @@
+/*!*toast*!*/
+/*.toast_info_box{position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;z-index:99999}*/
+/*.toast_info_box .error_msg{margin-top:60%;display:inline-block;max-width:600px;background:rgba(0,0,0,0.6);border-radius:10px;padding:20px 40px;color:#fff;line-height:44px;font-size:32px;letter-spacing: 4px}*/
+
+
+
+
+.home img{display:block;width:100%}
+.home .p-box{position:relative}
+
+.home .p1-txt,
+.home .p0-txt,
+.home .p2-txt{position:absolute;top:42%;right:14%;color:#fff;}
+.home .p0-txt{top:auto;bottom:2%;left:0;width:100%;text-align:center}
+.home .p2-txt{left:14%}
+.home .p-num{color:#fbe568}
+.home .p-btn{position:absolute;bottom:12%;right:12%;width:128px;height:41px;background:url(images/btn_1.png) no-repeat;background-size:100% auto}
+.home .p-btn0{background-image:url(images/btn_1.png)}
+.home .p-btn1{background-image:url(images/btn_2.png)}
+.home .p-btn2{background-image:url(images/btn_3.png)}
+.home .p-btn3{background-image:url(images/btn_4.png)}
+.home .p2-box .p-btn{bottom:14%;left:12%;right:auto}
+.home .p3-box .p-btn{}
+.home .p4-box .p-btn{bottom:46%;left:12%;right:auto}
+.home del{margin-left:10px}
+.home .rule{color:#faedab;background:url(images/pg_06.png) repeat-y;background-size:100% auto;line-height:1.5}
+.home .rule-txt{padding:0 9%;font-size:13px}
+.home table{margin-top:12px;border-left:1px solid #faedab;border-top:1px solid #faedab;}
+.home td{color:#faedab;font-size:11px;border-right:1px solid #faedab;border-bottom:1px solid #faedab;text-align:center}
+.home p{padding-top:12px}
+.home .fix-bottom{position:fixed;bottom:0;left:0;width:100%;font-size:16px;letter-spacing:3px;height:44px;line-height:44px;background:#893122;color:#fff;text-align:center}
+
+@media all and (min-width: 360px) {
+    .home .p-btn{bottom:14%;width:144px}
+    .home .p2-box .p-btn{bottom:16%}
+    .home .p0-txt{bottom:3%}
+}
+
+@media all and (min-width: 375px) {
+    .home .p-btn{width:150px}
+}
+.f-form{line-height:1.4;font-size:14px;color:#333}
+.f-form p{padding-top:10px;}
+.f-form .f-p{clear:both;line-height:26px;font-size:14px}
+.f-form .f-tip{font-size:11px;color:#999}
+.f-form .f-color{color:#893122}
+.f-form label{float:left;width:30%;text-align:right}
+.f-form input{float:left;width:65%;height:26px;line-height:26px;padding:0 5px;border:1px solid #aaa}
+.f-form .change-num-box{position:absolute;display:inline-block;vertical-align:baseline;width:63px;height:15px;line-height:15px;text-align:center;background:url(images/arrow.png) no-repeat;background-size:auto 15px}
+.f-form .change1,
+.f-form .change2{float:left;width:20px;height:15px}
+.f-form .change2{float:right}
+.f-form .change-num{display:inline-block;width:23px;height:15px}
+.f-form .big-t{font-size:24px;line-height:40px}
+.f-form .f-p-m{margin:-8px 0 0 -63px}
+
+
+.pop_window{width:85%;margin-left:-42.5%}
+.pop_window2 .pop_content{padding:20px 10px}
+
+.share-btn{position:absolute;z-index:1;top:0;right:10px;width:60px;height:50px;background:url(images/icon_share.png) no-repeat center;background-size:60px auto}
+

@@ -1,0 +1,27 @@
+<%if(!redInfo||(redInfo && redInfo.redRewardReceiveTotalCount==0)){%>
+<div class="redbag hasGotRed">
+	<div class="iconNull">
+		
+	</div>
+	<p class="tips fgrey">您还没有领取过现金红包哦!</p>
+	<% if(redInfo.isInvite==1){%>
+	<div class="investFrd">邀请好友拿现金红包</div>
+	<%}%>
+</div>
+<%}else{%>
+<div class="redbag">
+	<div class="hasAcquired redList">
+		<div class="tip">
+		    <p class="title">累计红包金额</p>
+		    <p class="amount stress"><%=redInfo.redRewardReceiveTotalAmount%>元</p>
+		</div>
+		<ul>
+
+		</ul>
+	</div>
+	<div class="bottomLine hide">
+		<div class="line"></div>
+		<span class="title2">没有更多结果了</span>
+	</div>
+</div>
+<%}%>

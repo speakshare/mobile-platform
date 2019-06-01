@@ -1,0 +1,15 @@
+.calendar-page{position:absolute;width:100%;min-height:100%;background:#eef3f9 url(bg_calendar.jpg) no-repeat;background-size:100% auto;padding-bottom:10px}
+.calendar-page .c-p-month{height:70px;font-size:30px;line-height:70px;color:#fff;text-align:center}
+.calendar-page .c-p-amount,
+.calendar-page .day-record{height:130px;background:#fff;margin:0 10px;padding:5px 20px;border-radius:10px}
+.calendar-page .c-a-row{height:40px;line-height:40px;border-bottom:1px solid #eee;color:#959595}
+.calendar-page .c-a-row:last-child{border-bottom:none}
+.calendar-page .c-a-num{float:right;color:#4f4f4f}
+
+.calendar-page .day-record{height:auto}
+.calendar-page .day-record .c-a-row:after{right:0}
+.calendar-page .day-record .c-a-num{margin-right:20px}
+.calendar-page .cur-date{text-align:center;color:#b5b5b5;font-size:13px;padding:10px 0}
+.calendar-page .buy-btn{position:fixed;bottom:0;left:0;width:100%;background:#fff;font-size:18px;height:48px;line-height:48px;text-align:center;color:#FF5532}
+.calendar-page .go-buy-btn{display:inline-block;padding:10px 20px}
+.calendar-page .has-no-data{height:115px;background:url(btn_calendar_no.png) no-repeat center 10px;background-size:95px auto;text-align:center;font-size:15px;color:#3B8BE8;padding:65px 0 20px}

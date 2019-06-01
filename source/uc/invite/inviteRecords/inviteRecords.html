@@ -1,0 +1,54 @@
+<div class="uc-inviterecord">
+	<%if(parseInt(info.totalInvite)>0){%>
+	<div class="my-invitecord-pnum" style="height:<%= $(window).width()*0.35%>px">
+		<p class="ptext">总邀请好友</p>
+		<p class="pnum"><%= info.totalInvite %>位</p>
+		<!-- <p class="ptips">好友完成首投才算邀请成功</p> -->
+		<div class="invitebtn"></div>
+	</div>
+	<%}%>
+	<div class="my-invitecord-step">
+		<%if(info.isQualified=='1'){%>
+		<p class="stepstatustips">恭喜您！您已符合理财师条件，点击申请</p>
+		<div class="tobeplannerbtn">成为理财师</div>
+		<%}%>
+		<%if(info.status=='3'){%>
+		<p class="stepstatustips">您的理财大使申请未通过，详情请咨询400-049-9188</p>
+		<div class="applyfass">成为理财师</div>
+		<%}else if(info.status=='1') {%>
+		<p class="stepstatustips">您的申请已提交，客服将在3个工作日内审核</p>
+		<div class="stepprocess">
+			<div class="step"><em class="cur"></em><em></em><em></em></div>
+			<div class="stepdesc"><p>提交申请</p><p>客服审核</p><p>审核通过</p></div>
+		</div>
+		<%}%>	
+	</div>
+
+	<div class="bannerbox"><div class="banner" style="height:<%= $(window).width()*0.24%>px"></div></div>
+	<%if(parseInt(info.totalInvite)<1){%>
+	<div class="noinvitewrap">
+		<p class='noinvitetext'>您还没有邀请好友，快来赚现金！</p>
+		<div class="invitebtn">邀请好友，拿现金</div>
+		<p class="ewm">您的专属邀请码：<%=info.inviteCode%></p>
+	</div>
+	<%}else{%>
+	<% if(_.isEmpty(list)) {%>
+	<p class="nodata">暂无邀请记录</p>
+	<%}else{%>
+	<div class="uc-inviterecord-bottom">
+		<div class="recordlist">
+			<div class="item head"><div class="left">好友</div><div class="center">奖励情况</div><div class="right">注册时间</div></div>
+			<%_.each(list,function(item){%>
+			<div class="item"><div class="left"><%= item.investName %></div><div class="center"><%= item.award %></div><div class="right"><%= item.registerTime?$.dateFormat(item.registerTime*1000,'yyyy/MM/dd'):'--' %></div></div>
+			<%})%>
+		</div>	
+	</div>
+<!-- 	<%if(!hasmore){%>
+	<div class="hasmorediv"><span class="hasmore">没有更多结果了</span></div>
+	<%}%> -->
+	<%}%>
+	<%}%>
+	<div class="share_mask">
+		<div class="shareimg"></div>
+	</div>
+</div>

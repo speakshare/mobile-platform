@@ -1,0 +1,141 @@
+.fun-index .pre-container{
+    background: #000000;
+    opacity: 0.8;
+    position:fixed;
+    width:100%;
+    height:100%;
+}
+.fun-index .pre-mask{
+    /*z-index:1000;*/
+    /*background:url(bg.png) no-repeat;*/
+    /*background-size: 100%;*/
+    /*position:fixed;*/
+    width:100%;
+    height:100%;
+}
+.fun-index .circle{
+    width: 74px;
+    height: 74px;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+}
+.fun-index .hot{
+    right: 8%;
+    background: url(hot.png) #ffa15b no-repeat;
+    background-size: 50px;
+    background-position: 11px 11px;
+    top: 6%;
+    border-radius: 50%;
+}
+.fun-index .hot-active{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    position: absolute;
+    right: 8%;
+    background: url(hot-active.png) no-repeat;
+    top: 6%;
+    background-size: 100px;
+    background-position: 10px -10px;
+    z-index: 2;
+    border-radius:0;
+}
+.fun-index .hot-desc{
+    color: #FFFFFF;
+    background: #be7c49;
+    border-radius: 100px;
+    padding:13px 80px 14px 27px;
+    position:absolute;
+    top: 6%;
+    width: 85%;
+    box-sizing: border-box;
+    right: 8%;
+    height: 64px;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    display:none;
+}
+.fun-index .zhi{
+    background: url(zhi.png) no-repeat;
+    background-size: 74px;
+    left: 8%;
+    bottom: 33%;
+    border-radius: 50%;
+
+}
+.fun-index .zhi-active{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    position: absolute;
+    left: 6%;
+    bottom: 33%;
+    background: url(zhi-active.png) no-repeat;
+    background-size: 96px;
+    background-position: -4px 8px;
+    z-index: 2;
+    border-radius:0;
+}
+.fun-index .jing-active{
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    position: absolute;
+    right: 7%;
+    background: url(jing-active.png) no-repeat;
+    bottom: 17%;
+    background-size: 100px;
+    background-position: 4px 5px;
+    z-index: 2;
+    border-radius:0;
+}
+.fun-index .zhi-desc{
+    color: #FFFFFF;
+    background: #6e6e6e;
+    border-radius: 100px;
+    padding:13px 27px 14px 80px;
+    position:absolute;
+    left: 8%;
+    bottom: 33%;
+    box-sizing: border-box;
+    right: 8%;
+    height: 64px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    width: 85%;
+     display:none;
+}
+.fun-index .jing{
+    right: 8%;
+    background: url(jing.png) #069198 no-repeat;
+    background-size: 50px;
+    background-position: 11px 11px;
+    bottom: 17%;
+    border-radius: 50%;
+}
+.fun-index .jing-desc{
+    color: #FFFFFF;
+    background: #147579;
+    border-radius: 100px;
+    padding:13px 80px 14px 27px;
+    position:absolute;
+    right: 8%;
+    bottom: 17%;
+    box-sizing: border-box;
+    right: 8%;
+    height: 64px;
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+    width: 85%;
+    display:none;
+}
+@media screen and (max-width:320px){
+    /*.fun-index .pre-mask{*/
+        /*font-size:10px;*/
+        /*line-height: 1.5;*/
+    /*}*/
+    .fun-index .hot-desc,.fun-index  .zhi-desc,.fun-index  .jing-desc{
+        padding-top:5px;
+    }
+}

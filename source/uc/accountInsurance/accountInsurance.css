@@ -1,0 +1,55 @@
+.acInsurance .ac-header .main-header{position: relative;padding: 10px 20px;background-color: #1b75ef;color: #fff;}
+.acInsurance .ac-header .logo:before{display: inline-block;width: 65px;height: 32px;/*background-position: -183px -360px;*/background:url(./imgs/logo_insurance@2x.png) no-repeat;background-size: 100%;}
+.acInsurance .logo-title{position: absolute;top: 16px;left: 28%;display: inline-block;height: 20px;width: 112px;line-height: 20px;text-align: center;background-color: #fff;color: #1b75ef;border-radius: 6px;}
+.acInsurance .ac-header .tips{padding: 15px 20px;font-size: 16px;background-color: #fff;color: #ff6046;}
+.acInsurance .ac-header .header-rIcon:before{display: inline-block;width: 82px;height: 82px;/*background-position: -209px -484px;*/background:url(./imgs/img_insurance@2x.png) no-repeat;background-size:100%;position: absolute;top: 20px;right: 20px;}
+.acInsurance .header-title{padding: 20px 0 24px;font-size: 20px;}
+
+.acInsurance .guarantee-content{margin-top: 10px;}
+.acInsurance .guarantee-content p{line-height: 20px;}
+
+.acInsurance .list{padding-left: 20px;background-color: #fff;margin-top: 10px;}
+.acInsurance .list div{padding: 20px 0;border-bottom: 1px solid #d0d0d0;}
+.acInsurance .list div:last-child{border:none;}
+
+.acInsurance .process{margin-top: 10px;}
+.acInsurance .process p{line-height: 20px;}
+.acInsurance .process .process-content{padding-top: 15px;}
+
+.up{display: inline-block;float: right;width: 19px;height: 11px;background:url(./imgs/up.png) no-repeat;background-size: 100%;}
+.down{background-image:url(./imgs/down.png) !important;}
+
+.acInsurance .item{padding: 20px;background-color: #fff;}
+.acInsurance .title{font-size: 16px;}
+.acInsurance .rTitle{float: right;padding-right: 20px;font-size: 14px;color: #c1c1c1;}
+
+.acInsurance .insurance-clause{padding: 20px 0 20px 20px;background-color: #fff;margin-top: 10px;}
+.acInsurance .insurance-clause .rTitle:after{display: inline-block;width: 14px;height: 15px;background-position: -256px -70px;}
+.acInsurance .guarantee-content .modify{padding-bottom: 15px;}
+.acInsurance .guarantee-content p{color: #666;}
+
+.myPolicy .logo-title{left: 0;margin-left: 20px;}
+.myPolicy .header-title{padding: 42px 0 24px;font-size:18px;}
+.myPolicy .item{margin-top: 10px;}
+.myPolicy .item-content{padding-top: 15px;}
+.myPolicy .ac-header .header-rIcon:before{display: inline-block;width: 80px;height: 80px;/*background-position: -130px -484px;*/background:url(./imgs/img_myinsurance@2x.png) no-repeat;background-size:100%;position: absolute;top: 20px;right: 3px;}
+
+
+.policyClause .banner{background:url(insurance_1.png) no-repeat;background-size: 100%;width: 100%;}
+.policyClause .register{padding-bottom: 0 !important;background-color: transparent !important;background:url(insurance_2.png) no-repeat;background-size: 100%;width: 100%;}
+.policyClause .footer_tips{position: relative;padding: 0 !important;background-color: transparent !important;background:url(insurance_3.png) no-repeat;background-size: 
+100%;width: 100%;}
+.policyClause .checkoutMyPolicy{position: absolute; bottom: 17.5%;left: 22%;font-size: 12px;color: #00c7e9;}
+
+
+
+
+@media screen and (min-width:320px){
+    .checkoutMyPolicy { position: absolute;bottom: 17.5%;left: 19%;font-size: 12px;color: #00c7e9;}
+}
+@media screen and (min-width:360px){
+    .checkoutMyPolicy { left: 22%;}
+}
+@media screen and (min-width:375px){
+    .checkoutMyPolicy { left: 24%;}
+}

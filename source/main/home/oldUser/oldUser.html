@@ -1,0 +1,90 @@
+﻿<div class="top-nav">
+    <span class="home-calendar"></span>
+    <div class="top-animate">
+        <p class="t-left">昨日收益 <span class="h-color"><%=$.amountFormat(homePage.ystdProfit,1)%></span></p>
+        <p class="t-left">累计收益 <span class="h-color"><%=$.amountFormat(homePage.totalAmt,1)%></span></p>
+        <p class="t-left">总资产 <span class="h-color"><%=$.amountFormat(homePage.myAssets)%></span></p>
+    </div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+    <% if(banner.length){
+        _.each(banner,function(n){ %>
+            <div class="swiper-slide" data-link="<%=n.actiLink%>"><img src="<%=n.actiImg%>"></div>
+        <% })
+    }else{ %>
+        <div class="swiper-slide" data-link=""><img src="images/11@2x.png"></div>
+    <% } %>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<div class="home-nav clearfix">
+    <div class="nav-btn invite-btn" style="height:<%=$(window).width()/750*200%>px"></div>
+    <div class="nav-btn safe-btn" style="height:<%=$(window).width()/750*200%>px"></div>
+    <div class="nav-btn sign-btn" style="height:<%=$(window).width()/750*200%>px"></div>
+</div>
+<% if(notice && (notice.newsType=='01' || notice.newsType=='03')){ %>
+    <div class="notice-box <%=notice.newsType=='03'?'':'notice-box-n'%>"><%=notice.newsTitle||''%></div>
+<% } %>
+<% if(homePage.memberProductList && homePage.memberProductList.length && homePage.minMemberLevel>1 || homePage.list.length ){ %>
+    <div class="product-box">
+        <% if(homePage.memberProductList && homePage.memberProductList.length && homePage.minMemberLevel>1){ %>
+            <h3 class="p-h3">会员专享</h3>
+            <% _.each(homePage.memberProductList,function(n){ %>
+                <div class="member-box" data-id="<%=n.productNo%>">
+                    <div class="member-level member-level<%=n.minMemberLevel%>"></div>
+                    <div class="p-profit"><span class="p-num"><%=n.annualizedRate%></span>预期年化</div>
+                    <div class="p-date"><span class="p-num"><%=n.productDay%></span>期限</div>
+                    <% if(n.customerProductType==1 || (sysTime[0]>=23 && sysTime[1]>=40 || sysTime[0]<6)){ %>
+                        <div class="member-btn disabled"><%=n.customerProductType==1?'即将开售':'6点开售'%></div>
+                    <% }else{ %>
+                        <div class="member-btn">立即投资</div>
+                    <% } %>
+                </div>
+            <% })
+        }
+        if(homePage.list && homePage.list.length){ %>
+            <h3 class="p-h3">精选投资</h3>
+            <div class="product-list">
+                <% _.each(homePage.list,function(n){ %>
+                    <div class="product-one clearfix" data-id="<%=n.productNo%>">
+                        <div class="p-type">定期</div>
+                        <div class="p-title"><%=n.productName%></div>
+                        <div class="p-profit"><span class="p-num"><%=n.annualizedRate%></span>预期年化</div>
+                        <div class="p-date"><span class="p-num"><%=n.productDay%></span>期限</div>
+                        <div class="p-dot">
+                            <span class="dot-t"><%=n.minPurchaseAmount%>起投</span>
+                            <% if(n.currentActivity){ %>
+                                <span class="dot-t"><%=n.currentActivity%></span>
+                            <% }
+                            if(n.close_period>0){ %>
+                                <span class="dot-t">满<%=n.close_period%>天可变现</span>
+                            <% } %>
+                        </div>
+                    </div>
+                <% }) %>
+
+                <!--<div class="product-one p-fund clearfix">-->
+                    <!--<div class="p-type">基金</div>-->
+                    <!--<div class="p-title">基金产品名称</div>-->
+                    <!--<div class="p-profit"><span class="p-num">+12.33</span>近一年收益</div>-->
+                    <!--<div class="p-dot">-->
+                        <!--<span class="dot-t">100起投</span>-->
+                        <!--<span class="dot-t">旺豆翻倍</span>-->
+                        <!--<span class="dot-t">满30天可变现</span>-->
+                    <!--</div>-->
+                <!--</div>-->
+            </div>
+        <% } %>
+    </div>
+<% } %>
+<div class="total-data">
+    <p class="b-left"><%=platformData.investmentAmount%>
+        <span class="h-color">累计投资金额(元)</span>
+    </p>
+    <p class="b-right"><%=platformData.registration%>
+        <span class="h-color">累计用户数(人)</span>
+    </p>
+</div>
+<div class="safe-tip">账户资金安全由银行、快钱支付以及太平财险共同保障</div>

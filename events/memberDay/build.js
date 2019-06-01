@@ -1,0 +1,78 @@
+﻿var webpack = require("webpack"),
+    dev_server = require("webpack-dev-server"),
+    ExtractTextPlugin = require("extract-text-webpack-plugin"),
+    debug = process.argv.indexOf("--debug") > -1,
+    logConfig = {
+        hash: true,
+        version: false,
+        assets: true,
+        chunks: false,
+        chunkModules: false,
+        modules: false,
+        cached: false,
+        reasons: false,
+        source: false,
+        errorDetails: false,
+        chunkOrigins: false,
+        modulesSort: false,
+        chunksSort: false,
+        assetsSort: false
+    },
+
+    _config = {
+        entry:{
+            app:['./source/main.js']
+        },
+        output: {
+            path: __dirname + "/dist/",
+            filename: "bundle" + (!debug ? ".min.js" : ".js"),
+            chunkFilename:'chunk_[name]'+(debug ?'':'/[chunkhash:4]')+'.js'
+        },
+        module: {
+            loaders: [
+                {
+                    test: /\.html$/,
+                    loader: "html-clean!html-loader?minimize=false"
+                },
+                {
+                    test: /\.css$/,
+                    loader: ExtractTextPlugin.extract("style-loader", "css-loader")
+                },
+                {
+                    test: /\.(png|jpg|svg|gif|eot|woff|ttf)$/,
+                    loader: 'url-loader?limit=4096&name=[path][hash:8].[ext]'
+                }]
+        }
+        , plugins: [
+            new ExtractTextPlugin("bundle"+ (!debug ? ".min.css" : ".css"))
+        ]
+    },
+    compiler, server;
+
+if(debug){
+    _config.devtool= 'cheap-module-source-map';
+    _config.entry.app.push('webpack/hot/dev-server');
+    _config.entry.app.push('webpack-dev-server/client?http://localhost:8088');
+    _config.plugins.push(new webpack.HotModuleReplacementPlugin());
+}else{
+    _config.output.publicPath='https://file.91yaowang.com/yaowang/events/memberDay/dist/';
+    _config.plugins.push(new webpack.optimize.UglifyJsPlugin());
+}
+
+compiler = webpack(_config);
+
+if (debug) {
+    server = new dev_server(compiler, {
+        hot: true,
+        inline:true,
+        stats: { colors: true }
+    });
+    server.listen(8088);
+} else {
+    compiler.run(function (err, status) {
+        if (err) {
+            console.warn(err);
+        }
+        console.log(status.toJson(logConfig));
+    });
+}

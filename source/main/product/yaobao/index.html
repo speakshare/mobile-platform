@@ -1,0 +1,39 @@
+<div class="yaobao-box">
+  <h3 class="yaobao-title">总金额(元)</h3>
+  <p class="yaobao-num"> <%=$.amountFormat(sumAmount)%> </p>
+  <p class="yaobao-profit">
+    <span class="yaobao-profit1">昨日收益(元)<span class="yaobao-profit-t" style="text-align: right;"><%=$.amountFormat(lastProfit)%></span></span>
+    <span class="yaobao-profit2 yaobaoProfit">累计收益(元)<span class="yaobao-profit-t"><%=$.amountFormat(totalProfit)%></span></span>
+  </p>
+</div>
+
+<section class="yaoBao-hint">马上开通余额自动转入摇宝，让您的收益不间断！<span class="cha-icon"></span></section>
+
+<div class="yaobao-dollar">
+  <ul class="dollar-tabs clearfixs">
+    <li class="dollar-tab-li active" data-id="1">7日年化(%)</li>
+    <li class="dollar-tab-li" data-id="2">万元收益(元)</li>
+  </ul>
+  <div class="dollar-chart"></div>
+  <div class="yaobao-dollar-summary arrow-right">摇宝产品说明书</div>
+  <div class="yaobao-dollar-auto arrow-right">资金自动转入摇宝<span class="yaobao-dollar-auto-t">持续享受收益，随时取现</span></div>
+  <div class="fixed-bottom dollar-btn">
+    <% if(availableAmount>0 || profit>0){ %>
+      <div class="dollar-btn2" id="yaobaoOut">转出</div>
+    <% }else{ %>
+      <div class="dollar-btn1">转出</div>
+    <% } %>
+    
+    <!--<% if(soldOut==1){ %>
+      <% if(arrange==0){ %>
+        <div class="dollar-btn2" id="yaobaoBespeak">预约</div>
+      <% } %>
+      <% if(arrange==1){ %>
+        <div class="dollar-btn1">已预约</div>
+      <% } %>
+    <% } %>-->
+    <% if(soldOut==0){ %>
+      <div class="dollar-btn2" id="yaobaoInto">转入</div>
+    <% } %>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="newsTitle">
+	<div class="tabs">
+		<div class="tab-title notice">消息</div><div class="tab-title activity active">活动</div>
+		<%if(!newsCount.unReadActivityCount==0){%>
+		<span class="newsTips <%=newsCount.unReadActivityCount>99?'dot':'number'%>"><%=newsCount.unReadActivityCount>99?'...':newsCount.unReadActivityCount%></span>
+		<%}%>
+	</div>
+	<div id="tabs-container" class="swiper-container">
+        <div class="swiper-slide">
+	        <div class="content-slide">
+				<ul class="newsList">
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="bottomLine hide">
+		<div class="line"></div>
+		<span class="title">没有更多结果了</span>
+	</div>
+</div>

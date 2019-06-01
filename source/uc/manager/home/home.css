@@ -1,0 +1,97 @@
+.plannerhome{background:#EEF3F9;height:100%;}
+.plannerhome .pbanner{position: relative; background:url(./imgs/bg_invite_gray.png) center center no-repeat;width:100%;padding-top:4%;box-sizing: content-box;}
+.plannerhome .pbanner .invitefrbtn{position: absolute;top:20px;right:0px; background:url(./imgs/btn_invite_share.png) center right no-repeat;background-size:contain;width:25%;height:57px;z-index:9;}
+.plannerhome .pbanner.golden{background:url(./imgs/bg_invite_golden.png) center center no-repeat;}
+.plannerhome .pbanner .face{position: relative;background:url(./imgs/btn_invite_silvery.png) left top no-repeat;background-size:contain;width:100%;height:75px;padding-left:90px;}
+.plannerhome .pbanner .face .levelrule{position: absolute;width:90px;height:75px;left:0px;top:0px;}
+.plannerhome .pbanner.golden .face{background:url(./imgs/btn_invite_golden.png) left top  no-repeat;background-size:contain;}
+.plannerhome .pbanner  .cyname{font-size: 20px;color: #FFFFFF;line-height: 20px;padding-top: 25px;}
+.plannerhome .pbanner  .xjname .name{font-size: 16px;font-weight: bold;color:#ffffff;line-height:30px;padding-top:10px;letter-spacing: 1.5px;}
+.plannerhome .pbanner  .xjname .lever{font-size: 0;line-height: 0;}
+.plannerhome .pbanner  .xjname .lever p{font-size: 15px;color: #FFFFFF;display: inline-block;vertical-align: top;height: 20px;line-height: 20px;margin-top: 2px;margin-left: 2px;}
+.plannerhome .pbanner  .xjname .lever .star{background:url(./imgs/img_Star.png) center center no-repeat;background-size: contain;display: inline-block;width:20px;height:20px;}
+.currmonth{background:#ffffff;position: relative;}
+.currmonth .currmonthred{font-size: 14px;color: #959595;line-height:14px;padding:15px 18px 0px;}
+.currmonth .redsum{font-size: 30px;color: #FF5532;line-height: 45px;padding-left:18px;}
+.currmonth .legen{position: absolute; padding:15px;top:10px;right:0px;border: 1px solid #FFEEDA;box-shadow: 0px 2px 10px 1px #FFEEDA;}
+.currmonth .legen .keytext{font-size: 13px;color: #959595;line-height: 13px;margin-top:3px;}
+.currmonth .legen .val{font-size: 17px;color: #FFA233;line-height:27px;}
+.currmonth .linebox{width:100%;/*margin-top:10px;*/height: 150px;margin-bottom:10px;}
+.totalbox{width:100%;background:#ffffff;margin-top:1px;padding:0px 13px;}
+.totalbox .mainwrap{height:55px;line-height:55px;}
+/*.totalbox.box2,.totalbox.box3{height:80px;}*/
+.totalbox.box2 .mainwrap,.totalbox.box3 .mainwrap{height:50px;line-height:60px;}
+.totalbox  .left{font-size: 15px;color:#4F4F4F;line-height: 15px;}
+.totalbox  .duecion:after{content: "";clear: both; background:url(./imgs/img_invite_tag.png) center center no-repeat;background-size:contain;width:68px;height:16px;display: inline-block;top: -10px;position: relative;left: 2px;}
+.totalbox  .right{font-size:15px;color:#959595;}
+.totalbox  .right em{color:#FFA233;}
+.totalbox  .right:after{display: inline-block;clear: both;content: ''; width:7px;height:10px;margin-left: 5px;background:url(./imgs/arrow.png) center center no-repeat;background-size:contain;}
+
+.totalbox.box2 .right,.totalbox.box3 .right{color:#4f4f4f;}
+.totalbox  .subright{color: #3B8BE8;line-height: 0px;height:20px;float:right;display:block;text-align:right;width:100%;}
+.totalbox.box3 .subright{color:#B5B5B5;}
+.btmlink {margin:20px auto 18px;text-align:center;padding-bottom:18px;}
+.btmlink {color: #FFA233;}
+.btmlink span{font-size: 15px;line-height: 15px;padding:5px 10px;}
+
+.plannerhome .pbanner .lever5 .tag{margin-left: -102px;}
+
+/*气泡注释*/
+.airBubble { position: relative;display: inline-block;}
+.airBubble .tag {left: 50%;margin-left: -90px;top: 27px;padding: 0px 6px;text-align: left;height: 22px;line-height: 22px;white-space: nowrap;font-size: 11px;color: #fff;border-radius: 4px;position: absolute;background: rgba(0, 0, 0, 0.22);}
+.airBubble .arrow {position: absolute;width: 15px;height: 15px;bottom: 21px;left: 50%;margin-left: -10px;}
+.airBubble .arrow * {display: block;border-width: 7px;position: absolute;border-style: solid dashed dashed;font-size: 0px;line-height: 0;}
+.airBubble .arrow em {border-color: transparent  transparent  rgba(0, 0, 0, 0.2) transparent;}
+
+
+/*20170426*/
+.plannerhome .makemoneyguide{position: absolute;right:0px;top:100px;/*bottom:15%;*/padding:1%;font-size:12px;color:#ffffff;z-index:9;
+	background:linear-gradient(90deg, #CDCED3, #A5A5A6);
+	background: -moz-linear-gradient(90deg, #CDCED3 0%, #A5A5A6 100%);
+	background: -webkit-linear-gradient(90deg, #CDCED3 0%,#A5A5A6 100%);
+	background: -o-linear-gradient(90deg, #CDCED3 0%,#A5A5A6 100%);
+	background: -ms-linear-gradient(90deg, #CDCED3 0%,#A5A5A6 100%);
+	background: linear-gradient(90deg, #CDCED3 0%,#A5A5A6 100%);
+}
+.plannerhome .makemoneyguide:before{content: "";clear: both; background:url(./imgs/wen.png) center center no-repeat;background-size:contain;width:14px;height:14px;margin-right:2px;display: inline-block;    margin-top: -2px;
+vertical-align: top;}
+.plannerhome .golden .makemoneyguide{background:linear-gradient(90deg, #FAC90E, #D6A00C);
+	background: -moz-linear-gradient(90deg, #FAC90E 0%, #D6A00C 100%);
+	background: -webkit-linear-gradient(90deg, #FAC90E 0%,#D6A00C 100%);
+	background: -o-linear-gradient(90deg, #FAC90E 0%,#D6A00C 100%);
+	background: -ms-linear-gradient(90deg, #FAC90E 0%,#D6A00C 100%);
+	background: linear-gradient(90deg, #FAC90E 0%,#D6A00C 100%);
+}
+.plannerhome .avatar{width:70px;height:70px;margin:0px auto ;background:url(./imgs/btn_invite_silvery.png) center center no-repeat;background-size:contain;}
+.plannerhome .golden .avatar{background-image :url(./imgs/btn_invite_golden.png);}
+.plannerhome .username{font-size: 18px;font-weight: bold;color:#ffffff;margin:4% auto;text-align: center;}
+.plannerhome .userlever{font-size: 0;line-height: 0;text-align: center;}
+.plannerhome .userlever .levername{font-size: 15px;color: #FFFFFF;display: inline-block;vertical-align: top;height: 20px;line-height: 20px;margin-top: 2px;margin-left: 2px;}
+.plannerhome  .star{background:url(./imgs/img_Star.png) center center no-repeat;background-size: contain;display: inline-block;width:20px;height:20px;}
+.investinginfo {width: 100%;background:#ffffff;display: flex;display: -webkit-flex;padding:2%;margin-bottom:10px;}
+.investinginfo .flex{position: relative; text-align: center;line-height: 25px;}
+.investinginfo .flex6{flex: 6;-webkit-flex:3;}
+.investinginfo .flex7{flex: 7;-webkit-flex:4;}
+.investinginfo .flex8{flex: 8;-webkit-flex:4;}
+.investinginfo .flex .lone{font-size:15px;color:#FFA233;font-weight: bold;}
+.investinginfo .flex .ltwo{font-size:12px;color:#959595;}
+.investinginfo .textalignleft{text-align:left;}
+.investinginfo .textalignright{text-align:right;}
+.investinginfo .askinfo:after{display: inline-block;clear: both;content: '';width:13px;height:13px; background:url(./imgs/ask.png) center center no-repeat;background-size:contain;margin-left: 3px}
+.investinginfo .answer{position: absolute; display: none; top: 54px;left: -44px;font-size: 12px;color: #959595;line-height: 15px;background: #ffffff;z-index: 9;padding: 5px;border: 1px solid #E1F2FD;text-align: left;width: 157px;box-shadow: 2px 1px 20px 2px #E1F2FD;}
+.investinginfo .answer .arrow {    position: absolute;width: 20px;height: 20px;top: -20px;right: 2px;}
+.investinginfo .answer .arrow * {display: block;border-width: 10px;position: absolute;border-style: solid dashed dashed;font-size: 0px;line-height: 0;}
+.investinginfo .answer .arrow em {    border-color: transparent transparent #E1F2FD transparent;}
+.investinginfo .answer .arrow span {border-color: transparent transparent #ffffff transparent;top: 2px;}
+.investinginfo .answer2 {left: 0;}
+.investinginfo .answer2 .arrow{right: 58px;}
+
+
+
+@media screen and (width:375px){
+
+}
+@media screen and (max-width:320px){
+	.plannerhome .pbanner{padding-bottom:10px;}
+	.plannerhome .makemoneyguide{top:97px;}
+}

@@ -1,0 +1,18 @@
+<div class="my-withdrawals bgcolor_eef3f9">
+	<div class="tradetimestatus <%= (TradingInfos.isTradingTime=='1'?'sysstatus':'') %>" >
+		<% if(TradingInfos.isTradingTime=='1'){%>
+		<div class="systips"><%= TradingInfos.promptMsg %></div>
+		<%}%>
+		<div class="accountbalance-info">账户余额<span class="balance"><em  id="accountAmount"><%= $.amountFormat(piggy) %></em> 元</span></div>
+		<div class="withdrawals-info">
+			<div class="bankcard">
+				<div class="bankcardinfo bank-icons bank-<%= bankCard.bankCode%>"><%= bankCard.bankName%>（<%= (bankCard.bankNum).slice(-4) %>）</div>
+				<p class="reminders">工作日15:00前申请预计当日到账，15:00后次日到账,遇法定节假日顺延</p>
+			</div>
+			<div class="inputbox"><label>提现金额</label><input type="number" autofocus="autofocus" class="input-text" id="userWithdrawAmount" placeholder="不少于<%= TradingInfos.withdrawMinMoney %>元 " /></div>
+		</div>
+		<div class="error"></div>
+		<div class="submit disablebtn">确定</div>
+		<p class="tips">单笔限额<%= TradingInfos.withdrawMaxMoney %>万，每日限提现<%= TradingInfos.withdrawTimes %>次</p>
+	</div>
+</div>

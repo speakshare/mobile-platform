@@ -1,0 +1,4 @@
+.info-match{padding:60px 17px;text-align: center}
+.info-match:before{content:'';margin-bottom:20px;display:inline-block;width:65px;height:65px;background:url(note@2x.png) no-repeat;background-size:65px auto}
+.info-match .title{font-size:20px;margin-bottom:20px;}
+.info-match .desc{font-size:13px;color:#999;line-height:1.5}

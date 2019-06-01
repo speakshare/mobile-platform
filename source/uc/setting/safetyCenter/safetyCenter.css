@@ -1,0 +1,4 @@
+.safety-center{margin:0}
+.safety-center .safety-box{height:50px;line-height:50px;padding:0 15px;background-color:#fff;border-bottom:1px solid #eee;}
+.safety-center .safety-word{font-size:15px;color:#666}
+.safety-center .safety-icon{float:right;content:'';display:inline-block;background:url(icon-right-shape@2x.png) no-repeat;background-size:100%;width:7px;height:12px;margin-top:18px}

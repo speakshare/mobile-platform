@@ -1,0 +1,48 @@
+<section class="registers" id="registers">
+    <section class="yw_logo">
+        <img class="banner-img" id="bannerImg">
+    </section>
+    <section class="registers-box">
+        <span class="be-con">手机号</span>
+        <input type="tel" value="<%=mobile%>" id="registerTel" class="inp-box pad-lef" maxlength="11"  placeholder="作为您的账号" required="required"/>
+        <i class="icons clear"></i>
+    </section>
+    <section class="registers-box">
+        <span class="be-con">图形码</span>
+        <input type="tel" id="registerVerify" class="inp-box inp-sma-box1 pad-lef" maxlength="4" placeholder="右侧图形码" required="required"/>
+        <img class="rig-box code-pic" id="graphCode">
+    </section>
+    <section class="registers-box">
+        <span class="be-con">验证码</span>
+        <input type="tel" id="registerNote" class="inp-box inp-sma-box1 pad-lef" placeholder="4位短信验证码" required="required"/>
+        <span class="rig-box" id="noteVerify">获取</span>
+    </section>
+    <section class="registers-box audio-box hide">
+        收不到验证码？请使用<span class="audio-btn">语音验证码</span>
+    </section>
+
+
+    <section class="registers-box">
+        <span class="be-con">登录密码</span>
+        <input type="password" id="setPassword" class="inp-box inp-sma-box2" placeholder="6位以上字母数字组合" required="required"/>
+        <i class="rig-box reg-un-enum" id="enumerable"></i>
+    </section>
+
+    <%if(!channelCode){%>
+        <section class="registers-box invites-box">
+            <span class="be-con">邀请码</span>
+            <%if(inviteCode){%>
+            <span class="invite-box"><%=inviteCode%></span>
+            <%}else{%>
+            <input type="text" id="inviteCode" class="inp-box" placeholder="选填" required="required"/>
+            <%}%>
+        </section>
+    <%}%>
+    <section class="common-btn2">确定</section>
+
+    <p class="acc-word">
+        <span id="ywUserAgr">注册即同意《会员注册协议》</span>
+        <span class="to-login">已有账号？<span class="update-col" id="toLogin">立即登录</span></span>
+    </p>
+    <p class="safety-hint"><i class="zhu-icon"></i>账户资金安全由银行、快钱支付以及太平财险共同保障</p>
+</section>

@@ -1,0 +1,10 @@
+<!--底部导航-->
+<% if($.getCache('channelCode')){ %>
+<div class="icons foot product-icon <%=index==2?'active':''%>" attr-idx="2" style="width:50%">产品</div>
+<div class="icons foot me-icon <%=index==4?'active':''%>" attr-idx="4" style="width:50%">我的<span class="<%=msgCount==1?'message_hint':''%>"></span><!-- <span class="<%=msgCount>0?'message_hint':''%>"></span> --></div>
+<% }else{ %>
+<div class="icons foot  home-icon <%=index==1?'active':''%>" attr-idx="1">首页</div>
+<div class="icons foot product-icon <%=index==2?'active':''%>" attr-idx="2">产品</div>
+<div class="icons foot mall-icon <%=index==3?'active':''%>" attr-idx="3">旺家</div>
+<div class="icons foot me-icon <%=index==4?'active':''%>" attr-idx="4">我的<span class="<%=msgCount==1?'message_hint':''%>"></span><!-- <span class="<%=msgCount>0?'message_hint':''%>"></span> --></div>
+<% } %>

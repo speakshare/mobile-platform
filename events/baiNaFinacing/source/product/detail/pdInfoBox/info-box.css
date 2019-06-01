@@ -1,0 +1,131 @@
+.info-box{
+    background:url('pd-bg.jpg') 0 0 no-repeat #fff;
+    background-size:100% 100%;
+    padding:50px;
+}
+
+.info-top{
+    display:table;
+    width:100%;
+}
+
+.info-top dl{
+    display:table-cell;
+    color:#4f4f4f;
+    font-size:28px;
+    vertical-align:bottom;
+}
+
+.info-top dl.dl-first dt{
+    color:#ff5532;
+    font-size:26px;
+    margin-bottom:10px;
+}
+
+.info-top dl.dl-last dt {
+    margin-bottom:10px;
+    font-size: 24px;
+}
+.info-top dl.dl-first dt span{
+    font-size:80px;
+}
+.info-top dl.dl-last dt span{
+    font-size:60px;
+    color: #4f4f4f;
+}
+.info-top .dl-fixed{
+    background-color:#fe6646;
+    color:#fff;
+    padding:10px 0;
+    text-align:center;
+    border-radius:10px;
+    margin-top:60px;
+}
+.info-pro{
+    padding:80px 0 40px 0;
+    width:100%;
+    margin:20px auto;
+}
+.pro-bar{
+    width: 100%;
+    height: 10px;
+    border-radius: 10px;
+    background: #ededed;
+    position: relative;
+}
+.pro-bar-inner{
+    height: 80%;
+    border-radius: inherit;
+    position: relative;
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#fe976f), to(#fe6646));
+}
+.pro-digital{
+    position: absolute;
+    background: #fd7559;
+    padding: 10px;
+    border-radius: 10px;
+    top: -60px;
+    font-size: 24px;
+    color:#fff;
+    font-weight: bold;
+    width: 80px;
+    text-align:center;
+}
+
+.pro-digital.disabled{
+    background: #b5b5b5;
+}
+.pro-digital:after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fd7559;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 50%;
+    margin-left: -6px;
+    bottom: -6px;
+}
+
+.pro-digital.disabled:after {
+    background: #b5b5b5;
+}
+.info-tag{
+    margin-bottom:40px;
+}
+
+.info-tag span {
+    display: inline-block;
+    margin-right: 10px;
+    padding:5px 10px;
+    color: #fff;
+    border-radius: 10px;
+    font-size:26px;
+}
+
+.info-tag span.first {
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#f5bdae), to(#fca695));
+}
+
+.info-tag span.middle {
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#f9a98a), to(#fc856d));
+}
+
+.info-tag span.last {
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#fd976e), to(#fd6445));
+}
+
+.info-bottom{
+    float:right;
+    margin-right:0;
+}
+
+.info-bottom .ux-arrow-right{
+    display:inline-block;
+    margin:4px 0 0 10px;
+    width: 20px;
+    height: 24px;
+    background:url(./../images/ux-icons.png) -28px -206px no-repeat transparent;
+    background-size:70px auto;
+}

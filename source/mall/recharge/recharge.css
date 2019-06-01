@@ -1,0 +1,41 @@
+.mall-recharge{position:absolute;height:100%;width:100%;background-color:transparent;}
+.mall-recharge .mainWrap{padding:15px 0 0;background-color:#fff;}
+.mall-recharge .active{color:#3b8bb8;}
+.mall-recharge .show{display: inline-block;}
+.mall-recharge .chargeContent{margin-bottom: 8px;}
+.mall-recharge .chargeContent .editorWrapper{width:100%;position: relative;padding: 21px 0 21px 18px;background-color: #fff;text-align: center;}
+.mall-recharge .chargeContent .editorWrapper .clearBtn{position: absolute;right: 20px;top: 35px;width:16px;height:16px;background:url(./imgs/btn_falue@2x.png) no-repeat center;background-size:100%;}
+.mall-recharge .chargeContent input{width: 80%;height: 42px;line-height: 42px;border: 0;text-align:left;font-size: 30px;margin-left:-21%;}
+.mall-recharge .chargeContent .tip{position:absolute;bottom:0;left:0;margin: 0 0 6px 18px;text-align:center;font-size: 14px;}
+.mall-recharge .chargeContent .warn{color:#FF5532;}
+.mall-recharge .chargeContent .operator{color:#b5b5b5;}
+.mall-recharge .selectZone .selectBtn{display: flex;margin-top: 3px;height: 40px;line-height: 40px;font-size:17px;color:#B5B5B5;}
+.mall-recharge .selectZone .selectBtn .selected{color:#4f4f4f;}
+.mall-recharge .selectZone .selectBtn .selected:after{content: '';position: absolute;height: 2px;width: 20px;background-color: #ff5532;bottom: 0;left: 46%;}
+.mall-recharge .selectZone .selectBtn span{flex:1;text-align: center;position:relative;}
+.mall-recharge .selectZone{margin-top:5px;}
+.mall-recharge .selectZone .selectContainer{display: flex;flex-flow:row wrap;padding: 38px 15px 30px;}
+.mall-recharge .selectZone .item{/*flex:1;*/ position: relative;width: 30%;text-align: center;border: 1px solid #e5e5e5;padding: 18px;margin: 0 3.33% 3.33% 0;border-radius: 6px;}
+.mall-recharge .selectZone .item .amount{font-size: 21px;padding-bottom: 17px;}
+.mall-recharge .selectZone .item:nth-child(3n){margin: 0 0 3.33% 0;}
+.mall-recharge .selectZone .item span{display:block;color:#b5b5b5;font-size: 13px;}
+.mall-recharge .selectZone .item .bean:before{content: '';background: url(./imgs/IMG_bean@2x.png) no-repeat;position: absolute; width: 15px;height: 15px;background-size: 100%;margin-left: -17px;margin-top: -2px;}
+.mall-recharge .selectZone .zhe-kou{display:inline-block;position:absolute;right:0;top: 0;background: url(../imgnew/img-red-triangle@2x.png) no-repeat;background-size: 100%;width: 38px;height: 38px;}
+.mall-recharge .selectZone .zhe-kou span{display: inline-block;font-size:12px;color: #fff;transform: rotate(45deg);-webkit-transform: rotate(45deg);margin:7px -12px 0 0}
+
+.mall-recharge .selectZone .pick{border: 1px solid #3B8BE8 !important;}
+.mall-recharge .selectZone .pick span{color:#3B8BE8 !important}
+.mall-recharge .selectZone .pick .zhe-kou span{color:#fff !important}
+.mall-recharge .count{margin:40px 0 20px;text-align: center;font-size: 14px;color: #454545;}
+.mall-recharge .count i{display: inline-block;width:15px;height:15px;margin: 0 3px 0 5px;background:url(./imgs/IMG_bean@2x.png) no-repeat center;background-size:100%;}
+.mall-recharge .rechargeBtn{height: 48px;line-height: 48px;text-align: center;border-radius: 5px;color: #fff;background: #ff5532;width: 85%;margin: 0 auto;font-size: 18px;}
+.mall-recharge .tips{padding:0 28px 30px;background:url(./imgs/bg_chongzhi@2x.png) no-repeat center;background-size:100%;}
+.mall-recharge .tips .title{margin:30px 0 20px;font-size: 18px;text-align: left;}
+.mall-recharge .tips p{font-size: 14px;color:#454545;line-height: 23px;margin-top: 5px}
+
+.rechargeResult .resultIcon{width:80px;height:80px;margin: 40px auto 10px;background:url(./imgs/doneicon@2x.png) no-repeat center;background-size:100%;}
+.rechargeResult h2{text-align: center;font-size: 18px;margin-top:20px;}
+.rechargeResult .button{text-align: center;margin-top: 50px;}
+.rechargeResult .button span{border:1px solid #ff5532;background-color:#fff;color:#ff5532;border-radius:3px;padding:5px 8px;font-size:16px;}
+.rechargeResult .button span:last-child{margin-left: 20px;}
+.rechargeResult .active{background-color:#ff5532;color:#fff;}

@@ -1,0 +1,149 @@
+.pro-list{margin:0;padding:0}
+.pro-list .pro-head{z-index:100;position:fixed;top:0;left:0;width:100%;text-align:center;height:45px;line-height:42px;background-color:#fff;border-bottom:1px solid #eee}
+.pro-list .pro-head .head-tab{display:inline-block;padding:0 10px;font-size:16px;color:#b5b5b5;}
+.pro-list .pro-head .active{border-bottom:3px solid #ff5532;color:#000;}
+
+.pro-list .por-list-box{margin:53px 0 0}
+.pro-list .pro-yaoBao{display:flex;margin:8px;background:url(images/card@2x.png) no-repeat;background-size:100%;}
+.pro-list .pro-yaoBao .pro-yaoBao-lef{flex:1}
+.pro-list .pro-yaoBao .pro-yaoBao-rig{flex:1.5}
+.pro-list .pro-yaoBao .num{font-size:30px;color:#ff5532;}
+.pro-list .pro-yaoBao .num span{font-size:14px;}
+.pro-list .pro-yaoBao .word1{margin-top:5px;;line-height:18px;font-size:15px;color:#4f4f4f;}
+.pro-list .pro-yaoBao .word2{font-size:17px;color:#4f4f4f}
+.pro-list .pro-yaoBao .word3{margin-top:10px;}
+.pro-list .pro-yaoBao .word3 span{margin-right:8px;padding:2px 5px;border-radius:2px;font-size:12px;color:#fff;background:-webkit-linear-gradient(left,#F1A081,#FB846C);background:linear-gradient(to right,#F1A081,#FB846C);}
+.pro-list .hint1{text-align:center;font-size:11px;color:#b5b5b5}
+
+.pro-list .pro-mod{margin-top:10px;background-color:#fff}
+.pro-list .pro-mod .pro-title{padding:15px;clear:both}
+.pro-list .pro-title .word1{font-size:16px;color:#4f4f4f}
+.pro-list .pro-title .word2{padding-left:15px;font-size:13px;color:#b5b5b5}
+.pro-list .pro-title .word3{float:right;margin-top:3px;font-size:13px;color:#4f4f4f}
+.pro-list .word-hint{text-align:center;padding:20px 0;font-size:13px;color:#999;border-top:1px solid #eee}
+
+.pro-list .pro-regular .pro-box{padding:20px;border-top:1px solid #eee}
+.pro-list .pro-regular .pro-item1{display:flex}
+.pro-list .pro-regular .pro-item1 .title{flex:2}
+.pro-list .pro-regular .pro-item1 .title span{font-size:15px;color:#4f4f4f}
+.pro-list .pro-regular .pro-item1 .title .new-icon{display:inline-block;background:url(images/IMG_newer@2x.png) no-repeat;background-size:100%;width:60px;height:17px;margin:0 0 -3px 3px}
+.pro-list .pro-regular .pro-item1 .title .wang-dou-icon{display:inline-block;background:url(images/IMG_wangdounewer@2x.png) no-repeat;background-size:50px 17px;width:50px;height:17px;margin:0 0 -3px 0}
+.pro-list .pro-regular .pro-item1 .title .hot-icon{display:inline-block;background:url(images/hot.png) no-repeat;background-size:26px 100%;width:24px;height:24px;margin:0 0 -5px 3px}
+.pro-list .pro-regular .pro-item1 .progress-bar{flex:1;}
+.pro-list .pro-regular .pro-item1 .load-line{margin-top:12px}
+.pro-list .pro-regular .pro-item1 .hint-word0{text-align:right;font-size:14px;color:#ff775b}
+.pro-list .pro-regular .pro-item1 .load-bar{float:right;position:relative;right:15px;width:65px;height:4px;background-color:#EDEDED;border-radius:5px;}
+.pro-list .pro-regular .pro-item1 .load-bar-inner{width:0;height:100%;border-radius:5px;background:-webkit-linear-gradient(left,#F2BEB1,#F6A190);background:linear-gradient(to right,#F2BEB1,#F6A190);}
+.pro-list .pro-regular .pro-item1 .counter{position:absolute;text-align:center;left:-15px;top:-18px;width:30px;padding:1px;font-size:11px;color:#fff;background-color:#ff9580;border-radius:2px;}
+.pro-list .pro-regular .pro-item1 .counter:after{content:"";position:absolute;left:50%;margin-left:-2px;bottom:-2px;width:4px;height:4px;background-color:#ff9580;-webkit-transform: rotate(45deg);transform:rotate(45deg);}
+.pro-list .pro-regular .pro-item1 .count-time,
+.pro-list .pro-regular .pro-item1 .count-down{font-size:12px;color:#ff5532;text-align:right}
+.pro-list .pro-regular .pro-item1 .count-time i{display:inline-block;background:url(images/ICO_qiang@2x.png) no-repeat;background-size:100%;width:8px;height:8px;margin:0 3px 0 0}
+.pro-list .pro-regular .pro-item1 .count-down i{display:inline-block;background:url(images/time@2x.png) no-repeat;background-size:100%;width:14px;height:14px;margin:0 3px -2px 0}
+
+
+.pro-list .pro-regular .pro-item2{display:flex;padding:15px 0 0}
+.pro-list .pro-regular .pro-item2 .num{flex:1.4}
+.pro-list .pro-regular .pro-item2 .yield{font-size:30px;color:#ff5532;padding-bottom:5px}
+.pro-list .pro-regular .pro-item2 .yield .col1{font-size:14px;}
+.pro-list .pro-regular .pro-item2 .yield .col2{font-size:12px;}
+.pro-list .pro-regular .pro-item2 .word1{font-size:13px;color:#959595}
+.pro-list .pro-regular .pro-item2 .time{flex:0.7;}
+.pro-list .pro-regular .pro-item2 .deadline{font-size:26px;color:#4f4f4f;padding:4px 0 5px}
+.pro-list .pro-regular .pro-item2 .deadline span{font-size:13px;}
+.pro-list .pro-regular .pro-item2 .pro-but{flex:1;text-align:right;padding-top:11px}
+.pro-list .pro-regular .pro-item2 .pro-but span{display:inline-block;text-align:center;width:80px;height:36px;line-height:36px;font-size:15px;color:#fff;border-radius:3px}
+.pro-list .pro-regular .pro-item2 .buy-but,
+.pro-list .pro-regular .pro-item2 .buy-but-fre{background-color:#FF775B;}
+.pro-list .pro-regular .pro-item2 .sale-hint{background-color:#b5b5b5;color:#fff}
+.pro-list .pro-regular .pro-item2 .sub-but{background-color:#CBCBCB;}
+.pro-list .pro-regular .pro-item3{margin-top:15px}
+.pro-list .pro-regular .pro-item3 span{font-size:12px;color:#ff5532;border:1px solid #F6A190;border-radius:3px;padding:1px 2px;margin-right:5px}
+
+.pro-list .pro-luxury .pro-box{position: relative;background:url(images/BG_finance@2x.png) no-repeat;background-size:100%;}
+.pro-list .pro-luxury .pro-slide{text-align:center;display:inline-block;width:150px;height:140px;margin:18px 0;background-color:#fff;border-radius:5px}
+.pro-list .pro-luxury .sale-wan{opacity: 0.5}
+.pro-list .pro-luxury .sale-wan-icon{position: absolute;bottom: 0;left: 0;margin:0 34px 18px;display: inline-block;background: url(images/img_single_sale@2x.png) no-repeat;background-size: 100%;width: 82px;height: 28px;}
+/*.pro-list .pro-luxury .type{display:inline-block;width:70px;height:22px;line-height:22px;font-size:14px;color:#fff;border-radius:0 0 3px 3px}*/
+.pro-list .pro-luxury .title{font-size:13px;color:#4f4f4f;} /*white-space:nowrap;overflow:hidden;text-overflow:ellipsis*/
+.pro-list .pro-luxury .num{padding:10px 0 5px;font-size:30px;color:#ff7b60;}
+.pro-list .pro-luxury .num span{font-size:14px;}
+.pro-list .pro-luxury .num .col1{font-size:14px;}
+.pro-list .pro-luxury .num .col2{font-size:12px;}
+.pro-list .pro-luxury .time{padding-bottom:8px;font-size:14px;color:#4f4f4f;}
+.pro-list .pro-luxury .line-lef,
+.pro-list .pro-luxury .line-rig{display:inline-block;width:30px;height:1px;margin-bottom:3px;}
+.pro-list .pro-luxury .line-lef{margin-right:3px;background-image: linear-gradient(-90deg, #D8D8D8 2%, rgba(255,255,255,0.00) 98%);}
+.pro-list .pro-luxury .line-rig{margin-left:3px;background-image: linear-gradient(90deg, #D8D8D8 2%, rgba(255,255,255,0.00) 98%);}
+.pro-list .pro-luxury .mon{display:inline-block;padding:2px 3px;font-size:13px;color:#b5b5b5;border-radius:3px}
+.pro-list .pro-luxury .type-icon2{display:inline-block;background:url(images/img_SLIVER@2x.png) no-repeat;background-size:100%;width:60px;height:32px;}
+.pro-list .pro-luxury .type-icon3{display:inline-block;background:url(images/img_gold@2x.png) no-repeat;background-size:100%;width:60px;height:32px;}
+.pro-list .pro-luxury .type-icon4{display:inline-block;background:url(images/img_PLATINUM@2x.png) no-repeat;background-size:100%;width:60px;height:32px;}
+.pro-list .pro-luxury .type-icon5{display:inline-block;background:url(images/img_DIAMOND@2x.png) no-repeat;background-size:100%;width:60px;height:32px;}
+/*.pro-list .pro-luxury .gold1{background-color:rgba(86,120,212,0.8)}*/
+/*.pro-list .pro-luxury .gold2{background-color:rgba(134,137,145,0.8)}*/
+/*.pro-list .pro-luxury .gold3{background-color:rgba(255,171,3,0.8)}*/
+/*.pro-list .pro-luxury .gold4{background-color:rgba(164,132,76,0.8)}*/
+/*.pro-list .pro-luxury .gold5{background-color:rgba(28,28,28,0.8)}*/
+/*.pro-list .pro-luxury .plat1{background-color:rgba(86,120,212,0.5)}*/
+/*.pro-list .pro-luxury .plat2{background-color:rgba(134,137,145,0.5)}*/
+/*.pro-list .pro-luxury .plat3{background-color:rgba(255,171,3,0.5)}*/
+/*.pro-list .pro-luxury .plat4{background-color:rgba(164,132,76,0.5)}*/
+/*.pro-list .pro-luxury .plat5{background-color:rgba(28,28,28,0.5)}*/
+
+.pro-list .pro-transfer .pro-box{padding:20px;border-top:1px solid #eee}
+.pro-list .pro-transfer .title{font-size:16px;color:#4f4f4f}
+.pro-list .pro-transfer .con{display:flex}
+.pro-list .pro-transfer .item1{flex:2;text-align:left}
+.pro-list .pro-transfer .item2{flex:1;text-align:center}
+.pro-list .pro-transfer .item3{flex:1.5;text-align:right}
+.pro-list .pro-transfer .num{font-size:30px;color:#ff5532;padding:8px 0 5px}
+.pro-list .pro-transfer .num span{font-size:14px;}
+.pro-list .pro-transfer .time,
+.pro-list .pro-transfer .mon{font-size:18px;color:#4f4f4f;padding:18px 0 8px}
+.pro-list .pro-transfer .word{font-size:13px;color:#959595}
+.pro-list .pro-transfer .pro-tally{padding-top:10px}
+.pro-list .pro-transfer .pro-tally span{font-size:12px;color:#ff5532;border:1px solid #F6A190;padding:1px 2px;border-radius:3px}
+.pro-list .pro-transfer .transfer-hin-word{text-align:center;padding:40px 0;font-size:13px;color:#b5b5b5;border-top:1px solid #eee}
+
+
+@-webkit-keyframes loader {
+    from{width:0;}
+    to{width:80%;}
+}
+@keyframes loader {
+    from{width:0;}
+    to{width: 80%;}
+}
+@keyframes counter {
+    from {left:-13px;}
+    to{left:85px;}
+}
+@-webkit-keyframes counter {
+    from {left:-13px;}
+    to{left:85px;}
+}
+
+@media screen and (min-width:320px) {
+    .pro-list .pro-yaoBao{height:72px}
+    .pro-list .pro-yaoBao .pro-yaoBao-lef{padding:3% 0 0 20px}
+    .pro-list .pro-yaoBao .pro-yaoBao-rig{padding-top:6%}
+    .pro-list .pro-regular .pro-item1 .title .wang-dou-icon{background-size:50px 17px;width:50px;height:17px;margin:0 0 -3px 0}
+    .pro-list .pro-regular .pro-box{padding:20px 15px;}
+}
+@media screen and (min-width:360px) {
+    .pro-list .pro-yaoBao{height:82px}
+    .pro-list .pro-yaoBao .pro-yaoBao-lef{padding:4% 0 0 20px}
+    .pro-list .pro-yaoBao .pro-yaoBao-rig{padding-top:6.5%}
+    .pro-list .pro-regular .pro-item1 .title .wang-dou-icon{background-size:100%;width:60px;height:17px;margin:0 0 -3px 3px}
+    .pro-list .pro-regular .pro-box{padding:20px;}
+}
+@media screen and (min-width:375px) {
+    .pro-list .pro-yaoBao{height:86px}
+    .pro-list .pro-yaoBao .pro-yaoBao-lef{padding:5% 0 0 20px}
+    .pro-list .pro-yaoBao .pro-yaoBao-rig{padding-top:7.5%}
+}
+@media screen and (min-width:414px) {
+    .pro-list .pro-yaoBao{height:96px}
+    .pro-list .pro-yaoBao .pro-yaoBao-rig{padding-top:7%}
+}

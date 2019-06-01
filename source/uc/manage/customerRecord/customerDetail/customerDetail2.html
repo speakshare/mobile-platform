@@ -1,0 +1,22 @@
+<% if(!_.isEmpty(list)){%>
+<% _.each(list,function(item){ %>
+	<li>
+		<div class="ordering" data-type='<%=item.type%>' data-id='<%=item.customerId%>' data-oid='<%=item.orderNo%>'>
+			<div class="order-name"><%=item.productName%>
+				<%if(item.buyType=='1'){%>
+				<span class="buyType">预约</span>
+				<%}else if(item.buyType=='2'){%>
+				<span class="buyType">变现</span>
+				<%}%>
+			</div>
+			<%if(item.type=='1'){%>
+				<div class="investInfo"><span>在投金额(元)：<%=parseFloat(item.investAmount).toFixed(2)%></span><span>最后投资时间：<%=$.dateFormat(item.endTime,'yyyy-MM-dd')%></span></div>
+				<div class="totalProfit"><span>累计收益(元)：<span class="red"><%=parseFloat(item.profit).toFixed(2)%></span></span></div>
+			<%}else{%>
+				<div class="investInfo"><span>在投金额(元)：<%=parseFloat(item.investAmount).toFixed(2)%></span><span>投资时间：<%=$.dateFormat(item.buyTime,'yyyy-MM-dd')%></span></div>
+				<div class="investInfo"><span>到期收益(元)：<span class="red"><%=parseFloat(item.profit).toFixed(2)%></span></span><span>到期时间：<%=$.dateFormat(item.endTime,'yyyy-MM-dd')%></span></div>
+			<%}%>
+		</div>
+	</li>
+<% }) %>
+<%}%>

@@ -1,0 +1,4 @@
+.icon-safe:before{background-position: -240px -50px;width: 18px;height: 18px;}
+.logo1,.logo2{background: url('logo1.png') no-repeat 100% 0;width: 75px;height: 76px;background-size:75px auto;display: table-cell;text-align: center;}
+.logo2{background: url('logo2.png') no-repeat 0 100%;background-size: 75px auto}
+.arrow{background: url('arrow.png') no-repeat 50% 50%;width: 22px;height: 14px;background-size: 22px auto;display: table-cell;text-align: center;vertical-align: middle;}

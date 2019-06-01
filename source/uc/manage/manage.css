@@ -1,0 +1,189 @@
+/*common*/
+.red{color:#ff6046 !important;}
+.right{float:right;}
+.manage ul{list-style: none;margin:0;padding:0;}
+.manage li{padding: 10px 18px;border-bottom: 1px solid #f2f2f2;}
+.manage{position:absolute;height: 100%;width: 100%;background-color:#f2f2f2;}
+.manage ul{margin:0;padding:0;list-style: none}
+.bottomLine{position:relative;padding:0 18px;margin-top: 30px;position: absolute;bottom: 0px;left:10%;width:80%;height:38px;}
+.bottomLine .line{margin-top:20px;border-bottom:1px solid #999;}
+.bottomLine .title{line-height: 40px;font-size:12px;background: #f2f2f2;color: #999;display: inline-block; width: 108px;position: absolute;top: 1px;left: 50%;-webkit-transform: translate(-54px);display: inline-block;text-align: center;margin: 0 auto;}
+.manage1{position: relative;}
+.manage1 .bottomLine{position: relative;}
+.manage1 .bottomLine .line{padding-top: 20px;}
+
+.manage2{position: relative;}
+.manage2 .bottomLine{ position: absolute;}
+/*.manage2 .bottomLine .line{padding-top: 20px;}*/
+/*投资记录*/
+.investRecord .investMoney{line-height: 20px;font-size: 14px;color: #999;float:right;text-align: right;}
+.investRecord .filter-date{position:relative;left: 0;top: 0;width: 100%;text-align: center;font-size: 17px;padding: 18px 0 10px;line-height:18px;background-color: #fff;}
+.investRecord .filter-date:after{content:url(./imgs/btn_updown.png);position: absolute;padding-left: 3px;}
+.invester .info span,.invester .investInfo{font-size:14px;color:#999;}
+.investRecord .asset-profit{width: 100%;display: table;margin: 10px 0;padding: 30px 0 20px;background-color: #fff;}
+.investRecord .asset-profit .profit-1 {display: table-cell;font-size: 22px;border-left: 1px solid #eee;text-align: center;}
+.investRecord .asset-profit .profit-1:first-child {border-left: none;}
+.investRecord .cash-num {color: #999;display: block;margin-top: 4px;font-size: 14px;}
+.investRecord .redEnvelope span{display: inline-block;width:10px;height:15px;background:url(./imgs/icon_hongbao.png) no-repeat center bottom;background-size: 100%;margin-right: 3px;}
+.investRecord .invest{width: 100%;background-color:#fff;}
+.investRecord .invest li{padding:10px 18px;}
+.investRecord .invest .invester{display: inline-block;font-size:18px;line-height: 20px}
+.investRecord .invest .info{font-size:16px;}
+.investRecord .invest .info span{padding-left: 10px;}
+    
+
+/*用户记录*/
+.customer-record .Tright{text-align:right;}
+.customer-record{background-color:#f2f2f2;}
+.customer-record .btn{position:relative;color:#999;padding: 15px 0;}
+.customer-record .active{color:#000;}
+.customer-record .active:after{content:'';position:absolute;height:2px;width:20px;background-color: red;bottom: 0;left: 50%;-webkit-transform: translate(-10px);}
+.customer-record .left{display: inline-block;line-height: 20px;color:#999;}
+.customer-record .name{color:#000;}
+.customer-record .right{float:right;line-height: 20px;font-size:13px;color:#999;}
+.customer-record .trends div{margin-top:10px;}
+.customer-record .tab{width:100%;display: table;font-size:16px;color:#999;border-bottom: 1px solid #f2f2f2;background-color:#fff;}
+.customer-record .tab span{display: table-cell;width:33%;text-align:center;}
+.customer-record .container{margin-top: 10px;padding-bottom: 80px;}
+.customer-record .container ul{background-color: #fff;}
+.customer-record .container li:last-child{border-bottom:none;}
+.customer-record .second-degree{padding:2px;height:25px;line-height: 25px;margin-left:3px;font-size:12px;color:#78b6ff;border:1px solid #78b6ff;border-radius:5px;}
+.customer-record .business-degree{padding:2px;height:25px;line-height: 25px;margin-left:3px;font-size:12px;color:#fe7b65;border:1px solid #fe7b65;border-radius:5px;}
+
+
+/*用户详情*/
+.investType .active{color:#ff6046;border-bottom: 1px solid #ff6046;padding-bottom: 10px;}
+.investType{background-color:#f2f2f2;}
+.investType .info{padding:18px 18px 10px;background-color: #fff;}
+.investType .info .left{display: inline-block;}
+.investType .info .right{float:right;}
+.investType .info .right .from{font-size:12px;text-align:right;color:#999;}
+.investType .info .right .count{font-size:13px;line-height: 30px;}
+.investType .time{color: #999;font-size: 12px;line-height: 30px;display:inline-block;}
+.investType .order ul{background-color: #fff;}
+.investType .asset-profit{width:100%;display: table;margin:10px 0;padding: 30px 0 20px;background-color: #fff;}
+.investType .asset-profit .profit-1 {display: table-cell;font-size: 22px;border-left: 1px solid #eee;text-align: center;}
+.investType .asset-profit .profit-1:first-child {border-left: none;}
+.investType .cash-num {color: #999;display: block;margin-top: 4px;font-size: 12px;}
+.investType .order .tab{width:100%;display: table;padding:10px 0 0;font-size:16px;background-color: #fff;}
+.investType .order .tab span{display: table-cell;width: 50%;text-align: center;}
+.investType .order .order-name{padding-bottom:8px;font-size:16px;}
+.investType .order .investInfo{width: 100%;font-size: 12px;line-height: 20px;color: #999;}
+.investType .order .investInfo>span:last-child{text-align:right;float:right;}
+.investType .order .totalProfit{font-size:12px;color: #999;line-height: 20px;}
+.investType .type{padding:2px;margin-left:3px;font-size:12px;color:#fff;background-color:#FFA588;border-radius:5px;}
+.investType .buyType{padding:2px;height:25px;line-height: 25px;margin-left:3px;font-size:12px;color:#78b6ff;border:1px solid #78b6ff;border-radius:5px;}
+.investType .order li:first-child{border-top:1px solid #f2f2f2;}
+.investType .tel{display: inline-block;width:20px;height:20px;background:url(./imgs/icon_dianhua.png) no-repeat;background-size: 100%;margin-left: 10px;
+    /*position: absolute;*/}
+
+/*邀请记录*/
+.inviteRecord .banner{background-color:#FEF4EF;}
+.inviteRecord .topLeft{padding: 12px 0 0 18px;color: #999;font-size: 14px;position:relative;}
+.inviteRecord .topLeft .calendar{display: inline-block;width:18px;height:18px;background:url(./imgs/icon_calendar.png) no-repeat;background-size: 87%;}
+.inviteRecord .topLeft .title{position: absolute;left: 12%;margin-top: 3px;font-size: 12px;}
+.inviteRecord .redEnvelope{font-size: 32px;line-height:47px;text-align: center;}
+.inviteRecord .tips{padding-bottom:40px;text-align: center;color: #666;position:relative;}
+.inviteRecord .asset-profit{margin:0;width:100%;display: table;padding: 10px 0;background-color: #fff;}
+.inviteRecord .asset-profit .profit-1 {position:relative;display: table-cell;font-size: 22px;border-left: 1px solid #eee;text-align: center;}
+.inviteRecord .asset-profit .profit-1:first-child {border-left: none;}
+.inviteRecord .asset-profit .profit-1>span:first-child{color:#444;}
+.inviteRecord .cash-num {color: #999;display: block;margin-top: 4px;font-size: 13px;}
+.inviteRecord .questions{position:relative;}
+.inviteRecord .customerInfo{margin-top:10px;background-color: #fff;color: #999;font-size: 14px;}
+.inviteRecord .customerInfo .title{padding: 10px 18px;font-size:16px;border-bottom: 1px solid #eee;color:#444;}
+.inviteRecord .customerInfo .title span:last-child{float:right;}
+.inviteRecord .recordBtn{padding: 13px 18px;margin-bottom:10px;background-color: #fff;color:#444;margin-top: 10px;font-size:16px;}
+.inviteRecord .recordBtn:after{content:url(./imgs/btn_right.png);float:right;}
+.inviteRecord .footerbanner{margin-top:10px;}
+.inviteRecord .redTips{display: inline-block;width: 30px;height: 30px;background: url(./imgs/icon_question.png) no-repeat center center;position: absolute;right: 32%;bottom: 61%;background-size: 50%;}
+.inviteRecord .cashNumTips{display: inline-block;width: 30px;height: 30px;background: url(./imgs/icon_question.png) no-repeat center center;position: absolute;right: 16%;top: 39.4%;background-size: 50%;}
+
+.inviteRecord .swiper-container-banner{position: relative;overflow:hidden;}
+.inviteRecord .swiper-container-banner .swiper-pagination-banner {text-align: right;right: 2%;bottom: 3px;position: absolute;z-index: 99;}
+.inviteRecord .swiper-container-banner .swiper-pagination-banner  .swiper-pagination-bullet{width:6px;height:6px;background:#eeeeee;opacity: 1;margin: 0 3px;}
+.inviteRecord .swiper-container-banner .swiper-pagination-banner .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#ffb9a1;}
+/*.inviteRecord .picdefault{background:url(../images/banner1.png) center center no-repeat;height:116px;width: 100%;background-size:100% 116px;}*/
+.pop_window{top:38% !important;}
+
+
+/*订单详情*/
+.orderDetail .tips{font-size:13px;color:#999;line-height: 20px;}
+.orderDetail .asset-profit{width:100%;display: table;margin:0 0 10px;padding: 30px 0 20px;background-color: #fff;}
+.orderDetail .asset-profit .profit-1 {display: table-cell;font-size: 22px;border-left: 1px solid #eee;text-align: center;}
+.orderDetail .asset-profit .profit-1:first-child {border-left: none;}
+.orderDetail .cash-num {color: #999;display: block;margin-top: 4px;font-size: 14px;}
+.orderDetail .product{padding:10px 18px;background-color: #fff;}
+.orderDetail .product .info{margin: 15px 0;display: flex;}
+.orderDetail .info .pre{flex-grow:1;}
+.orderDetail .info .pre div:first-child{font-size:25px;}
+.orderDetail .info .pre div:first-child span{font-size:18px;}
+.orderDetail .info .deadline div:first-child,
+.orderDetail .info .status div:first-child{font-size:14px;}
+.orderDetail .info .status .tips{margin-top:6px;}
+.orderDetail .info .deadline{flex-grow:1;}
+.orderDetail .product >.title{font-size:17px;}
+.orderDetail .product >.title span:last-child{font-size:15px;color:#999;}
+.orderDetail .timeline .date{padding-bottom: 5px;}
+.orderDetail .timeline .title{padding-top:5px;}
+.orderDetail .timeline .progrssbar{height:2px;background:#f2f2f2;position: relative;}
+.orderDetail .timeline .prograsspersent{position: absolute;width:0;top: 0;left: 0;background:#FF9C7D;height: 2px;transition:all 1s;-moz-transition:all 1s;
+	-webkit-transition:all 1s;-o-transition:all 1s;}
+.orderDetail .product .button{position: relative;}
+.orderDetail .product .button p{margin-right: 12px;}   
+.orderDetail .product .button:after{content:url(./imgs/btn_right.png);position:absolute;right:0;top:0;}
+
+.orderDetail .orderInfo{background-color: #fff;margin-top: 10px;font-size: 14px;}
+.orderDetail .orderInfo li span:last-child{float:right;}
+.orderDetail .orderInfo li{padding: 15px 18px;border-bottom: 1px solid #f2f2f2;}
+.orderDetail .orderInfo li:last-child{border:none;}
+
+
+/*摇宝记录*/
+.yaobaoRecord .asset-profit{width:100%;display: table;padding: 30px 0 20px;background-color: #fff;}
+.yaobaoRecord .asset-profit .profit-1 {display: table-cell;font-size: 22px;border-left: 1px solid #eee;text-align: center;}
+.yaobaoRecord .asset-profit .profit-1:first-child {border-left: none;}
+.yaobaoRecord .cash-num {color: #999;display: block;margin-top: 4px;font-size: 14px;}
+.yaobaoRecord .time{color: #999;font-size: 12px;line-height: 20px;}
+.yaobaoRecord .detailRecord{margin-top: 10px;/*margin-bottom:100%;*/background-color: #fff;}
+.yaobaoRecord .detailRecord .left{display: inline-block;}
+.yaobaoRecord .detailRecord .right{float:right;margin-top:10px;}
+.yaobaoRecord .plus{color:#ff6046;}
+.yaobaoRecord .decrease{color:green;}
+
+
+/*日期*/
+.month-picker-wrap{position:fixed;top:0;left:0;width:100%;height:100%;z-index:9999;background:rgba(0,0,0,0.7)}
+/*.month-picker-wrap .mask{position: absolute;z-index: 3;top: 0;left: 0;width: 100%;height: 100%;background: -webkit-gradient(linear, 0% 100%, 0% 0%, from(rgb(245, 245, 245)), color-stop(0.48, rgba(245, 245, 245, 0)), color-stop(0.52, rgba
+(245, 245, 245, 0)), to(rgb(245, 245, 245)));}*/
+.month-picker-wrap .picker-box{position:absolute;bottom:0;left:0;width:100%;background:#fff}
+.month-picker-wrap .picker-bar{height:36px;line-height:36px;border-bottom:1px solid #eee;text-align:right;color:#ff6046}
+.month-picker-wrap .cancel-btn{float:left;padding:0 17px}
+.month-picker-wrap .confirm-btn{float:right;padding:0 17px}
+.month-picker-wrap .picker-year,
+.month-picker-wrap .picker-month{position:relative;float:left;height:150px;width:50%;overflow:auto;padding:60px 0;font-size:17px;}
+.month-picker-wrap .picker-hover{position:absolute;bottom:60px;left:0;width:100%;height:30px;transform:scale(1.1) translateX(3px);border-top:1px solid #f2f2f2;border-bottom:1px solid #f2f2f2;}
+.month-picker-wrap .picker-li{height:30px;line-height:33px;text-align:center;border:none !important;color:#999;}
+
+
+
+
+@media screen and (width:414px){
+	.inviteRecord .redTips{right:34%;}
+	.inviteRecord .cashNumTips{right:19%;bottom:73.4%;}
+	.pop_window{top:43% !important;}
+}
+@media screen and (width:412px){
+	.inviteRecord .redTips{right:34%;}
+	.inviteRecord .cashNumTips{right:19%;top:40%;}
+	.pop_window{top:43% !important;}
+}
+@media screen and (width:360px){
+	.inviteRecord .cashNumTips{bottom:69.4% !important;}
+	.pop_window{top:48% !important;}
+}
+@media screen and (width:320px){
+	.inviteRecord .redTips{right:30%;}
+	.inviteRecord .cashNumTips{top:44.4% !important;right: 11%;}
+	.pop_window{top:49% !important;}
+}

@@ -1,0 +1,230 @@
+/* 我的客户 */
+.manager{position: absolute;width: 100%;height: auto;background-color: #fff;}
+.manager .bottomLine{position:relative;padding:0 18px;margin-top: 30px;position: absolute;bottom: 0px;left:10%;width:80%;height:41px;}
+.manager .bottomLine .line{margin-top:20px;border-bottom:1px solid #999;}
+.manager .bottomLine .title{line-height: 40px;font-size:12px;background: #fff;color: #999;display: inline-block; width: 108px;position: absolute;top: 1px;left: 50%;-webkit-transform: translate(-54px);display: inline-block;text-align: center;margin: 0 auto;}
+.manager header{padding:18px;background-image: linear-gradient(-90deg, #D8970E 1%, #F2B72A 99%);}
+.manager .innerHeader{height: 100px;text-align: center;padding: 25px 0;background-color: #fff;}
+.manager .innerHeader .title{padding-bottom: 8px;font-size:13px;color:#959595;}
+.manager .innerHeader .number{font-size:35px;color:#ffa233;}
+.manager .innerHeader .num{font-size:20px;color:#ffa233;}
+.manager .innerHeader .sum{display: inline-block;width:50%;padding-top: 10px;}
+.manager .innerHeader .sum:first-child{border-right:1px solid #e0e0e0;}
+.manager .innerHeader .registrum{float:right;}
+.manager .innerHeader div>span{display: block;padding-bottom: 15px;}
+.myCustomer .subTab{display: inline-block;width:50%;padding: 20px;text-align: center;}
+.myCustomer .subTab:last-child{margin-left: -4px;}
+.myCustomer .subTab span{display: block;}
+.myCustomer .subTab span:first-child{padding-bottom:10px;}
+.myCustomer .subTab .title{font-size: 12px;color:#959595;}
+.myCustomer .subTab .amount{font-size: 20px;color:#4f4f4f;}
+
+.manager {background:#EEF3F9;}
+.manager .topflexdiv{width:100%;display:flex;display: -webkit-flex;}
+.manager .topflexdiv .flex{flex:1;-webkit-flex:1;text-align: center;padding:20px 0 20px 0;}
+.manager .flex span{display:block;}
+.manager .flex .title{font-size:12px;color:#959595;}
+.manager .flex .value{font-size:20px;color:#4F4F4F;margin-top: 10px;}
+.manager .tabon{position: relative;}
+.manager .tabon:after{position: absolute;width:30%;height:2px;bottom:-1px;left:50%;margin-left:-15%;background:#FCA032;clear: both;content: '';}
+.manager .tabon .title{color:#4F4F4F;}
+.manager .tabon .value{color:#FCA032;}
+.manager .bothbr{border:1px solid #f2f2f2;border-top:none;border-bottom: none; }
+.manager .br{border-right:1px solid #f2f2f2;}
+.myCustomer{background:#ffffff;}
+.myCustomer .ullist li{border-top: 1px solid #f2f2f2;padding:20px 15px;text-align: left;color:#4F4F4F;}
+.myCustomer .ullist .top{margin-bottom:10px;}
+.myCustomer .ullist .username{font-size: 15px;}
+.myCustomer .ullist .username .superior{position: relative;top:-3px; font-size:12px;color:#ffffff;background:rgba(255,117,27,0.6);border-radius: 3px;padding:2px 3px;}
+.myCustomer .ullist .money{font-size: 13px;}
+.myCustomer .ullist .registertime{font-size:12px;color:#959595;}
+.myCustomer .ullist .duetime{font-size:12px;color:#338FFF;}
+.manager   .hasnodata{text-align:center;color:#666;padding-top:20px;padding-bottom:20px;display: block;}
+
+
+
+.myCustomer li{padding:20px 18px;border-top:1px solid #f2f2f2;}
+.myCustomer li:last-child{margin-bottom:55px;}
+.myCustomer li .left{border-right:none;}
+.myCustomer li .right{margin-top: -35px;}
+.myCustomer li .right span{display: block;}
+.myCustomer li .right span:first-child{padding-bottom:10px;}
+.myCustomer li .item span{display: block;}
+.myCustomer li .right .dueDate{color:#338fff;}
+.myCustomer li .item .name{margin-bottom:12px;font-size: 15px;color: #4f4f4f;}
+.myCustomer li .item>span:first-child{font-size:15px;color:#4f4f4f;}
+.myCustomer li .item>span:last-child{font-size:12px;color:#959595;}
+.myCustomer li .status{float: right;margin-top: 8px;font-size: 13px;color:#3b8be8;}
+.myCustomer .left{border-right:1px solid #e5e5e5;}
+.myCustomer .active{border-bottom: 1px solid #fca032;}
+.myCustomer .registerTime{color:#959595;}
+.myCustomer .inviter{background-color:#ff5532;display: inline !important;padding:3px;color:#fff;}
+
+
+
+
+/* 累计投资 */
+.accumulate .dueto{padding:10px 18px;background-color: #423A2E;color:#fff;font-size:14px;}
+.accumulate .icoRight{float:right;width:15px;height:15px;background:url(imgs/btn_coustomer_arrow@2x.png) no-repeat center;}
+.accumulate .leftBar{width: 2px;float: left;position: relative;padding: 59px 0 22px;margin-right: 15px;background-color:#d8d8d8;}
+.accumulate .leftBar .dot{display:inline-block;width:10px;height:10px;position: absolute;top: 0;left: -4px;border-radius:50%;}
+.accumulate .leftBar .dot1{background-color:#d8d8d8;}
+.accumulate .leftBar .curDot{background-color:#FF751B;}
+.accumulate li{padding:10px 18px;}
+.accumulate li .list span{display: block;}
+.accumulate li .list .date{padding-bottom:10px;font-size:13px;color:#959595;}
+.accumulate li .list .name{padding-bottom:10px;font-size:16px;color:#4a4a4a;}
+.accumulate li .list .product{margin-left: 17px;font-size:12px;color:#4a4a4a;}
+.accumulate li .list .amount{margin-top: -41px;padding-bottom: 5px;}
+.accumulate li .list .iconAmount{width:18px;height:20px;background:url(imgs/icon_redbag@2x.png) no-repeat center;background-size: 100%;}
+.accumulate li .list .wrap{padding:2px;margin:-20px 0 0 18px;border:1px solid #ff5532;}
+.accumulate .duetoTable li{background-color: #423A2E;color:#fff;border-top:1px solid rgba(255,255,255,.13);}
+.accumulate .duetoTable li .from{color:#bbb;font-size:12px;}
+.accumulate .duetoTable li .name{font-size:14px;color:#fff;}
+.accumulate .duetoTable .duetoList{display: inline-block;}
+.accumulate .duetoTable .duetoList .duetoDate{color:#fca032;}
+.accumulate .duetoTable .duetoList>span{display: block;padding-bottom:5px;}
+.accumulate .duetoTable .duetoList:last-child{float:right;}
+.accumulate .iconDueto{display: inline-block;width:30px;height:18px;margin:-18px 0 0 25%;background:url(imgs/tag_expire@2x.png) no-repeat center;background-size:100%;}
+
+
+.accumulate .topflexdiv{background:#ffffff;}
+.accumulate .dueList{margin:10px auto 0;font-size:14px;color:#4f4f4f;background: #ffffff url(imgs/dueover.png) 20px center no-repeat;background-size: 24px auto;padding:20px;padding-left: 46px;}
+.accumulate .dueList:after{float: right; clear: both;content: ''; background: url(imgs/btn_coustomer_arrow@2x.png) center center no-repeat;background-size: 100%; width:8px;height:14px;}
+.accumulate .ullist{background:#ffffff;margin-top:10px;}
+.accumulate .ullist li{margin-bottom:1px;padding:17px 15px;text-align: left;}
+.accumulate li .left{width:66%;float:left;}
+.accumulate li .right{width:33%;float:right;}
+.accumulate li span{display:block;}
+.accumulate li .datetime{background:rgba(181,181,181,0.6);font-size:12px;color:#ffffff;padding:6px 8px;border-radius: 3px;display: inline-block;}
+.accumulate li .today{background:rgba(255,117,27,0.6)}
+.accumulate li .username{font-size:18px;color:#4F4F4F;margin:10px 0;}
+.accumulate li .proinfo{font-size:12px;color:#4f4f4f;}
+.accumulate li .redsum{font-size:18px;color: #FF5532;background:url(imgs/red.png) 4px center no-repeat;background-size:17px auto;padding: 5px 0px 5px 25px;}
+.accumulate li .lever .star{background:url(imgs/star.png) left center no-repeat;background-size:20px auto;width:20px;height:20px;display: inline-block;}
+.accumulate li .investsum{font-size:13px;color:#959595;margin-top: 10px;}
+.accumulate li .username .superior{position: relative;top:-3px; font-size:12px;color:#ffffff;background:rgba(255,117,27,0.6);border-radius: 3px;padding:2px 3px;}
+
+/*即将到期列表*/
+.duelist li{padding:13px 20px;color:#4f4f4f;border-bottom:1px solid #eeeeee;background:#ffffff;text-align:left;}
+.duelist li .top{font-size:15px;}
+.duelist li .sub{font-size:12px;margin-top: 10px;}
+.duelist li .duetime{color:#FCA032;font-size:12px;padding-top: 2px;}
+.duelist li .fromUser{font-size:12px;color:#B5B5B5;}
+.duelist li .fromUser em{font-size:14px;color: #4F4F4F;}
+
+/* 累计红包 */
+.accumulateRed{padding: 18px;background-image: linear-gradient(-90deg, #D8970E 1%, #F2B72A 99%) !important;min-height: 100%;}
+.accumulateRed header{padding:0;}
+.accumulateRed .filter-date{display:inline-block;font-size:14px;color:#fff;}
+.accumulateRed .btnTriangle{display: inline-block;width:10px;height:6px;background:url(imgs/btn_triangle.png) no-repeat;background-size:100%;}
+.accumulateRed .content{background-color:#fff;height:100%;min-height: 73vh;padding:20px;}
+.accumulateRed .content li{margin-bottom:10px;position: relative;width:100%;}
+.accumulateRed .content .progress{display:inline-block;height:35px;line-height:35px;}
+.accumulateRed .content .other{background-color: #eef3f9;}
+.accumulateRed .content .most{background-color:#fef0db;border-left: 1px solid #FFA233;color: #FFA233;}
+.accumulateRed .content .progress .date{padding-left: 4px;}
+.accumulateRed .content .figure{font-size:15px;color:#ffa233;margin-top: 10px;}
+.accumulateRed .content .ullist{border-left:1px solid  #E6E6E6;}
+.accumulateRed .pickZone{padding:15px;}
+.accumulateRed .pickZone .curRed{float:right;color:#fff;}
+.accumulateRed .noRed{position: absolute;left: 50%;top: 38%;margin-left: -72.5px;}
+.accumulateRed .iconNoRed{width: 155px;height: 155px;background:url(imgs/Group6.png) no-repeat center;background-size:100%;}
+.accumulateRed .tips{font-size: 15px;color:#b5b5b5;}
+/*日期选择*/
+.accumulateRed .datemask{position: absolute;top:0px;left:0px;background:rgba(0,0,0,0.4);width:100%;height:100%;z-index:9;display: none;}
+.accumulateRed .date-picker{/*position: absolute;*/width: 140px;height:200px;overflow:auto; background: #ffffff;}
+.accumulateRed .pointer{position: absolute;top: 163px;left: 42px;}
+.accumulateRed .pointer:before{clear: both;content: '';position: absolute; top: -19px;left: 60px;border-width: 10px;border-style: solid;border-color: transparent transparent #ffffff transparent;}
+.accumulateRed .month-select{font-size:15px;color:#4f4f4f;text-align:center;padding:12px;border-bottom:1px solid #E5E5E5;}
+.accumulateRed .on{background:#FEF0DB;}
+
+/*用户详情*/
+.userDetail .info{padding:20px 15px;background:#ffffff;}
+.userDetail .info .left{display: inline-block; margin-top: 5px;}
+.userDetail .info .left .customer{position: relative;margin-right: 5px;font-size:18px;color:#4f4f4f;}
+.userDetail .type{padding: 2px; position: absolute;font-size: 12px; color: #fff;background: #88D1FC;border-radius: 2px; margin-left: 4px;}
+.userDetail .info .left .gender{display: inline-block;width:17px;height:17px;position: absolute;/* left: 35%;top: 3px; */}
+.userDetail .info .left .male{background:url(imgs/icon_man@2x.png)no-repeat;background-size:100%;}
+.userDetail .info .left .female{background:url(imgs/icon_woman@2x.png)no-repeat;background-size:100%;}
+.userDetail .info .left .time{padding-top: 10px;font-size:14px;color:#959595;}
+.userDetail .info .left .invite{padding-left: 5px;}
+.userDetail .info .left .invite em{font-size:14px;color: #FCA947;}
+.userDetail .info .right{float:right;}
+.userDetail .info .right .from{font-size:12px;text-align:right;color:#999;}
+.userDetail .info .right .count{font-size:13px;line-height: 30px;}
+.userDetail .time{color: #999;font-size: 12px;line-height: 30px;display:inline-block;}
+.userDetail .order ul{background-color: #fff;}
+.userDetail .asset-profit{width:100%;display: table;margin:10px 0;padding: 30px 0 20px;background-color: #fff;}
+.userDetail .asset-profit .profit-1 {display: table-cell;font-size: 20px;color:#fca032;border-left: 1px solid #eee;text-align: center;}
+.userDetail .asset-profit .profit-1:first-child {border-left: none;}
+.userDetail .cash-num {color: #999;display: block;margin-bottom:10px;font-size: 13px;}
+.userDetail .order .tab{width:100%;display: table;font-size:16px;background-color: #fff;color: #4f4f4f;}
+.userDetail .order .tab span{ display: inline-block; width: 50%; text-align: center; padding: 18px 0;}
+.userDetail .order .order-name{padding-bottom:8px;font-size:16px;}
+.userDetail .order .investInfo{width: 100%;font-size: 12px;line-height: 20px;color: #999;}
+.userDetail .order .investInfo>span:last-child{text-align:right;float:right;}
+.userDetail .order .totalProfit{font-size:12px;color: #999;line-height: 20px;}
+.userDetail .buyType{padding:2px;height:25px;line-height: 25px;margin-left:3px;font-size:12px;color:#78b6ff;border:1px solid #78b6ff;border-radius:5px;}
+.userDetail .order li:first-child{border-top:1px solid #f2f2f2;}
+.userDetail .tel{display: inline-block;width:68px;height:68px;background:url(imgs/phone.png) center center no-repeat;background-size: 100% auto;margin-left: 10px;}
+.userDetail .bottomLine{padding: 0 18px;margin-top: 30px;position: absolute;left: 10%;bottom: inherit;width: 80%;height: 38px;}
+
+.userDetail .ordering{padding:15px;}
+
+/*理财大使挣钱指南*/
+.lcds-moneyguide .invitebtn{position: fixed;bottom:0;}
+.lcds-moneyguide .lcdsrule{position: absolute;top:10px;left:0px;width:44px;}
+.lcds-moneyguide .sharebtn{position: absolute;top:15px;right:10px;width:60px;}
+
+/*订单详情*/
+.orderDetail .tips{font-size:12px;color:#999;line-height: 20px;}
+.orderDetail .profit .investAmount{font-size:25px !important;}
+.orderDetail .profit .totalProfitAmt .iconRight{content:url(imgs/btn_coustomer_arrow@2x.png);width: 8px;margin-left: 19px;}
+.orderDetail .asset-profit{margin:0 0 10px;padding: 22px 0 20px;background:url(imgs/bg_order_details@2x.png)no-repeat;background-size:100%;}
+.orderDetail .asset-profit .profit{width:100%;display: table}
+.orderDetail .asset-profit .profit-1 {display: table-cell;font-size: 20px;border: none;text-align: center;}
+.orderDetail .asset-profit .profit-1:first-child {border-left: none;}
+.orderDetail .redAmount{text-align: center;}
+.orderDetail .redAmount .redMoney{font-size:13px;color:#959595;}
+.orderDetail .redAmount .num{padding:10px 0 10px;font-size: 30px;color:#ff5532;}
+.orderDetail .cash-num {color: #999;display: block;margin-top: 4px;padding-bottom:3px;font-size: 14px;}
+.orderDetail .product{padding:10px 18px;background-color: #fff;}
+.orderDetail .product .info{margin: 15px 0;display: flex;}
+.orderDetail .info .pre{flex-grow:1;}
+.orderDetail .info .pre div:first-child{font-size:25px;}
+.orderDetail .info .pre div:first-child span{font-size:18px;}
+.orderDetail .info .deadline div:first-child,
+.orderDetail .info .status div:first-child{font-size:14px;}
+.orderDetail .info .status .tips{margin-top:6px;}
+.orderDetail .info .deadline{flex-grow:1;}
+.orderDetail .product >.title{font-size:17px;}
+.orderDetail .product >.title span:last-child{font-size:15px;color:#999;}
+.orderDetail .timeline .date{padding-bottom: 5px;font-size:13px;}
+.orderDetail .timeline .title{padding-top:5px;font-size:13px;}
+.orderDetail .timeline .progrssbar{height:2px;background:#f2f2f2;position: relative;}
+.orderDetail .timeline .prograsspersent{position: absolute;width:0;top: 0;left: 0;background:#FF9C7D;height: 2px;transition:all 1s;-moz-transition:all 1s;
+	-webkit-transition:all 1s;-o-transition:all 1s;}
+.orderDetail .product .button{position: relative;}
+.orderDetail .product .button p{margin-right: 12px;}   
+.orderDetail .product .button:after{content:'>';position:absolute;right:0;top:0;}
+
+.orderDetail .orderInfo{background-color: #fff;margin-top: 10px;font-size: 14px;}
+.orderDetail .orderInfo li span:last-child{float:right;}
+.orderDetail .orderInfo li{padding: 15px 18px;border-bottom: 1px solid #f2f2f2;}
+.orderDetail .orderInfo li:last-child{border:none;}
+
+
+
+@media screen and (width:414px){
+	.accumulateRed .content{min-height:75vh;}
+}
+@media screen and (width:412px){
+	.accumulateRed .content{min-height:72vh;}
+}
+@media screen and (width:360px){
+	.accumulateRed .content{min-height:72vh;}
+}
+@media screen and (width:320px){
+	.accumulateRed .content{min-height:68vh;}
+}

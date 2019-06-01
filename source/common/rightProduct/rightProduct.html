@@ -1,0 +1,31 @@
+<div id="layermbox2" class="layermbox layermbox0">
+<div class="laymshade"></div>
+    <div class="layermmain">
+        <div class="section">
+            <div class="layermchild  layermanim">
+                <div class="layermcont">
+                    <%if(data && data.list.length>0){%>
+                        <h4 class="layer_Apply1">适用产品</h4>
+                        <section class="layer_Apply2" style="height: 284px;">
+                        <% _.each(data.list,function(item){ %>
+                          <p class="layer_Apply3">
+                              <span><%=item.productName%></span>
+                              <%if(item.productType!='12'){%>
+                              <span data-productType="<%=item.productType%>" data-productNo="<%=item.productNo%>" class="pro1">使用</span>
+                              <%}%>
+                          </p>
+                        <%})%>
+                    </section>
+                    <%}else{%>
+                        <p style="margin:0;font-size: 17px;color: rgb(51,51,51);font-weight: 700;padding-bottom: 15px">提 示</p>
+                        <p style="margin:0;font-size:14px;color:#666;">暂无可用产品</p>
+                    <%}%>
+                    
+                </div>
+                <div class="layermbtn">
+                    <span>关闭</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.top-status-box{}
+
+.home-rule{background:url(./images/rulebg.png) repeat-y center 0;background-size:contain;padding: 10px 0px;}
+.home-rule h3{text-align:center;line-height: 50px;font-size:16px;font-weight:bold}
+.home-rule ol{list-style:decimal;padding-left:20px;width: 80%;margin: 0 auto;padding-top: 15px;font-size:12px;color:#624040;}
+.my-gift-btn{margin:10px 0;height:32px;background:url(./images/btn_1.png) no-repeat center 0;background-size:auto 100%}
+.linetop{background:url(./images/line-top.png) no-repeat center 0;background-size:100% auto;}
+.linecenter{background:url(./images/line-center.png) repeat-y center 0;background-size:100% auto;}
+.linebottom{background:url(./images/line-bottom.png) no-repeat center 0;background-size:100% auto;}
+.flower{width:100%;height:100%;position: fixed;top:0px;left:0px;/*background: rgba(0,0,0,0.3);*/}
+
+
+@media all and (min-width:360px) {
+    .my-gift-btn{height:41px;}
+    .home-rule ol{font-size:14px;}
+}

@@ -1,0 +1,23 @@
+<div class="investFriends" id="mainPage">
+  <% if(banner.imageUrl){ %>
+  <section class="bannerredbag">
+    <img src="<%=banner.imageUrl%>" alt="<%=banner.description%>" />
+  </section>
+  <%}%>
+  <section class="appdownload">
+    <p class='downloadtitle'>下载APP&nbsp;&nbsp;拿三重壕礼</p>
+    <div class="ewmdiv clearfix">
+      <div class="ewm">
+        <div class="wx"></div>
+        <div class="ewmtext">关注摇旺理财公众号</div>
+      </div>
+      <div class="ewm">
+       <div class="app"></div>
+       <div class="ewmtext">立即下载摇旺APP</div>
+     </div>
+   </div>
+ </section>
+ <section class="footer_pic">
+  <div class="footer_content" style="height:<%=($(window).width()>760)?790:($(window).width()/720*750-10) %>px"></div>
+</section>
+</div>

@@ -1,0 +1,50 @@
+﻿.uc-inviterecord{background:#EEF3F9;/*padding-top:10px;*/position: absolute;width: 100%;height: 100%;}
+.uc-inviterecord .uc-inviterecord-top{background:#ffffff;text-align:center;padding:25px 0px 21px;}
+.uc-inviterecord .uc-inviterecord-top .sumtext{font-size:15px;color:#4F4F4F;}
+.uc-inviterecord .uc-inviterecord-top .sumtext .sum{font-size: 20px;color: #FF5532;}
+.uc-inviterecord .uc-inviterecord-top .tips{font-size: 12px;color: #959595;margin-top:8px;line-height: 18px;}
+
+.uc-inviterecord  .uc-inviterecord-bottom{margin-top:10px;background:#ffffff;}
+.uc-inviterecord  .uc-inviterecord-bottom .historyrecords{width:100%;height:44px;line-height:44px;font-size: 15px;color: #4F4F4F;padding:0px 15px;border-bottom:1px solid #E6E6E6;}
+.uc-inviterecord  .uc-inviterecord-bottom .historyrecords:after{content:'';clear:both;background:url(./btn_arrow.png) center center no-repeat;width: 20px;height: 44px;background-size: 8px auto;display: block;float: right;}
+.uc-inviterecord  .recordlist{padding:0px 20px;/*border-top: 1px solid #E6E6E6;border-bottom: 1px solid #E6E6E6;*/}
+.uc-inviterecord  .recordlist .item{width:100%;height:35px;line-height:35px;font-size:12px;color:#959595;}
+.uc-inviterecord  .recordlist .item.head{font-size:14px;color:#4f4f4f;}
+.uc-inviterecord  .recordlist .item div{width:33.3%;display:inline-block;text-align:left;}
+.uc-inviterecord  .recordlist .item div.right{text-align:right;}
+.uc-inviterecord  .nodata{text-align: center;background: #EEF3F9;margin-top: 20px;text-align:center;}
+.uc-inviterecord  .hasmorediv{/*display: none;*/width:50%;border-top:1px solid #E6E6E6;margin:50px auto;position: relative;}
+.uc-inviterecord  .hasmorediv .hasmore{padding: 5px 20px;color:#999999;font-size:11px;background: #EEF3F9;position: absolute;top: -10px;left: 50%;margin-left: -59px;display: block;}.investFriends{background-color: #fff2d0 !important;}
+
+/*20170302*/
+.my-invitecord-pnum{background:url(./imgs/bg_my_invite.png);background-size:contain;padding:5% 0 5% 4%;position: relative;}
+.my-invitecord-pnum .ptext{font-size: 14px;color: #959595;letter-spacing: 0px;line-height: 14px;}
+.my-invitecord-pnum .pnum{font-size: 30px;color: #FF5532;line-height: 30px;margin:4% 0px;}
+.my-invitecord-pnum .ptips{background:url(./imgs/Shape.png) left center no-repeat;background-size:15px auto;font-size: 14px;color: #4F4F4F; padding-left: 18px;height:15px;}
+.my-invitecord-pnum .invitebtn{background:url(./imgs/btn_invitefriends_share.png) left center no-repeat;background-size:contain;width:130px;height:33px;position: absolute;top:25%;right:0px;}
+.my-invitecord-step {background:#EEF3F9;}
+.my-invitecord-step .stepstatustips{font-size: 14px;color: #4F4F4F;line-height: 14px;margin:15px auto 23px;text-align:center;}
+.my-invitecord-step  .stepprocess{width:90%;border-top:1px solid #C1C4C7;margin:0 auto;}
+.my-invitecord-step  .stepprocess .step{width:100%;position: relative;} 
+.my-invitecord-step  .stepprocess em{position: absolute; width:30px;height:15px;background:#EEF3F9 url(./imgs/icon_progressbar_no.png) center center no-repeat;background-size:15px auto;display:inline-block;top: -8px;}
+.my-invitecord-step  .stepprocess em.cur{background-image: url(./imgs/icon_progressbar_success.png);}
+.my-invitecord-step  .stepprocess em:nth-child(1){left:0;}
+.my-invitecord-step  .stepprocess em:nth-child(2){left:50%;margin-left:-15px;}
+.my-invitecord-step  .stepprocess em:nth-child(3){right:0;}
+.my-invitecord-step  .stepprocess .stepdesc{width:100%;margin-top: 18px;    margin-bottom: 10px;}
+.my-invitecord-step  .stepprocess .stepdesc p{display: inline-block;width:33.3%;font-size: 14px;color: #959595;line-height: 14px;}
+.my-invitecord-step  .stepprocess .stepdesc p:nth-child(1){text-align:left;}
+.my-invitecord-step  .stepprocess .stepdesc p:nth-child(2){text-align:center;}
+.my-invitecord-step  .stepprocess .stepdesc p:nth-child(3){text-align:right;}
+.my-invitecord-step  .tobeplannerbtn{width:90%;height:45px;margin:0 auto 15px;background: #FF5532;font-size: 18px;color: #FFFFFF;line-height:45px;text-align:center;}
+.my-invitecord-step  .applyfass{width:90%;height:45px;margin:0 auto 15px;background: #ccc;font-size: 18px;color: #FFFFFF;line-height:45px;text-align:center;}
+.uc-inviterecord .bannerbox{background:#ffffff;padding-top:10px;padding-bottom:10px;}
+.uc-inviterecord .banner{background:url(./imgs/banner.png) center center;background-size:100%;margin: 0 auto;width:95%;}
+.uc-inviterecord .noinvitewrap{background:#ffffff url(./imgs/img_invitefriends_blank.png) center 35px no-repeat;background-size:125px auto;text-align:center;margin-top: 10px;padding-top: 140px;padding-bottom:50px;}
+.uc-inviterecord .noinvitewrap .noinvitetext{margin:18px auto 0px;font-size: 15px;color: #959595;line-height: 15px;}
+.uc-inviterecord .noinvitewrap .invitebtn{width:80%;height:45px;margin:34px auto 13px;background: #FF5532;font-size: 18px;color: #FFFFFF;line-height:45px;text-align:center;}
+.uc-inviterecord .noinvitewrap .ewm{font-size: 15px;color: #4F4F4F;line-height: 30px;}
+
+@media screen and (max-width:360px){
+	.my-invitecord-step .stepstatustips{font-size:13px;}
+}

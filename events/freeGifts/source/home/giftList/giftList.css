@@ -1,0 +1,36 @@
+.gift-one{position:relative;background:url(../images/p1.png) no-repeat;background-size:100% auto}
+.gift-one:nth-child(2){background-image:url(../images/p2.png)}
+.gift-one:nth-child(3){background-image:url(../images/p3.png)}
+.gift-one:nth-child(4){background-image:url(../images/p4.png)}
+
+.exchange-btn,.gift-btn{position:absolute;width:48%;margin-top:34%;height:27px;background:url(../images/btn_5.png) no-repeat right 0;background-size:auto 100%}
+.gift-btn{background-image:url(../images/btn_2.png)}
+
+.btn-idx1,.btn-idx3{width:88%;}
+
+.exchange-box .dot{float:left;margin-bottom:10px;width:33.33%;text-align:left;color:#ff6046;font-size:12px}
+.exchange-box .dot:nth-child(3){text-align:center;}
+.exchange-box .dot:nth-child(4){text-align:right;}
+.exchange-tip .status{height:25px;background:url(../images/s1.png) no-repeat;background-size:100% auto}
+.exchange-tip .status2{background-image:url(../images/s2.png)}
+.exchange-tip .status3{background-image:url(../images/s3.png)}
+.exchange-tip h3{clear:both;font-weight:bold;font-size:18px;padding:10px 0}
+
+@media all and (min-width:360px) {
+    .exchange-btn,
+    .gift-btn{height:32px}
+    .exchange-tip .status{height:25px}
+}
+
+@media all and (min-width:414px) {
+    .exchange-btn,
+    .gift-btn{height:37px}
+    .exchange-tip .status{height:30px}
+}
+
+.address-form p{clear:both;height:36px}
+.address-form label{float:left;width:35%;text-align:right}
+.address-form input,
+.address-form textarea{float:left;width:65%;height:25px;border:1px solid #aaa;padding:0 6px}
+.address-form textarea{height:50px;padding:4px 6px}
+.address-form .tip-text{padding-top:10px;font-size:11px;color:#999}

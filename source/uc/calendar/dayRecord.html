@@ -1,0 +1,19 @@
+<% if(d.newInvestAmount>0 || d.alreadyPayAmount>0 || d.shouldPayAmount>0){ %>
+    <div class="cur-date"><%=year%>-<%=month%>-<%=day%></div>
+    <div>
+    <% if(d.newInvestAmount>0){ %>
+    <p class="c-a-row arrow-right" data-link="uc/calendar/<%=year%>/<%=month%>/<%=day%>/1">新增投资(元)<span class="c-a-num"><%=d.newInvestAmount%></span></p>
+    <% }
+    if(d.alreadyPayAmount>0){ %>
+    <p class="c-a-row arrow-right" data-link="uc/calendar/<%=year%>/<%=month%>/<%=day%>/2">已回款(元)<span class="c-a-num"><%=d.alreadyPayAmount%></span></p>
+    <% }
+    if(d.shouldPayAmount>0){ %>
+    <p class="c-a-row arrow-right" data-link="uc/calendar/<%=year%>/<%=month%>/<%=day%>/3">应回款(元)<span class="c-a-num"><%=d.shouldPayAmount%></span></p>
+    <% }%>
+    </div>
+    <!--<div class="buy-btn">去理财</div>-->
+<% }else{ %>
+    <div class="has-no-data">
+        <div class="go-buy-btn">去理财 > </div>
+    </div>
+<% } %>

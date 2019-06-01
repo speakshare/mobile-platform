@@ -1,0 +1,46 @@
+.toast_info_box{position:fixed;top:0;left:0;width:100%;height:100%;text-align:center;z-index:99999}
+.toast_info_box .error_msg{margin-top:120px;display:inline-block;max-width:290px;background:rgba(0,0,0,0.6);border-radius:5px;padding:10px 20px;color:#fff;line-height:24px;font-size:15px}
+.arrow-right,
+.arrow-down,
+.arrow-up{position:relative}
+.arrow-right:after,
+.arrow-down:after,
+.arrow-right:after{content:'';position:absolute;top:45%;right:20px;width:8px;height:8px;border-top:1px solid #999;border-right:1px solid #999;
+    -webkit-transform: rotate(45deg);transform: rotate(45deg)}
+.arrow-down:after{-webkit-transform: rotate(135deg);transform: rotate(135deg)}
+.arrow-up:after{-webkit-transform: rotate(-45deg);transform: rotate(-45deg)}
+
+.form-box{padding:10px 0}
+.form-box .form-p{line-height:50px;padding:0 17px;font-size:14px;font-size:16px}
+.form-box .form-p-white-bg{background:#fff}
+.form-box .input-text{width:188px;font-size:16px;height:30px;border:none;background:transparent}
+
+.form-box .form-hint-word{height:50px;line-height:50px}
+.form-box .form-hint-word .word{font-size:15px}
+.form-box .bot-bor{border-bottom:1px solid #eee}
+
+.form-box .red-bag-num{margin-left:5px;font-size:11px;color:#ed3b29;border:1px solid #ed3b29;border-radius:3px;padding:1px 3px;vertical-align: 1px}
+.form-box .red-bag-desc{float:right;padding-right:32px;color:#999}
+.form-box .red-bag:after{top:17px}
+
+
+.form-box .input-checkcode{width:208px;height:30px;border:none;background:transparent}
+.form-box .send-code{position:relative;right:-38px;top:0;border:none;background:#ff6046;color:#fff;height:35px;line-height:35px;width:100px;text-align:center;font-size:13px}
+
+#yaobaoOutConfirm{border-radius: 0;}
+#yaobaoOutConfirm.disabled-btn { background: #dad7d6;color: #fff}
+
+
+.capital-box{height:56px;line-height:56px;background:#fff;padding:0 15px}
+.capital-box .p-title{font-size:16px;margin-bottom:10px}
+.capital-box .capital-num,#yaobaoOutAmount{margin-left: 18px; font-size: 14px}
+.capital-input-box .form-label{width:100px;font-size:16px}
+.capital-input-box .input-text{width:150px;color:#ff6046;font-size:14px}
+.capital-input-box .input-all{float:right;color:#1b75ef;font-size:16px}
+.capital-input-box .submit-btn{margin:20px 0}
+
+
+
+.capital-result2{padding:0 17px}
+
+

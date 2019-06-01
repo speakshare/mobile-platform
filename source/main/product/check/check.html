@@ -1,0 +1,144 @@
+<section class="product-buy">
+    <section class="head-pic">
+        <p class="title"><%=pd.productName%></p>
+        <section class="data-mod">
+            <section class="time-limit"><span class="word1">预期年化收益率</span><span class="word2"><%=parseFloat(pd.annualizedRate).toFixed(2)%>%<%=pd.productAddonRate>0?'+'+pd.productAddonRate+'%':''%></span></section>
+            <section class="time-year"><span class="word1">期限</span><span class="word2"><%=pd.surplusDay%>天</span></section>
+        </section>
+        <section class="fixed-text">剩余金额：<%=pd.financingAmount-pd.currentAmount %>元</section>
+    </section>
+    <section class="product-item bor-bot">
+        <label>投资金额</label>
+        <input type="number" class="buy-money" id="buyMoney" placeholder="<%=pd.productType==10?'1000的整数倍，限购一万':pd.minPurchaseAmount+'起投，每'+Number(pd.stepAmount)+'元累加'%>" />
+    </section>
+
+    <%if(pd.productType=='10'){%>
+    <section class="product-item bor-bot">
+        <label>体验金</label>
+        <span class="li-num"><%=parseFloat(tyj).toFixed(2)%>元</span>
+    </section>
+    <%}else{%>
+    <section class="product-item" id="<%=redbag.list && redbag.list.length?'showRedBag':''%>">
+        <label>我的礼券</label>
+        <%if(redbag.list && redbag.list.length){%>
+        <span class="li-num"><%=redbag.list.length%>张</span>
+        <%}else{%>
+        <span class="un-li-qua">暂无礼券</span>
+        <%}%>
+        <span class="li-qua" id="liQua"></span>
+        <i class="icons icon-more"></i>
+    </section>
+    <%}%>
+    <p class="product-buy-hint">预计收益<span id="profitAmount">0.00</span>元，本息预计
+            <%if(pd.tradeType==2){%>
+            <span><%=$.dateFormat(pd.repaymentDate,'yyyy.MM.dd')%></span>
+            <%} else { %>
+            <span><%=$.dateFormat(pd.endDate,'yyyy.MM.dd')%></span>
+            <%}%>转入您的账户
+    </p>
+    
+    <!--<section class="common-btn2">确认支付</section>-->
+
+    <p class="agr">
+        <i id="disAgr"></i>我已阅读并同意
+        <% if(pd.tradeType==2){%>
+            <span data-url="#staticPage/underwriting">《定向委托投资协议》</span>
+        <%} else{%>
+            <span data-url="#staticPage/orientation">《定向委托投资协议》</span>
+        <%}%>
+        <span data-url="#staticPage/riskHint">《风险提示书》</span>
+        <% if(agree==0){ %>
+            <span data-url="#staticPage/accInvestor">《合格投资人声明》</span>
+        <% } %>
+    </p>
+
+    <section class="account-layer">
+        <section class="account-stock">
+            <section class="account-hint">选择支付方式</section>
+            <%if(pd.payType!=1){%>
+            <section class="account-box acc-icon checked" data-id="7">
+                <span class="acc-type">账户可用余额</span><span class="acc-num"><%=$.amountFormat(account.piggy)%>元</span>
+            </section>
+            <%}%>
+            <%if(pd.payType!=0){%>
+            <section class="account-box acc-icon" data-id="6">
+                <span class="acc-type">摇宝可用余额</span><span class="acc-num"><%=$.amountFormat(account.currentAssets)%>元</span>
+            </section>
+            <%}%>
+            <!--<%if(pd.payType!=1){%>-->
+            <!--<section class="icons checked account-lime" data-id="7">账户可用余额(元):<span class="txt-right"><%=$.amountFormat(account.piggy)%></span></section>-->
+            <!--<%}%>-->
+            <!--<%if(pd.payType!=0){%>-->
+            <!--<section class="icons account-lime <%=pd.payType==1?'checked':''%>" data-id="6">摇宝可用余额(元):<span class="txt-right"><%=$.amountFormat(account.currentAssets)%></span></section>-->
+            <!--<%}%>-->
+        </section>
+    </section>
+    <section class="to-buy-btn" id="proBtn">确认支付<span id="payAmount"></span></section>
+</section>
+
+<!--<div class="confirm-buy">-->
+    <!--<div class="pd-info">-->
+        <!--<h3 class="pd-name"><%=pd.productName%></h3>-->
+        <!--<span class="pd-rate"><%=parseFloat(pd.annualizedRate).toFixed(2)%><span class="pd-rate-t">%</span>-->
+        <!--</span>-->
+        <!--<% if(pd.productAddonRate>0){ %>-->
+        <!--<span class="addition-rate">+<%=pd.productAddonRate%>%</span>-->
+        <!--<% } %>-->
+        <!--<span class="pd-date">期限<%=pd.surplusDay%>天</span>-->
+    <!--</div>-->
+    <!--<div class="stock">剩余金额(元)：<%=parseFloat(pd.financingAmount-pd.currentAmount).toFixed(2)%></div>-->
+    <!--<div class="trade-info">-->
+        <!--<p class="form-p">-->
+            <!--<label class="form-label">投资金额(元)：</label>-->
+            <!--<input class="input-text" type="number"-->
+                   <!--placeholder=" <%=pd.productType==10?'1000的整数倍，限购一万':pd.minPurchaseAmount+'起投，每'+pd.minPurchaseAmount+'元累加'%> ">-->
+        <!--</p>-->
+        <!--<% if(pd.productType==10 && tyj>0){ %>-->
+        <!--<p class="form-p" >-->
+            <!--<label class="form-label">体验金(元)：</label> <%=tyj%>-->
+        <!--</p>-->
+        <!--<% } %>-->
+
+        <!--<div class="form-p income form-p2">-->
+            <!--<% if(pd.productType==10 && tyj>0){ %>-->
+                <!--<label class="form-label">体验金(元)：<span class="right"><%=parseFloat(tyj).toFixed(2)%></span></label> -->
+            <!--<% } %>-->
+            <!--&lt;!&ndash; <% if(pd.productType==10 && tyj>0){ %>-->
+            <!--<label class="form-label">体验金预期收益(元)：<%=Math.floor(tyj*(parseFloat(pd.annualizedRate)+parseFloat(pd.productAddonRate))*pd.surplusDay/365)/100%></label><br/>-->
+            <!--<% } %> &ndash;&gt;-->
+            <!--<label class="form-label">预期总收益(元)：<span class="red profitAmount right">0.00</span></label>-->
+            <!--<% if( pd.productType==10 && tyj>0){ %>-->
+            <!--<label class="form-label right-label">总收益包含体验金预计收益</label>-->
+            <!--<% } %>-->
+            <!--&lt;!&ndash; <label class="form-label">预计起息时间：<%=pd.dateOfInterest%></label> &ndash;&gt;-->
+        <!--</div>-->
+        <!--<p class="form-p" >-->
+            <!--<label class="form-label">预计起息时间：</label> <span class="right"><%=pd.dateOfInterest%></span>-->
+        <!--</p>-->
+        <!--<p class="form-p red-bag arrow-right">-->
+            <!--我的礼券 <span class="red-bag-num"><%=(redbag.list && redbag.list.length ? redbag.list.length : 0)%>礼券可用</span>-->
+            <!--<span class="red-bag-desc"><%=(redbag.list &&redbag.list.length >0?'未使用':'暂无礼券可用')%></span>-->
+            <!--&lt;!&ndash;<span class="trade-num-tip" id="useRedPacketTip">投资<span id="returnLimitAmount">0</span>元及以上可返现<span id="returnAmount">0</span>元</span>&ndash;&gt;-->
+        <!--</p>-->
+    <!--</div>-->
+
+    <!--<div class="trade-profit">-->
+        <!--<p class="form-p trade-p">-->
+            <!--<label class="form-label"><input type="checkbox" class="form-checkbox" checked="" id="buyAgreeCheckbox">-->
+                <!--我已阅读并同意</label>-->
+            <!--&lt;!&ndash; <a href="javascript:;" class="form-link">《基础资产收益权转让协议》</a> &ndash;&gt;-->
+            <!--<a href="#staticPage/orientation" class="form-link">《定向委托投资协议》</a>-->
+            <!--<a href="#staticPage/riskHint" class="form-link">《风险提示书》</a>-->
+            <!--<% if(agree==0){ %>-->
+            <!--<a href="#staticPage/accInvestor" class="form-link">《合格投资人声明》</a>-->
+            <!--<% } %>-->
+            <!--&lt;!&ndash; <a href="javascript:;" class="form-link">《催收授权委托书》</a> &ndash;&gt;-->
+
+        <!--</p>-->
+
+        <!--<div class="fixed-bottom">-->
+            <!--<button class="btn">立即投资</button>-->
+        <!--</div>-->
+        <!--<p class="icons safety-wordHint">账户资金安全由银行、快钱支付以及太平财险共同保障</p>-->
+    <!--</div>-->
+<!--</div>-->

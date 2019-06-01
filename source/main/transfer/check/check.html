@@ -1,0 +1,83 @@
+<section class="transfer-buy">
+	<section class="head-pic">
+		<p class="title" data-id="<%=transfer.productNo%>"><%=transfer.productName%></p>
+		<section class="data-mod">
+			<section class="time-limit"><span class="word1">预期年化收益率</span><span class="word2"><%=transfer.annualizedRate%>%</span></section>
+			<section class="time-year"><span class="word1">期限</span><span class="word2"><%=transfer.surplusDay%>天</span></section>
+		</section>
+	</section>
+	<section class="transfer-item">
+		<span>投资金额</span><span><%=transfer.transferMoney%>元</span>
+	</section>
+	<p class="transfer-buy-hint">预计收益<span><%=transfer.expectedProfit%>元</span>，本息预计<span><%=$.dateFormat(transfer.expireDate,'yyyy.MM.dd')%></span>转入您的账户</p>
+
+	<% if(transfer.transferStatus=='2'){%>
+	<section class="common-btn1 btn">已变现</section>
+	<%}else{%>
+	<section class="common-btn1 mar invest-btn btn">确认支付<%=transfer.transferMoney%>元</section>
+	<%}%>
+	<p class="agr"><i id="disAgr"></i>我已阅读并同意<span id="agrCon">《资产权益转让及受让协议》</span></p>
+	<!-- 支付窗口 -->
+	<div class="account-stock-wrap">
+		<div class="account-stock">
+			<div class="amountpay">实付金额(元):<span class="txt-right red" id="realPayAmount"><%=transfer.transferMoney%></span></div>
+			<%if(transfer.payType=='0'){%>
+			<div class="accountbalance">账户可用余额(元):<span class="txt-right redio checked" paytype='7'><%=$.fmoney(accountMoney.piggy,2)%></span></div>
+			<%}else if(transfer.payType=='1'){%>
+			<div class="ybbalance">摇宝可用余额(元):<span class="txt-right redio <%=transfer.payType=='1'?'checked':''%>" paytype='6'><%=$.fmoney(accountMoney.amountBase,2)%></span></div>
+			<%}else if(transfer.payType=='2'){%>
+			<div class="accountbalance">账户可用余额(元):<span class="txt-right redio checked" paytype='7'><%=$.fmoney(accountMoney.piggy,2)%></span></div>
+			<div class="ybbalance">摇宝可用余额(元):<span class="txt-right redio <%=transfer.payType=='1'?'checked':''%>" paytype='6'><%=$.fmoney(accountMoney.amountBase,2)%></span></div>
+			<%}%>
+			<section class="account-btn invest-btn btn" data-id="<%=transfer.transferId%>">立即投资</section>
+		</div>
+	</div>
+</section>
+
+<!--<div class="transfer-buyying">-->
+	<!--<div class="transfer-content">-->
+		<!--<div class="title toproductdetail" data-id="<%=transfer.productNo%>"> <%=transfer.productName%></div>-->
+		<!--<div class="prd-info">-->
+			<!--<div class="item">-->
+				<!--<span class="interest"><%=transfer.annualizedRate%></span>-->
+				<!--<span class="sign">%</span>-->
+				<!--<p class=>预期年化</p>-->
+			<!--</div>-->
+			<!--<div class="item center">-->
+				<!--<span class="num"><%=transfer.surplusDay%></span>-->
+				<!--<span>天</span>-->
+				<!--<p>剩余期限</p>-->
+			<!--</div>-->
+			<!--<div class="item right">-->
+				<!--<span class="num"><%=transfer.transferMoney%></span>-->
+				<!--<span>元</span>-->
+				<!--<p>变现金额</p>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+	<!--<div class="transfer-content mt10">-->
+		<!--<div class="tab">实付金额(元)<span class="frtxt askicon"><%=transfer.transferMoney%></span>-->
+			<!--<div class="tips">实付金额=变现本金+已获利息，受让人需提前垫付变现人已计但未付( <%=$.dateFormat(transfer.valueDate,'yyyy/MM/dd')%> ~ <%= $.dateFormat(new Date(new Date().getTime() - 86400*1000),'yyyy/MM/dd') %>)的利息。这部分利息会在产品到期或再次变现时付给受让人。</div>-->
+		<!--</div>-->
+		<!--<div class="tab">预计收益(元)<span class="frtxt"> <%=transfer.expectedProfit%></span></div>-->
+		<!--<div class="tab">预计到期日<span class="frtxt"> <%=transfer.expireDate%></span></div>-->
+	<!--</div>-->
+	<!--<div class="tipbar agreementicon">我已同意并阅读<span>《资产权益转让及受让协议》</span></div>-->
+	<!--<p class="icons safety-wordHint fixed-tips">账户资金安全由银行、快钱支付以及太平财险共同保障</p>-->
+	<!--<% if(transfer.transferStatus=='2' ){%>-->
+	<!--<div class="fixed-bottom transferout">已变现</div>-->
+	<!--<%}else{%>-->
+	<!--<div class="fixed-bottom investbtn" data-id="<%=transfer.transferId%>">立即投资</div>-->
+	<!--<%}%>-->
+	<!--&lt;!&ndash; 支付窗口 &ndash;&gt;-->
+	<!--<div class="account-stock-wrap">-->
+		<!--<div class="account-stock">-->
+			<!--<div class="amountpay">实付金额(元):<span class="txt-right red" id="realPayAmount"><%=transfer.transferMoney%></span></div>-->
+			<!--<%if(transfer.payType=='2'||transfer.payType=='0'){%>-->
+			<!--<div class="accountbalance" id="accountbalance">账户可用余额(元):<span class="txt-right redio checked" paytype='7'><%=$.fmoney(accountMoney.piggy,2)%></span></div>-->
+			<!--<%}else if(transfer.payType=='2'||transfer.payType=='1'){%>-->
+			<!--<div class="ybbalance" id="ybbalance">摇宝可用余额(元):<span class="txt-right redio <%=transfer.payType=='1'?'checked':''%>" paytype='6'><%=$.fmoney(accountMoney.amountBase,2)%></span></div>-->
+			<!--<%}%>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->

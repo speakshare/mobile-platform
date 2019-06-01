@@ -1,0 +1,37 @@
+/*提现*/ 
+.my-withdrawals .tradetimestatus .systips{font-size:13px;color:#FF5532;padding: 8px 16px;background: #FFF9C9;line-height: 20px;}
+.my-withdrawals .accountbalance-info{width:100%;height:56px;line-height:56px;background:#ffffff;padding: 0px 15px;color:#4f4f4f;font-size:15px;}
+.my-withdrawals .accountbalance-info  .balance{font-size:14px;margin-left:20px;}
+.my-withdrawals .withdrawals-info{margin-top:10px;background:#ffffff;padding:15px 0px 0px 15px;}
+.my-withdrawals .withdrawals-info .bankcard{background:#ffffff;height:100px;border-bottom:1px solid #E5E5E5;}
+.my-withdrawals .withdrawals-info .bankcard .bankcardinfo{background:#ffffff;font-size:15px;color:#4f4f4f;}
+.my-withdrawals .withdrawals-info .bankcard .bank-icons:before{width:50px;height:50px;margin-right:10px;vertical-align: middle;}
+.my-withdrawals .withdrawals-info .bankcard .reminders{font-size:13px;color:#959595;margin-left:60px;line-height:20px;margin-right: 20px;position: relative;top: -5px;}
+.my-withdrawals .withdrawals-info .inputbox{height:56px;line-height: 55px;}
+.my-withdrawals .withdrawals-info .inputbox label{font-size:15px;color:#4f4f4f;display: inline-block;padding:0px 5px;}
+.my-withdrawals .withdrawals-info .inputbox .input-text{font-size:14px;color:#4f4f4f;height:20px;line-height:20px;margin-top:20px;padding-left:10px;border: none;outline: none;}
+.my-withdrawals .submit{width:85%;height:48px;line-height:48px;text-align:center;font-size:18px;color:#ffffff;margin: 30px auto 10px;}
+.my-withdrawals .canbtn{background: #FF5532;}
+.my-withdrawals .disablebtn{background: #D5D5D5;}
+.my-withdrawals .tips{font-size:13px;color:#9FA7B4;width:85%;text-align:left;margin: 0px auto;}
+.my-withdrawals .error{width:85%;height: 15px;color:#FF5532;text-align:left;font-size:13px;margin:10px auto;}
+/*.c1786FE{color:#1786FE;}
+.yesbtn{color:#FF5532;}
+.nobtn{color:#4F4F4F;}*/
+
+/*银行卡icon*/
+.bank-icons.bank-ICBC:before{background-position: 1px 0;} /* 工商银行 */
+.bank-icons.bank-CMB:before{background-position: -100px -50px;}/* 招商银行 */
+.bank-icons.bank-BOC:before{background-position: -100px -100px;}/* 中国银行 */
+.bank-icons.bank-CITIC:before{background-position:-200px 0;}/* 中信银行 */
+.bank-icons.bank-HXB:before{background-position: -51px 0;}/* 中国华夏银行 */
+.bank-icons.bank-CGB:before{background-position: -100px -1px;}/* 中国广发银行 */
+.bank-icons.bank-PAB:before{background-position: -251px 0;}/* 中国平安银行 */
+.bank-icons.bank-ABC:before{background-position: -149px -51px;} /* 中国农业银行 */
+.bank-icons.bank-CMBC:before{background-position:-199px -50px;} /* 中国民生银行 */
+.bank-icons.bank-PSBC:before{background-position:-1px -50px;}/* 中国邮储银行 */
+.bank-icons.bank-CCB:before{background-position: -250px -50px;} /* 中国建设银行 */
+.bank-icons.bank-BCOM:before{background-position:-49px -101px;} /* 中国交通银行 */
+.bank-icons.bank-CIB:before{background-position:-200px -49px;} /* 中国兴业银行 */
+.bank-icons.bank-SPDB:before{background-position: -150px 0;} /* 中国浦发银行 */
+.bank-icons.bank-CEB:before{background-position: -50px -50px;} /* 中国光大银行 */

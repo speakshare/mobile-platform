@@ -1,0 +1,19 @@
+<%_.each(list,function(data){ %>
+<li class="transferItem" data-id='<%=data.orderNo%>'>
+    <div class="prd-name"><span><%=data.productName%></span><span class="old-transfer">已变现</span></div>
+    <div class="prd-info">
+        <div class="item">
+            <span class="interest default"><%=data.annualizedRate%></span><span class="sign default">%</span>
+            <div>预期年化</div>
+        </div>
+        <div class="item center">
+            <span class="num default"><%=data.surplusDay%></span><span>天</span>
+            <div>剩余期限</div>
+        </div>
+        <div class="item right">
+            <span class="num default"><%=data.transferMoney%></span><span>元</span>
+            <div>变现金额</div>
+        </div>
+    </div>
+</li>
+<%})%>

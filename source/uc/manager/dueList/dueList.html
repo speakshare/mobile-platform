@@ -1,0 +1,21 @@
+<div class="duelist manager">
+	<%if(!_.isEmpty(list)){%>
+	<ul>
+		<% _.each(list,function(n){ %>
+		<li>
+			<div class="top"><%=n.investAmount%> <span class="fr duetime">
+				<%if(n.dueDay>0&&n.dueDay<11){%>
+				<%=n.dueDay%> 天后到期
+				<%}%>
+			</span></div>
+			<div class="sub"><%=n.productName%> <span class="fr fromUser">来自<em><%=n.investName%></em></span></div>
+		</li>
+	</ul>
+	<%})%>
+	<%if(!hasMore){%>
+	<div class="hasnodata">—— 没有更多了——</div>
+	<%}%>
+	<%}else{%>
+	<div class="hasnodata">— 暂无即将到期列表 —</div>
+	<%}%>
+</div>

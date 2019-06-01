@@ -1,0 +1,77 @@
+.uc-home .uc-top{height:70px;line-height:70px;background:#fff}
+.uc-home .uc-msg{float:right;height:100%;width:20%;padding-right:20px;background:url(images/COMMENTS@2x.png) no-repeat center;background-size:24px 23px}
+.uc-home .uc-username{float:left;height:100%;width:80%;padding-left:90px;background:url(images/uc-top/img_head@2x.png) no-repeat 20px center;background-size:65px auto}
+.uc-home .uc-username2{background-image:url(images/uc-top/img_head_SLIVER@2x.png)}
+.uc-home .uc-username3{background-image:url(images/uc-top/img_head_gold@2x.png)}
+.uc-home .uc-username4{background-image:url(images/uc-top/img_head_PLATINUM@2x.png)}
+.uc-home .uc-username5{background-image:url(images/uc-top/img_head_diamond@2x.png)}
+.uc-home .un-login .uc-username{background-image:url(images/uc-top/img_bighead@2x.png)}
+.uc-home .login-btn{background:url(images/bg_weidenglu@2x.png) no-repeat;background-size:100% auto}
+
+.uc-top-fixed{padding-top:40px}
+.uc-top-fixed .uc-top{position:fixed;z-index:2;top:0;left:0;width:100%;height:40px;padding-top:4px;line-height:30px}
+.uc-top-fixed .uc-username{padding-left:20%;text-align:center;background-image:url(images/uc-top/img_small_head@2x.png);background-size:29px;height:29px}
+.uc-top-fixed .un-login .uc-username{background-image:url(images/uc-top/img_weidenglu@2x.png)}
+
+
+.uc-home .asset-wrap{background:#fff url(images/bg_white@2x.png) no-repeat;background-size:100% auto}
+.uc-home .asset-day{position:relative;background:url(images/asset-day/bg_normal@2x.png) no-repeat;background-size:100% auto;font-size:17px;color:#fff}
+.uc-home .asset-day2{background-image:url(images/asset-day/bg_sliver@2x.png)}
+.uc-home .asset-day3{background-image:url(images/asset-day/bg_gold@2x.png)}
+.uc-home .asset-day4{background-image:url(images/asset-day/bg_PLATINUM@2x.png)}
+.uc-home .asset-day5{background-image:url(images/asset-day/bg_diamond@2x.png)}
+.uc-home .all-asset{position:absolute;top:20%;left:10%;font-size:24px}
+.uc-home .all-asset .asset-title:after{content:'';position:absolute;width:40px;height:20px;background:url(images/asset-day/XIANSHI@2x.png) no-repeat center 0;background-size:13px auto}
+.uc-home .all-asset .asset-title-hidden:after{background-image:url(images/asset-day/YINGCANG@2x.png)}
+.uc-home .asset-title{display:block;font-size:13px;color:#fff;margin-bottom:8%}
+.uc-home .asset-profit{position:absolute;bottom:18%;left:10%}
+.uc-home .asset-profit2{position:absolute;bottom:18%;right:20%}
+.uc-home .uc-asset-tip{position:absolute;top:20%;right:10%;font-size:13px}
+.uc-home .uc-asset-tip:before{content:'';display:inline-block;width:18px;height:13px;background:url(images/asset-day/safe@2x.png) no-repeat;background-size:13px auto}
+.uc-home .invite-tip{position:absolute;z-index:2;margin:15px 0 0 30%;width:167px;height:47px;line-height:47px;text-align:center;color:#fff;background:url(images/img_yaoqing@2x.png) no-repeat;background-size:100% auto}
+
+.uc-home .asset-tips{padding-left:20px;height:37px;line-height:37px;color:#fff;
+    background-image:-webkit-linear-gradient(90deg, #FB907A 2%, #FB7459 99%);
+    background-image:linear-gradient(90deg, #FB907A 2%, #FB7459 99%);}
+
+.uc-home .asset-col{min-width:100px;padding:12px;font-size:15px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(187,203,216,0.50);
+    border-radius:4px;}
+.uc-home .asset-col .h-color{display:block;margin-top:10px;color:#ff5532}
+
+.uc-home .swiper-container{padding:10px 0}
+
+.uc-home .asset-count{padding:22px 14px 20px 20px;font-size:15px;line-height:20px}
+.uc-home .asset-btns{float:right}
+.uc-home .withdrawals-btn,
+.uc-home .recharge-btn{float:left;padding:0 10px}
+.uc-home .recharge-btn{border-right:1px solid #eee;color:#FF775B}
+
+.uc-home .asset-actions{margin-top:10px;padding-bottom:60px}
+.uc-home .arrow-right{padding:0 30px 0 20px;height:51px;line-height:51px;font-size:15px;background:#fff;border-top:1px solid #eee}
+.uc-home .arrow-right:first-child{border-top:none}
+.uc-home .arrow-right:last-child{margin-top:10px;border-top:none}
+.uc-home .arrow-right:after{top:21px;border-color:#4f4f4f}
+.uc-home .action-right{float:right;font-size:13px;color:#959595}
+.uc-home .asset-dot{position:absolute;margin:14px 0 0 10px;width:9px;height:9px;border-radius:50%;background:#ff5532}
+.uc-home .asset-star{display:inline-block;width:17px;height:17px;background:url(images/IMG_star@2x.png) no-repeat;background-size:17px auto;vertical-align:-2px}
+.uc-home .action-row:before{content:'';display:inline-block;margin-right:5px;width:24px;height:24px;background-size:24px auto;vertical-align:-6px}
+.uc-home .action-coupon:before{background-image:url(images/Img_liquan_new@2x.png)}
+.uc-home .action-invite:before{background-image:url(images/Img_licai_new@2x.png)}
+.uc-home .action-date:before{background-image:url(images/Img_calendar_new@2x.png)}
+.uc-home .action-record:before{background-image:url(images/Img_money_new@2x.png)}
+.uc-home .action-help:before{background-image:url(images/Img_help_NEW@2x.png)}
+.uc-home .action-setting:before{background-image:url(images/Img_SET_NEW@2x.png)}
+
+.uc-home .tip-div1,
+.uc-home .tip-div2,
+.uc-home .tip-div3{position:fixed;z-index:1111;top:0;left:0;width:100%;height:100%;background:url(images/tip1.png) no-repeat;background-size:cover}
+.uc-home .tip-div2{background-image:url(images/tip2.png)}
+.uc-home .tip-div3{background-image:url(images/tip3.png)}
+
+
+
+@media all and (min-width:360px) {
+    .uc-home .asset-title{margin-bottom:12%}
+}

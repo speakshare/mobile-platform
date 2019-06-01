@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>定投的正确姿势</title>
+    <meta name="keywords" content="和你聊聊定投那点事" />
+    <meta name="description" content="和你聊聊定投那点事" />
+    <meta id="vp" name="viewport" content="width=750,initial-scale=0.5,maximum-scale=0.5,minimum-scale=0.5,user-scalable=no">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <style>
+        body{margin:0;padding:0;width:100%;min-width:320px;background:#fff;font-size:14px;line-height:1.5;
+            font-family:"PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,SimSun}
+
+        .event img{display:block;width:100%}
+        .share-btn{position:absolute;right:30px;top:30px;width:140px;height:50px;background:url(share-btn.png) no-repeat center}
+        .share_mask{display:none;position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(../../mask.png) no-repeat 90% 20px}
+        .fund{position:relative;height:90px;margin-bottom:29px;font-size:28px;color:#000}
+        .fund-num,
+        .fund-title,
+        .fund-code,
+        .fund-btn,
+        .fund-name{position:absolute;left:50%;top:8%;}
+        .fund-title{left:50%;top:auto;bottom:8%}
+        .fund-name{left:6%;top:8%}
+        .fund-code{left:6%;top:auto;bottom:8%}
+        .fund-btn{left:auto;right:40px;bottom:15px;top:15px;width:130px;border:2px solid #000;border-radius:8px;text-align:center;line-height:60px}
+        .fund-num:after{content:'%'}
+
+        .fund-box{
+            display: none;
+            height: 86px;
+            position: absolute;
+            margin-top: -110px;
+            width: 100%;
+            background: #aa1c1c;}
+    </style>
+</head>
+<body>
+<img src="share.png" style="display:none;">
+<div class="event">
+    <div class="share-btn"></div>
+    <img src="pg_01.jpg">
+    <img src="pg_02.jpg">
+    <img src="pg_03.jpg">
+    <img src="pg_04.jpg">
+    <img src="pg_05.jpg">
+    <div class="fund-box">
+        <div class="fund">
+            <span class="fund-name">先锋现金宝货币</span>
+            <span class="fund-code">003585</span>
+            <span class="fund-num">100</span>
+            <span class="fund-title">七日年化</span>
+            <span class="fund-btn">购买</span>
+        </div>
+    </div>
+    <img src="pg_06.jpg">
+</div>
+<script src="../../jquery-2.1.4.min.js"></script>
+<script src="../../jsBridge.js"></script>
+<script src="../../weChat.js"></script>
+<script>
+    $(function(){
+        var w1=Math.min(window.innerWidth,screen.width*window.devicePixelRatio),scale=w1/750*0.5;
+        document.getElementById('vp').content='width=750,initial-scale='+scale+',maximum-scale='+scale+',minimum-scale='+scale+',user-scalable=no';
+
+        jsb.setShareInfo({
+            title:'定投的正确姿势',
+            desc:'和你聊聊定投那点事',
+            icon:location.origin+'/events/fund/f8/share.png',
+            link:location.href
+        });
+        $('.share-btn').on('click',function(){
+            jsb.share();
+        });
+
+        $('.fund').on('click',function(){
+            jsb.toFundDetail('003585');
+        });
+        $.ajax({
+//            url:'https://app.91yaowang.com/app/webservice/v2/fund/product/queryFundInfo',
+            url:'/app/webservice/v2/fund/product/queryFundInfo',
+            data:{
+                fundCode:'003585',
+                platform:'wap'
+            },
+            type:'post',
+            dataType:'json',
+            success:function(d){
+                if(d.status==0){
+                    $('.fund-num').html(d.data.content.sumOfNav);
+                    $('.fund-box').show()
+                }
+            }
+        })
+    });
+</script>
+</body>
+</html>

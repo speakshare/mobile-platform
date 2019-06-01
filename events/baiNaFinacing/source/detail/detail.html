@@ -1,0 +1,35 @@
+<div class="goods-detail">
+    <img class="goods-banner" src="<%=pd.goodsTopImg%>">
+    <ul>
+        <li class="d-info"><span class="d-title">投资期限</span><span class="d-t-info"><%=pd.procuctDay%>天</span></li>
+        <li class="d-info"><span class="d-title">投资本金</span><span class="d-t-info"><%=$.amountFormat(pd.productPrice)%>元</span></li>
+        <li class="d-info arrow-right coupon-row">
+            <span class="d-title">可使用礼券</span>
+            <span class="d-t-info d-t-coupon"><%=(coupon && coupon.list && coupon.list.length)?coupon.list.length+'张礼券':'暂无礼券'%></span>
+        </li>
+        <li class="d-info"><span class="d-title">预期额外收益</span><span class="d-t-info"><%=$.amountFormat(pd.preProfit)%>元</span></li>
+        <li class="d-info"><span class="d-title">本息预计返还时间</span><span class="d-t-info"><%=pd.enddate%></span></li>
+        <li class="d-info"><span class="d-title">预计到账金额</span><span class="d-t-info"><%=$.amountFormat(pd.preBackAmount)%>元</span></li>
+    </ul>
+    <div class="to-goods arrow-right">查看该商品所对应的产品详情</div>
+    <div class="agree-box">我同意并已阅读
+        <span class="rule-btn" data-link="/weizhan/#staticPage/underwriting">《定向委托投资协议》</span>
+        <span class="rule-btn" data-link="/weizhan/#staticPage/riskHint">《风险提示书》</span>
+    </div>
+    <div class="account-layer">
+        <div class="account-stock">
+            <h3 class="account-hint">选择支付方式</h3>
+            <% if(pd.payType!=1){ %>
+                <div class="account-box acc-icon checked" data-id="7">
+                    <span class="acc-type">账户可用余额</span><span class="acc-num"><%=$.amountFormat(account.piggy)%>元</span>
+                </div>
+            <% }
+            if(pd.payType!=0){ %>
+                <div class="account-box acc-icon" data-id="6">
+                    <span class="acc-type">摇宝可用余额</span><span class="acc-num"><%=$.amountFormat(account.currentAssets)%>元</span>
+                </div>
+            <% } %>
+        </div>
+    </div>
+    <div class="buy-btn">确认领取</div>
+</div>

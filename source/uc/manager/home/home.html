@@ -1,0 +1,53 @@
+<div class="plannerhome">
+	<div class="pbanner <%=(info.userType=='2'&& info.grade=='0')?'':'golden'%>" style="height:<%= $(window).width()*0.52 %>px">
+		<div class="invitefrbtn" ></div>
+		<%if(info.userType=='2'){%>
+		<div class="makemoneyguide">赚钱指南</div>
+		<%}%>	
+		<div class="avatar levelrule"></div>
+		<div class="username"><%=info.customerName%></div>
+		<div class="userlever lever<%=info.grade%>">
+			<div class="airBubble">
+				<%= $.starFormat(info.grade||0).star%>
+				<p class="levername"><%= $.starFormat(info.grade||0).text%></p>
+				<% if(info.userType=='2'){%>
+				<div class="tag">
+					<div class="arrow"> <em></em></div>
+					<%if(info.grade=='5'){%>
+					提佣比例为<%=info.currRate%>%,恭喜您已达到人生巅峰
+					<%}else{%>
+					提佣比例<%=info.currRate%>%，下级为<%=info.nextRate%>%，加油
+					<%}%>	
+				</div>	
+				<%}%>
+			</div>
+		</div>
+	</div>
+	<div class="investinginfo">
+		<div class="flex flex6 toRedDetail "><p class="lone"><%=investinfo.totalRedPacket%></p><p class="ltwo">总红包金额(元)</p></div>
+		<div class="flex flex7 "><p class="lone"><%=investinfo.level1Count%></p><p class="ltwo askinfo" data-flag='1'>一级在投人数</p>
+		<div class="answer answer2"><div class="arrow"> <em></em><span></span></div>一级在投人数：您直接邀请的，且当前投资了摇宝、定期的客户</div>
+		</div>
+		<div class="flex flex8 "><p class="lone"><%=investinfo.level1Amount%></p><p class="ltwo askinfo" data-flag='2'>一级在投金额(元)</p>
+			<div class="answer"><div class="arrow"> <em></em><span></span></div>一级在投金额：您直接邀请来的客户，当前投资在定期（不含变现）产品上的资金</div>
+		</div>
+	</div>
+	<div class="currmonth">
+		<p class="currmonthred">近七日红包(元)</p>
+		<p class="redsum toRedDetail"><%=income.totalRedPacket%></p>
+		<div class="linebox" id="line">
+		</div>
+	</div>
+	<div class="totalbox myClient">
+		<div class="mainwrap">
+			<span class="left">我的客户</span>
+			<span class="right"><em><%=investinfo.notInvest%></em>位一级客户还未投资</span>
+		</div>
+	</div>
+	<div class="totalbox mytotalInvest">
+		<div class="mainwrap">
+			<span class="left">订单明细</span>
+			<span class="right"><em><%=investinfo.totalAmount%></em>元在投</span>
+		</div>
+	</div>
+</div>

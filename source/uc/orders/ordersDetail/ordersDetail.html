@@ -1,0 +1,133 @@
+<div class="uc-ordersdetail">
+    <div class="detailtop">
+        <p class="productname"><%=oDetail.productName%><span class="frtext"><%if(oDetail.investStateCode == 2){%>剩余<em><%=oDetail.jieSuanDays%></em>天<%}%></span></p>
+        <div class="productdel clearfix">
+            <div class="wsec ">
+                <p class="secone mft fb fs20"><%=oDetail.procuctAroe%><span class="mft fs11">%<%if(oDetail.productAddonRate > 0){%>+<%=oDetail.productAddonRate%>%<%}%></span></p>
+                <p class="sectwo">预期年化</p>
+            </div>
+            <div class="wsec ">
+                <p class="secone"><%=oDetail.investCount%><span class="fs11">天</span></p>
+                <p class="sectwo">产品期限</p>
+            </div>
+            <div class="wsec ">
+                <p class="secone"><%=oDetail.investState%></p>
+                <p class="sectwo">订单状态</p>
+            </div>
+        </div>
+        <%if(oDetail.investStateCode == "10" || oDetail.investStateCode == "11" || oDetail.investStateCode == "12"){%>
+        <div class="datetimebar"><%=oDetail.mujiEndTime%><span class="fr"><%=oDetail.investDays%></span></div>
+        <div class="progrssbar">
+            <div class="prograsspersent" style="width:100%;" %></div>
+        </div>
+        <div class="datetimetext">募集截止日期<span class="fr">起息日期</span></div>
+        <%}else{%>
+        <div class="datetimebar"><%=oDetail.investDays%><span class="fr"><%=oDetail.expireDate%></span></div>
+        <div class="progrssbar">
+            <div class="prograsspersent" style="width:<%if(oDetail.investCount-oDetail.jieSuanDays > 0){%><%=(oDetail.investCount-oDetail.jieSuanDays)*100/oDetail.investCount%>%;"
+            <%}else{%>0%;"<%}%>>
+        </div>
+    </div>
+    <div class="datetimetext">起息日期<span class="fr">到期日期</span></div>
+    <%}%>
+</div>
+<div class="subtitle">订单信息</div>
+<div class="subinfo">
+    <div class="row">订单号<span class="fr"><%=oDetail.oid%></span></div>
+    <%if(oDetail.investStateCode == "9"){%>
+    <div class="row">变现时间<span class="fr"><%=oDetail.transferDate%></span></div>
+    <%}else if(oDetail.buyType == "2"){%>
+    <div class="row">受让时间<span class="fr"><%=oDetail.investDate%></span></div>
+    <%}else{%>
+    <div class="row">下单时间<span class="fr"><%=oDetail.investDate%></span></div>
+    <%}%>
+    <div class="row">投资金额(元)<span class="fr"><%=$.fmoneys(oDetail.investAmtSum)%></span></div>
+    <div class="row">实付金额(元)<span class="fr"><%=oDetail.realPayAmt%></span></div>
+    <%if(oDetail.productType == 10){%>
+    <div class="row">体验金(元)<span class="fr"><%=oDetail.tyjAmount%></span></div>
+    <%}%>
+    <div class="row">变现条件<span class="fr"><%if(oDetail.closePeriodDay == -1){%>不可变现<%}else{%>产品起息后，持有满<%=oDetail.closePeriodDay%>天可变现<%}%></span></div>
+    <div class="row">回款方式<span class="fr"><% if(oDetail.payBackType == "1"){%>到期付本息<%} else if(oDetail.payBackType == "2"){%>随存随取<%} else if(oDetail.payBackType == "3"){%>可变现<%}%></span></div>
+    <div class="row">支付方式<span class="fr">全额支付</span></div>
+</div>
+<%if(oDetail.investStateCode != "10" && oDetail.investStateCode != "12"){%>
+    <div class="subtitle">收益信息</div>
+    <div class="subinfo">
+        <%if(oDetail.productType != 10){%>
+        <%if(oDetail.rewardAmount > 0){%>
+        <div class="row">
+            返现券(元)
+            <span class="fr"><%=(oDetail.rewardAmount).toFixed(2)%></span>
+        </div>
+        <%}%>
+        <%if(oDetail.interestAddCouponProfit>0){%>
+        <div class="row">
+            加息收益(元)
+            <div class="helpicon">
+                <img src="_problem@2x.png">
+                <span class="helpinfo">该收益为加息劵收益</span>
+            </div>
+            <span class="fr"><%=oDetail.interestAddCouponProfit%></span>
+        </div>
+        <%}%>
+        <%}%>
+        <%if(oDetail.interestProfitAmt > 0){%>
+        <div class="row">
+            摇加息收益(元)
+            <span class="fr"><%=(oDetail.interestProfitAmt).toFixed(2)%></span>
+        </div>
+        <%}%>
+        <%if(oDetail.buyMoneyCftInterest > 0){%>
+        <div class="row">
+            理财金收益(元)
+            <span class="fr"><%=(oDetail.buyMoneyCftInterest).toFixed(2)%></span>
+        </div>
+        <%}%>
+        <%if(oDetail.investStateCode == "9"){%>
+        <div class="row">
+            变现金额(元)
+            <span class="fr"><%=oDetail.transferMoney%></span>
+        </div>
+        <div class="row">变现手续费(元)<span class="fr"><%=oDetail.transferFee%></span></div>
+        <%}%>
+        <%if(!(oDetail.investStateCode == 4|| oDetail.investStateCode == 9)){%>
+        <div class="row">
+            预计到期收益(元) <span class="fr"> <%=oDetail.preReturnProfit%> </span>
+        </div>
+        <%}%>
+        <%if(oDetail.buyType == "2" && oDetail.investStateCode == 4){%>
+        <div class="row">
+            到期收益(元)
+            <span class="fr"><%=(oDetail.preReturnProfit)%></span>
+        </div>
+        <%}%>
+        <div class="row">
+            <%if(oDetail.investStateCode == 4 || oDetail.investStateCode == 9){%>
+            实际<%}else{%>预计<%}%>到账金额(元)
+            <span class="fr">
+                <%if(oDetail.investStateCode == 9){%>
+                    <%=oDetail.realArrAmt%>
+                <%}else{%>
+                    <%=(oDetail.preReturnMoney)%>
+                <%}%>
+            </span>
+        </div>
+    </div>
+<%}%>
+
+<div class="protocol">相关协议</div>
+<%if(oDetail.closePeriod != -1 && oDetail.investStateCode == 2){%>
+<div class="toinvestbtn">
+    <%if(oDetail.closePeriod === 0){%>
+    <div class="transfer">申请变现</div>
+    <%}else if(oDetail.closePeriod > 0){%>
+    <div class="daysleft"><%=oDetail.closePeriod%>天后可变现</div>
+    <%}%>
+</div>
+<%}%>
+<%if(oDetail.investStateCode == 8){%>
+<div class="toinvestbtn">
+    <div class="cancleTransfer">取消变现</div>
+</div>
+<%}%>
+</div>

@@ -1,0 +1,12 @@
+.forget-pay-pwd{margin:0}
+.forget-pay-pwd input{border:none;width:44%}
+.forget-pay-pwd .forget-pay-head{text-align:center;padding:15px;line-height:20px;font-size:14px;color:#4f4f4f}
+.forget-pay-pwd .tel-num{font-size:18px;padding-top:10px}
+.forget-pay-pwd .forget-pay-box{height:50px;line-height:50px;padding-left:15px;background-color:#fff;border-bottom:1px solid #eee}
+.forget-pay-pwd .forget-pay-word{font-size:15px;color:#4f4f4f}
+.forget-pay-pwd .forget-pay-graph{padding:0 5px}
+.forget-pay-pwd .card-id{width:70%}
+.forget-pay-pwd .forget-pay-suffix{float:right;text-align:center;width:90px;height:50px;background-color:#ff6046;color:#fff}
+.forget-pay-pwd .col1{background-color:rgb(218,215,214);}
+
+.forget-pays-pwd{display:none}

@@ -1,0 +1,25 @@
+.hicar-wrap{position: relative;}
+.hicar-wrap .share{position: absolute;top:15px;right:20px;background:url(images/icon_share.png);background-size:100% auto;width:122px;height:40px;}
+.hicar-wrap  .recordwrap{position: relative;}
+.hicar-wrap  .recordwrap .recordbtn{position: absolute;top:0px;left:0px;}
+.hicar-wrap .act-desc-wrap{position: relative; width:100%;height:1102px;background:url(images/bg_10.jpg) center center no-repeat;background-size:100% auto;}
+.hicar-wrap .act-desc-wrap  .act-desc{width: 82%;margin:0 auto;font-size: 28px;color:#4f4f4f;padding-top: 24%;line-height:50px;list-style: decimal;padding-left: 30px;}
+.hicar-wrap .act-desc-wrap  .desctips{position: absolute;bottom:35px;right:60px;font-size:22px;color:#2c5132;}
+.hicar-wrap  .productwrap{position: relative;}
+.hicar-wrap  .protab{position: absolute;bottom:10px;left:0px;width: 100%;}
+.hicar-wrap .productbox{width: 633px;margin: 0px auto;border-left: 2px solid #95a388;border-top: 2px solid #95a388;font-size: 0;line-height: 0;}
+.hicar-wrap .productbox.nobt{border-top: none;}
+.hicar-wrap .productbox .tab{height:55px;line-height:55px;text-align:center;color:#e36500;font-size:24px;display:inline-block;border:2px solid #95a388;border-top:none;border-left: none;}
+.hicar-wrap .productbox .tab.title{color:#2c5132;font-size:28px;font-weight: bold;}
+.hicar-wrap .productbox .tab.w220{width:220px;}
+.hicar-wrap .productbox .tab.w190{width:190px;}
+.hicar-wrap .get_btn{width:338px;height:74px;margin:45px auto 30px;background:url(images/btn_get.png) center center no-repeat;background-size:cover;}
+.hicar-wrap .disable{width:338px;height:74px;margin:45px auto 30px;text-align:center;line-height:74px;background:#555252;color:#ffffff;font-size:28px;font-weight:bold;}
+.hicar-wrap .descDetail{position: relative;width: 200px;margin:0px auto 35px;font-size:28px;color:#2c5132;height: 30px;line-height: 30px;font-weight: bold;}
+.hicar-wrap .descDetail:after{position: absolute;top: 2px; right: 5px; clear: both;content: '';display: block;width: 26px;height: 24px;background:url(images/arrowdown.png) center right no-repeat;background-size:100%;}
+.hicar-wrap .descDetail.up:after{background:url(images/arrowup.png) center right no-repeat;background-size:100%;}
+.hicar-wrap  .protab.mt0{bottom:0px;}
+.hicar-wrap  .detailbg{width:100%;background:url(images/background.jpg) center center repeat-y;background-size: 100%;}
+.hicar-wrap  .detailbg .fwIntro{height:720px;display: none;}
+.hicar-wrap  .detailbg1 .fwIntro{height:960px;}
+.hicar-wrap  .detailbg .protocol-wrap{padding-top:0px;}

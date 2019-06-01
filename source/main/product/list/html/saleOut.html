@@ -1,0 +1,20 @@
+<%_.each(list,function(item){ %>
+	<div class="product soldout" data-id="<%=item.productNo%>">
+		<div class="pd-name limit">
+			<span><%=item.productName%></span>
+		</div>
+		<div class="pd-rate">
+			<div class="rate">
+				<div>
+					<span class="rate-data"><%=item.annualizedRate%></span>
+					<%if(item.productAddonRate!='0.00'){%><span class="f14 ml5"><%='+'+item.productAddonRate%>%</span><% } %>
+				</div>
+				<div class="rate-t">预期年化</div>
+			</div>
+			<div class="date tag">
+				<div class="rate-term"><%=item.productDay%>天</div>
+				<div class="rate-t">理财期限</div>
+			</div>
+		</div>
+	</div>
+<% })%>

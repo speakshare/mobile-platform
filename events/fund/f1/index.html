@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>选基金的8个要素 - 学会这八招，小白也能独步“武林”</title>
+    <meta name="keywords" content="选基金的8个要素" />
+    <meta name="description" content="学会这八招，小白也能独步“武林”" />
+    <!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <style>
+        body{margin:0;padding:0;width:100%;min-width:320px;background:#fff;font-size:14px;line-height:1.5;
+            font-family:"PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,SimSun}
+
+        .event img{display:block;width:100%}
+        .share-btn{position:absolute;right:0;top:0;width:22%;height:6%}
+        .share_mask{display:none;position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(../../mask.png) no-repeat 90% 20px;background-size:160px auto}
+    </style>
+</head>
+<body>
+<img src="i1.jpg" style="display:none;">
+<div class="event">
+    <div class="share-btn"></div>
+    <img src="fund1_01.jpg">
+    <img src="fund1_02.jpg">
+    <img src="fund1_03.png">
+    <img src="fund1_04.png">
+    <img src="fund1_05.png">
+    <img src="fund1_06.png">
+    <img src="fund1_07.png">
+    <img src="fund1_08.png">
+    <img src="fund1_09.png">
+    <img src="fund1_10.png">
+    <img src="fund1_11.png">
+    <img src="fund1_12.png">
+</div>
+<script src="../../jquery-2.1.4.min.js"></script>
+<script src="../../jsBridge.js"></script>
+<script src="../../weChat.js"></script>
+<script>
+    $(function(){
+        jsb.setShareInfo({
+            title:'选基金的8个要素',
+            desc:'学会这八招，小白也能独步“武林”',
+            icon:location.origin+'/events/fund/f1/i1.jpg',
+            link:location.href
+        });
+        $('.share-btn').on('click',function(){
+            jsb.share();
+        });
+    });
+</script>
+</body>
+</html>

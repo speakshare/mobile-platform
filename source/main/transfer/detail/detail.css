@@ -1,0 +1,56 @@
+.transfer-detail{margin:0;background-color:#fff}
+.transfer-detail .transfer-content{padding:16px;background:#ffffff;background:url(BG_bianxianxiangqing@2x.png) no-repeat;background-size:100%;width:100%;}
+.transfer-detail .transfer-content .title{display:flex;font-size: 14px;color:#444444;}
+.transfer-detail .transfer-content .product-name{flex:8;line-height:28px}
+.transfer-detail .transfer-content .product-raw{flex:1;text-align:right}
+.transfer-detail .transfer-content .product-raw i{display:inline-block;background:url(ICO_original@2x.png) no-repeat;background-size:100%;width:28px;height:28px;}
+.transfer-detail .prd-info{display: flex;flex-direction:row;margin-top:15px}
+.transfer-detail .prd-info .item{flex-grow:1;font-size:12px;color:#999;line-height:33px;}
+.transfer-detail .prd-info .item p{font-size:12px;color:#999;line-height:16px;}
+.transfer-detail .num{font-size:48px;color:#ffa223;}
+.transfer-detail .col1{color:#ff5532;}
+.transfer-detail .col2{color:#ffa223;}
+.transfer-detail .col3{height:10px;background-color:#f2f2f2}
+.transfer-detail .sign{position: relative;font-size:13px;color:#ff5532;}
+.transfer-detail .right{text-align:right;}
+.transfer-detail .size1{font-size:36px;line-height:42px;}
+.transfer-detail .size2{font-size:24px;text-decoration:line-through}
+.transfer-detail .ultra-short{position:absolute;margin-top:-15px;background:url(img_short@2x.png) no-repeat;background-size:100%;width:54px;height:17px;}
+.transfer-detail .transfer-banner-hint{background:url(Cycle@2x.png) no-repeat;background-size:100%;width:100%;text-align:center;font-size:12px;color:#959595;}
+
+.transfer-detail .transfer-item{background-color:#fff;font-size:15px;color:#4f4f4f}
+.transfer-detail .transfer-item .transfer-box{display:flex;flex-direction:row;height:50px;line-height:50px;padding:0 20px;border-bottom:1px solid #f2f2f2}
+.transfer-detail .transfer-item .lef{flex:1;}
+.transfer-detail .transfer-item .rig{flex:2;text-align:right;}
+.transfer-detail .transfer-item i{display:inline-block;background:url(icon_point@2x.png) no-repeat;background-size:100%;width:14px;height:14px;margin:0 0 -2px 5px}
+.transfer-detail .transfer-item .trim1{padding-top:4px;line-height:22px}
+.transfer-detail .transfer-item .trim2{line-height:18px;font-size:13px;color:#ffa233}
+.transfer-detail .transfer-item .trim3{font-size:13px}
+
+.transfer-hint{display:none;z-index:100;position:absolute;top:0;background-color:rgba(0,0,0,0.7);width:100%;height:100%}
+.transfer-hint .transfer-pop-close{position:absolute;top:30px;right:20px;color:#fff;}
+.transfer-hint .transfer-pop-fork{width:30px;height:30px;border:2px solid #fff;border-radius:50%;}
+.transfer-hint .transfer-pop-fork span{display:inline-block;width:2px;height:20px;background-color:#fff;}
+.transfer-hint .transfer-pop-fork span:nth-of-type(1){margin:3px -3px 0 12px;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.transfer-hint .transfer-pop-fork span:nth-of-type(2){margin:3px 0 0 -3px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.transfer-hint .word-hint{margin-top:60%;padding:0 20px;color:#fff}
+.transfer-hint .title{font-size:20px;text-align:center}
+.transfer-hint .word{font-size:14px;line-height:24px;padding:15px 0 30px;}
+.transfer-hint .btn{height:45px;line-height:45px;background-color:#ff6046;font-size:16px;color:#fff;margin:0 auto;text-align:center;width:86%}
+
+
+
+
+
+@media screen and (min-width:320px) {
+	.transfer-banner-hint{height:37px;line-height:37px;}
+}
+@media screen and (min-width:360px) {
+	.transfer-banner-hint{height:42px;line-height:42px;}
+}
+@media screen and (min-width:375px) {
+	.transfer-banner-hint{height:44px;line-height:44px;}
+}
+@media screen and (min-width:414px) {
+	.transfer-banner-hint{height:48px;line-height:48px;}
+}

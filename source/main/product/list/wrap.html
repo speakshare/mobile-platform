@@ -1,0 +1,35 @@
+<div class="productcate">
+    <% if(!$.getCache('channelCode')){ %>
+    <div class="tab">
+        <div class="tab-title active">理财<span></span></div>
+        <div class="tab-title fund">基金<span></span></div>
+        <div class="tab-title transfer-btn">变现<i class="<%=$.getCache('transfer_pop')?'':'transfer-dian'%>"></i><span></span></div>
+    </div>
+    <% }
+    if(!$.getCache('channelCode')){ %>
+    <div class="banner" style="height:<%=$(window).width()/750*200%>px"></div>
+    <% }else{ %>
+        <div class="bannerSlide">
+            <ul class="animate" style="height:<%=$(window).width()/750*200%>px">
+                <li data-link="#about/platformData" class="channel-banner-1">
+                </li>
+                <li data-link="#staticPage/securityGuarantee" class="channel-banner-2">
+                </li>
+                <li data-link="#staticPage/aboutYaoWang" class="channel-banner-3">
+                </li>
+            </ul>
+            <ul class="pages"><li></li><li></li><li></li></ul>
+        </div>
+    <% } %>
+    <div class="yb-product-box mt10"> </div>
+    <div class="productlist new-member-product mt10"> </div>
+    <div class="productlist mt10">
+        <div class="title">
+            <span>定期</span>
+            <span>优选资产,收益健康</span>
+        </div>
+        <div class="product-list">
+
+        </div>
+    </div>
+</div>

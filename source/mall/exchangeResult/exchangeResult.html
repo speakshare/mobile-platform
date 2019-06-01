@@ -1,0 +1,15 @@
+<div class="exchangeresultoutter">
+	<div class="succicon"></div>
+	<div class="succtext">兑换成功</div>
+	<!-- 商品 -->
+	<% if(typeid==1) {%>
+	<p class="succtips">兑换产品会在<span>3个工作日内寄出</span><br/>本次物流单号暂不支持展示，<span>预计10日内</span>收到产品。<br/>如有疑问，请联系我们</p>
+	<div class="btnbox">
+		<div class="singlebtn backtomall">继续兑换</div>
+	</div>
+	<% }else{ %>
+	<div class="btnbox">
+		<div class="leftbtn backtomall">继续兑换</div><div class="rightbtn  nowtouse" data-exid="<%= typeid %>">立即使用</div>
+	</div>
+	<%}%>
+</div>

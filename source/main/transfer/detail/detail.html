@@ -1,0 +1,59 @@
+<div class="transfer-detail">
+	<div class="transfer-content">
+		<div class="title">
+			<div class="product-name"><%=transfer.productName%></div>
+			<div class="product-raw" id="productDetail" data-id="<%=transfer.productNo%>"><i></i></div>
+		</div>
+		<div class="prd-info">
+			<div class="item">
+				<span class="num col1"> <%=transfer.annualizedRate%></span><span class="sign">%</span>
+				<p>预期年化收益率</p>
+			</div>
+			<div class="item">
+				<%if(transfer.transferStatus=='1'){%>
+				<div class="<%=transfer.surplusDay <= 30?'ultra-short':''%>"></div>
+				<%}%>
+				<span class="num size1"><%=transfer.surplusDay%></span><span>天</span>&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="num size2"><%=transfer.procuctDay%></span><span>天</span>
+				<p>期限</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="transfer-banner-hint">
+		买入后<span class="col2">当日<!--<%=$.dateFormat(transfer.valueDate,'yyyy/MM/dd')%>--></span>起息，本息预计<span class="col2"><%=$.dateFormat(transfer.expireDate,'yyyy/MM/dd')%></span>转入您的账户
+	</div>
+	<div class="col3"></div>
+	<div class="transfer-item">
+		<div class="transfer-box">
+			<div class="lef">变现金额<i id="transferHint"></i></div>
+			<div class="rig"><%=transfer.transferMoney%>元</div>
+		</div>
+		<div class="transfer-box">
+			<div class="lef">预计收益</div>
+			<div class="rig"><%=transfer.expectedProfit%>元<!--<p class="trim2">比平台同期产品多赚20.20元</p>--></div>
+		</div>
+		<div class="transfer-box">
+			<div class="lef">变现规则</div>
+			<div class="rig trim3">持有<%=transfer.transferValidDay%>天后可再次变现</div>
+		</div>
+	</div>
+	<% if(transfer.transferStatus=='2'){%>
+	<div class="common-btn1">已变现</div>
+	<%}else{%>
+	<div class="common-btn2" id="buyBtn">立即投资</div>
+	<%}%>
+</div>
+<div class="transfer-hint">
+	<div class="transfer-pop-close">
+		<div class="transfer-pop-fork">
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<div class="word-hint">
+		<p class="title">变现金额</p>
+		<p class="word">变现金额包括转让方的本金和全部或部分累积收益，受让方购买时需先垫付转让方申请变现的累积收益，该部分金额会在产品到期或再次变现时兑付给受让方。</p>
+		<div class="btn">知道了</div>
+	</div>
+</div>

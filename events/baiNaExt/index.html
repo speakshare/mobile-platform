@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>摇旺大牌合作季</title>
+    <meta name="keywords" content="难以置信！这里竟然可以送车送房送学历！" />
+    <meta name="description" content="只要你要 真的就有！" />
+    <!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <style>
+        body{margin:0;padding:0;width:100%;min-width:320px;background:#fff;font-size:14px;line-height:1.5;
+            font-family:"PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,SimSun}
+            .event{}
+            .event img{display:block;width:100%;}
+            .link{position:fixed;bottom:0;left:0;width:100%}
+            .share-btn{position:absolute;right:15px;top:10px;width:61px;height:20px;background:url(icon_share.png);background-size:100% auto}
+            .share_mask{display:none;position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(../mask.png) no-repeat 90% 20px;background-size:160px auto}
+
+            .coupon-btn{display:none;position:absolute;margin-top:-60px;width:100%;height:37px;background:url(btn_yijianlingqu.png) no-repeat center 0;background-size: auto 100%}
+            .coupon-btn-over{background-image:url(over.png)}
+            @media all and (min-width:360px) {
+                .event{font-size:78px}
+                .coupon-btn{margin-top:-66px;height:42px;}
+            }
+            @media all and (min-width:375px) {
+                .coupon-btn{margin-top:-70px;height:43px;}
+            }
+            @media all and (min-width:414px) {
+                .event{font-size:82px}
+                .coupon-btn{margin-top:-77px;height:48px;}
+            }
+            .pop-win{display:none;position:absolute;background:#fefaf9;top:50%;left:50%;width:300px;height:110px;margin:-75px 0 0 -150px;border-radius: 12px;border:1px solid #eee;text-align:center;padding-top:40px}
+            .pop-win .red{color:#861d2e}
+            .pop-win .pop-btn{position:absolute;bottom:0;left:0;height:35px;line-height:35px;width:100%;border-top:1px solid #d3cfce;font-size:16px;color:#861d2e}
+            .link-btn{width:175px;height:33px;margin:20px auto 25px; background:#ffffff url(btn.png) no-repeat center center;background-size:100% auto;}
+
+
+        </style>
+    </head>
+    <body>
+        <img src="share.png" style="display:none;">
+        <div class="event">
+            <div class="share-btn"></div>
+            <img src="bg_01.jpg">
+            <img src="bg_02.jpg">
+            <div class="coupon-btn"></div>
+            <img src="bg_03.jpg">
+            <img src="bg_04_01.jpg">
+            <div class="link-btn" data-link='PRO_1'> <img src="btn.png"/></div>
+            <img src="bg_04_02.jpg">
+            <img src="bg_05.jpg">
+            <img src="bg_06_01.jpg">
+            <div class="link-btn" data-link='PRO_1'> <img src="btn.png"/ ></div>
+            <img src="bg_06_02.jpg">
+            <img src="bg_07.jpg">
+            <img src="bg_08_01.jpg">
+            <div class="link-btn" data-link='PRO_2'> <img src="btn.png"/></div>
+            <img src="bg_08_02.jpg">
+        </div>
+
+        <div class="pop-win">
+            <span class="red">宠爱任性礼</span>领取成功<br>明天还可以再来哦
+            <span class="pop-btn">知道了</span>
+        </div>
+        <script src="../jquery-2.1.4.min.js"></script>
+        <script src="../jsBridge.js"></script>
+        <script src="../weChat.js"></script>
+        <script>
+            var token=localStorage.getItem('yw_user_loginToken');
+            jsb.setShareInfo({
+                title:'难以置信！这里竟然可以送车送房送学历！',
+                desc:'只要你要 真的就有！',
+                icon:location.origin+'/events/baiNaExt/share.png',
+                link:location.href
+            });
+            $.ajax({
+                type: 'post',
+                url: '/app/webservice/v2/member/receiveRewardByToday',
+                // url: 'https://app.91yaowang.com/app/webservice/v2/member/receiveRewardByToday',
+                data: {
+                    loginToken:token,
+                    key: 'jxbn4rg3h'
+                },
+                dataType: 'json',
+                success: function (d) {
+                    $('.coupon-btn').show();
+                    if(d.status==0 && d.data.isReceive==1) {
+                        $('.coupon-btn').addClass('coupon-btn-over')
+                    }
+                },
+                error:function(){
+                    $('.coupon-btn').show();
+                }
+            });
+            $('.share-btn').on('click',function(){
+                jsb.share();
+            });
+            $('.coupon-btn').on('click',function(){
+
+                if($(this).hasClass('coupon-btn-over')){
+                    return;
+                }
+                if(!token){
+                    localStorage.setItem('yw_user_after_login_link',location.href)
+                    window.location='/weizhan/#login';
+                    return;
+                }
+                $.ajax({
+                    type: 'post',
+                    url: '/app/webservice/v2/member/receiveRewardByActive',
+                    //url: 'https://app.91yaowang.com/app/webservice/v2/member/receiveRewardByActive',
+                    data: {
+                        loginToken:token,
+                        key: 'jxbn4rg3h'
+                    },
+                    dataType: 'json',
+                    success: function (d) {
+                        if(d.status==0) {
+                            $('.coupon-btn').addClass('coupon-btn-over');
+                            $('.pop-win').show();
+                        }else if(d.status==14){
+                            localStorage.clear();
+                            localStorage.setItem('yw_user_after_login_link',location.href)
+                            window.location='/weizhan/#login';
+                            return false;
+                        }else{
+                            alert(d.msg);
+                        }
+                    }
+                });
+            });
+            $('.pop-btn').on('click',function(){
+                $('.pop-win').hide();
+            })
+            $('.link-btn').on('click',function(e){
+             var link=$(e.currentTarget).attr('data-link');
+             location.href=location.origin+'/events/baiNaFinacing/index.html#home/'+link;
+         })
+
+     </script>
+ </body>
+ </html>

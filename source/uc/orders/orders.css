@@ -1,0 +1,53 @@
+/*定期产品*/
+.myorders {padding:10px 15px 65px;text-align:center;}
+.myorders .orderitem{border-radius:6px 0px 0px 6px;width:100%;max-height:129px;margin:0px auto 10px;overflow: hidden;position:relative;}
+.myorders .orderitem .order-leftbar{float:left;border-radius:6px 0px 0px 6px;width:27px;height: 140px;}
+.myorders .orderitem .order-leftbar.ocions{background:url(oicons.png) center center no-repeat;background-size:440px  auto;}
+
+/*申购中*/
+.myorders .orderitem .order-leftbar.purchasing { background-position: 0 0; }
+/*计息中 转让中*/
+.myorders .orderitem .order-leftbar.interestbearing { background-position: -38px 0; }
+/*赎回中*/
+.myorders .orderitem .order-leftbar.redempting{background-position:-76px 0;}
+/*赎回成功 已转让*/
+.myorders .orderitem .order-leftbar.redemptionsuc{background-position:-114px 0;}
+/*购买失败*/
+.myorders .orderitem .order-leftbar.buy-fail{background-position:-151px 0;}
+/*支付失败*/
+.myorders .orderitem .order-leftbar.pay-fail{background-position:-186px 0;}
+/*订单取消*/
+.myorders .orderitem .order-leftbar.order-cancel{background-position:-224px 0;}
+/*认购中*/
+.myorders .orderitem .order-leftbar.subscribing{background-position:-337px 0;}
+/*募集成功*/
+.myorders .orderitem .order-leftbar.raise-suc{background-position:-375px 0;}
+/*募集失败*/
+.myorders .orderitem .order-leftbar.raise-fail{background-position:-412px 0;}
+
+/*.myorders .orderitem .order-leftbar.transfering{background-position:-121px -14px;}*/
+/*.myorders .orderitem .order-leftbar.transfered{background-position:-152px -14px;}*/
+
+.myorders .orderitem .order-rightcont{width:100%;padding-left:27px;height: 140px;background:#ffffff;}
+.myorders .orderitem .order-rightcont .productname{flex:3;text-align: left;padding:10px 0 10px 15px;font-size: 15px;color:#444444;letter-spacing: 0.9px;}
+.myorders .orderitem .order-rightcont .productinfo{border-top:1px solid #E1E1E1;display: flex;display: -webkit-flex;flex-flow: row;-webkit-flex-flow:row;margin-left: 10px;margin-right:10px;}
+.myorders .orderitem .order-rightcont .productinfo .flex{flex:1;-webkit-flex:1;border-right:1px solid #E1E1E1;margin-top:17px;padding:0px 0px;}
+.myorders .orderitem .order-rightcont .productinfo .nobr{border: none;}
+.myorders .orderitem .order-rightcont .productinfo .flex .otextdesc{font-size:11px;color:#999999;text-align:center;}
+.myorders .orderitem .order-rightcont .productinfo .flex .setval{font-size:14px;color:#444444;text-align:center;margin-top:10px;}
+.myorders .orderitem .order-rightcont .productinfo .flex .setval span{font-size:11px;}
+.myorders .orderitem .order-rightcont .earnings{font-size:13px;color:#444444;margin-top:17px;padding-left:15px;text-align: left;}
+.myorders .orderitem .order-rightcont .earnings .earningsnum{font-size:18px;color:#ED3B29;float:right;margin-right:20px;}
+
+.myorders .orderitem .transfer{flex:1;text-align:right;height:35px;line-height:35px;}
+.myorders .orderitem .transfer span{padding:3px 5px 3px 7px;background: #FF6046;border-radius:100px 0 0 100px;font-size:10px;color:#fff;}
+.myorders .nodata{text-align: center; height: 100px;line-height: 100px; color: #999;}
+.myorders  .toinvestbtn{width: 100%;height: 65px;text-align: center;color: #ffffff;background:#f2f2f2;font-size: 16px;position: fixed;bottom: 0px; left: 0px; letter-spacing: 2px;}
+.myorders  .toinvestbtn div{width: 341px;line-height: 35px;text-align: center;background: #ff6046;border-radius:6px;margin:15px auto;}
+@media all and (max-width:350px) {
+	.myorders .orderitem .order-rightcont .productinfo .flex .setval{font-size:12px;}
+	.myorders  .toinvestbtn div{width: 300px;line-height: 35px;text-align: center;background: #ff6046;border-radius:6px;margin:15px auto;}
+	.myorders .orderitem .order-rightcont .productinfo .flex{margin-top: 10px;}
+}
+
+.transfer-state{display:flex}

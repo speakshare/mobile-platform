@@ -1,0 +1,87 @@
+<p class="pd-info-p">
+    <label class="pd-info-label">安全等级</label>
+    <span class="pd-info-text">
+        <% for (var i = 0; i < pd.riskType.count; i++) { %>
+        <span class="pd-level"><%= pd.riskType.type%></span>
+        <% } %>
+         <%= pd.riskType.typeName%>
+    </span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">总募集金额</label>
+    <span class="pd-info-text"><%=pd.financingAmount %></span>
+</p>
+<%if(pd.tradeType==2){%>
+<p class="pd-info-p">
+    <label class="pd-info-label">募集期</label>
+    <span class="pd-info-text"><%=pd.raiseDay%>天</span>
+</p>
+<%}%>
+<!--<p class="pd-info-p">
+    <label class="pd-info-label">起投金额</label>
+    <span class="pd-info-text">金额≥<%=pd.minPurchaseAmount %>元即可投资</span>
+</p>-->
+<p class="pd-info-p">
+    <label class="pd-info-label">起息日</label>
+    <span class="pd-info-text">
+       <%if(pd.tradeType==1 || pd.tradeType==0){%>
+            <%=pd.dateOfInterest %>
+        <%}else{%>
+            <%=$.dateFormat(pd.valueDate,'yyyy-MM-dd')%>
+        <%}%>
+    </span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">项目期限</label>
+    <span class="pd-info-text"><%=pd.surplusDay %>天</span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">封闭期</label>
+    <span class="pd-info-text"><%=pd.closePeriod %>天</span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">回款方式</label>
+    <span class="pd-info-text">到期付本息</span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">手续费</label>
+    <span class="pd-info-text">到期回款免收手续费</span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">赎回到账时间</label>
+    <span class="pd-info-text">申请赎回后1个工作日内</span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">投资客户类型</label>
+    <span class="pd-info-text">保守型及以上</span>
+</p>
+<p class="pd-info-p">
+    <label class="pd-info-label">税费计算</label>
+    <span class="pd-info-text pd-info-text2">根据国家法律，如收益达到纳税额度，由投资人自行申报，缴纳</span>
+</p>
+<p class="pd-info-p law arrow-right">
+    <label class="pd-info-label">法律文件</label>
+</p>
+<div class="pd-bank-list clearfix">
+    <h3 class="pd-title">支持银行及限额</h3>
+    <p class="pd-title-text">以下为各家银行交易限制明细，同时,请您确认自身设置的银行卡转账限额，并以此为准。感谢您的理解和支持。</p>
+    <section class="card-limit">
+        <% _.each(bankList.list,function(n){ %>
+        <section class="card-limit-list">
+            <span class="lef"><i class="icon-bank bank-type-<%=n.bankCode%>"></i><%=n.bankName%></span>
+            <span class="rig">
+            单笔限<span><%=n.singleQuota>=10000?(n.singleQuota/10000).toFixed(0)+'万':(+n.singleQuota).toFixed(0)%></span>
+            ，单日限<span>
+            <%if(n.samedayQuota >= 100000000){%>
+                <%=(+n.samedayQuota/100000000).toFixed(0)+'亿'%>
+            <%}else if(n.samedayQuota >= 10000){%>
+                <%=(+n.samedayQuota/10000).toFixed(0)+'万'%>
+            <%}else{%>
+                <%=(+n.samedayQuota).toFixed(0)%>
+            <%}%>
+            </span>
+        </span>
+        </section>
+        <% }) %>
+    </section>
+</div>

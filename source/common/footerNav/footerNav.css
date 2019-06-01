@@ -1,0 +1,17 @@
+/*底部导航*/
+.footer{display: none;z-index: 1000;position: fixed;width: 100%;height:50px;bottom: 0;margin: 0;padding:0;background-color: rgba(255, 255, 255,1.0);border-top: 1px solid #d5d5d5;}
+.footer .icons{float: left;width:25%;height:100%;text-align: center;font-size:10px;color:#999;}
+.footer .active{color:#ff6046;}
+.footer .home-icon:before,
+.footer .product-icon:before,
+.footer .mall-icon:before,
+.footer .me-icon:before{display: block;margin: 6px auto 5px;width:23px;height:24px;}
+.footer .home-icon:before{background-position:-1px 0;}
+.footer .product-icon:before{background-position:-26px 0;}
+.footer .mall-icon:before{background-position:-75px 0;}
+.footer .me-icon:before{background-position:-50px 0;}
+.footer .home-icon.active:before{background-position:-1px -25px;}
+.footer .product-icon.active:before{background-position:-27px -24px;}
+.footer .mall-icon.active:before{background-position:-75px -24px;}
+.footer .me-icon.active:before{background-position:-50px -24px;}
+.footer .message_hint{position: absolute;display: inline-block;margin-top:-30px;width:8px;height:8px;border-radius: 50%;background-color: red}

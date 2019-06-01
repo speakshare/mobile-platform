@@ -1,0 +1,25 @@
+<div class="mall-new-goodwrap">
+  <div class="mall-recharge-title">
+    <p class="title">兑礼品<span class='more'>更多</span></p>
+  </div>
+  <div class="mall-good-list">
+    <% if(_.isEmpty(list)){%>
+    <p class='nodatetips'>暂无数据</p>
+    <%}else{%>
+    <% _.each(list,function(item){  %>
+    <div class="goodinfo" data-id="<%= item.id %>">
+      <p class="good-maintitle <%= item.isActivity?'activity':(item.isHot?'hot':'pdl15')%>"><%= item.itemName %></p>
+      <div class="conterinner">
+        <div class="gooddesc"><%= item.subTitle %></div>
+        <p class="peasnum"><%= item.needPoints %><%= item.isMember == 1 ? '<i class="zhe"></i>':''%></p>
+        <p class="goodpricestock"><span class="cashprice">￥<%= item.itemPrice %><em></em></span><span class="stock">剩余:<%= item.currentStock %></span></p>
+      </div>
+      <div class="mainimg"><img src="<%= item.coverImg %>" /></div>
+      <% if(item.currentStock==0){%>
+      <div class="soldoutmask"><span class="soldout">已兑完</span></div>
+      <%}%>
+    </div>
+    <% })%> 
+    <%}%>
+</div>
+</div>

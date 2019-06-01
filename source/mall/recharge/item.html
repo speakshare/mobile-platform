@@ -1,0 +1,23 @@
+<% if(!_.isEmpty(data.list)){%>
+<% _.each(data.list,function(item){%>
+	<% if(item.ruleId==2){%>
+	<!-- 话费  -->
+	<div class="item" data-count="<%=item.needPoints%>" data-id="<%=item.ruleId%>">
+		<%if(item.isMember == 1 && data.level>1){%>
+		<span class="zhe-kou"><span><%=data.pointDiscount*100%10 != 0?data.pointDiscount*100:data.pointDiscount*10%>折</span></span>
+		<%}%>
+		<span class="amount"><%=item.displayName%></span>
+		<span class="bean"><%=item.needPoints%></span>
+	</div>
+	<%}else{%>
+	<!-- 流量 -->
+	<div class="item" data-count="<%=item.needPoints%>" data-id="<%=item.ruleId%>">
+		<%if(item.isMember == 1 && data.level>1){%>
+		<span class="zhe-kou"><span><%=data.pointDiscount*100%10 != 0?data.pointDiscount*100:data.pointDiscount*10%>折</span></span>
+		<%}%>
+		<span class="amount"><%=item.displayName%></span>
+		<span class="bean"><%=item.needPoints%></span>
+	</div>
+	<%}%>
+<%})%>
+<%}%>

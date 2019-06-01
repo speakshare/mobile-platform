@@ -1,0 +1,10 @@
+<div class="risk-box">
+    <h3 class="question"><%=q%></h3>
+    <ul>
+    <% var i=0;
+        _.each(a,function(v,k){ %>
+        <li class="answer" data-id="<%=v%>"><%=en[i]%>. <%=k%></li>
+    <% i++;
+        }) %>
+    </ul>
+</div>

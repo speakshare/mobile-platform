@@ -1,0 +1,24 @@
+<%if(!_.isEmpty(list)){%>
+<% _.each(list,function(n){ %>
+<li class="clearfix">
+	<div class="left">
+	<%if(($.dateFormat(n.buyTime*1000,'yyyy-MM-dd'))== ($.currentDate().year+'-'+$.currentDate().month+'-'+$.currentDate().day)){%>
+	<span><em class="datetime today">今日</em></span>
+	<%}else{%>
+	<span><em class="datetime"><%=$.dateFormat(n.buyTime*1000,'MM/dd')%></em></span>
+	<%}%>
+		<span class="username"><%=n.investName%> 
+        <%if(n.investName2){%>
+		<em class='superior'><%=n.investName2%>邀请</em>
+		<%}%>
+		</span>
+		<span class="proinfo"><%=n.productName%>|<%=n.deadline%>天</span>
+	</div>
+	<div class="right">
+		<span class="redsum"><%=n.redPacket%></span>
+		<span class="lever"><%=$.starFormat(n.star).star%></span>
+		<span class="investsum"><%=n.investAmount%>元</span>
+	</div>
+</li>
+<%})%>
+<%}%>

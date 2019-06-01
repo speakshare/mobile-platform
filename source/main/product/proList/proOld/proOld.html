@@ -1,0 +1,24 @@
+<%_.each(list,function(item){%>
+<section class="pro-old to-oldDetail" data-id="<%=item.productNo%>">
+    <section class="pro-title"><%=item.productName%></section>
+    <section class="pro-con">
+        <section class="item1">
+            <p class="num"><%=item.annualizedRate%><span class="col1">%</span><%=item.productAddonRate > 0 ? '<span class="col2">+'+item.productAddonRate+'%</span>':''%></p>
+            <p class="word">预期年化收益率</p>
+        </section>
+        <section class="item2">
+            <p class="time"><%=item.productDay%><span>天</span></p>
+            <p class="word">期限</p>
+        </section>
+        <section class="item3">
+            <span>已售罄</span>
+        </section>
+    </section>
+    <!--<section class="pro-hint">-->
+    <!--<span>旺豆翻倍</span>-->
+    <!--<span>满30天可变现</span>-->
+    <!--</section>-->
+</section>
+<%})%>
+<section class="add-list"></section>
+<p class="pro-old-hint">没有更多了！</p>

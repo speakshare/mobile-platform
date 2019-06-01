@@ -1,0 +1,20 @@
+<section>
+    <div class="swiper-container ui-help-container">
+        <div class="swiper-wrapper">
+            <% _.each(typeList,function(item,index){ %>
+            <div class="swiper-slide <%=index==0?'active':''%>" data-index="<%=index%>" data-code="<%=item.code%>">
+                <div class="ui-help-item">
+                    <%=item.name%>
+                </div>
+            </div>
+            <%})%>
+        </div>
+    </div>
+    
+    <div class="ui-qa-list"></div>
+    
+    <div class="ui-ser-footer">
+        <div class="ui-footer-title"><img src="images/icon-kefurexian@2x.png" alt="">客服热线</div>
+        <div class="ui-footer-time">工作日9:00-18:00(节假日除外)</div>
+    </div>
+</section>

@@ -1,0 +1,142 @@
+.fund-market ul{
+	background:#fff;
+	list-style: none;
+	line-height: 40px;
+}
+.tab{
+	padding-right:18px;
+	background:url(shadow.png) #fff no-repeat;
+	background-position:100%;
+	overflow: hidden;
+}
+.days{
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	border-top:1px solid #e5e5e5;
+	padding:0;
+}
+.tab ul{
+	overflow-x: auto;
+	height:40px;
+	width:100%;
+	white-space: nowrap;
+	-webkit-overflow-scrolling : touch;  
+}
+::-webkit-scrollbar{
+	display:none;
+}
+.tab li{
+	width:60px;
+	display:inline-block;
+	background: #fff;
+	font-size: 14px;
+	color: #B5B5B5;
+	position: relative;
+	text-align: center;
+}
+.days li{
+	float:left;
+	width:20%;
+}
+.days li.active{
+	color: #FF5532;
+}
+.tab li.active{
+	color: #4F4F4F;
+}
+.tab li.active span{
+	background: #FF5532;
+	width:18px;
+	height:2px;
+	position: absolute;
+	bottom: 0;
+	left:50%;
+	transform: translate(-50%);
+}
+.prdlist{
+	margin-top:10px;
+	padding:0 16px;
+}
+.prdlist li{
+	display: flex;
+	display: -webkit-flex;
+	font-size: 14px;
+	color: #4F4F4F;
+	height:48px;
+	line-height: 48px;
+	border-bottom:1px solid #e5e5e5;
+}
+.prdlist li:nth-child(1){
+	font-size: 12px;
+	line-height: 34px;
+	height:34px;
+}
+.prdlist li div{
+	flex:1;
+}
+.prdlist li div.long{
+	flex:3;
+}
+.center{
+	text-align:center;
+}
+.right{
+	text-align:right;
+}
+.prdlist .large{
+	font-size: 14px;
+	color: #4F4F4F;
+	line-height: 1.4;
+	margin-top:6px;
+}
+.prdlist .small{
+	font-size: 12px;
+	color: #B5B5B5;
+	line-height: 1.4;
+}
+.prdlist .percolor{
+	color:#FF5532;
+}
+.sort{
+    background: url(normal.png) #fff no-repeat;
+    background-size: 7px;
+    background-position: 100%;
+    padding-right: 10px;
+}
+.up{
+	background-image:url(up.png);
+}
+.down{
+	background-image:url(down.png);
+}
+.kong{
+	background:url(kong.png) #fff no-repeat;
+	background-size:200px;
+	background-position:50% 130px;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.kong div{
+	font-size: 15px;
+	color: #B5B5B5;
+	text-align:center;
+	margin-top: 340px;
+}
+.kong .btn{
+	background: #FF5532;
+	width:85%;
+	color:#fff;
+	font-size:18px;
+	line-height: 44px;
+	height:44px;
+	margin:15px auto;
+}
+@media screen and (max-width:320px){
+    .line{
+      width:37%;
+	}
+}

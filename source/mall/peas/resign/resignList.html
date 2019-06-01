@@ -1,0 +1,22 @@
+<div class="resignMask">
+	<div class="main">
+		<p class="resultTitle">补签成功</p>
+		<ul>
+			<% if(!_.isEmpty(list)){%>
+			<% _.each(list,function(item){ %>
+			<li>
+				<span class="date"><%=item.dateStr%></span>
+				<span class="result">补签成功<span class="pic <%=item.nodeType=='01'?'iconBean':'iconBox'%>"></span>
+				<%if(item.nodeType=='01'){%><span class="plusBeans">+<%=item.quantity%></span><%}%>
+				</span>
+				<span class="pic iconResult"></span>
+			</li>
+			<%})%>
+			<%}%>
+		</ul>
+		<div>
+			<p class="resignResult">成功补签，共获<span class="num"><%=mask.totalWD%></span>旺豆 <span class="amount"><%=mask.luckBoxNum%></span>个宝箱</p>
+			<div class="returnBtn"></div>
+		</div>
+	</div>
+</div>

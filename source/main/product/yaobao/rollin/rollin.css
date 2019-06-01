@@ -1,0 +1,330 @@
+#buyConfirm{
+  border-radius: 0;
+}
+.confirm-buy {
+  padding-bottom: 0
+}
+
+.confirm-buy .pd-info {
+  width: 100%;
+  height: 95px;
+  padding: 19px 17px;
+  background: #fff;
+  vertical-align: super;
+  overflow: hidden;
+}
+.pd-info .rate-note{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 5px;
+  color:#4F4F4F;
+  opacity: 0.6;
+}
+.confirm-buy .pd-name {
+  font-size: 15px;
+  margin-bottom: 11px
+}
+
+.confirm-buy .pd-rate {
+  float: left;
+  font-size: 44px;
+  color: #ff5532;
+  opacity: 0.9;
+}
+
+.confirm-buy .pd-rate-t {
+  font-size: 24px
+}
+.rollin .stress{
+  color: #FF5532;
+}
+.confirm-buy .pd-date {
+  float: left;
+  position: relative;
+  top: 18px;
+  left: 55px;
+  width: 62px;
+  height: 19px;
+}
+
+.confirm-buy .addition-rate {
+  color: #fc1d18;
+  margin-left: -8px
+}
+
+.confirm-buy .stock {
+  background: #fff;
+  color: #999;
+  padding-left: 17px;
+  height: 30px
+}
+
+.confirm-buy .trade-num-tip {
+  position: absolute;
+  margin: -10px 0 0 -175px;
+  min-width: 70px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+  padding: 0 8px;
+  text-align: center;
+  background: #ffe6dc;
+  border: 1px solid #ed3b29;
+  color: #ed3b29;
+  border-radius: 6px
+}
+
+/*.confirm-buy .form-link {*/
+  /*color: #5596ce*/
+/*}*/
+
+.confirm-buy .icon-safe {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%
+}
+
+.confirm-buy .safety-wordHint {
+  position: absolute;
+  bottom: 50px;
+  z-index: -2;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 100%;
+}
+
+.confirm-buy .right {
+  float: right;
+  margin-right: 10px;
+}
+
+.confirm-buy .trade-num-tip:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 18px;
+  left: 2px;
+  border: 6px solid transparent;
+  border-top: 6px solid #ed3b29
+}
+
+.confirm-buy .trade-info {
+  padding-left: 20px;
+  background: #fff;
+  margin-top: 9px;
+  position:relative;
+}
+
+.confirm-buy .input-text {
+  border: none
+}
+
+.confirm-buy .form-label {
+  width: 100px
+}
+
+.confirm-buy .form-p {
+  font-size: 15px;
+  line-height: 44px;
+  border-bottom: 1px solid #eee;
+  padding: 0;
+  position:relative;
+}
+
+
+.confirm-buy .trade-p {
+  line-height: 21px;
+  font-size: 12px
+}
+
+.confirm-buy .income {
+  font-size: 12px;
+  color: #444;
+  line-height: 22px;
+  padding: 5px 0
+}
+
+.confirm-buy .trade-profit .form-label {
+  font-size: 13px
+}
+
+.confirm-buy .trade-profit {
+  padding: 0 20px
+}
+
+.confirm-buy .red-bag-num {
+  margin-left: 5px;
+  font-size: 11px;
+  color: #ed3b29;
+  border: 1px solid #ed3b29;
+  border-radius: 3px;
+  padding: 1px 3px;
+  vertical-align: 1px
+}
+
+.confirm-buy .red-bag-desc {
+  float: right;
+  padding-right: 32px;
+  color: #999
+}
+
+.confirm-buy .red-bag:after {
+  top: 17px
+}
+
+.confirm-buy .form-checkbox {
+  position: relative;
+  top: -3px;
+  left: 3px;
+  width: 2px;
+  height: 2px;
+  margin-right: 15px;
+  background: none;
+  border: none
+}
+
+.confirm-buy .form-checkbox:before {
+  content: '';
+  position: absolute;
+  top: -11px;
+  left: -3px;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background: #fff;
+  vertical-align: -5px
+}
+
+.confirm-buy .form-checkbox:checked:before {
+  border-color: #ff6046
+}
+
+.confirm-buy .form-checkbox:checked:after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 8px;
+  height: 4px;
+  border-bottom: 2px solid #ff6046;
+  border-left: 2px solid #ff6046;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg)
+}
+
+.form-p2 .form-label {
+  display: block;
+  width: 100%;
+}
+
+.form-p2 .right-label {
+  color: #999;
+  text-align: right;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.fixed-bottom {
+  position: fixed;
+  z-index: 11;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+
+.fixed-bottom .btn {
+  border: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #ff6046;
+  color: #fff;
+  text-align: center
+}
+
+.form-box .form-btn {
+  width: 100%;
+  height: 45px;
+  line-height:45px;
+  background: #dad7d6;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  margin:20px 0;
+}
+.form-box .ux-button{
+  background: #ff6046;
+}
+.form-box .account-amount {
+  float: right
+}
+
+.form-box .form-tip {
+  color: #e00;
+  font-size: 12px
+}
+
+.form-box .submit-btn {
+  margin: 32px 0 25px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  background: #ff6046;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  outline:0 none;
+}
+
+.form-box .disabled-btn {
+  background: #dad7d6;
+  color: #fff
+}
+
+.form-box .form-tips {
+  text-align: center;
+  line-height:18px;
+  padding-top:15px;
+}
+
+.form-box .icons-safe {
+  font-size: 12px;
+  color: #999
+}
+
+.form-box .icons-safe:before {
+  margin-right: 3px;
+  background-position: -242px -54px;
+  width: 12px;
+  height: 14px;
+  vertical-align: -2px
+}
+
+.confirm-buy .form-checkbox {
+  top: -1px;
+  margin-right: 20px;
+}
+.confirm-buy .form-word{padding:10px 20px 0}
+
+.confirm-buy .hint-verify{display:none;font-size:12px;color:#ff6046;padding:20px 20px 10px}
+.confirm-buy .yaoBao-auto{position:relative;height:50px;line-height:50px;background-color:#fff;padding:0 20px;margin:10px 0}
+.confirm-buy .yaoBao-auto .word{font-size:15px;color:#4f4f4f}
+.confirm-buy .yaoBao-auto .tab-box{position:absolute;top:12px;right:20px;width:40px;height:24px;border:1px solid #e5e5e5;border-radius:50px}
+.confirm-buy .yaoBao-auto .roll{position:relative;margin-left:16px;width:22px;height:22px;border:1px solid #eee;border-radius:50%;background-color:#fff}
+.confirm-buy .yaoBao-auto .off{background-color:#3ccd55;-webkit-animation:dd 500ms ease-out;animation:dd 500ms ease-out}
+.confirm-buy .yaoBao-auto-word{font-size:13px;color:#959595;padding:0 20px}
+.confirm-buy .yaoBao-auto-agr{font-size:13px;color:#4f4f4f;line-height:24px;padding-bottom:10px}
+.confirm-buy .yaoBao-auto-agr .hint-word,
+.confirm-buy .yaoBao-auto-agr .form-link{color:#3b8be8}
+.confirm-buy .yaoBao-auto-agr .agr,
+.confirm-buy .yaoBao-auto-agr .no-agr{display:inline-block;width:13px;height:13px;margin:0 3px -1px 0}
+.confirm-buy .yaoBao-auto-agr .agr{background:url(btn-select@2x.png) no-repeat;background-size:13px;}
+.confirm-buy .yaoBao-auto-agr .no-agr{background:url(btn-not-select@2x.png) no-repeat;background-size:13px;}

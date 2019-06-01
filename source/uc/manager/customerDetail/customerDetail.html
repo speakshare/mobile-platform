@@ -1,0 +1,26 @@
+<div class="manager userDetail">
+	<div class="info">
+		<div class="left">
+			<div class="name f16">
+				<span class="customer"><%=info.userName?info.userName:$.telHide(info.mobile)%></span>
+				<!-- <span class="gender <%=info.gender=='1'?'female':'male'%>"></span> -->
+				<%if(info.riskLevel){%><span class="type"><%=info.riskLevel%></span><%}%>
+			</div>
+			<div class="time"><%=$.dateFormat(info.registerTime*1000,'yyyy/MM/dd')%>注册<span class="invite">邀请人数:<em><%=info.inviteCount%></em>人</span></div>
+		</div>
+		<div class="right">
+			<span class="tel" data-link="<%=info.mobile%>"></span>
+		</div>
+	</div>
+	<div class="asset-profit">
+		<div class="profit-1"><span class="cash-num">累计投资(元)</span><%=info.totalInvestAmount%></div>
+		<div class="profit-1 totalProfitAmt"><span class="cash-num">累计红包(元)</span><%=info.totalRedPacket%></div>
+	</div>
+	<div class="order">
+		<div class="tab topflexdiv">
+			<span class=" tabbtn  tabon" data-type='1'>在投订单</span><span class="tabbtn" data-type='0'>到期订单</span>
+		</div>
+		<ul class="ullist">
+		</ul>
+	</div>
+</div>

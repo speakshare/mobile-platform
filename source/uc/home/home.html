@@ -1,0 +1,101 @@
+<div class="uc-home">
+    <div class="uc-top <%=isLogin?'':'un-login'%>">
+        <div class="uc-msg"></div>
+        <div class="uc-username uc-username<%=level.level%>"><%=vip.customerName?(vip.customerName+'，'):''%>你好！</div>
+    </div>
+    <div class="asset-wrap">
+        <% if(isLogin){ %>
+        <div class="asset-day asset-day<%=level.level%>" style="height:<%=$(window).width()/750*360%>px">
+            <div class="all-asset">
+                <span class="asset-title">总资产(元)</span>
+                <span class="assetTxt"><%=$.amountFormat(zc.myAssets)%></span>
+            </div>
+            <div class="asset-profit">
+                <span class="asset-title">昨日收益</span>
+                <span class="assetTxt"><%=$.amountFormat(zc.ystdProfit,1)%></span>
+            </div>
+            <div class="asset-profit2">
+                <span class="asset-title">累计收益</span>
+                <span class="assetTxt"><%=$.amountFormat(zc.totalProfitAmt,1)%></span>
+            </div>
+            <div class="uc-asset-tip">账户安全险保障中</div>
+        </div>
+        <% }else{ %>
+            <div class="login-btn" style="height:<%=$(window).width()/750*360%>px"></div>
+        <% } %>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <% _.each(zc.assetsBanners,function(n){ %>
+                    <div class="swiper-slide asset-col" data-type="<%=n.type%>"><%=n.name%>
+                        <span class="h-color assetTxt"><%=$.amountFormat(n.yestProfit,1)%></span>
+                    </div>
+                <% }) %>
+            </div>
+        </div>
+        <div class="asset-count">
+            <div class="asset-btns">
+                <span class="recharge-btn">充值</span>
+                <span class="withdrawals-btn">提现</span>
+            </div>
+            账户余额 <span class="assetTxt"><%=$.amountFormat(zc.piggy)%></span>
+        </div>
+    </div>
+    <% if(isLogin && (zc.rechargingAmount>0 || zc.withdrawingAmount>0)){%>
+    <div class="asset-tips">
+        <% if(zc.rechargingAmount>0){ %>
+            您有<%=zc.rechargingAmount%>元资金正在充值处理中
+        <% }
+        if(zc.withdrawingAmount>0){ %>
+            您有<%=zc.withdrawingAmount%>元资金正在提现处理中
+        <% } %>
+    </div>
+    <% } %>
+    <div class="asset-actions">
+        <div class="arrow-right" data-link="uc/couponList">
+            <span class="action-right">
+                <%if(zc.redRewardCount){%>
+                    有<%=zc.redRewardCount%>个红包可领
+                <%}else if(zc.rewardCount){%>
+                    有<%=zc.rewardCount%>张礼券可使用
+                <%}else{%>
+                    暂无可用红包
+                <%}%>
+            </span>
+            <span class="action-row action-coupon">我的礼券</span>
+            <%if(zc.redRewardCount || zc.redRewardCount){%>
+                <span class="asset-dot"></span>
+            <% } %>
+        </div>
+        <div class="arrow-right" data-link="uc/invite">
+            <% if(!vip.lcdsLevel){ %>
+            <span class="action-right">月入两万轻轻松松</span>
+            <% }
+            if(!showInviteTip){ %>
+            <span class="invite-tip">邀请好友拿现金</span>
+            <% } %>
+            <span class="action-row action-invite">理财大使</span>
+            <% for(var i=0;i<vip.lcdsLevel;i++){ %>
+                <span class="asset-star"></span>
+            <% } %>
+        </div>
+        <div class="arrow-right" data-link="uc/calendar">
+            <span class="action-right">投资回款一目了然</span>
+            <span class="action-row action-date">理财日历</span>
+
+        </div>
+        <div class="arrow-right" data-link="uc/tradingRecord">
+            <span class="action-right"></span>
+            <span class="action-row action-record">资金记录</span>
+        </div>
+        <div class="arrow-right" data-link="uc/help" data-id="1">
+            <span class="action-right"></span>
+            <span class="action-row action-help">帮助中心</span>
+        </div>
+        <div class="arrow-right" data-link="uc/setting">
+            <span class="action-row action-setting">设置</span>
+        </div>
+    </div>
+    <div class="tip-div1 hide"></div>
+    <div class="tip-div2 hide"></div>
+    <div class="tip-div3 hide"></div>
+</div>

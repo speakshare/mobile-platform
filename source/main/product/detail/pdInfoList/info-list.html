@@ -1,0 +1,35 @@
+<div class="info-item info-item-first">
+    <span>投资周期</span>
+    <div class="time-line-box">
+        <div class="time-line">
+            <%if(pd.tradeType==0 || pd.tradeType==1){%>
+            <ol>
+                <li>
+                    <a class="order-item first selected"><%=pd.dateOfInterest%><br/><em>预期起息</em></a>
+                </li>
+                <li>
+                    <a class="order-item selected last"><%=pd.endDate%><br/><em>预期到期</em></a>
+                </li>
+            </ol>
+            <%}%>
+            <%if(pd.tradeType==2){%>
+            <ol>
+                <li>
+                    <a class="order-item first selected"><%=$.dateFormat(pd.mujiEndtime,'yyyy-MM-dd')%><br/><em>截止认购</em></a>
+                </li>
+                <li>
+                    <a class="order-item middle selected"><%=$.dateFormat(pd.valueDate,'yyyy-MM-dd')%><br/><em>预期起息</em></a>
+                </li>
+                <li>
+                    <a class="order-item selected last"><%=$.dateFormat(pd.expirationDate,'yyyy-MM-dd')%><br/><em>预期到期</em></a>
+                </li>
+            </ol>
+            <%}%>
+        </div>
+    </div>
+    <p>本息预计将于 <%if(pd.tradeType==1 || pd.tradeType==0){%> <em><%=pd.endDate%></em> <%}%> <%if(pd.tradeType==2){%> <em><%=$.dateFormat(pd.repaymentDate,'yyyy-MM-dd')%></em> <%}%> 一次性转入你的摇旺账户 </p>
+</div>
+<div class="info-item info-item-last">
+    <span>收益预知</span>
+    <p>存100000元 预期收益<em><%=$.amountFormat(pd.preProfit10000)%></em>元</p>
+</div>

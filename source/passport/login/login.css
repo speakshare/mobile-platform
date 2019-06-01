@@ -1,0 +1,41 @@
+/*登录*/
+.login{z-index: 55555;position: fixed;width: 100%;height: 100%;overflow:auto;background-color: #f2f2f2;left: 0;bottom: 0;animation: xian 500ms ease;-webkit-animation: xian 500ms ease;}
+.login .yw_logo-box{text-align: center;padding: 30px 0}
+.login .yw_logo{display: inline-block;background: url("img_sign_bannerlogo@2x.png") no-repeat;background-size: 100%;width: 180px;height: 83px;}
+.login .login-box{margin:0 20px;height: 50px;line-height:65px;border-bottom: 1px solid #d0d0d0;}
+.login .icon-box:before{width: 16px;height: 20px;margin-bottom: -3px}
+.login .tel-pic:before{background-position:-165px -382px;}
+.login .pass-pic:before{background-position:-214px -361px;}
+.login .inp-box{border: none;width: 70%;background-color: inherit;height: 27px;line-height: 27px;margin: 0 10px;font-size: 15px;}
+.login .acc-word{padding:0 20px;font-size: 14px;color: #666}
+.login .acc-word span:nth-child(2){float: right}
+.login .login-hint{display: none;padding:20px 20px 0 20px;font-size: 12px;color: #ff6046}
+
+/*底部提示*/
+.login .safety-hint{z-index: -2;position: absolute;bottom:20px;left: 50%;margin-left: -151px;font-size: 12px;color: #999}
+.login .zhu-icon{display:inline-block;background:url(zhuceicon@2x.png) no-repeat;background-size:100%;width:14px;height:14px;margin:0 3px -3px 0}
+/*.login .safety-hint:before{background-position:-242px -52px;width: 14px;height: 16px;margin-bottom: -2px}*/
+@keyframes xian {
+	from{bottom:-100%}
+	to{bottom:0}
+}
+
+@-webkit-keyframes xian {
+	from{bottom:-100%}
+	to{bottom:0}
+}
+@media all and (max-width:320px) and (max-height:480px) {
+	.login .safety-hint{position:relative}
+}
+
+/*兼容pc*/
+@media all and (min-width:760px){
+	.login{ width:760px;margin-left:calc((100% - 760px)/2);}
+	body .toast_info_box .error_msg{margin-top:100px;} 
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+	-webkit-appearance: none !important;
+	margin: 0; 
+}
+input[type="number"]{-moz-appearance:textfield;}

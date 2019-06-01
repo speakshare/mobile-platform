@@ -1,0 +1,125 @@
+.info-box{
+    background:url('pd-bg.jpg') 0 0 no-repeat #fff;
+    background-size:100% 100%;
+    padding:25px;
+}
+
+.info-top{
+    display:table;
+    width:100%;
+}
+
+.info-top dl{
+    display:table-cell;
+    color:#4f4f4f;
+    font-size:14px;
+}
+
+.info-top dl.dl-first dt{
+    color:#ff5532;
+    font-size:13px;
+    margin-bottom:5px;
+}
+
+.info-top dl.dl-last dt {
+    margin-bottom:5px;
+    font-size: 12px;
+}
+.info-top dl.dl-first dt span{
+    font-size:40px;
+}
+.info-top dl.dl-last dt span{
+    font-size:30px;
+    color: #4f4f4f;
+}
+.info-top .dl-fixed{
+    background-color:#fe6646;
+    color:#fff;
+    padding:5px 0;
+    text-align:center;
+    border-radius:5px;
+}
+.info-pro{
+    padding:40px 0 20px 0;
+    width:100%;
+    margin:10px auto;
+}
+.pro-bar{
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background: #ededed;
+    position: relative;
+}
+.pro-bar-inner{
+    height: 80%;
+    border-radius: inherit;
+    position: relative;
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#fe976f), to(#fe6646));
+}
+.pro-digital{
+    position: absolute;
+    background: #fd7559;
+    padding: 5px;
+    border-radius: 5px;
+    top: -30px;
+    font-size: 12px;
+    color:#fff;
+    font-weight: bold;
+    width: 40px;
+    text-align:center;
+}
+
+.pro-digital.disabled{
+    background: #b5b5b5;
+}
+.pro-digital:after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #fd7559;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    left: 50%;
+    margin-left: -3px;
+    bottom: -3px;
+}
+
+.pro-digital.disabled:after {
+    background: #b5b5b5;
+}
+.info-tag{
+    margin-bottom:20px;
+}
+.info-tag span{
+    display:inline-block;
+    margin-right:5px;
+    padding:5px;
+    color:#fff;
+    border-radius:5px;
+}
+
+.info-tag span.first{
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#f5bdae), to(#fca695));
+}
+.info-tag span.middle{
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#f9a98a), to(#fc856d));
+}
+.info-tag span.last{
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#fd976e), to(#fd6445));
+}
+
+.info-bottom{
+    float:right;
+    margin-right:0;
+}
+
+.info-bottom .ux-arrow-right{
+    display:inline-block;
+    margin:2px 0 0 5px;
+    width: 8px;
+    height: 12px;
+    background:url(./../images/ux-icons.png) -14px -103px no-repeat transparent;
+    background-size:35px auto;
+}

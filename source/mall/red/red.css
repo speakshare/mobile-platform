@@ -1,0 +1,68 @@
+/*红包兑换*/
+.mall-red-wrapper {background:#ffffff;padding-bottom: 2px;border-bottom:1px solid #efeded;}
+.mall-red-wrapper .redcontainer { padding-left: 10px;/*height: 120px;*/margin: 10px auto;}
+.mall-red-wrapper .redlist .swiper-slide{margin:0px auto;background:url(../images/redbg.png) center center no-repeat;background-size: 100%;}
+.mall-red-wrapper .redlist .perfer{text-align:right;font-size:11px;line-height: 15px;position: absolute;top: 24%;width: 100%;padding: 0 10px;}
+.mall-red-wrapper .redlist .perfer span{float:left;font-size:16px;font-weight: bold;}
+.mall-red-wrapper .redlist .perfer span em{font-size:11px;}
+.mall-red-wrapper .redlist .limittime{font-size:11px;text-align:right;position: absolute;top: 24%;width: 100%;margin-top: 20px;padding: 0 10px;}
+.mall-red-wrapper .redlist .costpeanum{color:#ffffff;text-align:center;font-size:13px;position: absolute;bottom: 10%;width: 100%;}
+.mall-red-wrapper .nodatetips{margin: 10px auto;text-align: center;font-size:14px;font-size:12px;}
+
+/*20161216*/
+.mall-red-wrapper {padding-bottom: 2px;border-bottom:1px solid #efeded;background:url(../imgnew/bg_liquan.png)bottom  center no-repeat; background-size: 100%;}
+.mall-red-wrapper .redlist .swiper-slide.type-jx{background:url(../imgnew/img_jiaxiquan.png) center center no-repeat;background-size: 100%;}
+.mall-red-wrapper .redlist .swiper-slide.type-dj{background:url(../imgnew/img_daijingquan.png) center center no-repeat;background-size: 100%;}
+.mall-red-wrapper .redlist .swiper-slide.type-fx{background:url(../imgnew/img_fanxianquan.png) center center no-repeat;background-size: 100%;}
+.mall-red-wrapper .redlist .fullinfo{font-size: 13px;color:#FFF9CD;padding-top: 15px;padding-left: 8px;}
+.mall-red-wrapper .redlist .denomination{font-size:16px;color:#FFF9CD;text-align:center;margin:8px auto 6px;}
+.mall-red-wrapper .redlist .denomination span{font-size:30px;}
+.mall-red-wrapper .redlist .costpeasnum{font-size:15px;color:#ffffff;padding-left: 22px;text-align:right;margin-right: 15px;height: 20px;vertical-align: top;}
+.mall-red-wrapper .redlist .costpeasnum .dou{display:inline-block;background:url(../imgnew/bean.png) no-repeat;background-size:100%;width:17px;height:17px;margin: 0 5px}
+.mall-red-wrapper .redlist .costpeasnum .zhe{display:inline-block;background:url(../imgnew/label-zhezi@2x.png) no-repeat;background-size:100%;width:20px;height:20px;}
+.mall-red-wrapper .redlist .soldout{top: 50%;left: 50%; margin-left:-27px;margin-top:-12px;}
+
+@media screen and (min-width:320px){
+	.mall-red-wrapper .redcontainer {height:80px;margin: 6px auto;}
+	.mall-red-wrapper .redlist .perfer,.mall-red-wrapper .redlist .limittime{padding:0 1px; font-size:10px;}
+	.mall-red-wrapper .redlist .perfer{top:16%;}
+	.mall-red-wrapper .redlist .perfer span{font-size:13px;}
+	.mall-red-wrapper .redlist .costpeanum{bottom:9%;}
+
+	.mall-red-wrapper .redlist .fullinfo{font-size: 11px;padding-top: 11px;padding-left: 6px;}
+	.mall-red-wrapper .redlist .denomination span{font-size:24px;}
+	.mall-red-wrapper .redlist .costpeasnum .zhe{width:13px;height:13px}
+	.mall-red-wrapper .redlist .costpeasnum .dou{width:15px;height:15px;margin-bottom:-2px}
+
+}
+@media screen and (min-width:360px){
+	.mall-red-wrapper .redcontainer {height:90px;margin: 6px auto;}
+	.mall-red-wrapper .redlist .perfer,.mall-red-wrapper .redlist .limittime{font-size:10px;padding:0 2px;}
+	.mall-red-wrapper .redlist .perfer{top:20%;padding:0px 4px;}
+	.mall-red-wrapper .redlist .costpeanum{bottom:9%;}
+
+    .mall-red-wrapper .redlist .fullinfo{font-size: 12px;}
+	.mall-red-wrapper .redlist .denomination span{font-size:28px;}
+	.mall-red-wrapper .redlist .costpeasnum .zhe{width:15px;height:15px}
+	.mall-red-wrapper .redlist .costpeasnum .dou{width:18px;height:18px;margin-bottom:-2px}
+
+}
+@media screen and (min-width:375px){
+	.mall-red-wrapper .redcontainer {height:95px;margin: 8px auto;}
+	.mall-red-wrapper .redlist .perfer{top:20%;padding:0px 8px;}
+	.mall-red-wrapper .redlist .perfer,.mall-red-wrapper .redlist .limittime{font-size:11px;padding:0 6px;}
+	.mall-red-wrapper .redlist .perfer span{font-size:14px;}
+	.mall-red-wrapper .redlist .costpeanum{bottom:11%;}
+
+	.mall-red-wrapper .redlist .fullinfo{font-size: 13px;padding-top: 13px;padding-left: 8px;}
+	.mall-red-wrapper .redlist .denomination span{font-size:30px;}
+	.mall-red-wrapper .redlist .costpeasnum .zhe{width:16px;height:16px}
+	.mall-red-wrapper .redlist .costpeasnum .dou{width:19px;height:19px;margin-bottom:-3px}
+}
+
+@media screen and (min-width:414px){
+	.mall-red-wrapper .redcontainer {height:105px;margin: 10px auto;}
+	.mall-red-wrapper .redlist .perfer,.mall-red-wrapper .redlist .limittime{padding:0 10px;}
+	.mall-red-wrapper .redlist .perfer span{font-size:16px;}
+	.mall-red-wrapper .redlist .costpeanum{bottom:11%;}
+}

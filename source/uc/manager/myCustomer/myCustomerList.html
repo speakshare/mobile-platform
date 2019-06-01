@@ -1,0 +1,21 @@
+<% if(!_.isEmpty(list)){%>
+<ul class="ullist clearfix">
+	<% _.each(list,function(n){ %>
+	<li class="customerDetail" data-nid='<%=n.investId%>'>
+		<div class="top"><span class="username"><%=n.investName%> 
+			<%if(n.investName2){%>
+			<em class='superior'><%=n.investName2%>邀请</em>
+			<%}%>
+		</span><span class="fr registertime"><%= $.dateFormat(n.registerTime*1000,'yyyy/MM/dd') %>注册</span></div>
+		<div class="bottom"><span class="money"><%= n.investAmount>0?'在投金额'+n.investAmount:'暂无在投' %></span><span class="fr duetime">
+		<%if(n.dueDay>0 && n.dueDay<11){%>
+		<%=n.dueDay%>天后到期
+		<%}%>
+		</span></div>	
+	</li>
+	<%})%>
+</ul>
+<%}%>
+<%if(!hasMore){%>
+<span class="hasnodata">—— 没有更多结果了——</span>
+<%}%>

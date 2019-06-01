@@ -1,0 +1,17 @@
+.pro-old{margin:0;border-bottom:1px solid #e5e5e5;padding:20px;color:#b5b5b5}
+.pro-old .pro-title{font-size:15px;color:#4f4f4f;}
+.pro-old .pro-con{display:flex;padding:15px 0}
+.pro-old .pro-con .item1{flex:1.5}
+.pro-old .pro-con .num{font-size:30px;padding-bottom:5px}
+.pro-old .pro-con .num span{font-size:14px;}
+.pro-old .pro-con .num .col1{font-size:14px;}
+.pro-old .pro-con .num .col2{font-size:12px;}
+.pro-old .pro-con .time{font-size:26px;padding:3px 0 6px}
+.pro-old .pro-con .time span{font-size:13px;}
+.pro-old .pro-con .item2{flex:1;text-align:center}
+.pro-old .pro-con .item3{flex:1;text-align:right;margin-top:17px}
+.pro-old .pro-con .item3 span{border:1px solid #b5b5b5;border-radius:5px;padding:5px 10px;}
+.pro-old .pro-con .word{font-size:13px;}
+.pro-old .pro-hint{flex:1}
+.pro-old .pro-hint span{font-size:11px;border:1px solid #b5b5b5;padding:1px 2px;margin-right:5px;border-radius:3px}
+.pro-old-hint{display:none;text-align:center;padding:20px 0;font-size:13px;color:#4f4f4f}

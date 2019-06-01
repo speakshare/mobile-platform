@@ -1,0 +1,20 @@
+.my-asset .asset-ring-wrap{background:#fff;margin-bottom:10px;padding:20px 0}
+.my-asset .asset-ring-box{position:relative}
+.my-asset .asset-text{position:absolute;top:95px;width:100%;text-align:center;font-size:12px;line-height:1.4;color:#999}
+.my-asset .asset-text-num{color:#666;font-size:17px}
+.my-asset .asset-chart,
+.my-asset .asset-chart canvas{width:228px;height:228px;margin:0 auto}
+
+
+.my-asset .asset-note{text-align: center; margin-top: 12px;color: #999}
+.my-asset .asset-chart-desc{background:#fff;font-size:12px;line-height: 1.5;padding-left:15px}
+.my-asset .asset-chart-desc p{height:40px;font-size:15px;line-height:40px;border-top:1px solid #eee;color:#4f4f4f;padding-right:15px}
+.my-asset .asset-chart-desc p:first-child{border-top:none}
+.my-asset .asset-chart-desc p:before{content:'';margin-right:10px;display:inline-block;width:7px;height:7px;background:#FF5532;vertical-align:1px}
+.my-asset .asset-chart-desc p:nth-child(2):before{background:#FCA032}
+.my-asset .asset-chart-desc p:nth-child(3):before{background:#3b8be8}
+.my-asset .asset-chart-desc p:nth-child(4):before{background:#A432FC}
+.my-asset .asset-chart-desc .asset-num{float:right}
+@media screen and (min-width:360px){
+    .my-asset .asset-desc{margin:20px 17px;font-size:13px}
+}

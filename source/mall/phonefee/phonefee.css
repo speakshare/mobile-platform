@@ -1,0 +1,35 @@
+/*话费兑换*/
+.mall-bill-wrapper {background:#ffffff; padding-bottom: 2px;border-bottom:1px solid #efeded;}
+.mall-bill-wrapper .billcontainer { padding-left: 10px;height: 120px;margin: 10px auto;}
+.mall-bill-wrapper .billlist .swiper-slide{margin:0px auto;background:url(../images/billbg.png) center center no-repeat;background-size: 100%;}
+.mall-bill-wrapper .billlist .perfer{text-align:right;font-size:11px;line-height: 15px;position: absolute;top: 24%;width: 100%;padding: 0 10px;}
+.mall-bill-wrapper .billlist .perfer span{float:left;font-size:16px;font-weight: bold;}
+.mall-bill-wrapper .billlist .perfer span em{font-size:11px;}
+.mall-bill-wrapper .billlist .limittime{font-size:11px;text-align:right;position: absolute;top: 24%;width: 100%;margin-top: 20px;padding: 0 10px;}
+.mall-bill-wrapper .billlist .costpeanum{color:#ffffff;text-align:center;font-size:13px;position: absolute;bottom: 10%;width: 100%;}
+.mall-bill-wrapper .nodatetips{margin: 10px auto;text-align: center;font-size:14px;font-size:12px;}
+/*摇旺电话*/
+.mall-ywphone-enter{width:100%;height:45px;line-height:45px;margin:10px 0 23px;background: #ffffff;}
+.mall-ywphone-enter .title{font-size:16px;color:#444444;margin-left:15px;padding-left: 32px;background: url(../images/ywphone.png) left center no-repeat;background-size: 20px auto;}
+.mall-ywphone-enter .touseywpone{float:right;margin-right:15px;font-size: 13px;color:#999999;}
+
+@media screen and (min-width:320px){
+	.mall-bill-wrapper .billcontainer {height:80px;margin: 6px auto;}
+	.mall-bill-wrapper .billlist .perfer,.mall-bill-wrapper .billlist .limittime{padding:0 4px;}
+	.mall-bill-wrapper .billlist .costpeanum{bottom:9%;}
+}
+@media screen and (min-width:360px){
+	.mall-bill-wrapper .billcontainer {height:90px;margin: 6px auto;}
+	.mall-bill-wrapper .billlist .perfer{top:20%;}
+	.mall-bill-wrapper .billlist .costpeanum{bottom:9%;}
+}
+@media screen and (min-width:375px){
+	.mall-bill-wrapper .billcontainer {height:100px;margin: 8px auto;}
+	.mall-bill-wrapper .billlist .costpeanum{bottom:11%;}
+}
+
+@media screen and (min-width:410px){
+	.mall-bill-wrapper .billcontainer {height:110px;margin: 10px auto;}
+	.mall-bill-wrapper .billlist .perfer,.mall-bill-wrapper .billlist .limittime{padding:0 10px;}
+	.mall-bill-wrapper .billlist .costpeanum{bottom:11%;}
+}

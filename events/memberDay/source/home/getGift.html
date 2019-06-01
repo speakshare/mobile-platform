@@ -1,0 +1,17 @@
+<div class="f-form clearfix">
+    <p>您已成功投资</p>
+    <p>【会员专享-<%=p.levelName%>】产品<span class="f-color"><%=p.investAmt%></span>元</p>
+    <% if(p.isMultiple==0){ %>
+        <p>本次兑换1件<%=p.name%></p>
+    <% }else{ %>
+        <p class="f-p-m">本次兑换<%=p.name%>：<span class="change-num-box">
+            <span class="change1"></span>
+            <span class="change-num"><%=p.balance%></span>
+            <span class="change2"></span>
+        </span>
+    <% } %>
+    <p class="f-tip">请认真填写您的收货地址，提交订单后将无法修改</p>
+    <p class="f-p"><label>收货人：</label><input class="f-name" type="text" maxlength="10" value="<%=d.memberName||''%>"></p>
+    <p class="f-p"><label>手机号：</label><input class="f-mobile" type="text" maxlength="11" value="<%=d.telephone||''%>"></p>
+    <p class="f-p"><label>详细地址：</label><input class="f-address" type="text" maxlength="50" value="<%=d.address||''%>"></p>
+</div>

@@ -1,0 +1,12 @@
+.recharge-result{margin:0;padding:0}
+.recharge-result .icon-suc{background:url(icon-success@2x.png) no-repeat;background-size:100%;width:60px;height:60px;margin:30px auto 20px;}
+.recharge-result .word{text-align:center;font-size:17px;color:#4f4f4f;padding-bottom:10px}
+.recharge-result .money{text-align:center;font-size:15px;color:#959595}
+.recharge-result .money span{color:#fca032}
+.recharge-result .btn{text-align:center;padding:35px 0 30px;}
+.recharge-result .btn span:nth-of-type(1),
+.recharge-result .btn span:nth-of-type(2){display:inline-block;border:2px solid #ff5532;font-size:16px;width:130px;height:46px;line-height:44px;}
+.recharge-result .btn span:nth-of-type(1){color:#ff5532;margin-right:3%}
+.recharge-result .btn span:nth-of-type(2){color:#fff;margin-left:3%;background-color:#ff5532;}
+.recharge-result .hint-word{text-align:center;font-size:13px;color:#959595}
+.recharge-result .hint-word span{color:#3b8beb}

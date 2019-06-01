@@ -1,0 +1,28 @@
+<% if(!$.getCache('channelCode')){%>
+    <%if(pd.activity && pd.activity.currentActivity){ %>
+        <%if(pd.activity && pd.activity.actiUrl){ %>
+        <div class="detail_banner detail_banner_ads" data-link="<%=pd.activity.actiUrl%>" style="height:<%=$(window).width()/750*74%>px;line-height:<%=$(window).width()/750*74%>px">
+        <%}else{%>
+        <div class="detail_banner detail_banner_ads" style="height:<%=$(window).width()/750*74%>px;line-height:<%=$(window).width()/750*74%>px">
+        <%}%>
+            <span class="t1"><%=pd.activity.currentActivity%></span>
+            <span class="t2"><%=pd.activity.actiTheme%></span>
+        </div>
+    <%}else{%>
+        <%if(pd.productType==10){ %>
+            <div class="detail_banner detail_banner1" style="height:<%=$(window).width()/750*74%>px;line-height:<%=$(window).width()/750*74%>px">
+                <% if(tyj>0){ %>
+                    <span class="t1">起投1000元</span>
+                    <span class="t2">额外获得<b><%=(pd.annualizedRate * 5 * tyj / 36500).toFixed(2)%></b>元体验金收益</span>
+                <% }else{ %>
+                    <span class="t1">新手专享理财计划</span>
+                    <span class="t2">使用体验金获高收益</span>
+                <% } %>
+            </div>
+        <% }else{ %>
+            <div class="detail_banner2" data-link="<%=ads.imageUrlHL%>">
+                <img class="detail-banner-img" src="<%=ads.imageUrl%>">
+            </div>
+        <% }%>
+    <%}%>
+<%}%>

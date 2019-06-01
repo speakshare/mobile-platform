@@ -1,0 +1,58 @@
+﻿<% var selectedBagId=selectedBagId ,isUseByProduct=isUseByProduct%>
+<%if(isUseByProduct){%>
+<div class="withoutredbtn">不使用</div>
+<%}%>
+<% _.each(gift,function(n){ %>
+<%if(n.ruleType == "1" || n.ruleType == "4"){%>
+<li class="red-bag-one <%=n.isUsedStatus=='1'?'red-bag-used':(n.isUsedStatus=='2'?'red-bag-past':'') %>" data-amount="<%=n.amount%>"  data-limitAmount="<%=n.limitAmount%>" data-ruleType="<%=n.ruleType%>" data-id="<%=n.sendRewardId%>">
+    <%}else if(n.ruleType == "2"){%>
+    <li class="red-bag-one <%=n.isUsedStatus=='1'?'red-bag-used':(n.isUsedStatus=='2'?'red-bag-past':'') %>" data-amount="<%=n.interestAddVal%>"  data-limitAmount="<%=n.limitAmount%>" data-maxAmount="<%=n.interestAddMaxPrincipal%>" data-ruleType="<%=n.ruleType%>" data-limitDay="<%=n.interestAddDays%>" data-id="<%=n.sendRewardId%>">
+        <%}%>
+        <div class="wrap" style="height: <%=($(window).width()-15)/707*233 %>px" data-id="<%=n.ruleId%>" data-bagid="<%=n.sendRewardId%>" data-status="<%=n.isUsedStatus%>">
+          <%if(n.ruleType==1){%>
+          <div class="left">
+            <p class="amount  <%= n.isUsedStatus==2?'fgrey':'blue' %>">￥<span class="amount"><%=n.amount%></span></p>
+            <p class="tips">满<%=n.limitAmount%>元返</p>
+        </div>
+        <p class="tigbar  <%= n.isUsedStatus==2?'fgreyBg':'bluebg' %>"></p>
+        <%}else if(n.ruleType==2){%>
+        <div class="left">
+            <p class="amount <%= n.isUsedStatus==2?'fgrey':'deepYellow' %>"><span class="amount"><%=n.interestAddVal%></span>%</p>
+            <p class="tips">满<%=n.limitAmount%>元用</p>
+        </div>
+        <p class="tigbar <%= n.isUsedStatus==2?'fgreyBg':'deepYellowBg' %>"></p>
+        <%}else if(n.ruleType==4){%> 
+        <div class="left">
+            <p class="amount <%= n.isUsedStatus==2?'fgrey':'lightYellow' %>">￥<span class="amount"><%=n.amount%></span></p>
+            <p class="tips">满<%=n.limitAmount%>元减</p>
+        </div>
+        <p class="tigbar <%= n.isUsedStatus==2?'fgreyBg':'lightYellowBg' %>"></p>
+        <%}%>
+        <div class="right <%=(n.ruleType==1?'right-fx':(n.ruleType==2?'right-jx':(n.ruleType==4?'right-dj':'')))%>  <%=n.isUsedStatus==2?'right-isused':''%>" >
+            <p><span class="title"><%=(n.ruleType==1?'返现券':(n.ruleType==2?'加息券':(n.ruleType==4?'代金券':''))) %></span><span><%=n.ruleName%></span></p>
+            <p class="introduce raise">
+              <%if(n.ruleType==2){%>
+              最高加息<%=n.interestAddMaxPrincipal%>元，<%=n.interestAddDays%>天
+              <%}%>
+          </p>                       
+          <p class="desc2 tips fgrey f12" >适用产品></p>
+          <p class="f12 fgrey">   
+           <% var servDate=localStorage.getItem('yw-redbagservDate') ,expiredDays=(new Date(n.overdueTime).getTime()-new Date(servDate).getTime())/(1000 * 60 * 60 * 24) %>
+           <%if(n.isUsedStatus==0 && expiredDays>=0 && expiredDays<3){%>
+           <p class="dueovertips">
+             <%=expiredDays+1%>天后过期
+         </p>
+         <%}else{%>
+         <p class="f12 fgrey"><%=n.validDesc%></p>
+         <%}%>
+         <%if(isUseByProduct){%>
+         <p class="selectbtn <%= n.sendRewardId==selectedBagId?'selected':'' %>"></p>
+         <%}%> 
+
+     </div>
+ </div>
+ <%if(n.isUsedStatus==2){%>
+ <span class="invalid iconExpired"></span>
+ <%}%>
+</li>
+<%})%>

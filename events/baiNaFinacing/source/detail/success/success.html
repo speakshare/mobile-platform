@@ -1,0 +1,42 @@
+<section class="product-success">
+    <section class="success-pro success-type">
+        <section class="suc-icon">
+            <i class="trim"></i>
+            <em class="fixed-height"></em>
+        </section>
+        <section class="suc-word fix-word">
+            <p class="col first">您的权益申请已成功提交</p>
+            <p class="col middle">产品募集成功后即可领取</p>
+            <p class="col last"><%=resultPageNotes%></p>
+        </section>
+    </section>
+    <section class="fix-type">
+        <section class="success-pro">
+            <section class="suc-icon">
+                <i class="trim1"></i>
+                <span class="fixed-height"></span>
+            </section>
+            <section class="suc-word">
+                <p class="col4">投资申请提交成功</p>
+                <p class="col1"><%=$.amountFormat(investAmtSum)%>元</p>
+                <p class="col text-gray">额外获得<%=prePointAmt%>旺豆</p>
+            </section>
+        </section>
+        <section class="success-pro">
+            <section class="suc-icon">
+                <i class="trim2"></i>
+            </section>
+            <section class="suc-word">
+                <p class="col4">预计份额确认结果</p>
+                <p class="col2"><%=$.dateFormat(preConfirmDate,'yyyy/MM/dd')%></p>
+            </section>
+        </section>
+    </section>
+    
+    <section class="fix-type">
+        <section class="common-btn" id="toAct">完成</section>
+        <section class="ux-tips">
+            请至活动页面“我的领取记录”查看订单详情。
+        </section>
+    </section>
+</section>

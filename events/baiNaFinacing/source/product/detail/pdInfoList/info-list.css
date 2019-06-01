@@ -1,0 +1,116 @@
+.info-item{
+    padding:30px;
+    background-color:#fff;
+}
+.info-item-first{
+    margin-bottom:20px;
+}
+
+.productdetail .pd-info-list .info-item-first span{
+    height:40px;
+    line-height:40px;
+    display:block;
+    padding-left:40px;
+    background:url(./../images/ux-icons.png) 0 -40px no-repeat transparent;
+    background-size:40px auto;
+    font-size:30px;
+}
+
+.productdetail .pd-info-list .info-item-last span{
+    display:block;
+    height: 40px;
+    line-height:40px;
+    padding-left: 40px;
+    background: url(./../images/ux-icons.png) 0 -76px no-repeat transparent;
+    background-size: 40px auto;
+}
+
+.productdetail .pd-info-list .info-item-last p{
+    height: 4px;
+    line-height:40px;
+    padding-left: 40px;
+    background: url(./../images/ux-icons.png) 0 0 no-repeat transparent;
+    background-size: 40px auto;
+}
+
+
+.time-line-box {
+    position: relative;
+    height: 180px;
+    margin: 40px auto 0;
+    width: 90%;
+}
+
+.time-line {
+    width:80%;
+    position: absolute;
+    z-index: 1;
+    left:50%;
+    top: 50%;
+    height: 4px;
+    transform: translate(-50%,-50%);
+    background: -webkit-gradient(linear, 0 0, 46% 0, from(#fe6646), to(#fe976f));
+}
+.time-line em{
+    color:#4f4f4f;
+}
+
+.info-item p em{
+    color:#fc5635;
+}
+.order-item {
+    position: absolute;
+    bottom: -140px;
+    z-index: 2;
+    text-align: center;
+    font-size: 28px;
+    padding-bottom: 30px;
+    color: #4f4f4f;
+    line-height: 120px;
+    width: 200px;
+    display: block;
+}
+
+.order-item.first{
+    color: #ff5532;
+}
+
+.order-item:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    bottom: 126px;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+}
+
+.order-item.first {
+    left: -24%;
+}
+
+.order-item.last {
+    left: 84%;
+}
+
+.order-item.middle {
+    left: 30%;
+}
+
+.first.selected:after {
+    background-color: #ff5532;
+}
+.last.selected:after {
+    background-color: #fa967e;
+}
+
+.middle.selected:after {
+    background-color: #fa967e;
+}
+
+
+
+

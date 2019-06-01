@@ -1,0 +1,62 @@
+var template= _.template(require('./popWindow.html'));
+require('./popWindow.css');
+module.exports=function (options) {
+    var defaultOptions = {
+            title: '',
+            content: '',
+            yes: '确认',
+            no: '',
+            uniqID: $.uniqID(),
+            type: 1,
+            closeBtn: false,
+            tapMask: false,
+            callback: $.noop()
+        },
+
+        opt = {},
+        win;
+    opt = $.extend(defaultOptions, options);
+    if (opt.type == 1) opt.no = opt.no || '取消';
+    win = $(template(opt));
+    $('body').append(win).on('touchend.popWindow' + opt.uniqID, '.yes_btn,.no_btn,.pop_window_wrap', function (e) {
+        var pos = false,
+            obj = $(e.target),
+            obj2 = $(e.currentTarget);
+
+        if (obj.hasClass('pop_window_wrap') && opt.tapMask) {
+            win.remove();
+            $('body').off('touchend.popWindow' + opt.uniqID);
+            return false;
+        }
+        if (obj2.hasClass('yes_btn') || obj2.hasClass('no_btn')) {
+            if (obj2.hasClass('yes_btn')) {
+                pos = true
+            }
+            if ($.type(opt.callback) == 'function') {
+                var temp = (function(pos, event){
+                    event.preventDefault();
+                    opt.callback(pos,event);
+                })(pos, event);
+                if (temp !== false) {
+                    win.remove();
+                    $('body').off('touchend.popWindow' + opt.uniqID);
+                }
+            } else {
+                win.remove();
+                $('body').off('touchend.popWindow' + opt.uniqID);
+            }
+        }
+    })
+    // window.onpopstate = function() {
+    //     win.remove();
+    //     $('body').off('tap.popWindow' + opt.uniqID);
+    //     window.onpopstate=null;
+    // };
+    var obj=win.find('.pop_window');
+    obj.css('margin-top',-obj.height()/2);
+    $(window).on('popstate.popWindow'+ opt.uniqID,function(){
+        win.remove();
+        $('body').off('tap.popWindow' + opt.uniqID);
+        $(window).off('popstate.popWindow'+ opt.uniqID);
+    })
+};

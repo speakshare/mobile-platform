@@ -1,0 +1,87 @@
+.resign{width:100%;position:absolute;background:url(./imgs/bg_color@2x.png) no-repeat;padding:40px 18px 21px;min-height:100%;background-size:cover;}
+.resign .container{width:100%;padding: 20px 20px 37%;position:relative;background:url(./imgs/bg_card@2x.png) no-repeat;background-size:100%;min-height:60vh;}
+.resign .container .leftBar{width: 2px;float: left;position: relative;padding: 15px 0 22px;margin-right: 15px;background-color:#d8d8d8;}
+.resign .container .leftBar .dot{display:inline-block;width:10px;height:10px;position: absolute;top: 0;left: -4px;border-radius:50%;}
+.resign .container .leftBar .dot1{background-color:#d8d8d8;}
+.resign .container .leftBar .curDot{background-color:#FF751B;}
+.resign .container li{padding-bottom: 23px;}
+.resign .container .preSignInfo{float:right;}
+.resign .container .rightTips{float:right;margin-right:18px;}
+.resign .container .tip{margin-left: 3px;}
+.resign .container .stress{color:#ff5532 !important;font-weight: normal;}
+.resign .container .resignDate:first-child{color:#4f4f4f;}
+.resign .container .resignDate,.resign .container .rightTips{color:#b5b5b5;}
+.resign .container .icons{position: relative;width:21px;height:21px;margin-bottom:-8px;margin-left: 2px;display: inline-block;}
+.resign .container .beans{background:url(./imgs/img_bean@2x.png) no-repeat;background-size:100%;}
+.resign .container .hasbeans{background:url(./imgs/img_bean_tanchuang@2x.png) no-repeat;background-size:100%;}
+.resign .container .invalideBean{background:url(./imgs/img_bean_no effect@2x.png) no-repeat;background-size:100%;}
+.resign .container .hasbox{background:url(./imgs/treasure_chest@2x copy.png) no-repeat;background-size:100%;}
+.resign .container .box{background:url(./imgs/img_baoxiang@2x.png) no-repeat;background-size:100%;}
+.resign .container .validBox{background:url(./imgs/img_baoxiang_no effect@2x.png) no-repeat;background-size:100%;}
+.resign .container .getBeans{position: absolute;right: -17px;top: -5px;}
+.resign .container .validBeans{color:#ff751b;}
+.resign .container .invalidBeans{color:#b5b5b5;}
+
+
+.resign .wait{border-bottom:1px solid #e5e5e5;padding-bottom:5px;}
+.resign .wait .pending{text-align:center;padding-bottom: 13px;font-size:14px;color:#fe9149;}
+.resign .wait .tips{display:inline-block;font-size:14px;line-height: 18px;color:#4f4f4f;}
+.resign .wait .left{width:71%;}
+.resign .wait .investBtn{display:inline-block;margin-top:-34px;float: right;width:50px;height:18px;background:url(./imgs/BTN_touzi@2x.png)no-repeat;background-size:100%;}
+.resign .wait .investAmount{margin-top: 5px;font-size:12px;color:#959595;}
+.resign .wait .inviteBtn{display:inline-block;margin-top:-34px;float: right;width:50px;height:18px;background:url(./imgs/btn_yaoqing@2x.png)no-repeat;background-size:100%;}
+.resign .wait .complete{text-align:center;padding-bottom: 13px;font-size:14px;color:#88d53f;}
+
+.resign .container .btn{position: absolute;right: 17px;bottom: 28px;}
+.resign .container .btn .plusNum{position: absolute;right: 5px;top: 5px;color:#fff;}
+.resign .signBtn{display:inline-block;width:60px;height:60px;}
+.resign .signAgain{position:relative;background:url(./imgs/btn_sign_new@2x.png) no-repeat;background-size:100%;}
+.resign .resignBtn{background:url(./imgs/btn_buqian@2x.png) no-repeat;background-size:100%;margin-left: 10px;}
+.resign .invalid{background:url(./imgs/btn_buqian_no effect@2x.png) no-repeat;background-size: 100%;}
+
+.resignStress{color:#ff5532;}
+
+/* 补签成功蒙层 */
+.resignWrap .resignMask{width:100%;height:100%;position: fixed;top:0;left:0;background-color: rgba(0,0,0,.3);padding:20% 45px;}
+.resignWrap .resignMask .main{background-color:#fff;border-radius:6px;padding:18px 0;}
+.resignWrap .resignMask .main li{border-top: 1px solid #e5e5e5;padding: 8px 18px;}
+.resignWrap .resignMask .main li:last-child{border-bottom: 1px solid #e5e5e5;}
+.resignWrap .resignMask .main .resignResult{padding: 20px 18px;font-size:12px;color:#959595;}
+.resignWrap .resignMask .main .result{position:relative;display: inline-block;margin-left: 14%;color:#ff7536;}
+.resignWrap .resignMask .result .plusBeans{position: absolute;top: -4px;right: -19px;}
+.resignWrap .pic{width:20px;height:20px;margin:0 0 -5px 2px;display: inline-block;}
+.resignWrap .iconBean{background:url(./imgs/img_bean_tanchuang@2x.png) no-repeat;background-size:100%;}
+.resignWrap .iconBox{background:url(./imgs/box.gif) no-repeat center center;background-size:100%;}
+.resignWrap .resignMask .main .iconResult{float:right;background:url(./imgs/check.gif) no-repeat;background-size:100%;}
+.resignWrap .resignResult .num,.resignWrap .resignResult .amount{color:#ff751b;}
+.resignWrap .resignMask .main .resultTitle{display: inherit;font-size:14px;color:#4f4f4f;text-align: center;padding-bottom: 15px;}
+.resignWrap .resignMask .returnBtn{width:50px;height:18px;margin: 0 auto;background:url(./imgs/BTN_fanhui@2x.png)no-repeat;background-size:100%;}
+
+
+@media screen and (width:414px){
+	.resign .container{padding: 20px 20px 49%;}
+	.resign .container li{padding-bottom:37px;}
+	.resign .container .leftBar{padding: 29px 0 22px;}
+	.resign .container .btn{bottom:70px;right:26px;}
+	.resign .wait .investAmount{display: inline-block;padding:10px 0;}
+	.resign .wait .inviteBtn{margin-top: -50px;}
+}
+@media screen and (width:412px){
+	.resign .container{padding: 20px 20px 42.5%;}
+	.resign .container li{padding-bottom:36px;}
+	.resign .container .leftBar{padding: 28px 0 22px;}
+	.resign .container .btn{bottom:47px;right:30px;}
+	.resign .wait .investAmount{display: inline-block;padding:8px 0;}
+}
+@media screen and (width:375px){
+	.resign .container{padding: 20px 20px 51%;}
+	.resign .container li{padding-bottom:31px;}
+	.resign .container .leftBar{padding: 23px 0 22px;}
+	.resign .container .btn{bottom:79px;right:20px;}
+}
+@media screen and (width:360px){
+	.resign .container{padding: 20px 20px 39%;}
+	.resign .container li{padding-bottom:29px;}
+	.resign .container .leftBar{padding: 21px 0 22px;}
+	.resign .container .btn{bottom:24px;}
+}

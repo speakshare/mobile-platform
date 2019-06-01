@@ -1,0 +1,61 @@
+<%_.each(list,function(item){%>
+<section class="hold-pos-record">
+    <section class="record-line1">
+        <span><%=item.exchangeClass%></span>
+        <span class="record-rig">
+            <%if(item.exchangeClass=='卖出'){%>
+            <%=item.exchangeCount%>份
+            <%}else{%>
+            <%=item.exchangeAmount%>元
+            <%}%>
+        </span>
+    </section>
+
+    <%if(item.exchangeClassStatus=='买入处理中'||item.exchangeClassStatus=='卖出处理中'){%>
+    <section class="record-line2">
+        <span><%=$.dateFormat(item.applyTime*1000,'yyyy/MM/dd hh:mm:ss')%></span>
+        <span class="record-rig record-col1"><%=item.exchangeClassStatus%></span>
+    </section>
+    <section class="record-word record-wid">
+        <%if(item.exchangeClass=='买入'){%>
+        <p class="record-par record-pars rec-wid">预计<%=$.dateFormat(item.exchangeConfirmDate*1000,'MM/dd')%>后确认净值</p>
+        <%}else if(item.exchangeClass=='卖出'){%>
+        <p class="record-par record-pars"><i class="icon1-record"></i>预计<%=$.dateFormat(item.exchangeConfirmDate*1000,'MM/dd')%>后确认净值</p>
+        <span class="lin"></span>
+        <p class="record-par"><i class="icon2-record"></i>预计<%=$.dateFormat(item.captailArrivalDate*1000,'MM/dd')%>前到账</p>
+        <%}else{%>
+        <p class="record-par record-pars">预计<%=$.dateFormat(item.exchangeConfirmDate*1000,'MM/dd')%>后确认净值</p>
+        <%}%>
+    </section>
+    <%}else if(item.exchangeClassStatus=='买入失败'||item.exchangeClassStatus=='卖出失败'){%>
+    <section class="record-line2">
+        <span><%=$.dateFormat(item.applyTime*1000,'yyyy/MM/dd hh:mm:ss')%></span>
+        <span class="record-rig record-col1"><%=item.exchangeStatusName=='确认成功'?item.confirmShare:item.exchangeClassStatus%></span>
+    </section>
+    <%}else{%>
+    <%if(item.exchangeStatusName=='已撤单'){%>
+    <section class="record-line2">
+        <span><%=$.dateFormat(item.applyTime*1000,'yyyy/MM/dd hh:mm:ss')%></span>
+        <span class="record-rig record-col1"><%=item.exchangeStatusName%></span>
+    </section>
+    <%}else{%>
+    <section class="record-line2">
+        <span><%=$.dateFormat(item.applyTime*1000,'yyyy/MM/dd hh:mm:ss')%></span>
+        <span class="record-rig record-par">
+            <%if(item.exchangeClass=='卖出'){%>
+            金额<%=item.confirmAmount%>元
+            <%}else{%>
+            份额<%=item.confirmShare%>份
+            <%}%>
+            &nbsp;净值<%=item.nav%>
+        </span>
+    </section>
+    <section class="record-word">
+        <!--<p class="record-col2"><%=item.exchangeStatusName%></p>-->
+        <p class="record-col2">交易已完成</p>
+    </section>
+    <%}%>
+    <%}%>
+</section>
+<%})%>
+<p class="more-record" id="moreRecord">点击加载更多</p>

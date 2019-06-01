@@ -1,0 +1,52 @@
+<div class="my-new-peas clearfix">
+    <div class="peasbox-pd16 clearfix">
+       <% if($.getLogin() && signinfo){%>
+       <div class="ordericon">
+           <div class="orderbtn"></div>
+       </div>
+       <div class="my-new-peasbox">
+           <div class="my-new-peasnum peasrecordbtn" id="currpeasnum"><%= signinfo.shakeAmt%></div>
+           <p class="signdaysbox">已连续签到<span class="cFD6F53"><%= signinfo.continuesDays%></span>天，距下个宝箱还有<span class="cFD6F53"><%= signinfo.arriveLuckBoxDays%></span>天
+            <em class="tips"></em></p>
+            <div class="signbar  <%= signinfo.chanceFlag=='1'?'resign':((signinfo.nextNodeType=='01' && signinfo.todaySigned ) ||(signinfo.todayNodeType=='01' && !signinfo.todaySigned) )?'peasign':'boxsign'%>  <%= signinfo.todaySigned?'signed':''%>">
+                <%if(signinfo.chanceFlag !=='1'){%>
+                    <% if((signinfo.nextNodeType=='01' && signinfo.todaySigned ) ||(signinfo.todayNodeType=='01' && !signinfo.todaySigned)){%>
+                    <span class="signnum <%= signinfo.todaySigned?'cB5B5B5':''%>">+<%= signinfo.nextPoint %></span>
+                    <%}%>
+                <% } %>
+            </div>
+        </div>
+
+        <% }else{ %>
+        <div class="loginbox gotologinbtn">
+            <div class="tologin">暂未登录</div>
+            <div class="loginstatusdesc">登录领取更多旺豆吧！</div>
+        </div>
+        <%}%>
+    </div>
+    <div class="meumenter"><div class="meum meum1 lottery">旺豆抽奖</div><div class="meum meum2 torecharge">话费充值</div><div class="meum meum3 pearaiders">旺豆攻略</div></div>
+    <div class="bannerbox">
+        <% if(imgUrl && imgUrl.list.length){ %>
+        <div class="swiper-container-banner">
+            <div class="swiper-wrapper">
+                <%_.each(imgUrl.list,function(item){%>
+                <div class="swiper-slide">
+                    <% if(item.imageUrlHL&& item.imageUrlHL.length) {%>
+                    <a href="<%=item.imageUrlHL%>" class="bannerflag" data-id="<%=item.id%>">
+                        <img src="<%=item.imageUrl%>"/>
+                    </a>
+                    <%}else{%>
+                    <img src="<%=item.imageUrl%>">
+                    <%}%>
+                </div>
+                <%})%>   
+            </div>
+            <div class="swiper-pagination-banner"></div>
+        </div>
+        <%}else{%>
+        <div class="picdefault"></div>
+        <%}%>
+    </div>
+</div>
+
+

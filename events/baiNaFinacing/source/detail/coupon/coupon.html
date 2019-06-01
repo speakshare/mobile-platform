@@ -1,0 +1,18 @@
+<div class="coupon-list">
+    <div class="cancel-selected">不使用</div>
+    <% _.each(list,function(n){
+        if(n.ruleType && n.isUsedStatus==0){%>
+            <div class="coupon-one coupon-type<%=n.ruleType%> <%= n.sendRewardId==selectedID?'coupon-selected':''%>" data-amount="<%=n.amount%>"  data-limitAmount="<%=n.limitAmount%>" data-ruleType="<%=n.ruleType%>" data-id="<%=n.sendRewardId%>">
+                <div class="coupon-amount">
+                    <p class="coupon-num"><%=n.amount%></p>
+                    <p class="coupon-tip">满<%=n.limitAmount%>元<%=n.ruleType==1?'返':n.ruleType==2?'用':'减'%></p>
+                </div>
+
+                <div class="coupon-desc">
+                    <p class="coupon-title"><%=n.ruleName%></p>
+                    <p class="coupon-expire"><%=n.validDesc%></p>
+                </div>
+            </div>
+        <% }
+    })%>
+</div>

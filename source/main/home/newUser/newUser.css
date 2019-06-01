@@ -1,0 +1,61 @@
+.home-box{background:#eef3f9;padding-bottom:52px}
+.home-box .top-banner{position:relative;background:url(images/bg_zibang@2x.jpg) no-repeat;background-size:100% auto}
+.home-box .b-title,
+.home-box .login-btn,
+.home-box .b-left,
+.home-box .b-right{position:absolute;color:#4f4f4f;font-size:13px;text-align:center}
+.home-box .b-title{top:25%;font-size:18px;opacity:0.9;width:100%;font-weight:bold}
+.home-box .b-left{top:50%;left:0;width:46%}
+.home-box .b-right{top:50%;left:46%;width:54%}
+.home-box .h-color{color:#FF7806}
+.home-box .top-banner .h-color{display:block;margin-top:11px;font-size:18px}
+.home-box .b-left .h-color{font-size:14px;font-weight:bold;margin-top:12px}
+.home-box .login-btn{top:4%;right:20px;font-size:15px;height:40px}
+.home-box .login-btn:after{content:'';display:inline-block;margin-left:6px;width:13px;height:13px;vertical-align:-1px;background:url(./images/img_arrow@2x.png);background-size:100% auto}
+
+.new-weal{margin-bottom:10px}
+.new-weal .weal-line{position:relative;padding:15px 0 15px 52px;background:#fff}
+.new-weal .weal-1{margin-bottom:10px;padding-top:22px;background:url(images/bg_xian@2x.png) no-repeat;background-size:100% auto}
+.new-weal .weal-line:before{content:'';position:absolute;top:15px;left:10px;width:52px;height:32px;background:url(images/Group6@2x.png) no-repeat;background-size:auto 32px}
+.new-weal .weal-2{border-bottom:1px solid #eee}
+.new-weal .weal-2:before{background-image:url(images/Group7@2x.png)}
+.new-weal .weal-3:before{background-image:url(images/Group15@2x.png)}
+.new-weal .weal-title{font-size:15px;color:#4f4f4f;margin-bottom:8px}
+.new-weal .weal-1 .weal-title{font-size:15px;color:#4f4f4f;margin-bottom:21px}
+.new-weal .weal-1 .p-profit{margin-right:20px}
+.new-weal .weal-1 .weal-date{margin:4px 15px 0 0}
+.new-weal .weal-btn{float:right;margin:6px 10px 0 0;width:80px;height:36px;background:#ff775b;font-size:16px;border-radius:3px;color:#fff;text-align:center;line-height: 36px;}
+.new-weal .weal-btn.disabled{color:#fff;background:#d8d8d8}
+.new-weal .weal-btn2{float:right;margin-top:9px;padding-right:34px;color:#FF775B;font-size:13px}
+.new-weal .weal-btn2:after{border-color:#FF775B;top:2px}
+.new-weal .weal-btn2:empty:after{border-color:#4f4f4f}
+.new-weal .weal-desc{font-size:12px;color:#999}
+
+.event-box{background:#fff;padding:15px 0;height:180px;overflow:hidden}
+.event-box .event-h3{margin:0 0 18px 10px;font-size:15px;color:#4f4f4f}
+.event-box .event-h3:before{content:'';display:inline-block;width:2px;height:8px;background:#FF775B;margin-right:6px;vertical-align:2px}
+.event-box li{float:left;width:162px;height:112px;margin-right:10px}
+.event-box li img{display:block;width:162px;height:112px}
+.event-box .animate{width:100%;height:112px;overflow: hidden}
+
+@media all and (min-width:360px) {
+    .new-weal .weal-line{padding:21px 0 18px 62px}
+    .new-weal .weal-line:before{left:20px;top:20px}
+    .new-weal .weal-1{padding-top:31px}
+    .new-weal .weal-1 .weal-title{margin-bottom:23px}
+    .new-weal .weal-1 .p-profit{margin-right:35px}
+    .new-weal .p-num{font-size:32px}
+    .new-weal .weal-btn{margin-right:20px}
+    .new-weal .weal-desc{font-size:13px}
+
+    .event-box{padding:21px 0}
+    .event-box .event-h3{margin-left:20px}
+}
+
+@media all and (min-width:375px) {
+    .new-weal .p-profit{margin-right:52px}
+}
+
+@media all and (min-width:414px) {
+    .new-weal .weal-1 .weal-title{margin-bottom:28px}
+}

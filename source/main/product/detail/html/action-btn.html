@@ -1,0 +1,106 @@
+<div class="purchase">
+    <% if($.getToken() && (minMemberLevel>=1 && minMemberLevel>level)){ %>
+        <button class="btn" disabled="disabled">
+            <div class="btn-content">
+                <p class="f16"><%=levelName%>及以上会员可购买</p>
+            </div>
+        </button>
+    <% }else{ %>
+
+        <%if(tradeType==0 || tradeType==1){%>
+        <% if(isSaleOff==2 || investPercent==100 || procuctStatus==6){ %>
+            <button class="btn" disabled="disabled">
+                <div class="btn-content">
+                    <p class="f16">已售馨</p>
+                </div>
+            </button>
+        <% }else if(isSaleOff==1 && investPercent<100){ %>
+            <%if(dealForbiddenTimeFlag!=0){%>
+            <button class="btn" data-flag="true">
+                <div class="btn-content">
+                    <p class="f16">立即购买</p>
+                    <p class="f12">剩余金额：<%=financingAmount-currentAmount %>元</p>
+                </div>
+            </button>
+            <%}else{%>
+                <button class="btn">
+                    <div class="btn-content">
+                        <p class="f16">立即购买</p>
+                        <p class="f12">剩余金额：<%=financingAmount-currentAmount %>元</p>
+                    </div>
+                </button>
+            <%}%>
+        <% }else if(isSaleOff==3){ %>
+            <%if(new Date().getTime() <= productSaletime && productSaletime - new Date().getTime()<3600000){%>
+                <button class="btn disabled fixed-btn" disabled="disabled">
+                    <div class="btn-content">
+                        <p class="f12 grabTitle">距开抢</p>
+                        <p class="f12 timer" data-time="<%=productSaletime%>">
+                            <span class="min"></span>
+                            <span class="sec"></span>
+                        </p>
+                    </div>
+                </button>
+            <%}else{%>
+                <button class="btn disabled fixed-btn" disabled="disabled">
+                    <div class="btn-content">
+                        <p class="f16">今日<%=new Date(productSaletime).getHours()%>点开抢</p>
+                    </div>
+                </button>
+            <%}%>
+        <%}%>
+    <%}else {%>
+        <%if(isSaleOff==2){%>
+            <%if(isOver==1){%>
+                <button class="btn" disabled="disabled">
+                    <div class="btn-content">
+                        <p class="f16">募集结束</p>
+                    </div>
+                </button>
+            <%} else if(isOver==0){ %>
+                <button class="btn" disabled="disabled">
+                    <div class="btn-content">
+                        <p class="f16">募集成功</p>
+                    </div>
+                </button>
+            <%}%>
+        <%}else if(isSaleOff==1){%>
+            <%if(dealForbiddenTimeFlag!=0){%>
+                <button class="btn" data-flag="true">
+                    <div class="btn-content">
+                        <p class="f16">立即认购</p>
+                        <p class="f12">剩余金额：<%=financingAmount-currentAmount %>元</p>
+                    </div>
+                </button>
+            <%}else{%>
+                <%if(investPercent<100){%>
+                    <button class="btn">
+                        <div class="btn-content">
+                            <p class="f16">立即认购</p>
+                            <p class="f12">剩余金额：<%=financingAmount-currentAmount %>元</p>
+                        </div>
+                    </button>
+                <%}%>
+            <%}%>
+        <%}else if(isSaleOff ==3){%>
+            <%if(new Date().getTime() <= productSaletime && productSaletime - new Date().getTime()<3600000){%>
+                <button class="btn disabled fixed-btn" disabled="disabled">
+                    <div class="btn-content">
+                        <p class="f12 grabTitle">距开抢</p>
+                        <p class="f12 timer" data-time="<%=productSaletime%>">
+                            <span class="min"></span>
+                            <span class="sec"></span>
+                        </p>
+                    </div>
+                </button>
+            <%}else{%>
+                <button class="btn disabled fixed-btn" disabled="disabled">
+                    <div class="btn-content">
+                        <p class="f16">今日<%=new Date(productSaletime).getHours()%>点开抢</p>
+                    </div>
+                </button>
+            <%}%>
+        <%}%>
+    <%}
+    } %>
+</div>

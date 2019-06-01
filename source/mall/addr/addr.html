@@ -1,0 +1,25 @@
+<% if(_.isEmpty(addr)){ %>
+<div class="inputdiv">
+<input class="addr-inputbox"  placeholder="收货人姓名" required="required" id="addrName"  />
+</div>
+<div class="inputdiv">
+<input class="addr-inputbox addrTel" placeholder="手机号码" id="addrTel"  maxlength="11" required="required" />
+</div>
+<div class="inputdiv">
+<input class="addr-inputbox" placeholder="邮政编码"  id="addrZipCode" />
+</div>
+<textarea class="addr_detail" placeholder="详细地址" required="required" id="addrDetail" ></textarea>
+<%}else{%>
+<input id="addrid"  type="hidden" value="<%= addr.id %>"/>
+<div class="inputdiv">
+<input class="addr-inputbox"  placeholder="收货人姓名" required="required" id="addrName" value="<%= addr.memberName %>" />
+</div>
+<div class="inputdiv">
+<input class="addr-inputbox addrTel" placeholder="手机号码" id="addrTel"  maxlength="11" required="required" value="<%= addr.telephone %>" />
+</div>
+<div class="inputdiv">
+<input class="addr-inputbox" placeholder="邮政编码"  id="addrZipCode" value="<%= addr.zipCode %>" />
+</div>
+<textarea class="addr_detail" placeholder="详细地址" required="required" id="addrDetail" ><%= addr.address %></textarea>
+<%}%>
+<div class="addrfinishbtn" data-id="<%=  _.isEmpty(addr)?'1':'2' %>">完成</div>

@@ -1,0 +1,122 @@
+.fund-rule{
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.fund-rule .state{
+    padding:0 16px;
+    border-top:1px solid #e5e5e5;
+    background:#fff;
+}
+.fund-rule .light{
+    opacity: 0.6;
+    color: #4F4F4F;
+    line-height: 39px;
+    
+}
+.fund-rule .title{
+    border-bottom:1px solid #e5e5e5;
+    font-size:15px;
+    line-height: 44px;
+    width:100%;
+}
+.fund-rule .buy-rule{
+    margin-top:10px;
+}
+.fund-rule .flow{
+    margin-top:10px;
+
+}
+.fund-rule .circle{
+    width:10px;
+    height:10px;
+    display: inline-block;
+    border: 2px solid #FF5532;
+    border-radius:50%;
+}
+.fund-rule .line{
+    opacity: 0.8;
+    background: #FF5532;
+    display: inline-block;
+    width:43%;
+    height:1px;
+    vertical-align: 5px;
+}
+
+.fund-rule .three{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    display:-webkit-flex;
+    margin-top:6px;
+}
+
+.fund-rule .three span{
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+}
+.fund-rule .center{
+    text-align:center;
+}
+.fund-rule .right{
+    text-align:right;
+}
+.fund-rule .desc{
+    line-height: 1.4;
+    margin-top:20px;
+    padding-bottom:15px;
+}
+.fund-rule .time-color{
+    color:#FDD29E;
+}
+.fund-rule .buyinterest{
+    margin-top:10px;
+    background:#fff;
+    padding:0 16px;
+}
+.fund-rule .buyinterest ul{
+    list-style: none;
+}
+.fund-rule .buyinterest li{
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 14px;
+    color: #4F4F4F;
+}
+.fund-rule .buyinterest li:nth-child(1){
+    font-size: 12px;
+    color: #4F4F4F;
+    line-height: 34px;
+}
+.fund-rule .buyinterest li:nth-child(n+2){
+    line-height: 44px;
+}
+.fund-rule .buyinterest span{
+    -webkit-box-flex:4;
+        -ms-flex:4;
+            flex:4;
+}
+.fund-rule .buyinterest span.five{
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+}
+.fund-rule .buyinterest .del{
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+.fund-rule .buyinterest .per-color{
+    color:#FF5532;
+}
+@media screen and (max-width:320px){
+    .fund-rule .line{
+      width:42%;
+    }
+    .fund-rule .buyinterest li{
+        font-size:10px;
+    }
+}

@@ -1,0 +1,31 @@
+.gift-box{width:95%;padding:0 10px 0 20px;margin:20px auto;background:#fff8eb;border-radius:12px;box-shadow:0px 2px 4px #f74976}
+.gift-box .gift-banner{height:30px;background:url(images/img_reward_title.png) no-repeat center 0;background-size:auto 100%}
+.gift-box .gift-tip,
+.gift-box .gift-tip2{margin:15px 0 20px;font-size:13px;font-weight:bold;color:#F64976;text-align:center}
+.gift-box .gift-tip2{font-size:12px;margin:0;padding:20px}
+.gift-box .gift-b{position:relative;padding:10px 10px 6px 20px;margin-top:8px;background:#FFFBF6;border-radius:0 10px 10px 0;box-shadow:0px 1px 3px #f74976}
+.gift-box .gift-b b{display:block;font-weight:bold;color:#AC2649;padding-bottom:5px}
+.gift-box .gift-b p{font-size:11px;color:#C2637B}
+
+
+
+.gift-box .gift-b:before,
+.gift-box .gift-b:after{content:'';position:absolute;width:10px;height:58px;top:0;left:-1px;background:#F64976}
+.gift-box .gift-b:before{z-index:13;left:-15px;top:-15px;width:38px;height:38px;background:url(images/img_home_lv1.png) no-repeat;background-size:100% auto}
+.gift-box .gift-2:before{background-image:url(images/img_home_lv2.png)}
+.gift-box .gift-3:before{background-image:url(images/img_home_lv3.png)}
+.gift-box .gift-4:before{background-image:url(images/img_home_lv4.png)}
+
+.gift-box .gift-3:after,
+.gift-box .gift-4:after{background:#F4D5DD}
+
+.gift-box .receive-btn,
+.gift-box .fighting-btn{position:absolute;top:25px;right:5px;width:60px;height:33px;background:url(images/btn_home_receive.png) no-repeat;background-size:100% auto}
+.gift-box .fighting-btn{background-image:url(images/btn_home_fighting.png)}
+
+@media all and (min-width:360px) {
+    .gift-box .gift-b p{font-size:12px}
+    .gift-box .gift-b:after{height:60px}
+    .gift-box .receive-btn,
+    .gift-box .fighting-btn{top:22px;width:68px}
+}

@@ -1,0 +1,70 @@
+<section class="product-success">
+    <%if(tradeType=="0" || tradeType=="1"){%>
+    <section class="success-pro">
+        <section class="suc-icon">
+            <i class="trim1"></i>
+            <span></span>
+        </section>
+        <section class="suc-word">
+            <p class="col4">投资成功</p>
+            <p class="col1"><%=investAmtSum%>元</p>
+            <%if(productType=='10'){%>
+            <p class="col3"><%=tyjAmount%>元体验金</p>
+            <%}%>
+        </section>
+    </section>
+    <section class="success-pro">
+        <section class="suc-icon">
+            <i class="trim2"></i>
+            <span></span>
+        </section>
+        <section class="suc-word">
+            <p class="col4">预计起息时间</p>
+            <p class="col2"><%=$.dateFormat(investDays,'yyyy/MM/dd')%></p>
+        </section>
+    </section>
+    <section class="success-pro">
+        <section class="suc-icon">
+            <i class="trim2"></i>
+        </section>
+        <section class="suc-word">
+            <p class="col4">预计本息到账时间</p>
+            <p class="col2"><%=$.dateFormat(expireDate,'yyyy/MM/dd')%></p>
+            <p class="col3">预计到期总收益<span class="col1"><%=preReturnProfitByBuyFinish%>元</span></p>
+            <%if(productType=='10'){%>
+            <p class="col3">(含体验金预计收益<%=buyMoneyCftInterest%>元)</p>
+            <%}%>
+        </section>
+    </section>
+    <%}%>
+    <%if(tradeType=="2"){%>
+    <section class="success-pro">
+        <section class="suc-icon">
+            <i class="trim1"></i>
+            <span></span>
+        </section>
+        <section class="suc-word">
+            <p class="col4">投资申请提交成功</p>
+            <p class="col1"><%=investAmtSum%>元</p>
+        </section>
+    </section>
+    
+    <section class="success-pro">
+        <section class="suc-icon">
+            <i class="trim2"></i>
+        </section>
+        <section class="suc-word">
+            <p class="col4">预计份额确认结果</p>
+            <p class="col2"><%=$.dateFormat(mujiEndTime,'yyyy/MM/dd')%></p>
+        </section>
+    </section>
+    <%}%>
+    <section class="success-dou" id="toMall">
+        <section class="dou-word">
+            <p>预计获得 <span class="col1"><%=pointAmt%>旺豆</span></p>
+            <p>投资享旺豆奖励 去看看></p>
+        </section>
+        <section class="dou-pic"></section>
+    </section>
+    <section class="common-btn2" id="toProduct">完成</section>
+</section>

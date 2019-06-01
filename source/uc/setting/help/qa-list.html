@@ -1,0 +1,13 @@
+<% _.each(questionList,function(item,index){ %>
+<div class="ui-qa-item">
+    <div class="ui-qa-title">
+        <div class="ui-qa-arrow ui-arrow-down"></div>
+        <div class="ui-qa-issue">
+            <%=index+1%>.<%=item.question%>
+        </div>
+    </div>
+    <div class="ui-qa-answer">
+        <pre><code><%=item.answers%></code></pre>
+    </div>
+</div>
+<%})%>

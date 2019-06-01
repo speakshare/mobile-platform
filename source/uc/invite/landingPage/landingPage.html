@@ -1,0 +1,28 @@
+﻿<%if(banner.channelSwitch && banner.channelSwitch=="1"){ %>
+<div class="errordiv">
+    <div class="defimg"></div>
+    <p class="errormsg"> 此链接已失效</p>
+    <div class="ywewmdiv">
+        <div class="ywewm"></div>
+        <p class="errormsg"> 请关注摇旺微信公众号：yaowang_licai</p>
+    </div>
+</div>
+<%}else{%>
+<div class="investFriends" id="mainPage">
+    <% if(banner.imageUrl){ %>
+    <div class="bannerredbag">
+        <img src="<%=banner.imageUrl%>" alt="<%=banner.description%>">
+    </div>
+    <% } %>
+    <div class="register edit">
+        <p class="title"><span class="inviter stress"><%=inviter.customerName?inviter.customerName:$.telHide(inviter.mobilePhone)%></span>邀请您体验<span class="stress">摇旺</span>，新手福利享不停</p>
+        <input type="tel" class="phoneNumber" maxlength="11" placeholder="输入手机号领取" required="required"/>
+        <div class="btn" id="register">注册领壕礼</div>
+        <p class="tips">摇旺已有<span class="stress count"><%= information.registration%></span>名注册用户</p>
+        <p class="tips">为用户管理近<span class="stress number"><%= information.investmentAmount%></span>元资产</p>
+    </div>
+    <div class="footer_pic">
+        <div class="footer_content" style="height:<%=($(window).width()>760)?790:($(window).width()/720*750-10) %>px"></div>
+    </div>
+</div>
+<%}%>

@@ -1,0 +1,106 @@
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">安全等级</label>
+    <span class="pd-info-text">
+        <% for (var i = 0; i < pd.riskType.count; i++) { %>
+        <span class="pd-level"><%= pd.riskType.type%></span>
+        <% } %>
+        <%= pd.riskType.typeName%>
+    </span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">总募集金额</label>
+    <span class="pd-info-text"><%=pd.financingAmount %></span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">募集期</label>
+    <%if(pd.tradeType==2){%>
+    <span class="pd-info-text"><%=pd.raiseDay%>天</span>
+    <%}%>
+    <%if(pd.tradeType==0 || pd.tradeType==1){%>
+    <span class="pd-info-text"><%=pd.jiXiRuleDay%>天</span>
+    <%}%>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">起投金额</label>
+    <span class="pd-info-text">金额≥<%=pd.minPurchaseAmount %>元即可投资</span>
+</p>
+<% if(pd.tradeType==2){%>
+    <p class="pd-info-p clearfix">
+        <label class="pd-info-label">投资人数</label>
+        <span class="pd-info-text">不超过200人</span>
+    </p>
+<%}%>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">起息日</label>
+    <span class="pd-info-text">
+        <%if(pd.tradeType==1 || pd.tradeType==0){%>
+        <%=pd.dateOfInterest %>
+        <%}else{%>
+        <%=$.dateFormat(pd.valueDate,'yyyy-MM-dd')%>
+        <%}%>
+    </span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">项目期限</label>
+    <span class="pd-info-text"><%=pd.surplusDay %>天</span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">封闭期</label>
+    <span class="pd-info-text"><%=pd.closePeriod %>天</span>
+</p>
+
+<%if(pd.tradeType==2 && pd.assetTypeName){%>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">标的资产类型</label>
+    <span class="pd-info-text"><%=pd.assetTypeName%></span>
+</p>
+<%}%>
+
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">回款方式</label>
+    <span class="pd-info-text">到期付本息</span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">手续费</label>
+    <span class="pd-info-text">到期回款免收手续费</span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">赎回到账时间</label>
+    <span class="pd-info-text">申请赎回后1个工作日内</span>
+</p>
+<%if(pd.tradeType==1 || pd.tradeType==0){%>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">投资客户类型</label>
+    <span class="pd-info-text">保守型及以上</span>
+</p>
+<%}%>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">税费计算</label>
+    <span class="pd-info-text pd-info-text2">因投资本产品而涉及的相关税费，投资人需自行申报及缴纳</span>
+</p>
+<p class="pd-info-p clearfix">
+    <label class="pd-info-label">期望年化收益率</label>
+    <span class="pd-info-text pd-info-text2"><%=$.amountFormat(pd.annualizedRate) %>%，（为定向委托投资标的到期产生的期望年化收益率扣除受托投资管理机构的管理费率）。</span>
+</p>
+<%if(pd.tradeType==2){%>
+<p class="pd-info-p fixed-p clearfix">
+    <label class="pd-info-label">投资人适当性管理要求</label>
+    <span class="pd-info-text pd-info-text2">符合备案的交易所对应的合格投资人要求</span>
+</p>
+<%}%>
+<p class="pd-info-p law arrow-right">
+    <label class="pd-info-label">法律文件</label>
+</p>
+<div class="pd-bank-list clearfix">
+    <h3 class="pd-title">支持银行及限额</h3>
+    <p class="pd-title-text">以下为各家银行交易限制明细，同时,请您确认自身设置的银行卡转账限额，并以此为准。感谢您的理解和支持。</p>
+    <section class="card-limit">
+        <% _.each(bankList.list,function(n){ %>
+        <section class="card-limit-list">
+            <span class="lef"><i class="icon-bank bank-type-<%=n.bankCode%>"></i><%=n.bankName%></span>
+            <span class="rig"><span><%=n.singleQuotaStr%></span>，<span><%=n.samedayQuotaStr%></span>
+        </span>
+    </section>
+    <% }) %>
+</section>
+</div>

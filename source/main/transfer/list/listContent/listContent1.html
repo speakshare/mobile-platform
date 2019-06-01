@@ -1,0 +1,25 @@
+<% if(totalCount != 0){%>
+<ul style="border-top: 1px solid #eee">
+    <% _.each(list,function(item){ %>
+    <li class="transferItem" data-id='<%=item.orderNo%>'>
+        <div class="prd-name"><%=item.productName%><i class="<%=item.surplusDay<=30?'ultra-short':''%>"></i></div>
+        <div class="prd-info">
+            <div class="item">
+                <span class="interest"><%=item.annualizedRate%></span><span class="sign">%</span>
+                <div>预期年化</div>
+            </div>
+            <div class="item center">
+                <span class="num"><%=item.surplusDay%></span><span>天</span>
+                <div>剩余期限</div>
+            </div>
+            <div class="item right">
+                <span class="num"><%=item.transferMoney%></span><span>元</span>
+                <div>变现金额</div>
+            </div>
+        </div>
+    </li>
+    <% }) %>
+</ul>
+<%}else{%>
+<p class='empty'><i></i><span>暂无变现产品</span></p>
+<%}%>

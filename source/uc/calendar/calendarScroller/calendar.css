@@ -1,0 +1,20 @@
+.calendar-box{margin:6px 10px;background:#fff;border-radius:10px;overflow:hidden}
+
+.month-days{float:left;width:100%;}
+.calendar-box .week-day,
+.month-days .month-days-one{float:left;margin:4px 0;color:#9FA7B4;height:26px;font-size:15px;width:14.2857%;text-align:center;line-height:26px}
+.calendar-box .week-day{color:#C1C1C1;font-size:14px}
+.month-days .select-date{color:#FF5532}
+
+.month-days .has-data:after{content:'';display:block;width:5px;height:5px;background:#FFA233;margin:0 auto 0;border-radius:50%;}
+.month-days .today{display:inline-block;width:22px;height:22px;line-height:22px;border-radius:50%;background:#FF5532;color:#fff;box-shadow:0 0 4px #ff5532}
+
+.calendar-other-bths{text-align:center}
+
+.calendar-box .back-btn{display:inline-block;padding:3px 5px;border:1px solid #ffa233;border-radius:3px;color:#ffa233}
+
+.calendar-box .prev-btn,
+.calendar-box .next-btn{display:inline-block;width:40px;height:30px;vertical-align:-11px}
+.calendar-box .prev-btn:before,
+.calendar-box .next-btn:before{content:'';position:absolute;margin-left:-10px;width:20px;height:25px;background:url(btn_calendar_left@2x.png) no-repeat;background-size:100% auto}
+.calendar-box .next-btn:before{background-image:url(btn_calendar_right@2x.png)}

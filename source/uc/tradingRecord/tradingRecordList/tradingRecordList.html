@@ -1,0 +1,9 @@
+<%_.each(list,function(item){%>
+<%if(item.isFirst == 1){%>
+<p class="time-quantum"><%=item.month%></p>
+<%}%>
+<section class="trading-record-list">
+    <p class="list1"><span><%=item.type%></span><span class="<%=item.money>=0?'col1':'col2'%>"><%=item.money>=0?'+'+item.money:item.money%></span></p>
+    <p class="list2"><span><%=item.date%></span><span><%=item.status%></span></p>
+</section>
+<%})%>

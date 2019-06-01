@@ -1,0 +1,141 @@
+<section class="member-home">
+    <section class="slide-type">
+        <div class="swiper-container">
+            <div class="swiper-wrapper guo">
+                <div class="swiper-slide">
+                    <section class="member-box general">
+                        <%=cache.level == 1 ? '<div class="current-note"  >当前</div>' : ''%>
+                        <section class="con-word">
+                            <%if(cache.level == 1){%>
+                            <p>当前在投金额：<%=cache.currZt%>元</p>
+                            <p>当前累计年化：<%=cache.currLj%>元</p>
+                            <%}else if(cache.level < 1){%>
+                            <p>在投金额需达： <%=cache.rules[1].ZT%>元</p>
+                            <p>累计年化需达： <%=cache.rules[1].LJ%>元</p>
+                            <%} else{%>
+                            <p>您已达成该等级条件</p>
+                            <%}%>
+                        </section>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="member-box silver">
+                        <%=cache.level == 2 ? '<div class="current-note"  >当前</div>' : ''%>
+                        <section class="con-word">
+                            <%if(cache.level == 2){%>
+                            <p>当前在投金额：<%=cache.currZt%>元</p>
+                            <p>当前累计年化：<%=cache.currLj%>元</p>
+                            <%}else if(cache.level < 2){%>
+                            <p>在投金额需达： <%=cache.rules[2].ZT%>元</p>
+                            <p>累计年化需达： <%=cache.rules[2].LJ%>元</p>
+                            <%} else{%>
+                            <p>您已达成该等级条件</p>
+                            <%}%>
+                        </section>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="member-box gold">
+                        <%=cache.level == 3 ? '<div class="current-note"  >当前</div>' : ''%>
+                        <section class="con-word">
+                            <%if(cache.level == 3){%>
+                            <p>当前在投金额：<%=cache.currZt%>元</p>
+                            <p>当前累计年化：<%=cache.currLj%>元</p>
+                            <%}else if(cache.level < 3){%>
+                            <p>在投金额需达： <%=cache.rules[3].ZT%>元</p>
+                            <p>累计年化需达： <%=cache.rules[3].LJ%>元</p>
+                            <%} else{%>
+                            <p>您已达成该等级条件</p>
+                            <%}%>
+                        </section>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="member-box platinum">
+                        <%=cache.level == 4 ? '<div class="current-note"  >当前</div>' : ''%>
+                        <section class="con-word">
+                            <%if(cache.level == 4){%>
+                            <p>当前在投金额：<%=cache.currZt%>元</p>
+                            <p>当前累计年化：<%=cache.currLj%>元</p>
+                            <%}else if(cache.level < 4){%>
+                            <p>在投金额需达： <%=cache.rules[4].ZT%>元</p>
+                            <p>累计年化需达： <%=cache.rules[4].LJ%>元</p>
+                            <%} else{%>
+                            <p>您已达成该等级条件</p>
+                            <%}%>
+                        </section>
+                    </section>
+                </div>
+                <div class="swiper-slide">
+                    <section class="member-box masonry">
+                        <%=cache.level == 5 ? '<div class="current-note"  >当前</div>' : ''%>
+                        <section class="con-word">
+                            <%if(cache.level == 5){%>
+                            <p>当前在投金额：<%=cache.currZt%>元</p>
+                            <p>当前累计年化：<%=cache.currLj%>元</p>
+                            <%}else{%>
+                            <p>在投金额需达： <%=cache.rules[5].ZT%>元</p>
+                            <p>累计年化需达： <%=cache.rules[5].LJ%>元</p>
+                            <%}%>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </section>
+    <%if(cache.level < 5){%>
+    <section class="next-level-tip">
+        <div>
+            <div class="next-level-label">距<%=cache.badgeName[cache.level]%>会员还差：</div>
+            <div >
+                <div class="next-level-zt"><%=cache.nextLevelZt==0?'已满足':(cache.nextLevelZt+ '元')%>在投金额</div>
+                <div><%=cache.nextLevelLj==0?'已满足':(cache.nextLevelLj+ '元')%>累计年化</div>
+            </div>
+
+        </div>
+
+    </section>
+    <%}%>
+    <section class="tally-icon"><i></i></section>
+    <section class="exclusive-type">
+        <section class="exclusive birth" type-id='0'>
+            <i class="confirm-check"></i>
+            <span class="icon"></span>
+            <p class="text"></p>
+        </section>
+        <section class="exclusive qiandao" type-id='1'>
+            <span class="icon"></span>
+            <p class="text">签到旺豆</p>
+        </section>
+        <section class="exclusive huiyuanchanpin" type-id='2'>
+            <span class="icon"></span>
+            <p class="text">会员产品</p>
+        </section>
+
+        <section class="exclusive wangjiazhekou" type-id="6">
+            <span class="icon"></span>
+            <p class="text">旺家折扣</p>
+        </section>
+    </section>
+    <section class="exclusive-type">
+        <section class="exclusive difeibianxian" type-id="7">
+            <span class="icon"></span>
+            <p class="text">低费变现</p>
+        </section>
+        <section class="exclusive huodongtequan" type-id="3">
+            <span class="icon"></span>
+            <p class="text">活动特权</p>
+        </section>
+        <section class="exclusive xianxiahuodong" type-id="4">
+            <span class="icon"></span>
+            <p class="text">线下活动</p>
+        </section>
+        <section class="exclusive zhuanxiangguwen" type-id="5">
+            <span class="icon"></span>
+            <p class="text">专享顾问</p>
+        </section>
+
+
+    </section>
+    <p class="depict-hint">特权描述：会员生日当天摇旺会赠送一个生日礼包，礼包内含神秘祝福投资券，等级越高，礼包越大。</p>
+</section>

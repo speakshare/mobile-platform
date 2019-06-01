@@ -1,0 +1,113 @@
+<section class="reg-transfer">
+	<section class="head">
+		<p class="pro-name-box"><%=oDetail.productName%><span class="rule-rig">变现规则</span></p>
+		<p class="tip-title">变现金额</p>
+		<section class="money">
+			<section class="inp-money">
+				<input type="text" class="inp-mon" onkeyup="$.clearNoNum(this)">
+				<p class="tip-mon">金额不能小于<%=oDetail.lowerLimitTransMoney%>元</p>
+			</section>
+			<section class="txt-money">
+				<span class="txt-num"></span>
+				<i class="icon feed-num"></i>
+			</section>
+		</section>
+		<section class="money-range">
+			<section class="range-box">
+				<input type='range' class="inp-range">
+			</section>
+			<p class="district"><span><%=oDetail.lowerLimitTransMoney%>元</span><span><%=oDetail.upperLimitTransMoney%>元</span></p>
+		</section>
+	</section>
+
+	<section class="cont">
+		<section class="cont-box">
+			<section class="lef">预期年化收益率</section>
+			<section class="rig col1"><span class="tendency"><%=oDetail.annualizedRate%></span>%</section>
+		</section>
+		<section class="cont-box">
+			<section class="lef">剩余期限</section>
+			<section class="rig"><%=oDetail.jieSuanDays%>天</section>
+		</section>
+		<section class="cont-box">
+			<section class="lef">变现手续费<i class="icon fact-hint"></i></section>
+			<section class="rig">
+				<p><span class="old-transferFee"></span><span class="poundage"><%=oDetail.transferFee%></span>元</p>
+				<p class="hui-yuan"></p>
+			</section>
+		</section>
+		<section class="cont-box">
+			<section class="lef">变现到手金额</section>
+			<section class="rig"><span class="come-money"><%=oDetail.realArrAmt%></span>元</section>
+		</section>
+		<div class="transfer-hint">
+			<div class="transfer-pop-close">
+				<div class="transfer-pop-fork">
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<div class="word-hint">
+				<p class="title">变现手续费</p>
+				<p class="word">变现手续费=变现金额*变现手续费率（不成功不收取费用）；其中手续费率为0.2%，手续费最低10元，最高不超过300元；白银以上等级会员享有手续费减免，以会员页面说明为准；</p>
+				<div class="btn">知道了</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="transfer-btn">
+		<p class="word-hint">变现有效期3天，逾期自动撤销</p>
+		<%if(oDetail.closePeriod == '0'){%>
+		<section class="cont-btn confirm-btn">确认变现</section>
+		<%}else{%>
+		<section class="cont-btn0 col2">已变现或变现中</section>
+		<%}%>
+	</section>
+</section>
+
+<!--<div class="uc-transfer">-->
+<!--<ul>-->
+	<!--<li>-->
+		<!--<div class="prd-name"><%=oDetail.productName%></div>-->
+		<!--<div class="prd-info">-->
+			<!--<div class="item">-->
+				<!--<div class="detail">-->
+					<!--<span class="interest"><%=oDetail.procuctAroe%>%</span>-->
+					<!--<%if(oDetail.productAddonRate>0){%><span class="sign">+<%=oDetail.productAddonRate%>%</span><%}%>-->
+				<!--</div>-->
+				<!--<div>预期年化</div>-->
+			<!--</div>-->
+			<!--<div class="item center">-->
+				<!--<div class="detail">-->
+					<!--<span class="num"><%=oDetail.jieSuanDays%></span>-->
+					<!--<span>天</span>-->
+				<!--</div>-->
+				<!--<div>剩余期限</div>-->
+			<!--</div>-->
+			<!--<div class="item right">-->
+				<!--<div class="detail">-->
+					<!--<span class="num"><%=oDetail.transferAmt%></span>-->
+					<!--<span>元</span>-->
+				<!--</div>-->
+				<!--<div>变现金额</div>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</li>-->
+<!--</ul>-->
+<!--<div class="subinfo">-->
+	<!--<div class="row">投资本金(元)<span class="fr"><%=oDetail.investAmtSum%></span></div>-->
+	<!--<div class="row">当前收益(元)<span class="fr"><%=oDetail.currentProfit%><img class="helpinfo" src="_problem@2x.png"></span>-->
+		<!--<p class="info">当前收益是指截止到昨日获得的收益总额，实际获得收益以交易日当天的计算结果为准。</p>-->
+	<!--</div>-->
+	<!--<div class="row">变现手续费(元)<span class="fr"><%=oDetail.transferFee%><img class="helpinfo" src="_problem@2x.png"></span>-->
+		<!--<p class="info">变现手续费=变现金额*变现手续费率(不成功不收取费用);其中手续费率为0.2%，手续费最低10元，最高不超过300元。变现金额以交易日当天的实际金额为准。</p>-->
+	<!--</div>-->
+	<!--<div class="row">变现到手金额<span class="fr"><%=oDetail.realArrAmt%></span></div>-->
+<!--</div>-->
+<!--<p class="instruction">变现有效期3天，逾期自动撤销</p>-->
+<!--<a href="/weizhan/#staticPage/realizationRule"><p class="instruction rule">变现规则</p></a>-->
+<!--<p class="icons safety-wordHint">账户资金安全由银行、快钱支付以及太平财险共同保障</p>-->
+<!--<div class="toinvestbtn">-->
+	<!--<div>确认变现</div>-->
+<!--</div>-->
+<!--</div>-->

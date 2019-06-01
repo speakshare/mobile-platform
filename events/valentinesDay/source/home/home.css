@@ -1,0 +1,6 @@
+
+.rule-btn{margin:20px auto 0;padding-bottom:20px;height:57px;width:162px;background:url(images/btn_home_rule.png) no-repeat;background-size:100% auto}
+
+@media all and (min-width:375px) {
+    .home-rule{padding-bottom:90px}
+}

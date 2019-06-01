@@ -1,0 +1,27 @@
+<div class="mall-orderinfo-wrapper">
+	<% if(!_.isEmpty(oinfo)){%>
+	<div class="addresswrap">
+		<p class="username"><%=oinfo.memberName%><span class="userTel"><%=oinfo.telephone%></span></p>
+		<p class="addrdetail">收货地址：<%=oinfo.address%></p>
+	</div>
+	<%if(oinfo.logisticCompany && oinfo.logisticNo){%>
+	<div class="haslogisticsinfo">
+		<div class="logisticsinfo">
+			<p class="logistics-left hasbt">快递公司<span class="rightinfo"><%=oinfo.logisticCompany%></span></p>
+			<p class="logistics-left">快递单号<span class="rightinfo userselect"><%=oinfo.logisticNo%></span></p>
+		</div>
+		<p class="tips">您的包裹正在路上，请耐心等待！</p>
+	</div>
+	<%}else{%>
+	<div class="withoutlogisticsinfo">
+		<div class="noinfoicon"></div>
+		<p class="tips">您的订单正在准备出库，请耐心等待</p>
+	</div>
+	<%}%>
+	<%}else{%>
+	<div class="withoutlogisticsinfo">
+		<div class="noinfoicon"></div>
+		<p class="tips">您的订单正在准备出库，请耐心等待</p>
+	</div>
+	<%}%>
+</div>

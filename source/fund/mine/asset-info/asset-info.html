@@ -1,0 +1,15 @@
+<div class="f-title">
+	<div class="title">总资产(元)</div>
+	<div class="invest"><%=$.amountFormat(zc.assetSumAmount)%></div>
+	<div class="info">
+		<p class="item">
+			<!--(<%=$.dateFormat(zc.fundDate*1000,'MM/dd')%>)昨日收益时间-->
+			<span class="title">昨日收益</span><br>
+			<span class="title1"><%=$.amountFormat(zc.profitYesterdayAmount,1)%></span>
+		</p>
+		<p style="padding-left: 32px;">
+			<span class="title">累计总收益</span><br>
+			<span class="title1"><%=$.amountFormat(zc.profitSumAmount,1)%></span>
+		</p>
+	</div>
+</div>

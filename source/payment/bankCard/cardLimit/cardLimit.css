@@ -1,0 +1,29 @@
+.card-limit{background-color:#fff}
+.card-limit .card-limit-hint{background-color:#fff9c9;padding:8px 15px;line-height:20px;font-size:13px;color:#ff5532}
+.card-limit .card-limit-list{height:45px;line-height:46px;padding:0 15px;border-bottom:1px solid #eee}
+.card-limit .card-limit-list .lef{font-size:15px;color:#4f4f4f}
+.card-limit .card-limit-list .rig{float:right;font-size:12px;color:#999}
+.card-limit .card-limit-list .rig span{color:#4f4f4f}
+
+.card-limit .icon-bank{display:inline-block;background:url(bank_logo.png) no-repeat;background-size:240px auto;width:32px;height:32px;margin:0 5px -11px 0}
+.card-limit .bank-type-CIB{background-position:-4px -84px}
+.card-limit .bank-type-CMBC{background-position:-164px -44px}
+.card-limit .bank-type-CMB{background-position:-84px -44px}
+.card-limit .bank-type-BOC{background-position:-84px -84px}
+.card-limit .bank-type-CCB{background-position:-204px -44px}
+.card-limit .bank-type-ICBC{background-position:-4px -4px}
+.card-limit .bank-type-CITIC{background-position:-164px -4px}
+.card-limit .bank-type-SPDB{background-position:-124px -4px}
+.card-limit .bank-type-CEB{background-position:-44px -45px}
+.card-limit .bank-type-BCOM{background-position:-44px -84px}
+.card-limit .bank-type-ABC{background-position:-124px -44px}
+.card-limit .bank-type-PAB{background-position:-205px -4px}
+.card-limit .bank-type-HXB{background-position:-44px -4px}
+/*广发、邮政*/
+.card-limit .bank-type-CGB{background-position:-84px -4px}
+.card-limit .bank-type-PSBC{background-position:-4px -44px}
+
+
+
+
+

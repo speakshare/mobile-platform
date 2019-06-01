@@ -1,0 +1,28 @@
+<div class="my-info">
+    <div class="my-head">
+        <div class="user-name">
+            <% if(state.realNameVerifyFlag!=0){ %>
+                <span class="name"><%=name.customerName%></span>
+            <% } %>
+            <%=$.telHide(mobile)%>
+        </div>
+    </div>
+    <div>
+        <div class="arrow-right vip-level">
+            <span class="right-txt color<%=level.level%>"><%=level.type%></span>
+            会员等级
+        </div>
+        <div class="arrow-right idCard-btn">
+            <span class="right-txt <%=state.realNameVerifyFlag==0?'h-color':''%>"><%=state.realNameVerifyFlag==0?'立即去实名':idCard%></span>
+            身份证号
+        </div>
+        <div class="arrow-right bankcard-btn">
+            <span class="right-txt <%=state.bindCardFlag==0?'h-color':''%>"><%=state.bindCardFlag==0?'立即去绑卡':''%></span>
+            银行卡管理
+        </div>
+        <div class="arrow-right risk-btn">
+            <span class="right-txt <%=risk.riskCode==0?'h-color':''%>"><%=risk.riskCode==0?'未测评':risk.riskType%></span>
+            风险测评
+        </div>
+    </div>
+</div>

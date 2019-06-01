@@ -1,0 +1,61 @@
+<section class="bank-manage">
+    <section class="bank-card-tab" id="bankCardTab">
+        <section class="car-tab tab-state" data-id="1">理财银行卡</section>
+        <section class="car-tab" data-id="2">基金银行卡</section>
+    </section>
+    <section class="bank-card" id="bankCard">
+        <%if(card.bankNum){%>
+        <section class="bank-box">
+            <section class="bank-con bank-<%=card.bankCode%>">
+                <section class="bank-icon">
+                    <i class="bank-icon-box bank-name-<%=card.bankCode%>"></i>
+                </section>
+                <section class="bank-word">
+                    <p class="bank-name"><%=card.bankName%></p>
+                    <p class="bank-card-number"><%=card.bankNum%></p>
+                </section>
+                <span class="bank-mak">储蓄卡</span>
+            </section>
+            <p class="bank-hint"><%=card.singleQuotaStr%>,<%=card.samedayQuotaStr%></p>
+        </section>
+        <p class="unbind-bank" id="unbindCardBank">解绑银行卡</p>
+        <%}else{%>
+        <section class="add-bank" id="addCardBank"><span>添加银行卡</span></section>
+        <%}%>
+        <p class="look-limit" id="lookLimit1">查看银行卡限额</p>
+    </section>
+    <section class="bank-fund" id="bankFund">
+        <%if(fund.bankCode){%>
+        <section class="bank-box">
+            <section class="bank-con bank-<%=fund.bankCode%>">
+                <section class="bank-icon">
+                    <i class="bank-icon-box bank-name-<%=fund.bankCode%>"></i>
+                </section>
+                <section class="bank-word">
+                    <p class="bank-name"><%=fund.bankName%></p>
+                    <p class="bank-card-number"><%=fund.bankCardNo.substr(0,4)%>***********<%=fund.bankCardNo.substr(fund.bankCardNo.length-4,4)%></p>
+                </section>
+                <span class="bank-mak">储蓄卡</span>
+            </section>
+            <p class="bank-hint"><%=fund.singleQuotaStr%>,<%=fund.samedayQuotaStr%></p>
+        </section>
+        <%}else{%>
+        <section class="add-bank" id="addFundBank"><span>添加银行卡</span></section>
+        <%}%>
+        <p class="look-limit" id="lookLimit2">查看银行卡限额</p>
+    </section>
+</section>
+<section class="keyboard-bg"></section>
+<section class="keyboard">
+    <section class="title"><span>交易密码</span><span id="closeKeyBoard"></span></section>
+    <section class="password-box" id="passWord">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+    </section>
+    <p class="hint-word"><a id="forgetPass">忘记密码？</a></p>
+    <table class="keyboard-tab">
+        <tr><td>1</td><td>2</td><td>3</td></tr>
+        <tr><td>4</td><td>5</td><td>6</td></tr>
+        <tr><td>7</td><td>8</td><td>9</td></tr>
+        <tr><td class="bg"></td><td>0</td><td class="bg" id="clearPass">x</td></tr>
+    </table>
+</section>

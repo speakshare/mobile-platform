@@ -1,0 +1,563 @@
+.productdetail .pd-info-box {
+    background: #fff
+}
+
+.productdetail .section {
+    padding-bottom: 56px
+}
+
+.productdetail .detail-data {
+    display: table;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px
+}
+
+.productdetail .detail-data span {
+    display: table-cell
+}
+
+.productdetail .arrow:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #999;
+    border-right: 1px solid #999;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    float: right;
+    margin: -20px 17px 0 0;
+}
+
+.productdetail .detail-data span div:nth-child(1) {
+    color: #fa623c;
+    font-size: 12px
+}
+
+.productdetail .detail-data span div:nth-child(2) {
+    color: #999999;
+    margin-top: 7px;
+    font-size: 12px;
+}
+
+.productdetail .pd-info-list {
+    background: #f2f2f2
+}
+
+/*.productdetail .pd-info-list span:nth-child(1){height: 15px;font-size: 15px;color: #666;}*/
+/*.productdetail .pd-info-list span:nth-child(2){color:#444;margin-left:40px}*/
+.productdetail .pd-info-list p {
+    font-size: 13px;
+    color: #999;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.productdetail .progress-ring {
+    text-align: center;
+    position: relative;
+    margin: 0 auto
+}
+
+.productdetail .pd-rate {
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    font-size: 38px;
+    text-align: center;
+    color: #fc1d18;
+    top: 60px;
+}
+
+.productdetail .pd-title {
+    display: block;
+    margin: 10px auto;
+    font-size: 12px;
+    color: #999;
+}
+
+.productdetail .progress-ring canvas {
+    width: 185px;
+    height: 185px;
+    padding-top: 20px
+}
+
+.productdetail .dq, .productdetail .dk, .productdetail .zr {
+    position: relative;
+    padding: 15px 17px 15px 45px;
+}
+
+.productdetail .dk {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee
+}
+
+.productdetail .dq.icons:before {
+    width: 25px;
+    height: 25px;
+    background-position: -190px -25px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.productdetail .dk.icons:before {
+    width: 25px;
+    height: 25px;
+    background-position: -167px -25px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.productdetail .zr.icons:before {
+    width: 25px;
+    height: 25px;
+    background-position: -142px -25px;
+    position: absolute;
+    left: 10px;
+    top: 12px;
+}
+
+.productdetail .more-page {
+    height: 50px;
+    background-size: 15px auto;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #999999;
+    line-height: 50px;
+}
+
+.productdetail .law.arrow:after {
+    margin: 0
+}
+
+.pd-tabs .tabs {
+    display: table;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    z-index: 10;
+    border-bottom: 1px solid #eee
+}
+
+.pd-tabs .tabs .active {
+    color: #ff6046;
+}
+
+.pd-tabs .tabs li {
+    display: table-cell;
+    height: 43px;
+    line-height: 43px;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+}
+
+.pd-tabs .tabline {
+    background: #ff6046;
+    height: 2px;
+    width: 33%;
+    margin-top: -2px;
+    position: relative;
+    z-index: 11
+}
+
+.pd-info {
+    background-color: #fff;
+}
+
+.pd-infos .htpanel {
+    background: #fff;
+    padding: 15px 17px;
+    margin-top: 10px;
+}
+
+.pd-infos .htpanel label {
+    color: #444
+}
+
+.pd-infos .htpanel p {
+    font-size: 12px;
+    padding-top: 10px;
+    line-height: 18px;
+    color: #999;
+}
+
+.pd-infos .htpanel:nth-child(1) {
+    margin-top: 0px;
+    border-top: 1px solid #eee;
+}
+
+.pd-infos .pd-info-p {
+    clear: both;
+    line-height: 43px;
+    border-top: 1px solid #eee;
+    background: #fff
+}
+
+.pd-infos .pd-info-p.fixed-p {
+    line-height: 1.2;
+}
+
+.pd-infos .pd-info-p.law {
+    height: 43px;
+}
+
+.pd-infos .pd-info-p:first-child {
+    border-top: none
+}
+
+.pd-infos .pd-info-p:after {
+    top: 16px
+}
+
+.pd-infos .pd-info-label {
+    float: left;
+    width: 30%;
+    font-size: 13px;
+    padding-left: 15px;
+    color: #999
+}
+
+.pd-infos .fixed-p .pd-info-label {
+    padding-top: 5px;
+}
+
+.pd-infos .pd-info-text {
+    float: left;
+    width: 60%;
+    font-size: 12px;
+    color: #444;
+}
+
+.pd-infos .pd-info-text2 {
+    font-size: 11px;
+    line-height: 16px;
+    padding: 5px 0
+}
+
+.pd-infos .bank-icons {
+    float: left;
+    margin-left: 12px;
+    height: 43px;
+    line-height: 43px
+}
+
+.pd-infos .bank-icons:before {
+    vertical-align: -18px;
+    margin-right: 20px;
+    zoom: 0.6;
+    width: 51px;
+    height: 51px
+}
+
+.pd-infos .pd-level {
+    padding: 1px 3px;
+    border: 1px solid #ff6046;
+    color: #ff6046;
+    margin-right: -1px;
+    border-radius: 3px
+}
+
+.pd-infos .pd-level:last-child {
+    margin-right: 5px
+}
+
+.pd-infos .pd-title {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    height: 40px;
+    line-height: 25px;
+    padding: 10px 0 10px 17px;
+    background: #fff
+}
+
+.pd-infos .pd-title:first-child {
+    margin-top: 0
+}
+
+.pd-infos .pd-title-text {
+    height: 100%;
+    font-size: 12px;
+    padding: 0 15px 10px 17px;
+    line-height: 18px;
+    color: #999;
+    background: #fff
+}
+
+.pd-infos .pd-imgs-c {
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 5px 17px;
+    background: #fff
+}
+
+.pd-infos .pd-imgs-i {
+    margin: 0 auto
+}
+
+.pd-bank-list {
+    margin-top: 10px;
+    background: #fff;
+    margin-bottom: 30px
+}
+
+.pd-bank-list .pd-info-text {
+    float: right;
+    text-align: right;
+    padding-right: 17px;
+    font-size: 12px;
+    color: #999;
+    width: auto;
+    padding-top: 3px;
+    line-height: 40px
+}
+
+.pd-bank-list .pd-info-text2 {
+    float: none;
+    padding: 0 17px
+}
+
+.action-btn-box .purchase {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 56px;
+    z-index: 100
+}
+
+.action-btn-box .purchase .btn {
+    background: #f2553c;
+    width: 100%;
+    height: 56px;
+    border: none;
+    font-family: "PingFang SC Light", "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif, "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "STHeiti,SimSun";
+}
+
+.action-btn-box .purchase .btn-content {
+    color: #fff;
+    text-align: center
+}
+
+.action-btn-box .purchase .btn[ disabled=disabled] {
+    background: #aaa
+}
+
+.action-btn-box .purchase .btn.fixed-btn[ disabled=disabled] {
+    background: #FFA233;
+}
+
+.action-btn-box .purchase .grabTitle {
+    line-height: 20px;
+}
+
+.detail-infos {
+    padding-bottom: 60px
+}
+
+.fixed-more {
+    text-align: right;
+    padding: 10px;
+    color: #1b75ef;
+}
+
+.pd-ad {
+    height: 132px
+}
+
+.detail-banner-box {
+    clear: both
+}
+
+.card-limit {
+    background-color: #fff
+}
+
+.card-limit .card-limit-hint {
+    background-color: #fff9c9;
+    padding: 8px 15px;
+    line-height: 20px;
+    font-size: 13px;
+    color: #ff5532
+}
+
+.card-limit .card-limit-list {
+    height: 45px;
+    line-height: 46px;
+    padding: 0 15px;
+    border-bottom: 1px solid #eee
+}
+
+.card-limit .card-limit-list .lef {
+    font-size: 15px;
+    color: #4f4f4f
+}
+
+.card-limit .card-limit-list .rig {
+    float: right;
+    font-size: 12px;
+    color: #999
+}
+
+.card-limit .card-limit-list .rig span {
+    color: #4f4f4f
+}
+
+.card-limit .icon-bank {
+    display: inline-block;
+    background: url(images/bank_logo.png) no-repeat;
+    background-size: 240px auto;
+    width: 32px;
+    height: 32px;
+    margin: 0 5px -11px 0
+}
+
+.card-limit .bank-type-CIB {
+    background-position: -4px -84px
+}
+
+.card-limit .bank-type-CMBC {
+    background-position: -164px -44px
+}
+
+.card-limit .bank-type-CMB {
+    background-position: -84px -44px
+}
+
+.card-limit .bank-type-BOC {
+    background-position: -84px -84px
+}
+
+.card-limit .bank-type-CCB {
+    background-position: -204px -44px
+}
+
+.card-limit .bank-type-ICBC {
+    background-position: -4px -4px
+}
+
+.card-limit .bank-type-CITIC {
+    background-position: -164px -4px
+}
+
+.card-limit .bank-type-SPDB {
+    background-position: -124px -4px
+}
+
+.card-limit .bank-type-CEB {
+    background-position: -44px -45px
+}
+
+.card-limit .bank-type-BCOM {
+    background-position: -44px -84px
+}
+
+.card-limit .bank-type-ABC {
+    background-position: -124px -44px
+}
+
+.card-limit .bank-type-PAB {
+    background-position: -205px -4px
+}
+
+.card-limit .bank-type-HXB {
+    background-position: -44px -4px
+}
+
+/*广发、邮政*/
+.card-limit .bank-type-CGB {
+    background-position: -84px -4px
+}
+
+.card-limit .bank-type-PSBC {
+    background-position: -4px -44px
+}
+
+.fixed-pop {
+    display: none;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+}
+
+.ui-pro-list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    color: #4a4a4a;
+    background-color:#fff;
+    border-radius:10px;
+    padding:35px 10px 20px 10px;
+}
+
+.ui-pro-list h2{
+    position:fixed;
+    top:10px;
+    left:0;
+    font-size:18px;
+    text-align:center;
+    width: 100%;
+}
+.ui-pro-list .ux-shutdown{
+    position: fixed;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+    color: #bbb;
+    width: 20px;
+    height: 20px;
+}
+.ui-scroll-box{
+    height:100%;
+    width:100%;
+    overflow: auto;
+}
+
+.ui-scroll-box::-webkit-scrollbar {
+    width: 2px;
+    border:1px solid #f0f0f0;
+}
+.ui-table {
+    width: 100%;
+    margin:10px 0 20px 0;
+}
+
+.ui-table caption {
+    border-left:4px solid #FF775B;
+    padding:2px 5px;
+    text-align: left;
+    font-size: 16px;
+    color: #4a4a4a;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.ui-table caption span{
+    font-size:12px;
+    color:#959595;
+}
+.ui-table td,
+.ui-table th {
+    padding: 5px 0;
+    vertical-align: top;
+}
+
+.ui-table td{
+    text-align:left;
+    width:65%;
+}
+.ui-table th {
+    text-align: left;
+    width:35%;
+    color:#959595;
+    font-weight:normal;
+}

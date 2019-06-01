@@ -1,0 +1,35 @@
+<section class="compact">
+    <section class="compact-hint">正在进行以下投资</section>
+    <%if(list.length != 0){%>
+    <%_.each(list,function(item){%>
+    <section class="compact-box" data-id="<%=item.id%>">
+        <section class="compact-word">
+            <p><span><%if(buyType == '0'){%>
+                受托人：<%=item.name%>
+                <%}else if(buyType == '2'){%>
+                转让方：<%=item.transferCustomer%>
+                <%}%></span><span class="rig col">投资时间</span></p>
+            <p><span>在投金额：<%=item.matchAmount%></span><span class="rig"><%=item.buyTime%></span></p>
+        </section>
+        <section class="compact-icon">
+            <i class="icons icon-more"></i>
+        </section>
+    </section>
+    <%if(tradeMode == '0'){%>
+    <section class="download-box" data-id="<%=item.id%>">
+        <span class="download-word">下载合同</span>
+    </section>
+    <%}else{%>
+    <%if(buyType == '0'){%>
+    <section class="download-box" data-id="<%=orderNo%>">
+        <span class="download-word">下载合同</span>
+    </section>
+    <%}%>
+    <%}%>
+    <%})%>
+    <%}else{%>
+    <section class="compact-box2">
+        您的投资<span class="col2"><%=shenggouStatus%></span>...
+    </section>
+    <%}%>
+</section>

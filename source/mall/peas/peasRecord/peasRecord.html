@@ -1,0 +1,23 @@
+<div class="peasrecordwrap">
+    <% if(_.isEmpty(peasRecordlist)){%>
+    <div class="peasguild">
+        <div class="peasimg"></div>
+        <p class="peasguildtext">还没有旺豆哦，快去赚旺豆吧！</p>
+        <p class="pearaidersbtn">如何获得旺豆？</p>
+    </div>
+    <% }else{ %>
+    <div class="peas-statics">
+       <p class="peastext">旺豆总计</p>
+       <p class="peasnum"><%= peaNum %></p>
+   </div>
+   <div class="recordlist">
+    <% _.each(peasRecordlist,function(item){ %>
+    <div class="recorditem clearfix">
+       <p class="line1"><span class="fl"><%= item.operType %></span> <span class='fr <%=((item.inOut)=="I")?"red":"green" %>'><%=(item.inOut=="I")?"+":"-" %><%= item.pointAmt %> </span></p>
+       <p class="line2"><span class="fl"><%= item.notes %></span> <span class='fr'><%= item.createTime %></span></p>
+   </div>
+   <% }) %>
+</div>
+<%}%>
+</div>
+

@@ -1,0 +1,38 @@
+<% _.each(list,function(n){ %>
+<div class="profit-row">
+    <div class="profit-btn arrow-right">
+        <%=n.profitDate%><span class="profit-row-num"><%=$.amountFormat(n.totalAmt,1)%></span>
+    </div>
+    <div class="profit-row-detail hide">
+        <% if(n.hbProfit>0){ %>
+        <p>现金红包(元)<span class="profit-row-num"><%=$.amountFormat(n.hbProfit)%></span></p>
+        <% }
+        if(n.dqProfit>0){ %>
+        <p>定期收益(元)<span class="profit-row-num"><%=$.amountFormat(n.dqProfit)%></span></p>
+        <% }
+        if(n.hqProfit>0){ %>
+        <p>活期收益(元)<span class="profit-row-num"><%=$.amountFormat(n.hqProfit)%></span></p>
+        <% }
+        if(parseFloat(n.zyjProfit) > 0){%>
+        <p>变现收益(溢价)<span class="profit-row-num"><%=$.amountFormat(n.zyjProfit)%></span></p>
+        <%}else if(parseFloat(n.zyjProfit) < 0){%>
+        <p>变现收益(折价)<span class="profit-row-num"><%=$.amountFormat(n.zyjProfit)%></span></p>
+        <%}
+        if(n.rewardProfit>0){ %>
+        <p>返现券收益(元)<span class="profit-row-num"><%=$.amountFormat(n.rewardProfit)%></span></p>
+        <% }
+        if(n.tyjProfit >0){ %>
+        <p>体验金收益(元)<span class="profit-row-num"><%=$.amountFormat(n.tyjProfit)%></span></p>
+        <% }
+        if(n.interestProfit >0){ %>
+        <p>摇加息收益(元)<span class="profit-row-num"><%=$.amountFormat(n.interestProfit)%></span></p>
+        <% } %>
+        <%if(n.lcjProfit >0){ %>
+        <p>理财金收益(元)<span class="profit-row-num"><%=$.amountFormat(n.lcjProfit)%></span></p>
+        <% } %>
+        <%if(n.jxProfit >0){ %>
+        <p>加息收益(元)<span class="profit-row-num"><%=$.amountFormat(n.jxProfit)%></span></p>
+        <% } %>
+    </div>
+</div>
+<% }) %>

@@ -1,0 +1,17 @@
+<% if(!_.isEmpty(list)){%>
+<% _.each(list,function(item){ %>
+<li>
+	<div class="duetoList left">
+		<span><%=item.investAmount%></span>
+		<span><%=item.productName%></span>
+	</div>
+	<div class="duetoList right">
+		<span class="duetoDate">
+		<%if(item.dueDay>0&&item.dueDay<11)%>
+		<%=item.dueDay%>天后到期
+		</span>
+		<span class="from">来自<span class="name"><%=item.investName%></span></span>
+	</div>
+</li>
+<%})%>
+<%}%>

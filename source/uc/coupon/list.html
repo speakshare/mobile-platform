@@ -1,0 +1,50 @@
+<% _.each(data.list,function(n){ %>
+<%if(n.ruleType == "1"){%>
+<li class="red-bag-one  <%if(n.isUsedStatus=='1'){%>red-bag-used <%}else if(n.isUsedStatus=='2'){%>red-bag-past<%}%>" data-id="<%=n.sendRewardId%>" data-amount="<%=n.amount%>"  data-limitAmount="<%=n.limitAmount%>">
+    <div class="num">￥<%=n.amount%></div>
+    <div class="text">
+        <div class="content">
+            <p class="name"><%=n.ruleName%></p>
+            <p class="desc">单笔投资满<%=n.limitAmount%>元可用</p>
+        </div>
+    </div>
+    <p class="date"><%=n.validDesc%>
+        <%if(n.isUsedStatus=='0'){%>
+        <span class="desc2" data-id="<%=n.ruleId%>" data-bagid="<%=n.sendRewardId%>">查看适用产品</span>
+        <%}%>
+    </p>
+</li>
+<%}else if(n.ruleType == "2"){%>
+<li class="red-bag-one <%if(n.isUsedStatus=='1'){%>red-bag-used<%}else if(n.isUsedStatus==2){%>red-bag-past<%}%>" data-id="<%=n.sendRewardId%>" data-amount="<%=n.amount%>"  data-limitAmount="<%=n.limitAmount%>" data-maxAmount="<%=n.interestAddMaxPrincipal%>">
+    <div class="num">+<%=n.interestAddVal%><span class="sflag">%</span></div>
+    <div class="text interest">
+        <div class="content">
+            <p class="name"><%=n.ruleName%></p>
+            <p class="desc">单笔订单投资满<%=n.limitAmount%>元可用</p>
+            <p class="desc">最高加息本金：<%=n.interestAddMaxPrincipal%>元</p>
+            <p class="desc">最高加息天数：<%=n.interestAddDays%>天</p>
+        </div>
+    </div>
+    <p class="date"><%=n.validDesc%>
+        <%if(n.isUsedStatus=='0'){%>
+        <span class="desc2" data-id="<%=n.ruleId%>" data-bagid="<%=n.sendRewardId%>">查看适用产品</span>
+        <%}%>
+    </p>
+</li>
+<%}else if(n.ruleType == "4"){%>
+<li class="red-bag-one  <%if(n.isUsedStatus=='1'){%>red-bag-used <%}else if(n.isUsedStatus=='2'){%>red-bag-past<%}%>" data-id="<%=n.sendRewardId%>" data-amount="<%=n.amount%>"  data-limitAmount="<%=n.limitAmount%>">
+    <div class="num">￥<%=n.amount%></div>
+    <div class="text">
+        <div class="content">
+            <p class="name"><%=n.ruleName%></p>
+            <p class="desc">单笔投资满<%=n.limitAmount%>元可减</p>
+        </div>
+    </div>
+    <p class="date"><%=n.validDesc%>
+        <%if(n.isUsedStatus=='0'){%>
+        <span class="desc2" data-id="<%=n.ruleId%>" data-bagid="<%=n.sendRewardId%>">查看适用产品</span>
+        <%}%>
+    </p>
+</li>
+<%}%>
+<%})%>

@@ -1,0 +1,71 @@
+﻿
+/*20170306*/
+
+.invite-bg{position:absolute;width:100%;height:auto; padding-bottom: 15px;background:linear-gradient(120deg, #FF6C44, #FFBA4E);
+	background: -moz-linear-gradient(120deg, #FF6C44 0%, #FFBA4E 100%);
+    background: -webkit-linear-gradient(120deg, #FF6C44 0%,#FFBA4E 100%);
+    background: -o-linear-gradient(120deg, #FF6C44 0%,#FFBA4E 100%);
+    background: -ms-linear-gradient(120deg, #FF6C44 0%,#FFBA4E 100%);
+    background: linear-gradient(120deg, #FF6C44 0%,#FFBA4E 100%);}
+.invite-bg  .banner{background:url(./imgs/img_friend_top.png) top center no-repeat;background-size:cover;margin:0 auto;}
+.invite-bg  .centercontent{position: relative; width:95%;margin:-2% auto 0px;background:#ffffff;border-radius: 6px;padding: 3%; }
+.invite-bg  .centercontent .invitebtn{position: absolute;top:-46px;left:50%;background:url(./imgs/btn_friend_share.png) bottom center no-repeat;width:100%;margin-left: -50%;height:80px;background-size:contain;}
+.centercontent .ewm { width: 120px; height: 120px; margin: 25px auto 0; max-height: 120px; }
+.centercontent .ewm canvas { width: 100%; height: 100%; max-height: 160px; }
+.invite-bg  .centercontent .ewmtext{text-align:center;font-size: 15px;color: #4F4F4F;padding-top:10px;margin-bottom: 15px;}
+
+.invite-bg .centercontent .ewmtext .star { background: url(./imgs/img_Star.png) center center no-repeat; background-size: contain; display: inline-block; width: 12px; height: 12px; }
+.invite-bg  .inviterule{background:url(./imgs/btn_friend_rule.png) center center no-repeat;background-size:contain;position: absolute;top:10px;left:0px;height: 23px;width: 64px;}
+.invite-bg  .myinvite{background:url(./imgs/btn_friend_myinvite.png) center center no-repeat;background-size:contain;position: absolute;top:5px;right:0px;height: 33px;width: 88px;}
+.invite-bg  .myinvite .pointergif{position:absolute;top:5px; left:30px;background:url(./imgs/1.png) bottom center no-repeat;background-size:50px auto;width:50px;height:50px;animation:pot 1s infinite ease-in-out;-webkit-animation:pot 1s infinite ease-in-out;-moz-animation:pot 1s infinite ease-in-out;-o-animation:pot 1s infinite ease-in-out;}
+.centercontent>img{
+    width: 100%;
+}
+.invite-bg  .palnnerguide{background:url(./imgs/img_friend_title.png) top center no-repeat;background-size: 148px  auto;width: 100%;margin: 30px auto 0px;padding-top: 25px;}
+.invite-bg  .palnnerguide .invitetips{font-size: 14px;color: #4F4F4F;text-align:center;}
+.invite-bg  .palnnerguide .invitetips span{color: #FCA032;}
+.invite-bg  .palnnerguide .bannerbar{background:url(./imgs/banner_friend.png) top center no-repeat;background-size:contain;width:100%;margin-top:10px;}
+.invite-bg  .share_mask{display:none;position: fixed;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index: 9;top: 0px;left: 0px;}
+.invite-bg  .share_mask .shareimg{position: absolute;top:10px;right:10px;background:url(./share.png)center center no-repeat;width: 40px;height: 60px; background-size: 100%;animation:beat 1s infinite ease-in-out;-webkit-animation:beat 1s infinite ease-in-out;-moz-animation:beat 1s infinite ease-in-out;-o-animation:beat 1s infinite ease-in-out;}
+
+.fixed-margin{
+    margin-bottom:10px;
+}
+
+@keyframes beat{0%{top:10px;}50%{top:20px;}}
+@-webkit-keyframes beat{0%{top:10px;}50%{top:20px;}}
+@keyframes pot{
+0%{background-image:url(./imgs/1.png);}
+20%{background-image :url(./imgs/2.png);}
+40%{background-image:url(./imgs/3.png);}
+60%{background-image :url(./imgs/4.png);}
+80%{background-image:url(./imgs/5.png);}
+}
+@-webkit-keyframes pot{
+0%{background-image:url(./imgs/1.png);}
+20%{background-image :url(./imgs/2.png);}
+40%{background-image:url(./imgs/3.png);}
+60%{background-image :url(./imgs/4.png);}
+80%{background-image:url(./imgs/5.png);}
+}
+
+/*
+@media screen and (max-width:320px){
+.invite-bg  .centercontent .contbox{padding-left:45%;}	
+}
+@media screen and (min-width:320px){
+	.invite-main .invite-banner .invite-ewm{top:53%;}
+	!*.invite-bg  .centercontent .invitebtn{height:65px;top:-30px;}*!
+}
+@media screen and (min-width:360px){
+	.invite-main .invite-banner .invite-ewm{top:53%;}
+	!*.invite-bg  .centercontent .invitebtn{height:75px;top:-40px;}*!
+}
+@media screen and (min-width:375px){
+	.invite-main .invite-banner .invite-ewm{top:54%;}
+	!*.invite-bg  .centercontent .invitebtn{height:85px;top:-50px;}*!
+}*/
+
+
+
+

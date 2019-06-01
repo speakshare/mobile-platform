@@ -1,0 +1,9 @@
+.tx-notice{padding:0 12px 20px;background:#fff;color:#666;font-size:14px;line-height:22px}
+.tx-notice p{padding-left:12px;padding-top:12px}
+.tx-notice p:before{content:'';position:absolute;margin:5px 0 0 -20px;width:14px;height:14px;color:#999;text-align:center;font-size:12px;line-height:14px;border-radius:10px;border:1px solid #999}
+.tx-notice p:nth-of-type(1):before{content:'1'}
+.tx-notice p:nth-of-type(2):before{content:'2'}
+.tx-notice p:nth-of-type(3):before{content:'注';font-size:14px;border:none;color:#EB3F30}
+.tx-notice p:nth-of-type(3){color:#999}
+.tx-notice p:nth-of-type(4):before{content:'3'}
+.tx-notice p:nth-of-type(5):before{content:'4'}

@@ -1,0 +1,55 @@
+<div class="elvation">
+  <p class="title">评估结果</p>
+  <div class="result">
+  		<%if(data.type == 1){%>
+  		<p class="re-title">保守型</p>
+  		<%}else if(data.type == 2){%>
+  		<p class="re-title">稳健型</p>
+  		<%}else{%>
+  		<p class="re-title">积极型</p>
+  		<%}%>
+  		<div class="per-bar">
+  		<div class="pre-mask" style="width:<%=data.percent%>%"></div>
+  		<ul>
+  			<li></li>
+  			<li class="space"></li>
+  			<li></li>
+  			<li class="space"></li>
+  			<li></li>
+  			<li class="space"></li>
+  			<li></li>
+  			<li class="space"></li>
+  			<li></li>
+  		</ul>
+  		<ul class="percent">
+  			<li></li>
+  			<li class="space">20</li>
+  			<li></li>
+  			<li class="space">40</li>
+  			<li></li>
+  			<li class="space">60</li>
+  			<li></li>
+  			<li class="space">80</li>
+  			<li></li>
+  		</ul>
+  		</div>
+  		<%if(data.type == 1){%>
+	  		<p class="re-prd">低风险产品和较低风险产品</p>
+	  		<p class="re-des">
+	  			对投资很谨慎，尽量回避风险。宁愿将资产的大部分投资于较低风险的债券市场或非常灵活地货币市场中，获取相对较低回报。
+	  		</p>
+  		<%}else if(data.type == 2){%>
+  			<p class="re-prd">低风险产品、较低风险产品和中等风险产品</p>
+	  		<p class="re-des">
+	  			对投资知识较为了解，喜欢将投资平均分配于高风险高回报和低风险低回报的产品。愿意投资于较高风险的股市，是期望在长线上追求较高的资本回报，以抗衡通货膨胀，其余投资于风险较低的债券市场，取得组合的均衡发展。
+	  		</p>
+  		<%}else{%>
+  			<p class="re-prd">低风险产品、较低风险产品、中等风险产品、较高风险产品和高风险产品</p>
+	  		<p class="re-des">
+	  			明白高风险回报，低风险低回报的投资定律。可能是较为年轻，对未来的收入充分乐观，愿意将资产的大部分投资于较高风险的股市上，期待获取较高的回报率，但同时明白股票投资在短期波动中有可能产生账面损失。
+	  		</p>
+  		<%}%>
+  </div>
+  <div class="ok-btn">我已了解</div>
+  <div class="re-elevation">重新评估</div>
+  </div>

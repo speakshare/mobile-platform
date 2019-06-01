@@ -1,0 +1,41 @@
+<section class="hold-pos">
+    <section class="update-hint1">今日净值已更新</section>
+    <section class="hold-pos-head">
+        <p><%=data.fundName%> <%=data.fundCode%></p>
+        <p>总资产</p>
+        <p><%=data.fundAmount%></p>
+        <p>日收益（元）</p>
+        <p>
+            <%if(data.fundProfitTodayAmount){%>
+            <%=data.fundProfitTodayAmount>0?'+'+data.fundProfitTodayAmount:data.fundProfitTodayAmount%>
+            <%}else{%>
+            0.00
+            <%}%>
+        </p>
+    </section>
+    <%if(data.buyIngAmount>0&&data.salIngCount>0){%>
+    <section class="update-hint2 <%=data.buyIngAmount>0?'sta':''%>"><span class="pic"></span>您有<%=data.buyIngAmount%>元资金正在买入处理中...</section>
+    <%}else{%>
+    <section class="update-hint2 <%=data.buyIngAmount>0?'sta':''%>"><span class="pic"></span>您有<%=data.buyIngAmount%>元资金正在买入处理中...</section>
+    <section class="update-hint2 <%=data.salIngCount>0?'sta':''%>"><span class="pic"></span>您有<%=data.salIngCount%>份基金正在卖出处理中...</section>
+    <%}%>
+    <section class="hold-pos-con">
+        <section class="loc">持有份额<span class="num"><%=data.fundCount%></span></section>
+        <section><%=data.fundType=="N"?"最新净值":"万份收益"%><span class="num"><%=data.fundPerAmount%></span></section>
+        <section class="loc">
+            <%if(data.fundProfitSumAmount>0){%>
+            累计收益<span class="col2">+<%=data.fundProfitSumAmount%></span>
+            <%}else if(data.fundProfitSumAmount<0){%>
+            累计收益<span class="col1"><%=data.fundProfitSumAmount%></span>
+            <%}else{%>
+            累计收益<span class="col0"><%=data.fundProfitSumAmount%></span>
+            <%}%>
+        </section>
+        <section>更新时间<span class="num"><%=$.dateFormat(data.fundDate*1000,'MM/dd')%></span></section>
+    </section>
+    <div class="hold-pos-records icons">交易记录</div>
+    <section class="hold-pos-but">
+        <section class="sale">卖出</section>
+        <section class="buy">买入</section>
+    </section>
+</section>

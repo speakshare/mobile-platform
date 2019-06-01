@@ -1,0 +1,30 @@
+.coupon-list{position:fixed;top:0;left:0;width:100%;height:100%;overflow:auto;background:#EEF3F9;z-index: 101;padding-left:24px}
+.coupon-list .coupon-one{position:relative;height:233px;padding:0 8px;margin-top:20px;background:url(images/bg_ticket.png) no-repeat;background-size:auto 233px}
+.coupon-list .coupon-one:before{content:'';position:absolute;left:-5px;width:13px;height:233px;background:#3B8BE8;border-radius:13px 0 0 13px}
+.coupon-list .coupon-type2:before{background:#FF5532}
+.coupon-list .coupon-type4:before{background:#FCA032}
+
+.coupon-list .coupon-one:after{content:'';position: absolute;bottom:25px;right:45px;width:36px;height:36px;background:url(images/btn_choose.png) no-repeat;background-size:100%;}
+.coupon-list .coupon-selected:after{background-image:url(images/btn_choose_checked.png)}
+
+.coupon-list .coupon-amount{float:left;width:238px;margin-top:50px;color:#3B8BE8;text-align:center}
+.coupon-list .coupon-num{font-size:60px}
+.coupon-list .coupon-num:before{content:'￥';font-size:30px}
+
+.coupon-list .coupon-type2 .coupon-num:before{content:''}
+.coupon-list .coupon-type2 .coupon-num{color:#FF5532}
+.coupon-list .coupon-type2 .coupon-num:after{content:'%';color:#FF5532;font-size:30px}
+.coupon-list .coupon-type4 .coupon-num,
+.coupon-list .coupon-type4 .coupon-num:before{color:#FCA032}
+
+.coupon-list .coupon-tip{font-size:26px;color:#4f4f4f}
+
+.coupon-list .coupon-desc{float:left;margin:32px 0 0 38px}
+.coupon-list .coupon-title{font-size:30px;color:#4f4f4f}
+.coupon-list .coupon-title:before{content:'返现券';display:inline-block;margin-right:8px;width:118px;height:42px;line-height:42px;background:#3B8BE8;border-radius:4px;text-align:center;color:#fff}
+.coupon-list .coupon-title:after{content:'适用产品>';display:block;line-height:3;color:#959595;font-size:24px}
+.coupon-list .coupon-type2 .coupon-title:before{content:'加息券';background:#FF5532}
+.coupon-list .coupon-type4 .coupon-title:before{content:'代金券';background:#FCA032}
+.coupon-list .coupon-expire{color:#b5b5b5}
+
+.coupon-list .cancel-selected{width:705px;height:86px;line-height:86px;background:#fff;margin-top:20px;text-align:center;font-size:32px;color:#4f4f4f;border:2px solid #DDD;}

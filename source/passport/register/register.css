@@ -1,0 +1,54 @@
+/*登录*/
+.registers{z-index: 55555;position: fixed;width: 100%;height: 100%;overflow:auto;background-color: #fff;left: 0;bottom: 0;animation: xian 500ms ease;-webkit-animation: xian 500ms ease;}
+.registers .registers-box{margin:0 20px;height: 50px;line-height:50px;border-bottom: 1px solid #e5e5e5;font-size:15px}
+.registers .invites-box{height:40px;line-height:40px;background-color:#f5f8fb;border:none;margin-top:10px;padding-left:14px}
+/*.registers .banner-img{width:100%;height:120px}*/
+
+.registers .be-con{color:#4f4f4f}
+.registers .rig-box{float:right;height:100%;color:#ff5532}
+.registers .code-pic{margin-top:11px;width:70px;height:28px}
+.registers .reg-un-enum,.reg-enum{display:inline-block;margin-top:22px;}
+.registers .reg-un-enum{margin-top:22px;background:url(btn_eye_shut@2x.png) no-repeat;background-size:100%;width:20px;height:10px}
+.registers .reg-enum{margin-top:18px;background:url(btn_eye@2x.png) no-repeat;background-size:100%;width:20px;height:14px}
+
+.registers .invite-box{padding-left: 10px}
+.registers .inp-box{border: none;margin:0 10px 0 15px;width:70%;background-color:inherit;color:#4f4f4f;height: 27px;line-height: 27px;font-size: 15px;}
+.registers .inp-sma-box1{width:42%;}
+.registers .inp-sma-box2{width:52%;}
+.registers .pad-lef{padding-left:16px}
+.registers .audio-btn{color:#3B8BE8}
+
+.registers .acc-word{padding:0 20px 18px;font-size:13px;color:#9fa7b4}
+.registers .to-login{float:right}
+.registers .update-col{color:#ff6046}
+.registers .inp-box::-webkit-input-placeholder {
+    color: #c1c1c1;
+}
+
+/*底部提示*/
+.registers .safety-hint{z-index: 0;position: absolute;bottom:20px;left: 50%;margin-left: -151px;font-size: 12px;color: #9fa7b4}
+.registers .zhu-icon{display:inline-block;background:url(zhuceicon@2x.png) no-repeat;background-size:100%;width:14px;height:14px;margin:0 3px -3px 0}
+/*.registers .safety-hint:before{background-position:-242px -52px;width: 14px;height: 16px;margin-bottom: -2px}*/
+@keyframes xian {
+    from{bottom: -100%}
+    to{bottom:0}
+}
+@-webkit-keyframes xian {
+    from{bottom: -100%}
+    to{bottom:0}
+}
+
+.send-sms-tip{position: absolute;color:#ff6046;
+    margin-top: 39%;
+    text-align: center;
+    WIDTH: 100%;
+}
+
+/*兼容pc*/
+@media all and (min-width:760px){
+	.registers{ width:760px;margin-left:calc((100% - 760px)/2);}
+}
+
+@media screen and (max-width:320px){
+    .registers .acc-word{font-size:12px;}
+}

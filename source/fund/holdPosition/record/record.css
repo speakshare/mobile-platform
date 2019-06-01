@@ -1,0 +1,15 @@
+.hold-pos-record{background-color:#fff;margin:10px 0 0;padding:15px;line-height:24px}
+.hold-pos-record .record-line1{font-size:15px;color:#4f4f4f}
+.hold-pos-record .record-line2{font-size:12px;color:#959595}
+.hold-pos-record .record-rig{float:right;clear:right;font-size:15px;color:#4f4f4f}
+.hold-pos-record .record-col1{font-size:13px;color:#fca032}
+.hold-pos-record .record-col2{font-size:13px;color:#4f4f4f;text-align:right}
+.hold-pos-record .record-word{font-size:11px;color:#4f4f4f;}
+.hold-pos-record .record-par{color:#959595;font-size:12px;}
+.hold-pos-record .record-pars{color:#3b8beb}
+.hold-pos-record .record-wid{display:inline-block;}
+.hold-pos-record .rec-wid{padding-left:17px}
+.hold-pos-record .icon1-record{display:inline-block;background:url(icon_selected@2x.png) no-repeat;background-size:100%;width:12px;height:12px;margin:0 5px -1px 0}
+.hold-pos-record .icon2-record{display:inline-block;background:url(icon_notselected@2x.png) no-repeat;background-size:100%;width:9px;height:9px;margin:0 7px -1px 1px}
+.hold-pos-record .lin{position:absolute;display: inline-block;width:1px;height:13px;background-color:#b5b5b5;margin:-6px 0 0 5px}
+.more-record{text-align:center;padding:20px 0;font-size:15px;color:#4f4f4f;background-color:#f2f2f2;margin-top:10px}

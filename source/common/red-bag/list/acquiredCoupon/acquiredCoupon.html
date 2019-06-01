@@ -1,0 +1,61 @@
+﻿<%if(!list ||(list && list.length==0)){%>
+<div class="redbag hasGotRed">
+	<div class="iconNull">
+	</div>
+	<p class="tips fgrey">您还没有领取过礼券哦!</p>
+</div>
+<%}else{%>
+<div class="redbag hasUsed pd40">
+	<div class="giftList">
+		<ul>
+			<%_.each(list, function(item){%>
+			<li>
+		        <div class="wrap"  style="height: <%=($(window).width()-15)/707*233 %>px">
+		        	<%if(item.ruleType == 1){%>
+		            <div class="left">
+		                <p class="amount failure">￥<span class="amount"><%=item.amount%></span></p>
+		                <p class="tips">满<%=item.limitAmount%>元返</p>
+                        <p class="bar bluebg"></p>
+		            </div>
+		            <div class="right">
+		                <p><span class="title failurebg">返现券</span><%=item.ruleName%></p>
+		                <p class="tips fgrey f12">适用产品></p>
+		                <p class="f12 deadline failure"><%=item.validDesc%></p>
+		            </div>
+		            <%}else if(item.ruleType == 2){%>
+		            <div class="left">
+		                <p class="amount failure"><span class="amount"><%=item.interestAddVal%></span>%</p>
+		                <p class="tips">满<%=item.limitAmount%>元用</p>
+                        <p class="bar deepYellowBg"></p>
+		            </div>
+		            <div class="right">
+		                <p><span class="title failurebg">加息券</span><%=item.ruleName%></p>
+                        <p class="introduce raise">最高加息<%=item.interestAddMaxPrincipal%>元，<%=item.interestAddDays%>天</p>
+		                <p class="tips fgrey f12">适用产品></p>
+		                <p class="f12 deadline failure"><%=item.validDesc%></p>
+		            </div>
+		            <%}else if(item.ruleType == 4) {%>
+		            <div class="left">
+		                <p class="amount failure">￥<span class="amount"><%=item.amount%></span></p>
+		                <p class="tips">满<%=item.limitAmount%>元减</p>
+                        <p class="bar bluebg"></p>
+		            </div>
+		            <div class="right">
+		                <p><span class="title failurebg">代金券</span><%=item.ruleName%></p>
+		                <p class="tips fgrey f12">适用产品></p>
+		                <p class="f12 deadline failure"><%=item.validDesc%></p>
+		            </div>
+		            <%}%>
+		        </div>
+		        <span class="invalid iconUsed"></span>
+		        <div class="tigbar failurebg"></div>
+		    </li>
+		    <%})%>
+		</ul>
+	</div>
+	<div class="bottomLine hide">
+		<div class="line"></div>
+		<span class="title1">没有更多结果了</span>
+	</div>
+</div>
+<%}%>

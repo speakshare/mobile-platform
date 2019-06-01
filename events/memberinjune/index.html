@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>摇旺6月会员日</title>
+    <meta name="keywords" content="摇旺＋会员日"/>
+    <meta name="description" content="摇旺＋会员日"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+</head>
+<style>
+    body{margin:0;padding:0;width:100%;min-width:320px;background:#fff;font-size:14px;line-height:1.5;
+        font-family:"PingFang SC Light","Helvetica Neue",Helvetica ,"Microsoft Yahei", Arial,sans-serif,"Luxi Sans","DejaVu Sans",Tahoma,"Hiragino Sans GB",STHeiti,SimSun}
+    .header-btn{position:absolute;top:10px;background-size:100% auto}
+    .share-btn{right:15px;width:61px;height:20px;background-image:url(https://file.91yaowang.com/yaowang/events/memberinjune/imgs/icon_share.png)}
+    .event img{width:100%;display: block;}
+    .event{position: relative;font-size: 0; line-height: 0;}
+    .share_mask{display:none;position:fixed;z-index:999999;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6) url(https://file.91yaowang.com/yaowang/events/mask.png) no-repeat 90% 20px;background-size:140px auto}
+    .platform>img{display: none;}
+    #btn{position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;}
+    .ios .ios,.other .other{display: block}
+</style>
+<body>
+<div class="event">
+    <div class="share-btn header-btn"></div>
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/pg_01.jpg">
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/pg_02.jpg">
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/pg_03.jpg">
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/pg_04.jpg">
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/pg_05.jpg">
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/pg_06.jpg">
+
+    <div class="platform">
+        <img class="other" src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/r_02.jpg">
+        <img class="ios" src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/ri_02.jpg">
+    </div>
+    <img class="btn" id="btn" src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/btn_huiyuanliqiang.png">
+</div>
+<script src="https://file.91yaowang.com/yaowang/events/jquery-2.1.4.min.js"></script>
+<script src="https://file.91yaowang.com/yaowang/events/jsBridge.js"></script>
+<script src="https://file.91yaowang.com/yaowang/events/weChat.js"></script>
+<script>
+    $(function(){
+        jsb.setShareInfo({
+            title:'想买最新版iPad Pro？这里免费送！',
+            desc:'会员限量抢 0元送到家',
+            icon:location.origin+'/events/memberinjune/imgs/share.jpg',
+            link:location.href
+        });
+
+        $('.share-btn').on('click',function(){
+            jsb.share();
+        });
+
+        if(isIOS()){
+            $(".platform").addClass("ios")
+        }else{
+            $(".platform").addClass("other")
+        }
+        $('.btn').on('click',function(){
+            jsb.toDetail("2478");
+        });
+    });
+    function isIOS () {
+        return /ipad|iphone|iPod|Macintosh|mac os/i.test(navigator.userAgent);
+    }
+
+</script>
+</body>
+</html>

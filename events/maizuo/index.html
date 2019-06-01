@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head lang="en">
+    <meta charset="UTF-8">
+    <title>摇旺约你看大片</title>
+    <meta name="keywords" content="摇旺约你看大片"/>
+    <meta name="description" content="摇旺约你看大片"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-width: 320px;
+        background: #fff;
+        font-size: 14px;
+        line-height: 1.5;
+        font-family: "PingFang SC Light", "Helvetica Neue", Helvetica, "Microsoft Yahei", Arial, sans-serif, "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", STHeiti, SimSun
+      }
+
+      .ux-section {
+        background-color: #ef9f16;
+      }
+      .ux-section img {
+        display: block;
+        width: 100%
+      }
+    </style>
+  </head>
+  <body>
+    <section class="ux-section">
+      <img src="images/mz-banner.png" width="100" alt="">
+      <img src="images/mz-act.png" width="100" alt="">
+      <img src="images/mz-get.png" class="ux-button" width="100" alt="">
+      <img src="images/mz-rule.png" width="100" alt="">
+    </section>
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script src="../jsBridge.js"></script>
+    <script src="../weChat.js"></script>
+    <script>
+      $(function () {
+        jsb.setShareInfo({
+          title: '摇旺约你看大片',
+          desc: '我有电影票你有时间吗？',
+          link: location.href
+        });
+        
+        $('.ux-button').on('click',function(){
+          location.href='https://wz.91yaowang.com/weizhan/#uc/invite/landingPage?i=wkof8LS';
+        })
+      });
+    </script>
+  </body>
+</html>

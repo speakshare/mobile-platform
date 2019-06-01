@@ -1,0 +1,29 @@
+/*键盘*/
+.pay-keyboard{width:100%;height:auto;}
+.pay-keyboard .hint-word{text-align:center;padding:30px 0;font-size:14px;color:#999}
+.pay-keyboard .password-box{margin:0 15px;height:50px;line-height:50px;border:1px solid #ccc;background-color: #fff;}
+.pay-keyboard .password-box span{float:left;text-align:center;width:48px;height:50px;font-size:24px;border-left:1px solid #ccc;}
+.pay-keyboard .password-box span:first-child{border-left:0}
+.pay-keyboard .keyboard-tab{z-index:100;position:fixed;bottom:0;left:0;width:100%;background-color: #fff;font-size:20px;color:#666;animation: xian 600ms ease-out;-webkit-animation: xian 600ms ease-out;}
+.pay-keyboard .keyboard-tab tr{height:50px;border-top:1px solid #ccc;}
+.pay-keyboard .keyboard-tab td{text-align:center}
+.pay-keyboard .keyboard-tab td:active{background-color:#f0f0f0;}
+.pay-keyboard .keyboard-tab tr td:nth-of-type(2){border-left:1px solid #ccc;border-right:1px solid #ccc}
+.pay-keyboard .bg{background-color:#ccc;font-size:24px}
+@-webkit-keyframes xian {
+    from{bottom: -100%}
+    to{bottom:0}
+}
+@keyframes xian {
+    from{bottom: -100%}
+    to{bottom:0}
+}
+@media screen and (min-width:320px){
+    .pay-keyboard .keyboard-tab tr{height: 50px;}
+}
+@media screen and (min-width:360px){
+    .pay-keyboard .keyboard-tab tr{height: 54px;}
+}
+@media screen and (min-width:414px){
+    .pay-keyboard .keyboard-tab tr{height: 58px;}
+}

@@ -1,0 +1,25 @@
+<div class="mall-bill-wrapper">
+	<div class="mall-recharge-title">
+		<p class="title">兑话费<span>高清音质 &nbsp;&nbsp;无限畅聊</span></p>
+	</div>
+	<% if(_.isEmpty(billlist)){%>
+	<p class='nodatetips'>暂无数据</p>
+	<%}else{%>
+	<div class="swiper-container billcontainer">
+		<div class="swiper-wrapper billlist">
+			<% _.each(billlist,function(item){  %>
+			<div class="swiper-slide billinfo" data-id="<%= item.id %>">
+				<p class="perfer"><span><em>￥</em><%= item.amount %></span> 约<%= item.longTime %>分钟</p>
+				<p class="limittime">国内通话时长</p>
+				<p class="costpeanum"><%= item.needPoints %>旺豆兑换</p>
+			</div>
+			<% }) %>
+		</div>
+	</div>
+	<%}%>
+
+</div>
+<div class="mall-ywphone-enter ywcall">
+	<p class="title">摇旺电话<span class="touseywpone">去使用 > </span></p>
+</div>
+

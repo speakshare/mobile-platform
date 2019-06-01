@@ -1,0 +1,96 @@
+.elvation{
+	background:url(../question/bg_evaluate.jpg) no-repeat top left;
+	height:736px;
+	background-size: cover;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.elvation img{
+	width: 12px;
+	margin-top:20px;
+}
+.elvation .title{
+	font-size: 23px;
+	color: #4F4F4F;
+	padding-top:25px;
+	text-align:center;
+}
+.elvation .result{
+	background:#fff;
+	padding-top:22px;
+	text-align:center;
+	margin:0 8%;
+	min-height:330px;
+}
+.elvation .re-title{
+	font-size: 35px;
+	color: #FF5532;
+	text-align:center;
+	margin:35px auto;
+}
+.elvation .result ul{
+	height: 5px;
+	border-radius:3px;
+	padding:0px;
+	list-style: none;
+	background:-moz-linear-gradient(left,#FFDDD6,#FF5532);/*Mozilla*/
+	background:-webkit-gradient(linear,0 50%,100% 50%,from(#FFDDD6),to(#FF5532));/*Old gradient for webkit*/
+	background:-webkit-linear-gradient(left,#FFDDD6,#FF5532);/*new gradient for Webkit*/
+	background:-o-linear-gradient(left,#FFDDD6,#FF5532); /*Opera11*/
+}
+.elvation .result ul.percent{
+	background:#fff;
+	font-size: 11px;
+	color: #7A7A7A;
+	margin-top:10px;
+}
+.elvation .per-bar{
+	position:relative;
+	margin: 0 22px;
+}
+.elvation .pre-mask{
+	height: 5px;
+	position:absolute;
+	background: #fff;
+	right:0px;
+	width:0%;
+}
+.elvation .result li{
+	width:19%;
+	float:left;
+	height:5px;
+}
+.elvation .result li.space{
+	width:1%;
+	background:#fff;
+}
+.elvation .re-prd{
+	font-size: 13px;
+	color: #FFA233;
+	text-align:left;
+	padding:10px 22px;
+	margin-top:20px;
+	line-height: 1.4;
+}
+.elvation .re-des{
+	font-size: 13px;
+	color: #7A7A7A;
+	text-align:left;
+	padding:10px 22px 20px;
+	line-height: 1.4;
+}
+.elvation .ok-btn{
+	background: #FF5532;
+	color:#fff;
+	font-size:16px;
+	line-height:48px;
+	text-align:center;
+	margin:16px 8%;
+}
+.elvation .re-elevation{
+	margin-top:20px;
+	font-size: 14px;
+	color: #3B8BE8;
+	text-align:center;
+}

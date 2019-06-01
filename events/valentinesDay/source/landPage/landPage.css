@@ -1,0 +1,33 @@
+.acty214-landPage{background:#FFEBC9;position: relative;top:0px;left:0px;width:100%;height:100%;}
+.acty214-landPage .acty214-wrap{width:96%;height:100%;margin:0px auto;padding: 20px 0px;}
+.acty214-landPage .acty214-wrap .logo{position: absolute;width:13%;height:50px;background:url(./img/img_home_logo.png)center center no-repeat;background-size:100%;}
+.acty214-landPage .acty214-wrap .headimg{width:80%;background:url(./img/titlebg.png) center bottom no-repeat;background-size:100%;margin:0 auto;position: relative;z-index: 99;}
+.acty214-landPage .acty214-wrap .innerwarp{width:100%;background:url(./img/boxbg.png)center top no-repeat;background-size:contain;position: relative;top:-20px;}
+.acty214-landPage .acty214-wrap .innerwarp .content{width:260px;/*height:100%;*/margin:0 auto;padding: 10px 0;}
+.acty214-landPage .acty214-wrap .innerwarp .facebox {background:url(./img/heart.png) center 10px no-repeat;background-size:35px auto;margin-top: 20px;}
+.acty214-landPage .acty214-wrap .innerwarp .face{position: relative; width:100px;height:100px;border:2px solid #F64976;border-radius:5px;margin:0 auto;}
+.acty214-landPage .acty214-wrap .innerwarp .face img{width:100%;height:100%;}
+.acty214-landPage .acty214-wrap .innerwarp .face .upload-img{  opacity: 0.01;top: 0;left: 0;width: 100%;height: 100%;position: absolute;}
+.acty214-landPage .acty214-wrap .innerwarp .face .slaveHeadImg{display:none;}
+.acty214-landPage .acty214-wrap .innerwarp .mainface{float:left;}
+.acty214-landPage .acty214-wrap .innerwarp .subface{float:right;}
+.acty214-landPage .acty214-wrap .innerwarp .subface .face{background:url(./img/camera.png) center center no-repeat;background-size:40px auto;}
+.acty214-landPage .acty214-wrap .innerwarp .facebox .name{font-size:14px;color:#7D3145;text-align:center;margin-top:5px;font-weight: bold;}
+.acty214-landPage .acty214-wrap .innerwarp .facebox  .subname{color:#F64976;}
+.acty214-landPage .acty214-wrap .innerwarp .dottedline{border-top:1.5px dashed #FDDEDD;width:98%;margin:0 auto;}
+.acty214-landPage .acty214-wrap .innerwarp .inputbox{background: url(./img/inputimg.png) center top no-repeat;width: 100%;height: 45px;background-size: 100%;margin: 10px auto;}
+.acty214-landPage .acty214-wrap .innerwarp .inputbox .input{height:20px;font-size:14px;color:#C2637B;padding-left:5px;margin-top: 10px;margin-left: 5px;border: none;outline: none;background:#FFEAEF;font-weight: bold;}
+.acty214-landPage .acty214-wrap .innerwarp .inputbox input::-webkit-input-placeholder{color: #C2637B;}
+.acty214-landPage .acty214-wrap .innerwarp .inputbox input:-moz-placeholder{color:#C2637B;}
+.acty214-landPage .acty214-wrap .innerwarp .inputbox input::-moz-placeholder{color:#C2637B;}
+.acty214-landPage .acty214-wrap .innerwarp .inputbox input:-ms-input-placeholder{color:#C2637B;}
+.acty214-landPage .acty214-wrap .innerwarp .tips{font-size:12px;color:#F64976;}
+.acty214-landPage .acty214-wrap .innerwarp .btnbox{position: absolute;bottom:-10px;left:0px;width: 100%;}
+.acty214-landPage .acty214-wrap .innerwarp .btnbox .bottombtn{width:125px;height:50px;}
+.acty214-landPage .acty214-wrap .innerwarp .btnbox .nobtn{float:left;background:url(./img/nobtn.png) left bottom no-repeat;background-size:contain;}
+.acty214-landPage .acty214-wrap .innerwarp .btnbox .yesbtn{float:right;background:url(./img/yesbtn.png) right bottom no-repeat;background-size:contain;}
+@media screen and (max-width:340px){
+  .acty214-landPage .acty214-wrap .innerwarp .content{width:240px;}
+  .acty214-landPage .acty214-wrap .innerwarp .face{width:80px;height:80px;}
+  .acty214-landPage .acty214-wrap .innerwarp .btnbox .bottombtn{width:110px;height:50px;}
+}

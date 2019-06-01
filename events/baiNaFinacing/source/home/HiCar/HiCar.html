@@ -1,0 +1,84 @@
+<div class="hicar-wrap">
+<img src="<%= location.origin+'/events/baiNaFinacing/dist/hicaricon.jpg' %>"  style="display: none"  >
+	<div class="share"></div>
+	<img src="images/bg_01.jpg" />
+	<img src="images/bg_02.jpg" />
+	<div class="recordwrap">
+		<img src="images/bg_03.jpg" />
+		<div class="recordbtn"><img src="images/recordbtn.png" /></div>
+	</div>
+	<img src="images/bg_04.jpg" />
+	<div class="productwrap">
+		<img src="images/bg_05.jpg" />
+		<%if(baiNaActiProductList[0]&&baiNaActiProductList[0].goodsPromotionProductInfoSet[0]){%>
+		<div class="protab">
+			<div class="productbox">
+				<div class="tab title w220"><%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].productName%></div>
+				<div class="tab title w190">投资金额</div>
+				<div class="tab title w220">预计到期收益</div>
+			</div>
+			<div class="productbox nobt">
+				<div class="tab w220">期限<%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].procuctDay%>天</div>
+				<div class="tab w190"><%=baiNaActiProductList[0].productPrice%>元</div>
+				<div class="tab w220"><%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].preProfit%>元</div>
+			</div>
+			<%if(dealForbiddenTimeFlag=='1'){%>
+			<div class="disable">23:00-6:00 维护时间</div>
+			<%}else if(!baiNaActiProductList[0].goodsPromotionProductInfoSet[0] || baiNaActiProductList[0].goodsPromotionProductInfoSet[0].procuctStatus=='6'||( baiNaActiProductList[0].goodsPromotionProductInfoSet[0].procuctAmount-baiNaActiProductList[0].goodsPromotionProductInfoSet[0].productAmountBuy< baiNaActiProductList[0].productPrice)){%>
+			<div class="disable"> 已领取完</div>
+			<%}else{%>
+			<div class="get_btn" data-code='<%=baiNaActiProductList[0].promotionCode%>' data-gid='<%=baiNaActiProductList[0].goodsId%>' data-pid='<%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].productNo%>'></div>
+			<%}%>
+			<div class="descDetail fwxq" data-pid="1">查看服务详情</div>
+		</div>
+		<%}%>
+
+	</div>
+	<div class="detailbg">
+		<div class="fwIntro desc1" data-flag='mgs'></div>
+	</div>
+	<img src="images/bg_06.jpg" />
+	<img src="images/bg_07.jpg" />
+	<img src="images/bg_08.jpg" />
+	<div class="productwrap">
+		<img src="images/bg_09.jpg" />
+		<%if(baiNaActiProductList[1]&&baiNaActiProductList[1].goodsPromotionProductInfoSet[0]){%>
+		<div class="protab mt0">
+			<div class="productbox">
+				<div class="tab title w220"><%=baiNaActiProductList[1].goodsPromotionProductInfoSet[0].productName%></div>
+				<div class="tab title w190">投资金额</div>
+				<div class="tab title w220">预计到期收益</div>
+			</div>
+			<div class="productbox nobt">
+				<div class="tab w220">期限<%=baiNaActiProductList[1].goodsPromotionProductInfoSet[0].procuctDay%>天</div>
+				<div class="tab w190"><%=baiNaActiProductList[1].productPrice%>元</div>
+				<div class="tab w220"><%=baiNaActiProductList[1].goodsPromotionProductInfoSet[0].preProfit%>元</div>
+			</div>
+			<%if(dealForbiddenTimeFlag=='1'){%>
+			<div class="disable">23:00-6:00 维护时间</div>
+			<%}else if(!baiNaActiProductList[1].goodsPromotionProductInfoSet[0] || baiNaActiProductList[1].goodsPromotionProductInfoSet[0].procuctStatus=='6'||( baiNaActiProductList[1].goodsPromotionProductInfoSet[0].procuctAmount-baiNaActiProductList[1].goodsPromotionProductInfoSet[0].productAmountBuy< baiNaActiProductList[1].productPrice)){%>
+			<div class="disable">已领取完</div>
+			<%}else{%>
+			<div class="get_btn" data-code='<%=baiNaActiProductList[1].promotionCode%>' data-gid='<%=baiNaActiProductList[1].goodsId%>' data-pid='<%=baiNaActiProductList[1].goodsPromotionProductInfoSet[0].productNo%>'></div>
+			<%}%>
+			<div class="descDetail fwxq" data-pid="2">查看服务详情</div>
+		</div>
+		<%}%>
+	</div>
+	<div class="detailbg1 detailbg">
+		<div class="fwIntro  desc2 " data-flag='zc'></div>
+	</div>
+	<img src="images/bg_09_02.jpg" />
+	<div class="act-desc-wrap">
+		<ol class="act-desc">
+			<% var desc=baiNaActiProductList[0].notes.replace('\r','').split('\n') %>
+			<% _.each(desc,function(item){  %>
+			<li><%=item%></li>
+			<%})%>
+			<% if($.isIOS()){%>
+			<li>本活动与苹果公司无关</li>
+			<%}%>
+		</ol>
+		<p class="desctips">理财有风险，投资需谨慎</p>
+	</div>
+</div>

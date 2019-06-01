@@ -1,0 +1,46 @@
+<% if(!_.isEmpty(list)){%>
+<% _.each(list,function(item){ %>
+	<%if(item.investFlag=="1"){%>
+		<li class="customer-item" data-cid='<%=item.customerId%>'>
+			<div class="left">
+				<div class="name f16">
+					<span class="customer"><%=item.customerName?item.customerName:$.telHide(item.phoneNum)%></span>
+					<%if(item.flag==2){%>
+					<span class="second-degree"><%=item.customerName1?item.customerName1:'尾号'+(item.phoneNum1).substr(7,4)%>邀请</span>
+					<%}%>
+				</div>
+				<div class="f14"><%=parseFloat(item.investAmount).toFixed(2)%></div>
+				<div class="f12">在投金额</div>
+			</div>
+			<div class="right">
+				<div class="f12">注册时间<%=$.dateFormat(item.registerTime,'yyyy-MM-dd')%></div>				
+				<div class="Tright f14 red"><%=parseFloat(item.totalAmt).toFixed(2)%></div>
+				<div class="Tright f12">累计盈亏</div>
+			</div>
+		</li>
+	<%} else{%>
+	    <li class="customer-item" data-cid='<%=item.customerId%>'>
+			<div class="left">
+				<div class="name f16">
+					<span class="customer"><%=item.customerName?item.customerName:$.telHide(item.phoneNum)%></span>
+					<%if(item.flag==2){%>
+					<span class="second-degree"><%=item.customerName1?item.customerName1:'尾号'+(item.phoneNum1).substr(7,4)%>邀请</span>
+					<%}%>
+				</div>
+				<div class="f12">注册时间<%=$.dateFormat(item.registerTime,'yyyy-MM-dd')%></div>
+			</div>
+			<div class="right trends">
+			<%if(item.realNameVerify=='0'){%>
+				<div class="name f16">等待实名</div>
+			<%}else{%>
+				<%if(item.bindBank=='0'){%>
+					<div class="name f16">等待绑卡</div>
+				<%}else{%>
+					<div class="name f16">等待首投</div>
+				<%}%>
+			<%}%>
+			</div>
+		</li>
+	<%}%>
+<% }) %>
+<%}%>

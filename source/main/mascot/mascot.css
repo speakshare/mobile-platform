@@ -1,0 +1,25 @@
+.mascot{
+    position: fixed;
+    z-index:99999;
+    width: 120px;
+    height: 130px;
+    background-repeat:  no-repeat;
+    background-size: contain;
+
+}
+.mascot.top{
+    top: 80px;
+    right: 0;
+
+
+}
+.mascot.left{
+    top:250px;
+    left: 0;
+
+}
+.mascot.right{
+    top: 300px;
+    right: 0;
+
+}

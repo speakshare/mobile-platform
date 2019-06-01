@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>规则说明</title>
+    <meta name="keywords" content="摇旺＋会员日"/>
+    <meta name="description" content="摇旺＋会员日"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maxmum-scale=1.0,user-scalable=no,minimal-ui"/>
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+</head>
+<style>
+    body{margin:0;padding:0;width:100%;min-width:320px;background:#fff;}
+
+    .event img{width:100%;display: block;}
+
+
+</style>
+<body>
+<div class="event">
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/ri_01.jpg">
+    <div class="platform">
+        <img class="other" src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/r_02.jpg">
+        <img class="ios" src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/ri_02.jpg">
+    </div>
+    <img src="https://file.91yaowang.com/yaowang/events/memberinjune/imgs/ri_03.jpg">
+
+</div>
+<script src="https://file.91yaowang.com/yaowang/events/jquery-2.1.4.min.js"></script>
+
+<script>
+    $(function(){
+        if(isIOS()){
+            $(".platform").addClass("ios")
+        }else{
+            $(".platform").addClass("other")
+        }
+    })
+
+    function isIOS () {
+        return /ipad|iphone|iPod|Macintosh|mac os/i.test(navigator.userAgent);
+    }
+
+
+</script>
+</body>
+</html>

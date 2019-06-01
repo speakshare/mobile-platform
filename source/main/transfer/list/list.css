@@ -1,0 +1,71 @@
+.classify-tab{z-index:555;position:fixed;top:0;width:100%;background-color:rgba(255,255,255,0.9);height:45px;line-height:45px;color:#4f4f4f;border-bottom:1px solid #ccc;font-size:14px;}
+.classify-tab div{float:left;width:33.33%;text-align:center}
+.classify-tab .yie i,
+.classify-tab .rea i,
+.classify-tab .dea i{display:inline-block;width:16px;height:16px;margin:0 3px -3px 0;}
+.classify-tab .yie i{background:url(up@2x.png) no-repeat;background-size:100%;}
+.classify-tab .rea i{background:url(realize@2x.png) no-repeat;background-size:100%}
+.classify-tab .dea i{background:url(time@2x.png) no-repeat;background-size:100%}
+.classify-tab .active{color:#FF5532}
+.classify-tab .yie i.active{background:url(up_chosen@2x.png) no-repeat;background-size:100%;}
+.classify-tab .rea i.active{background:url(realize_chosen@2x.png) no-repeat;background-size:100%;}
+.classify-tab .dea i.active{background:url(time_chosen@2x.png) no-repeat;background-size:100%;}
+
+.classify-tab .small-triangle{display:inline-block;background:url(all_arrow@2x.png) no-repeat;background-size:100%;width:6px;height:10px;margin-left:5px}
+.classify-tab .small-triangle.active1{background:url(UP_arrow@2x.png) no-repeat;background-size:100%;}
+.classify-tab .small-triangle.active2{background:url(DOWN_arrow@2x.png) no-repeat;background-size:100%;}
+.transfer-banner{margin:0 0 10px;padding:10px;background-color:#fff}
+
+.transfer-pop{z-index:555;position:fixed;top:45px;left:0;width:100%;height:100%;background-color:rgba(0,0,0,0.5)}
+.transfer-pop .transfer-pop-con{position:relative;margin:40% 15%;text-align:center;background-color:#fff;border-radius:5px}
+.transfer-pop .transfer-pop-close{position:absolute;top:-60px;right:0;color:#fff;}
+.transfer-pop .transfer-pop-fork{width:30px;height:30px;border:2px solid #fff;border-radius:50%}
+.transfer-pop .transfer-pop-fork span{display:inline-block;width:2px;height:20px;background-color:#fff;}
+.transfer-pop .transfer-pop-fork span:nth-of-type(1){margin:3px -3px 0 0;-webkit-transform:rotate(45deg);transform:rotate(45deg)}
+.transfer-pop .transfer-pop-fork span:nth-of-type(2){margin:3px 0 0 -3px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
+.transfer-pop .transfer-pop-line{display:inline-block;width:2px;height:30px;background-color:#fff;}
+.transfer-pop .transfer-pop-con p{line-height:26px}
+.transfer-pop .transfer-pop-con p:nth-of-type(1),
+.transfer-pop .transfer-pop-con p:nth-of-type(3){font-size:16px;color:#FF5532}
+.transfer-pop .transfer-pop-con p:nth-of-type(2),
+.transfer-pop .transfer-pop-con p:nth-of-type(4){font-size:14px;color:#4f4f4f}
+.transfer-pop .transfer-pop-pic{display:inline-block;background:url(img_qingdai@2x.png) no-repeat;background-size:100%;width:100%;}
+.transfer-pop .transfer-pop-but{background-color:#FF5532;font-size:16px;color:#fff;padding:15px 0;margin-top:10px;border-radius:0 0 5px 5px}
+
+/*投资成功*/
+.successPage .emphasis{color: #ff6046;}
+.successPage .title{position: relative;padding: 30px 0;text-align: center;font-size: 16px;}
+.successPage .title:before{content:'';width: 20px;height: 20px;background:url(success.png) no-repeat;position: absolute;left: 35%;top: 35%;background-size: 100%;}
+.successPage .main{background-color: #fff;color: #999;}
+.successPage .invest-list li{padding: 10px 20px;border-bottom: 1px solid #dad7d6;}
+.successPage .process .line{position: relative;height: 2px;margin: 25px 85px 8px;background-color: #ff6046;}
+.successPage .process .line .point{width: 10px;height: 10px;border-radius: 100%;position: absolute;background-color: #ff6046;left: 0;margin-top: -4px;}
+.successPage .process .line:after{content:'';width: 18px;height: 18px;background:url(success.png) no-repeat;background-size: 100%;position: absolute;top: 0;right: 0;margin-top: -6px;}
+.successPage .process .content{padding: 10px 30px 25px;}
+.successPage .process p{display: inline-block;}
+.successPage .process span{display: block;}
+.successPage .start,
+.successPage .end{line-height: 18px;}
+.successPage .end{float: right;}
+.successPage .node{text-align: center;}
+.invest-list li span{float: right;color: #000;}
+.successPage .btn{height: 40px;line-height: 40px;margin: 20px 20px 100px;font-size: 16px;text-align: center;border-radius: 9px;color: #fff;background-color: #ff6046;}
+.successPage .tips{text-align: center;line-height: 20px;color: #999;}
+.successPage .guarantee{position: relative;margin: 40px 0 20px;text-align: center;color: #999;}
+.successPage .guarantee.icons:before{width: 15px;height: 20px;background-position:-240px -48px;position: absolute;top:12px;top: 0;margin-top: -7px;margin-left: -22px;}
+
+@media screen and (min-width:320px){
+    .transfer-pop .transfer-pop-pic{height:80px}
+}
+
+@media screen and (min-width:360px){
+    .transfer-pop .transfer-pop-pic{height:88px}
+}
+
+@media screen and (min-width:375px){
+    .transfer-pop .transfer-pop-pic{height:90px}
+}
+
+@media screen and (min-width:414px){
+    .transfer-pop .transfer-pop-pic{height:100px}
+}

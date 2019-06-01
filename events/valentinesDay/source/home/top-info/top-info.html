@@ -1,0 +1,66 @@
+<div class="logo"></div>
+<div class="share-btn"></div>
+<div class="l1"></div>
+<div class="l2"></div>
+<div class="r1"></div>
+<div class="r2"></div>
+<div class="h1"></div>
+<div class="h2"></div>
+<div class="h3"></div>
+<div class="h4"></div>
+<!--<div class="b1"></div>-->
+<div class="u-b">
+    <% if(info && info.relationList && info.relationList.length>0){ %>
+        <p class="tip1">主人，有<%=info.relationList.length%>个想跟你结婚的人已排好队</p>
+        <div class="user-list clearfix">
+            <div class="overSilder">
+                <ul class="animate">
+                    <% _.each(info.relationList,function(n){ %>
+                        <li class="user-one <%=n.isBind==1?'love':''%>" data-id="<%=n.slaveUserId%>" data-teamId="<%=n.teamId%>" data-name="<%=n.niceName%>">
+                            <img class="user-img" src="<%=n.headImg%>">
+                            <p class="name"><%=n.niceName%></p>
+                        </li>
+                    <% }) %>
+                </ul>
+            </div>
+            <div class="invite-btn">
+                <div class="invite-btn-img"></div>
+                <div class="txt">继续邀请</div>
+            </div>
+        </div>
+        <p class="tip2">选择为情人会获得恋爱基金现金奖励</p>
+    <% } %>
+</div>
+<!--<div class="b3"></div>-->
+<div class="icon-1" style="height:<%=$('.content').width()*0.31%>px">
+    <img src="<%=info.masterHeadImg?info.masterHeadImg:(location.origin+'/events/valentinesDay/dist/i1.png')%>" class="user-icon-1">
+    <% if(info.masterUserId>0 && !$.isApp()){ %>
+        <div class="upload-img-mask"></div>
+        <input type="file" class="upload-img">
+    <%} %>
+    <div class="edit-name-btn"><%=info.masterNickname?info.masterNickname:'编辑姓名'%></div>
+</div>
+<div class="icon-2 <%=partner.isBind==1?'love':''%>" style="height:<%=$('.content').width()*0.31%>px">
+    <img src="<%=partner.headImg?partner.headImg:(location.origin+'/events/valentinesDay/dist/i2.png')%>" class="user-icon-2">
+    <div class="invite-desc"><%=partner.niceName?partner.niceName:'邀请我的情人'%></div>
+</div>
+
+<div class="history-desc">
+    <div class="history-btn"></div>
+    生成情侣证，分享到朋友圈，得到6个亲朋好友的<br>祝福即可获得300元返现券
+</div>
+<div class="loading-box">
+    <div class="bounceball"></div>
+</div>
+<div class="invest-box">
+    <p class="invest-tip">投资赢万元恋爱基金</p>
+    <div class="invest-btn"></div>
+    <% _.each(info.loverAmountList,function(n){
+        if(n.slaveName){ %>
+            <p class="invest-info-p">您和<span class="color2"><%=n.slaveName%></span>已投资<span class="color2"><%=n.totalInvestAmount%></span>元，年化已达到<span class="color2"><%=n.totalInvestAmountYear%></span></p>
+        <% }else{ %>
+            <p class="invest-info-p">您已投资<span class="color2"><%=n.totalInvestAmount%></span>元，年化已达到<span class="color2"><%=n.totalInvestAmountYear%></span></p>
+        <% }
+    }) %>
+</div>
+<div class="share_mask"></div>

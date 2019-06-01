@@ -1,0 +1,36 @@
+<section class="user-tied-card">
+    <section class="user-tied-head">你好，<span class="real-name"></span></section>
+    <section class="user-tied-box" id="limitBank">
+        <label class="user-tied-word">开户银行</label>
+        <section class="user-tied-bank col3" id="accountBank">请选择</section>
+        <i class="icons icon-more"></i>
+    </section>
+    <section class="user-tied-box">
+        <label class="user-tied-word">银行卡号</label>
+        <input type="number" class="user-tied-bank tied-card-trim" id="bankCardNum" placeholder="本人银行卡号">
+    </section>
+    <section class="user-tied-box">
+        <label class="user-tied-word">开户省市</label>
+        <input type="text" class="user-tied-bank tied-card-type" id="accountCity" readonly="readonly" placeholder="请选择">
+        <input id="value" type="hidden"/>
+        <i class="icons icon-more"></i>
+    </section>
+    <section class="user-tied-box">
+        <label class="user-tied-word">手&nbsp;机&nbsp;&nbsp;号</label>
+        <input type="tel" class="user-tied-bank tied-card-trim" id="telNum" maxlength="11" placeholder="银行预留手机号">
+    </section>
+    <!--<section class="user-tied-box pad-rig">-->
+        <!--<label class="user-tied-word">图&nbsp;形&nbsp;&nbsp;码</label>-->
+        <!--<input type="number" class="user-tied-bank ver-code" id="inpGraph" placeholder="请输入图形验证码">-->
+        <!--<img class="forget-pay-suffix" id="graphPic">-->
+    <!--</section>-->
+    <section class="user-tied-box pad-rig">
+        <label class="user-tied-word">验&nbsp;证&nbsp;&nbsp;码</label>
+        <input type="number" class="user-tied-bank ver-code" id="verCodeNum" readonly="readonly" placeholder="请输入短信验证码">
+        <span class="get-ver col1" id="getVer">获取验证码</span>
+    </section>
+    <section class="bank-card-limit">
+        <section id="bankCardLimit"></section>
+    </section>
+    <section class="common-btn1">下一步</section>
+</section>

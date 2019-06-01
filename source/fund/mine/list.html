@@ -1,0 +1,69 @@
+<% if(list.length==0){
+    if(flag){ %>
+        <div class="f-hempty center">无历史持仓基金哦！</div>
+    <% }else{ %>
+        <div class="f-kong center">
+            <div class="f-empty"></div>
+            <p>亲，快来升级你的资产配置~</p>
+            <div class="gotoFund">去看看基金</div>
+        </div>
+    <% }
+}else{
+    _.each(list, function(n){ %>
+        <li class="f-item" data-id="<%=n.fundCode%>">
+            <p class="title"><%=n.fundName%> <%=n.fundCode%></p>
+            <div class="detail">
+                <p>
+                    <span class="subt">总资产</span><br>
+                    <span class="subc"><%=$.amountFormat(n.fundAmount)%></span>
+                </p>
+                <p class="center">
+                    <span class="subt">累计收益</span><br>
+                    <% if(!n.fundProfitSumAmount || n.fundProfitSumAmount==0){ %>
+                        <span class="subc">0.00</span>
+                    <% }else{ %>
+                        <span class="subc <%=n.fundProfitSumAmount>0?'red':'green'%>">
+                            <%=$.amountFormat(n.fundProfitSumAmount,1)%>
+                        </span>
+                    <% } %>
+
+                </p>
+                <% if(flag==0){ %>
+                    <p class="right">
+                        <span class="subt">
+                            日收益(<%=$.dateFormat(n.incomeDate*1000,'MM/dd')||'--/--'%>)
+                        </span><br>
+
+                        <% if(!n.fundProfitTodayAmount || n.fundProfitTodayAmount==0 || n.fundProfitTodayAmount=="0.00"){ %>
+                        <span class="subc">0.00</span>
+                        <% }else{ %>
+                        <span class="subc <%=n.fundProfitSumAmount>0?'red':'green'%>">
+                            <%=$.amountFormat(n.fundProfitTodayAmount,1)%>
+                        </span>
+                        <% } %>
+
+
+                        <!--<% if(!n.fundProfitTodayAmount || n.fundProfitTodayAmount==0 || n.fundProfitTodayAmount=="0.00"){ %>-->
+                            <!--<span class="subc">0.00</span>-->
+                        <!--<% }else if(parseInt(n.fundProfitTodayAmount)>0){ %>-->
+                            <!--<span class="subc red">-->
+                                <!--<%=$.amountFormat(n.fundProfitTodayAmount)%>-->
+                            <!--</span>-->
+                        <!--<% }else if(parseInt(n.fundProfitTodayAmount)<0){%>-->
+                            <!--<span class="subc green">-->
+                                <!--<%=$.amountFormat(n.fundProfitTodayAmount)%>-->
+                            <!--</span>-->
+                        <!--<% } %>-->
+                    </p>
+                <% } %>
+            </div>
+            <ul>
+                <% if(n.buyIngAmount > 0){ %>
+                    <li><%=$.amountFormat(n.buyIngAmount)%>元买入处理中</li>
+                <% }else if(n.salIngCount > 0){ %>
+                    <li><%=$.amountFormat(n.salIngCount)%>份卖出处理中</li>
+                <% } %>
+            </ul>
+        </li>
+    <% })
+} %>

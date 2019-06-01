@@ -1,0 +1,68 @@
+<div class='home'>
+    <div class="share-btn"></div>
+    <div class="p-box">
+        <img src="images/pg_01.png">
+        <div class="p0-txt">
+            <%=level==0?'当前未登录，请登录后获取礼品':('您当前是 '+levelName)%>
+        </div>
+    </div>
+    <div class="p-box p1-box">
+        <img src="images/pg_02.png">
+        <div class="p1-txt">还剩：<span class="p-num"><%=list[0].store%></span> <del>原价：<%=list[0].price%>元</del></div>
+        <div class="p-btn p-btn<%=list[0].status%>" data-id="0"></div>
+    </div>
+    <div class="p-box p2-box">
+        <img src="images/pg_03.png">
+        <div class="p2-txt">还剩：<span class="p-num"><%=list[1].store%></span> <del>原价：<%=list[1].price%>元</del></div>
+        <div class="p-btn p-btn<%=list[1].status%>" data-id="1"></div>
+    </div>
+    <div class="p-box p3-box">
+        <img src="images/pg_04.png">
+        <div class="p-btn p-btn<%=list[2].status%>" data-id="2"></div>
+    </div>
+    <div class="p-box p4-box">
+        <img src="images/pg_05.png">
+        <div class="p-btn p-btn<%=list[3].status%>" data-id="3"></div>
+    </div>
+    <div class="rule">
+        <div class="rule-txt">
+            <p>1、活动时间： 2017年7月15日10点-24点；</p>
+            <p>2、本活动限白银及以上等级会员参加；</p>
+            <p>3、购买指定投资产品后需回到活动页面兑换奖励，投资金额与可兑换奖励如下：</p>
+            <table>
+                <tr>
+                    <td>会员等级限制</td>
+                    <td style="width:24%">指定产品<br>投资金额(元)</td>
+                    <td>可兑换奖励</td>
+                    <td>兑换限制</td>
+                </tr>
+                <tr>
+                    <td>白银及以上等级</td>
+                    <td>80000</td>
+                    <td>iPad Pro或三星Galaxy S8+</td>
+                    <td>总量200台，单人无兑换限制</td>
+                </tr>
+                <tr>
+                    <td>铂金及以上等级</td>
+                    <td>18000</td>
+                    <td>iPad Pro手写笔键盘套装</td>
+                    <td>总量10套，单人限兑一次</td>
+                </tr>
+                <tr>
+                    <td>钻石</td>
+                    <td>8000</td>
+                    <td>苹果AirPords耳机</td>
+                    <td>总量5副，单人限兑一次</td>
+                </tr>
+            </table>
+            <p>4、兑换成功后客服人员会在7个工作日内与您确认兑换时填写的收货信息，奖励 30天内寄出，颜色随机发放；</p>
+            <p>5、奖品图片仅供参考，以实物为准；</p>
+            <p>6、本活动合法范围内最终解释权归摇旺所有；</p>
+            <% if(!$.isWeixin() && $.isIOS()){ %>
+                <p>7、本活动与苹果公司无关；</p>
+            <% } %>
+        </div>
+        <img src="images/pg_07.png">
+    </div>
+    <div class="fix-bottom">我的奖品</div>
+</div>

@@ -1,0 +1,2 @@
+.safe-tip{height:30px;line-height:30px;font-size:11px;color:#9FA7B4;text-align:center}
+.safe-tip:before{content:'';margin-right:6px;display:inline-block;width:14px;height:14px;background:url(images/img_zhanghu@2x.png) no-repeat;background-size:14px auto;vertical-align:-3px}

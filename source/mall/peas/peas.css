@@ -1,0 +1,218 @@
+/*旺豆总数*/
+.mall-navbar{position:relative;width:100%;height:45px;line-height:45px;color: #000000;background: #ffffff;}
+.mall-navbar .back{background:url(../images/back.png) center center no-repeat;width: 30px;height: 45px;background-size: 9px  auto;}
+.mall-navbar .mall-navbar-left{position: absolute;top:0px;left:18px;}
+.mall-navbar .mall-navbar-center{font-size:19px;text-align:center;color: #333333;/*font-weight: bold;*/}
+.mall-navbar .mall-navbar-right{position: absolute;right:18px;top:0px;color:#000000;}
+
+.mall-banner{position: relative;width: 100%;height: 130px;background:url(../images/bg.png) center center no-repeat;background-size: 100% 130px;}
+.mall-banner .peanum{position:relative;top:47%;font-size:30px;text-align:center;color:#ffffff;letter-spacing: 0.98px;}
+.mall-banner .peanum .peaicon{background:url(../images/pea.png) left center no-repeat;background-size: 27px auto;padding-left: 30px;}
+.mall-banner .pearaiders{position: absolute;width: 45px;height: 33px;line-height: 13px;text-align: left;padding-left: 15px;font-size:11px;color:#ffffff;right: 0px;bottom: 10px;background: #c3373a;opacity: 0.9;border-radius: 23px 0px 0px 23px;vertical-align: top;padding-top: 4px;}
+.mall-banner .exchangeRecords{position: absolute;top: 0px;right: 6px;font-size: 11px;color: #ffffff;padding: 8px 10px 15px;}
+.mall-banner .exchangeRecords .ricon:before{background:url(../images/r.png) center center no-repeat;width: 5px;height: 9px;display:block;position: absolute;content: '';background-size: 100%;top: 8px;right: 2px;}
+
+.mall-banner .loginoutstatus{width:100%;position:relative;top:20%;text-align:center;}
+.mall-banner .loginoutstatus .userpic{background:url(../images/myuserpic.png) center center no-repeat;width:28px;height:28px;background-size:100%;margin:0 auto;}
+.mall-banner .loginoutstatus .loginout{font-size:16px;color:#fffefe;margin:7px auto 5px;}
+.mall-banner .loginoutstatus .loginlead{font-size:14px;color:#fffefe;opacity: 0.8;}
+
+.mall-peas .bannerSlide{position:relative;overflow:hidden;will-change:transform;height:116px;}
+.mall-peas .bannerSlide .pages{text-align:right;right:2%;bottom:4px;}
+.mall-peas .bannerSlide .pages li{background:#cbcbcb;}
+.mall-peas .bannerSlide .pages li.active{background:#ff6046;}
+.mall-peas .bannerSlide .picdefault{background:url(../images/banner1.png) center center no-repeat;height:116px;width: 100%;background-size:100% 116px;}
+
+.mall-peas .swiper-container-banner{position: relative;height:116px;overflow:hidden;}
+.mall-peas .swiper-container-banner img{width:100%;height:100%;}
+.mall-peas .swiper-container-banner .swiper-pagination-banner {text-align: right;right: 2%;bottom: 3px;position: absolute;z-index: 99;}
+.mall-peas .swiper-container-banner .swiper-pagination-banner  .swiper-pagination-bullet{width:6px;height:6px;background:#eeeeee;opacity: 1;margin: 0 3px;}
+.mall-peas .swiper-container-banner .swiper-pagination-banner .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#FF5532;}
+.mall-peas .picdefault{background:url(../images/banner1.png) center center no-repeat;height:116px;width: 100%;background-size:100% 116px;}
+
+/*20161216*/
+.my-new-peas  .peasbox-pd16{padding:0px 16px;}
+.my-new-peas  .loginbox {text-align:center;padding-top:50px;}
+.my-new-peas  .loginbox .tologin{font-size: 18px;color: #4F4F4F;}
+.my-new-peas  .loginbox .tologin:after{content: '';clear: both;background:url(../imgnew/arrow.png) center center no-repeat;background-size:100%;display:inline-block;width:11px;height:11px;vertical-align: top;margin-left: 7px;margin-top: 2px;}
+.my-new-peas  .loginbox .loginstatusdesc{font-size:15px;color:#B5B5B5;margin-top:10px;}
+.my-new-peas  .ordericon{width:100%;height:40px;margin-bottom:15px;padding-top:15px;}
+.my-new-peas  .ordericon .orderbtn{width:25px;height:25px;background:url(../imgnew/ordericon.png) center center no-repeat;background-size:25px auto;float:right;}
+.my-new-peas  .my-new-peasbox{position: relative;padding:0 17px;}
+.my-new-peas  .my-new-peasbox .my-new-peasnum{background:url(../imgnew/bg_bean_all.png) no-repeat;height:48px;background-size:83px auto;font-size:36px;color:#4f4f4f;padding-left:80px;}
+.my-new-peas  .my-new-peasbox .signdaysbox{position:relative; font-size:13px;color:#B5B5B5;}
+.my-new-peas  .my-new-peasbox .signdaysbox em{position: absolute;background:url(../imgnew/imgtips.png) center center no-repeat;width:174px;height:228px;display: block;background-size: 100%;top: 5px;left: 97px;z-index: 9;display:none;}
+.my-new-peas  .my-new-peasbox .signdaysbox:after{width:13px;height:13px;content: '';clear:both;background:url(../imgnew/icon_ point.png) no-repeat;background-size:100%;display: inline-block;margin-left:-3px;vertical-align: top;}
+.my-new-peas  .my-new-peasbox .signbar{position: absolute;z-index:2;top:0px;right:10px; width:64px;height:64px;}
+.my-new-peas  .my-new-peasbox .signbar.peasign{background:url(../imgnew/btn_sign.png) no-repeat;background-size:100%;}
+.my-new-peas  .my-new-peasbox .signbar.resign{background:url(./resign/imgs/btn_buqian@2x.png) no-repeat;background-size:100%;}
+.my-new-peas  .my-new-peasbox .signbar.peasign.signed{background:url(../imgnew/btn_sign_noeffect.png) no-repeat;background-size:100%;}
+.my-new-peas  .my-new-peasbox .signbar.boxsign{background:url(../imgnew/btn_box.png) no-repeat;background-size:100%;}
+.my-new-peas  .my-new-peasbox .signbar.boxsign.signed{background:url(../imgnew/btn_box_signed.png) no-repeat;background-size:100%;}
+.my-new-peas  .my-new-peasbox .signbar .signnum{ color: #ffffff;font-size: 12px;position: relative;top: 4px;left: 37px;/* font-weight: bold; */}
+.my-new-peas  .my-new-peasbox .signbar .signnum.cB5B5B5{color:#B5B5B5;}
+.my-new-peas  .meumenter{margin-top:25px;width:100%;}
+.my-new-peas  .meumenter .meum{width:33.3%;display:inline-block;text-align:center;padding-top: 55px;font-size:13px;color:#4F4F4F;}
+.my-new-peas  .meumenter .meum1{background:url(../imgnew/icon_choujiang.png) top center  no-repeat;background-size: 44px 44px;}
+.my-new-peas  .meumenter .meum2{background:url(../imgnew/icon_huafei.png) top center no-repeat;background-size:44px 44px;}
+.my-new-peas  .meumenter .meum3{background:url(../imgnew/icon_strategy.png) top center no-repeat;background-size:44px 44px;}
+.my-new-peas  .bannerbox{margin:20px 13px 13px;}
+.my-new-peas  .bannerbox .picdefault{background:url(../imgnew/banner.png) center center no-repeat;height:116px;width: 100%;background-size:100% 116px;}
+.cFD6F53 {color:#FD6F53;}
+/*签到*/
+.mask{position:fixed; width:100%;height:100%;background:#000;opacity: 0.77;z-index:999;left:0px;top:0px;text-align:center;}
+.chestbox1{position:fixed;top:20%;background:url(../imgs/treasure_chest.gif) center center no-repeat;width:236px;height:195px;z-index:1000;margin:0 auto;background-size:100%;left: 50%;margin-left: -118px;opacity: 1;text-align: center;}
+.chestbox1 .num1{position:absolute;font-weight:500;color: #ffe56c;margin-left:20px;margin-top:-60px;font-size:20px;animation: up2 3s ease 1s;-webkit-animation:up2 3s ease 1s;-moz-animation:up2 3s ease 1s;-ms-animation:up2 3s ease 1s;-o-animation:up2 3s ease 1s;opacity:0;}
+.chestbox1 .iconBean{display:inline-block;width:40px;height:40px;background:url(../imgs/img-wangdou.png) center center no-repeat;background-size: 100%;padding-right:10px;}
+.chestbox1 .beanNum{position: absolute;bottom:10px;left: 4px;font-size: 14px;color: #000;}
+.chestbox1 .iconvouchers{display:inline-block;position:absolute;top:20%;background:url(../imgs/img-daijinquan@2x.png) center center no-repeat;background-size:100%;width:100px;height:40px;z-index:1000;margin:0 auto;left: 50%;margin-left: -70px;opacity: 1;text-align: center;}
+
+.peasbox1{position:fixed;top:20%;background:url(../imgs/img-tanchuang2 bg@2x.png) center center no-repeat;width:200px;height:179px;z-index:1000;margin:0 auto;background-size:100%;left: 50%;margin-left: -100px;opacity: 1;text-align: center;}
+.peasbox1 i{display: inline-block;background:url(../imgs/img-wangdou.png) center center no-repeat;background-size:100%;width:50px;height:50px;position: fixed;top:33%;left:34%;}
+.peasbox1 .text{font-size: 14px;color: #fff;text-align: center;bottom: -55px;position: relative;}
+.peasbox1 .text span{color: #fff;}
+.peasbox1 .plusNum{position: absolute;top:55%;left:47%;font-size: 30px;color:#ff6046;}
+.peasbox1 .closeBtn,.vouchers .closeBtn{display: inline-block;width:10px;height:10px;background:url(../imgs/icon-close@2x.png) center center no-repeat;background-size:100%;position: absolute;right: 10px;padding:9px;}
+
+.vouchers{position:fixed;top:20%;background:url(../imgs/img-tanchuang bg@2x.png) center center no-repeat;width:200px;height:233px;z-index:1000;margin:0 auto;background-size:100%;left: 50%;margin-left: -100px;opacity: 1;text-align: center;}
+.vouchers .text{font-size: 14px;color: #fff;text-align: center;top: 54px;position: relative;}
+.vouchers button{background:url(../imgs/btn-kuaiqushiyong@2x.png) center center no-repeat;background-size:100%;border: 0;outline:0;width: 153px;height: 52px;position: fixed;top: 49%;left: 30%;}
+.vouchers .item{position: fixed;top: 33.5%;right: 34%;font-size: 12px;background: rgba(0,0,0,.3);border-radius: 2px;padding: 3px 4px;color:#fff;}
+.vouchers .tips{position: fixed;top: 34%;left: 35%;font-size: 12px;color:#fff;}
+.vouchers .plusNum{position: fixed;top:37%;left:41%;font-size: 30px;color: #fff;}
+
+
+/* 普通得旺豆 */
+.mask{position:fixed; width:100%;height:100%;background:#000;opacity: 0.77;z-index:999;left:0px;top:0px;text-align:center;}
+.chestbox{position:fixed;top:20%;background:url(../imgs/treasure_chest.gif) center center no-repeat;width:236px;height:195px;z-index:1000;margin:0 auto;background-size:100%;left: 50%;margin-left: -118px;opacity: 1;text-align: center;}
+.chestbox .num{position:absolute;font-weight:500;color: #ffe56c;margin-left:-30px;margin-top:-40px;font-size:20px;animation: up1 3s ease 1s;-webkit-animation:up1 3s ease 1s;-moz-animation:up1 3s ease 1s;-ms-animation:up1 3s ease 1s;-o-animation:up1 3s ease 1s;opacity:0;}
+.peasbox{position:fixed;top:20%;background:url(../imgs/pop_up_window.png) center center no-repeat;width:190px;height:120px;z-index:1000;margin:0 auto;background-size:100%;left: 50%;margin-left: -95px;opacity: 1;text-align: center;}
+.peasbox .text{font-size: 12px;color: #000;text-align: center;bottom: -96px;position: relative;}
+.peasbox .text span{color: #ff6046;}
+
+@media screen and (max-width:320px){
+	.peasbox1 i{top:39%;left:32%;}
+	.vouchers .tips{top: 39%;left: 34%;}
+	.vouchers .item{top: 38.5%;right: 31%;padding: 2px 4px;}
+	.vouchers button{top: 58%;left: 27%;}
+	.vouchers .plusNum{top: 44%;}
+}
+@media screen and (width:360px){
+	.vouchers button{top: 48%;}
+}
+@media screen and (width:412px){
+	.vouchers button{top: 47%;left: 32%;}
+}
+@media screen and (width:414px){
+	.vouchers button{top: 46%;left: 32%;}
+}
+
+@keyframes up1
+{
+	0%{bottom:55px;text-align:center;opacity: 0;transform: scale(0.5);}
+	100%{bottom: 130px;opacity: 1;transform: scale(1.1);}
+}
+@-webkit-keyframes up1{
+	0%{bottom:55px;text-align:center;opacity: 0;-webkit-transform: scale(0.5);}
+	100%{bottom: 130px;opacity: 1;-webkit-transform: scale(1.1);}
+}
+@-moz-keyframes up1{
+	0%{bottom:55px;text-align:center;opacity: 0;-moz-transform: scale(0.5);}
+	100%{bottom: 130px;opacity: 1;-moz-transform: scale(1.1);}
+}
+@-ms-keyframes up1{
+	0%{bottom:55px;text-align:center;opacity: 0;-ms-transform: scale(0.5);}
+	100%{bottom: 130px;opacity: 1;-ms-transform: scale(1.1);}
+}
+@-o-keyframes up1{
+	0%{bottom:55px;text-align:center;opacity: 0;-o-transform: scale(0.5);}
+	100%{bottom: 130px;opacity: 1;-o-transform: scale(1.1);}
+}
+
+@keyframes up2
+{
+	0%{bottom:55px;text-align:center;opacity: 0;transform: scale(0.5);}
+	100%{bottom: 180px;opacity: 1;transform: scale(1.1);}
+}
+@-webkit-keyframes up2{
+	0%{bottom:55px;text-align:center;opacity: 0;-webkit-transform: scale(0.5);}
+	100%{bottom: 180px;opacity: 1;-webkit-transform: scale(1.1);}
+}
+@-moz-keyframes up2{
+	0%{bottom:55px;text-align:center;opacity: 0;-moz-transform: scale(0.5);}
+	100%{bottom: 180px;opacity: 1;-moz-transform: scale(1.1);}
+}
+@-ms-keyframes up2{
+	0%{bottom:55px;text-align:center;opacity: 0;-ms-transform: scale(0.5);}
+	100%{bottom: 180px;opacity: 1;-ms-transform: scale(1.1);}
+}
+@-o-keyframes up2{
+	0%{bottom:55px;text-align:center;opacity: 0;-o-transform: scale(0.5);}
+	100%{bottom: 180px;opacity: 1;-o-transform: scale(1.1);}
+}
+@media screen and (max-width:350px){
+	.my-new-peas  .my-new-peasbox {padding:0;}
+	.my-new-peas  .my-new-peasbox .signbar{top: 0px;right: 0px;width: 60px;height: 60px;}
+}
+
+.sign-animate{position:absolute;z-index:3;top:12px;right:28px;width:29px;height:29px;background:url(images/icon-bean-shadow@2x.png);background-size:29px auto;
+	-webkit-animation:signAnimate 1s ease forwards;animation: signAnimate 1s ease forwards}
+
+
+
+@-webkit-keyframes signAnimate{
+	0%{-webkit-transform: rotate(15deg)}
+	15%{-webkit-transform: rotate(-15deg)}
+	30%{-webkit-transform: rotate(15deg)}
+	45%{-webkit-transform: rotate(-15deg)}
+	50%{-webkit-transform: rotate(0deg)}
+	60%{-webkit-transform: translate3d(-50px,-40px,0)}
+	90%{-webkit-transform: translate3d(-200px,-40px,0)}
+	100%{-webkit-transform: translate3d(-220px,0,0);opacity:0}
+}
+@keyframes signAnimate{
+	0%{-webkit-transform: rotate(15deg)}
+	15%{-webkit-transform: rotate(-15deg)}
+	30%{-webkit-transform: rotate(15deg)}
+	45%{-webkit-transform: rotate(-15deg)}
+	50%{-webkit-transform: rotate(0deg)}
+	60%{-webkit-transform: translate3d(-50px,-40px,0)}
+	90%{-webkit-transform: translate3d(-200px,-40px,0)}
+	100%{-webkit-transform: translate3d(-220px,0,0);opacity:0}
+}
+.signed-tips{position:absolute;
+	top:0;right:10px;z-index:1;line-height: 1.2;color:#FCA032;
+	-webkit-animation:signAnimate2 2s ease forwards;animation: signAnimate2 2s ease forwards
+}
+.signed-tips .icon-n:before{content:'';display:inline-block;margin:0 3px 0 -15px;width:15px;height:15px;background:url(images/icon-silver 30-30@2x.png);background-size:15px auto}
+.signed-tips .icon-n3:before{background-image:url(images/icon-gold 30-30@2x.png)}
+.signed-tips .icon-n4:before{background-image:url(images/icon-platinum 30-30@2x.png)}
+.signed-tips .icon-n5:before{background-image:url(images/icon-diamond 30-30@2x.png)}
+.peas-box-animate{position:absolute;
+	top:0;left:17px;width:83px;height:48px;background: url(../imgnew/bg_bean_all.png) no-repeat;background-size:83px auto;
+	-webkit-animation:signAnimate3 1s ease forwards;animation: signAnimate3 1s ease forwards
+}
+@media all and (max-width:320px) {
+	.peas-box-animate{left:0}
+}
+
+@-webkit-keyframes signAnimate2{
+	0%{-webkit-transform: translate3d(0,0,0)}
+	40%{-webkit-transform: translate3d(0,-35px,0)}
+	100%{-webkit-transform: translate3d(0,-40px,0)}
+}
+@keyframes signAnimate2{
+	0%{transform: translate3d(0,0,0)}
+	40%{transform: translate3d(0,-35px,0)}
+	100%{transform: translate3d(0,-40px,0)}
+}
+
+@-webkit-keyframes signAnimate3{
+	0%{-webkit-transform: scale(1)}
+	100%{-webkit-transform: scale(1.2)}
+}
+
+@keyframes signAnimate3{
+	0%{transform: scale(1)}
+	100%{transform: scale(1.2)}
+}

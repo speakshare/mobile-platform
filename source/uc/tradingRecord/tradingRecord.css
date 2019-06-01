@@ -1,0 +1,15 @@
+.trading-record{margin:0}
+.trading-record .type-tab{z-index:10;display:flex;position:fixed;top:0;left:0;width:100%;height:45px;line-height:45px;background-color:rgba(255,255,255,1);border-bottom:1px solid #eee}
+.trading-record .type-tab span{flex-grow:1;text-align:center}
+.trading-record .trading-record-box{display:none;margin-top:45px;}
+.trading-record .trading-record-list{padding:10px 15px;background-color:#fff;border-bottom:1px solid #eee;font-size:14px}
+.trading-record .time-quantum{padding:10px 15px;font-size:16px;}
+.trading-record .list1{padding-bottom:10px}
+.trading-record .list2{color:#999}
+.trading-record .list1 span:nth-of-type(2),
+.trading-record .list2 span:nth-of-type(2){float:right}
+.trading-record .list1 span:nth-of-type(1){color:#4f4f4f}
+.trading-record .data-more{display:none;text-align:center;padding:15px 0;font-size:15px;color:#4f4f4f}
+.trading-record .col1{color:#c24640}
+.trading-record .col2{color:#3c984b}
+.trading-record .sty1{color:#ff6046;border-bottom:2px solid #ff6046}

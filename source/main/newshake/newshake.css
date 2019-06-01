@@ -1,0 +1,22 @@
+.newshake-box{position: absolute;width: 100%;height: 100%;background-color: #e3d7cb;}
+.shakebg{position: relative;background: url(./bgshake.png) 0 0 no-repeat;background-size: 16rem 25.728rem;width: 16rem;height: 25.728rem;margin: 0 auto;}
+.shakebg.notxt{background-image: url(./bgshakenotxt.png);}
+.shakebtn{position: absolute;width: 7.722rem;height: 1.706rem;top: 10.752rem;left: 50%;margin-left: -3.861rem;background: url(./btn_shake.png) 0 0 no-repeat;background-size: 7.722rem;}
+.shakebtn.pressed{background-position: 0 -1.749rem;}
+
+.shakemove{width: 14.08rem;height: 6.4rem;position: absolute;top: 3.84rem;left: 50%;margin-left: -7.04rem;background: url(./shakeposter.png) 0 0 no-repeat;background-size: 14.08rem 6.4rem;}
+.shakemove.shakeend{background-image: url(./shakemove.gif);}
+
+.goNext{color: #a07554;text-align: right;position: absolute;top: 0rem;right: 0rem;font-size: 0.6rem;padding: 1rem;}
+
+.experienceBox{background:url(./experience.png) 0 0 no-repeat;background-size:10.752rem 16.9173rem;width:10.752rem;height:16.9173rem;}
+.experienceBox .closeX{display: inline-block;width: 1.5rem;height: 1.5rem;border-radius: 1rem;box-sizing: border-box;border: 2px solid #fff;color: #fff;font-size: 1rem;text-align: center;line-height: 1.5rem;position: absolute;right: 0;bottom: 102%;}
+.experienceBox .shakeprofit{position: absolute;font-size: 0.64rem;color: #fff;top: 5.653rem;width: 100%;text-align: center;}
+.experienceBox .shakeprofit p:first-child{font-size: 1.322rem;}
+.experienceBox .shakeprofit p:last-child{margin-top: 0.5rem;}
+.experienceBox .rightuse{width: 9.173rem;position: absolute;height: 1.877rem;top: 13.226rem;left: 50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);}
+.experienceBox .firstarm{width: 4.2rem;height: 0.552rem;top: 15.7rem;position: absolute;left: 50%;-webkit-transform:translateX(-50%);transform:translateX(-50%);
+    background: #fff;
+    color: #ff5520;
+    text-align: center;}
+

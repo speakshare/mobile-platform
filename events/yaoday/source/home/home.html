@@ -1,0 +1,79 @@
+<div class="ui-section">
+    <div class="share-btn">分享</div>
+    <div class="my-bonus">我的奖金</div>
+    <div class="ui-container">
+        <div class="ui-header">
+            <div class="ui-header-bgc">
+                <img src="images/img-yd-bg1.jpg" alt="">
+            </div>
+            <div class="ui-header-title">
+                <%if(info.yaoDayFlag=='1'){%>
+                    <img src="images/img-yd-subtitle.png" alt="">
+                <%} else{%>
+                    <div class="sub-title<%=info.nextYaoDay%>"></div>
+                <%}%>
+            </div>
+            <div class="ui-header-bonus">
+                <%if(info.yaoDayFlag=='1'){%>
+                    <img src="images/img-yd-bonus-residue.png" alt="">
+                <%} else{%>
+                    <img src="images/img-yd-bonus-all.png" alt="">
+                <%}%>
+                <div class="my-bonus-total"><span><%=info.totalAmount%></span>元</div>
+            </div>
+            <div class="ui-header-down">
+                <% if(!isLogin){%>
+                    <div class="ui-sign">
+                        <img src="images/btn-yd-denglu.png" alt="">
+                    </div>
+                <%} else {%>
+                    <% if(!isFree){%>
+                        <div class="ui-no-free">
+                            <img src="images/btn-yd-no-free.png" alt="">
+                        </div>
+                    <%}else{%>
+                        <div class="ui-free">
+                            <img src="images/btn-yd-free.png" alt="">
+                        </div>
+                    <%}%>
+                    
+                <div class="ui-peas-text">当前旺豆余额：<span><%=info.wdNum%></span></div>
+                <% } %>
+            </div>
+        </div>
+        <div class="ui-footer">
+            <div class="ui-winner">
+                <div class="ui-slider">
+                    <%if(showList){%>
+                    <ul class="ui-winner-list">
+                        <% _.each(nameList,function(item){ %>
+                            <li class="clearfix">
+                                <div class="float-left">用户<%=item.phoneNum%></div>
+                                <div class="float-right">摇中<%if(item.zjType=='5'){%>现金红包<%} else if(item.zjType=='4'){%>代金券<%}%><%=item.zjAmount%>元
+                                </div>
+                            </li>
+                        <%})%>
+                    </ul>
+                    <%} else {%>
+                        <div class="text-center">暂无中奖名单</div>
+                    <%}%>
+                </div>
+            </div>
+            <ul class="ui-rule-box">
+                <div class="ui-rule-header"></div>
+                <div class="ui-rule-body">
+                    <li><span>&bull;</span>在本页面内摇一摇即可参加活动，首次摇免费，之后每次摇需消耗100旺豆；</li>
+                    <li><span>&bull;</span>摇一摇有概率获得现金红包等多种神秘奖励；</li>
+                    <li><span>&bull;</span>摇Day每周三开启，时间为上午10点-24点；</li>
+                    <li><span>&bull;</span>现金红包次日方可领取，领取位置：【我的】-【我的礼券】；其他奖励获取时间与有效期以获得奖励时的提示和实际标注信息为准；</li>
+                    <li><span>&bull;</span>本次活动最终解释权归摇旺理财所有。</li>
+                    <% if($.isIOS()){ %>
+                    <li><span>&bull;</span>本活动与苹果公司无关</li>
+                    <% } %>
+                </div>
+                <div class="ui-rule-footer"></div>
+            </ul>
+        </div>
+    </div>
+</div>
+<audio id="J_audio" class="ui-audio" src="<%=$.getStaticOrgin()%>/yaowang/dist/audio/red-01.mp3"></audio>

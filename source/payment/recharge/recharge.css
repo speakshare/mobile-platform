@@ -1,0 +1,64 @@
+.recharges-box{margin:0;padding:0;}
+.recharge{background-color:#fff}
+.recharge .bank-cards{margin:0 0 0 20px;padding:20px 0;border-bottom:1px solid #eee}
+.recharge .bank-name{height:40px;}
+.recharge .bank-name span{padding-left:10px;font-size:15px;color:#4f4f4f;}
+.recharge .limit{padding-left:50px;line-height:24px;font-size:13px;color:#959595}
+.recharge .recharge-box{margin:0 20px;height: 50px;line-height:50px;}
+.recharge .recharge-verify{display:none;margin-left:20px;height: 50px;line-height:50px;border-top:1px solid #eee;}
+.recharge .inp-word{font-size:15px;color:#4f4f4f}
+.recharge .recharge-inp{border:none;background-color:inherit;width:70%;height:25px;line-height:25px;margin:0 10px;font-size:15px}
+.recharge .verify-word{width:44%;}
+.recharge .verify-bot{float:right;text-align:center;font-size:13px;color:#fff;background-color:#ff6046;width:85px}
+
+.recharges-box .hint-verify{display:none;font-size:12px;color:#ff6046;padding:20px 20px 10px}
+.recharges-box .yaoBao-auto{position:relative;height:50px;line-height:50px;background-color:#fff;padding:0 20px;margin:10px 0}
+.recharges-box .yaoBao-auto .word{font-size:15px;color:#4f4f4f}
+.recharges-box .yaoBao-auto .tab-box{position:absolute;top:12px;right:20px;width:40px;height:24px;border:1px solid #e5e5e5;border-radius:50px}
+.recharges-box .yaoBao-auto .roll{position:relative;margin-left:16px;width:22px;height:22px;border:1px solid #eee;border-radius:50%;background-color:#fff}
+.recharges-box .yaoBao-auto .off{background-color:#3ccd55;-webkit-animation:dd 500ms ease-out;animation:dd 500ms ease-out}
+.recharges-box .yaoBao-auto-word{font-size:13px;color:#959595;padding:0 20px 10px}
+.recharges-box .yaoBao-auto-agr{padding:0 20px;font-size:13px;color:#4f4f4f;line-height:24px}
+.recharges-box .yaoBao-auto-agr .hint-word{color:#3b8be8}
+.recharges-box .yaoBao-auto-agr .agr,
+.recharges-box .yaoBao-auto-agr .no-agr{display:inline-block;width:13px;height:13px;margin:0 3px -1px 0}
+.recharges-box .yaoBao-auto-agr .agr{background:url(btn-select@2x.png) no-repeat;background-size:13px;}
+.recharges-box .yaoBao-auto-agr .no-agr{background:url(btn-not-select@2x.png) no-repeat;background-size:13px;}
+
+.recharge .icon-bank{display:inline-block;width:40px;height:40px;background:url(bank_logo.png) no-repeat;background-size:300px auto;border-radius:50%;margin:0 0 -15px 0}
+.recharge .bank-type-BOC{background-position:-105px -105px}
+.recharge .bank-type-ICBC{background-position:-4px -5px}
+.recharge .bank-type-CMB{background-position:-105px -55px}
+.recharge .bank-type-CITIC{background-position:-205px -5px}
+.recharge .bank-type-PAB{background-position:-256px -5px}
+.recharge .bank-type-HXB{background-position:-56px -5px}
+.recharge .bank-type-CGB{background-position:-105px -6px}
+.recharge .bank-type-ABC{background-position:-154px -56px}
+.recharge .bank-type-CMBC{background-position:-204px -55px}
+.recharge .bank-type-PSBC{background-position:-6px -55px}
+.recharge .bank-type-CCB{background-position:-255px -55px}
+.recharge .bank-type-BCOM{background-position:-54px -106px}
+.recharge .bank-type-CIB{background-position:-5px -104px}
+.recharge .bank-type-SPDB{background-position:-155px -5px}
+.recharge .bank-type-CEB{background-position:-55px -55px}
+
+@-webkit-keyframes dd {
+    0%{background-color:#fff}
+    50%{background-color:#fff}
+    100%{background-color:#3ccd55}
+}
+@keyframes dd {
+    0%{background-color:#fff}
+    50%{background-color:#fff}
+    100%{background-color:#3ccd55}
+}
+
+@media screen and (min-width:320px){
+    .recharges-box .yaoBao-auto-agr{font-size:11px;}
+}
+@media screen and (min-width:360px){
+    .recharges-box .yaoBao-auto-agr{font-size:12px;}
+}
+@media screen and (min-width:375px){
+    .recharges-box .yaoBao-auto-agr{font-size:13px;}
+}

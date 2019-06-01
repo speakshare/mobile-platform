@@ -1,0 +1,17 @@
+<% if(list.length){ %>
+    <% _.each(list,function(n){ %>
+    <div class="c-order-row">
+        <div class="c-o-title"><%=n.productName%>
+            <%=n.buyType==2?'<span class="transfer-product"></span>':''%>
+        </div>
+        <div class="profit-title"><span class="profit-t"><%=type==1?'预计收益':'到账金额'%></span><%=$.amountFormat(type==1?n.profit:n.backAmount)%></div>
+        <div class="p-o clearfix">
+            <p class="c-o-r"><span class="c-o-t">预期年化</span><%=$.amountFormat(n.interestTotal)%>%</p>
+            <p class="c-o-r"><span class="c-o-t">实付金额</span><%=$.amountFormat(n.realPayAmount)%></p>
+            <p class="c-o-r"><span class="c-o-t"><%=type==1?'到期时间':'下单时间'%></span><%=$.dateFormat((type==1?n.endTime:n.payTime),'yyyy/MM/dd')%></p>
+        </div>
+    </div>
+    <% })
+}else{ %>
+    <div class="has-no-data">暂无此记录</div>
+<% } %>

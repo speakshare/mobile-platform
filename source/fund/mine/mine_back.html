@@ -1,0 +1,74 @@
+<div class="myfund">
+<div class="top">
+	<div class="f-title">
+		<div class="title">总资产(元)</div>
+		<!-- <div class="invest">13,178.88</div> -->
+		<div class="invest"><%=(asset.assetSumAmount ? $.fmoney(asset.assetSumAmount, 2) : 0)%></div>
+		<div class="info">
+			<p class="item">
+			   <span class="title">昨日收益(<%=data.dm%>)</span><br>
+			   <!-- <span class="title1">+187.88</span> -->
+			   <span class="title1"><%=(asset.profitSumAmount ? asset.profitSumAmount : 0)%></span>
+			</p>
+			<p style="padding-left: 32px;">
+				<span class="title">累计总收益</span><br>
+			   <!-- <span class="title1">+187.88</span> -->
+			   <span class="title1"><%=(asset.profitSumAmount ? asset.profitSumAmount : 0)%></span>
+			</p>
+		</div>
+	</div>
+	<div class="f-tab">
+		<div class="flist holding <%if(data.flag){%>active<%}%>">持仓中<span></span></div>
+		<div class="flist history <%if(!data.flag){%>active<%}%>">历史持仓<span></span></div>
+	</div>
+</div>
+<ul class="f-itemList">
+	<%_.each(list, function(item){%>
+	<li class="f-item" data-id="<%=item.fundCode%>">
+		<p class="title"><%=item.fundName%> <%=item.fundCode%></p>
+		<div class="detail">
+			<p>
+				<span class="subt">总资产</span><br>
+				<span class="subc"><%=item.fundAmount%></span>
+			</p>
+			<p class="center">
+				<span class="subt">累计收益</span><br>
+				<%if(item.fundAmount - 0 >　0){%>
+				<span class="subc color">+<%=item.fundAmount%></span>
+				<%}else{%>
+					<span class="subc">--</span>
+				<%}%>
+			</p>
+			<%if(data.flag){%>
+			<p class="right">
+				<span class="subt">日收益(<%if(item.isProfitUpdate){%><%=data.dm%><%}else{%><%=data.ydm%><%}%>)</span><br>
+				<%if(item.fundProfitTodayAmount || item.fundProfitYesterdayAmount){%>
+					<span class="subc color">+<%if(item.isProfitUpdate){%><%=item.fundProfitTodayAmount%><%}else{%> <%=item.fundProfitYesterdayAmount%><%}%></span>
+				<%}else{%>
+					<span class="subc">--</span>
+				<%}%>
+			</p>
+			<%}%>
+		</div>
+		<ul>
+			<%if(item.buyIngAmount - 0 > 0){%>
+			<li><%=item.buyIngAmount%>元买入处理中</li>
+			<%}%>
+			<%if(item.salIngCount - 0 > 0){%>
+			<li><%=item.salIngCount%>元卖出处理中</li>
+			<%}%>
+		</ul>
+	</li>
+	<%})%>
+</ul>
+
+ <%if(data.flag && list.length < 1){%>
+ <div class="f-kong center">
+	<div class="f-empty"></div>
+	<p>亲，快来升级你的资产配置~</p>
+	<div class="gotoFund">去看看基金</div>
+</div>
+<%}else if(!data.flag && list.length < 1){%>
+<div class="f-hempty center">无历史持仓基金哦！</div>
+<%}%>
+</div>

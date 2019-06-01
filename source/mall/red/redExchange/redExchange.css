@@ -1,0 +1,266 @@
+.redwarp .descinfo .imgcontent {background: url(../../images/redbg.png) center center no-repeat;background-size: 100%;}
+.redwarp .textdesc .userinfo {background:none;text-indent:0px;}
+
+.descinfo {
+    padding: 15px 17px;
+    border-bottom: 1px solid #eaeaea;
+    background: #ffffff;
+}
+
+.descinfo .imgcontent {
+    float: left;
+    background: url(../../images/billbg.png) center center;
+    background-size: 100%;
+    width: 140px;
+    height: 90px;
+}
+
+.descinfo .imgcontent .perfer {
+    text-align: right;
+    font-size: 11px;
+    line-height: 15px;
+    padding: 10px 5px;
+}
+
+.descinfo .imgcontent .perfer span {
+    float: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.descinfo .imgcontent .perfer span em {
+    font-size: 11px;
+}
+
+.descinfo .imgcontent .limittime {
+    font-size: 11px;
+    text-align: right;
+    padding: 0 5px;
+}
+
+.descinfo .imgcontent .costpeanum {
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 19px;
+}
+
+.textdesc {
+    text-align: left;
+    padding-left: 21px;
+    overflow: hidden;
+    padding-top: 11px;
+}
+
+.textdesc .textdesctitle {
+    font-size: 16px;
+    color: #444444;
+    font-weight: bold;
+    line-height: 21px;
+}
+
+.textdesc .userinfo {
+    font-size: 12px;
+    color: #666666;
+    background: url(../../images/bulb.png) left top no-repeat;
+    background-size: 13px 13px;
+    text-indent: 18px;
+    margin-top: 7px;
+    line-height: 17px;
+    letter-spacing: 1px;
+}
+
+.needpeasnum {
+    padding: 0 17px;
+    height: 45px;
+    line-height: 45px;
+    background: #ffffff;
+    font-size: 16px;
+    color: #444444;
+    text-align: left;
+}
+
+.needpeasnum .frnum {
+    float: right;
+    color: #ff6046;
+}
+
+.exchangestep {
+    padding: 18px 17px;
+    text-align: left;
+}
+
+.exchangestep .stepinfo {
+    font-size: 12px;
+    color: #999999;
+    line-height: 20px;
+}
+
+.exchangestep .currpeas {
+    margin-top: 37px;
+    margin-bottom: 9px;
+    text-align: center;
+    color: #444444;
+    font-size: 14px;
+}
+
+.exchangestep .currpeas .currpeasnum {
+    color: #ff6046;
+}
+
+.exchangebtn {
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 6px;
+    text-align: center;
+    margin: 0 auto
+}
+
+.exchangebtn.canExchange, .exchangebtn.tologinbtn {
+    background: #ff6046;
+}
+
+.exchangebtn.peasout {
+    background: #dad7d6;
+}
+
+.exchange_btn {
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    padding: 15px 0 6px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #ff6046;
+    color: #fff;
+}
+
+.exchange_btn .tips {
+    line-height: 20px;
+    color: #fff;
+}
+@media screen and (min-width: 320px) {
+    .descinfo {
+        padding: 10px 8px;
+    }
+
+    .textdesc {
+        padding-left: 6px;
+    }
+
+    .descinfo .imgcontent .perfer {
+        padding: 10px 1px;
+    }
+
+    .textdesc .textdesctitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .zhe-kou{font-size: 12px;color: #FCA032;padding-top: 5px}
+
+    .textdesc .userinfo {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .descinfo {
+        padding: 11px 10px;
+    }
+
+    .textdesc {
+        padding-left: 10px;
+    }
+
+    .descinfo .imgcontent .perfer {
+        padding: 10px 2px;
+    }
+
+    .textdesc .textdesctitle {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .textdesc .userinfo {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+}
+
+@media screen and (min-width: 375px) {
+    .descinfo {
+        padding: 11px 10px;
+    }
+
+    .textdesc {
+        padding-left: 14px;
+    }
+
+    .descinfo .imgcontent .perfer {
+        padding: 10px 3px;
+    }
+
+    .textdesc .textdesctitle {
+        font-size: 15px;
+        line-height: 19px;
+    }
+
+    .textdesc .userinfo {
+        font-size: 11px;
+        margin-top: 7px;
+    }
+}
+
+@media screen and (min-width: 410px) {
+    .descinfo {
+        padding: 15px 17px;
+    }
+
+    .textdesc {
+        padding-left: 21px;
+    }
+
+    .descinfo .imgcontent .perfer {
+        padding: 10px 3px;
+    }
+
+    .textdesc .textdesctitle {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .textdesc .userinfo {
+        font-size: 12px;
+        margin-top: 7px;
+    }
+}
+
+/*20161223*/
+.redwarpnew  {background:#ffffff;}
+.redwarpnew   .imgcontent{position: relative;}
+.redwarpnew  .descinfo{background:#EEF3F9;border:none;}
+.redwarpnew  .descinfo .imgcontent.img_jx{background: url(../../imgnew/img_jiaxiquan.png) center center no-repeat;background-size: 100%;}
+.redwarpnew  .descinfo .imgcontent.img_fx{background: url(../../imgnew/img_fanxianquan.png) center center no-repeat;background-size: 100%;}
+.redwarpnew  .descinfo .imgcontent.img_dj{background: url(../../imgnew/img_daijingquan.png) center center no-repeat;background-size: 100%;}
+.redwarpnew  .descinfo .imgcontent .fullinfo{font-size: 13px;color:#FFF9CD;padding-top: 10px;padding-left: 8px;}
+.redwarpnew  .descinfo .imgcontent .denomination{font-size:16px;color:#FFF9CD;text-align:center;margin:10px auto 6px;}
+.redwarpnew  .descinfo .imgcontent .denomination span{font-size:30px;}
+.redwarpnew  .descinfo .imgcontent .costpeasnum{font-size:15px;color:#ffffff;text-align: right;margin-right: 15px;vertical-align: top;}
+.redwarpnew  .descinfo .imgcontent .dou{display:inline-block;background:url(../../imgnew/bean.png) no-repeat;background-size:100%;width:18px;height:18px;margin:0 5px -3px 5px}
+.redwarpnew  .descinfo .imgcontent .zhe{display:inline-block;background:url(../../imgnew/label-zhezi@2x.png) no-repeat;background-size:100%;width:15px;height:15px}
+.redwarpnew  .descinfo .imgcontent .soldout{top: 50%;left: 50%; margin-left:-27px;margin-top:-12px;}
+.redwarpnew  .descinfo .textdesc{min-height: 90px;}
+.redwarpnew  .exchangestep {padding-bottom:60px;}
+.redwarpnew  .exchangestep .stepinfo{font-size:13px;color:#454545;margin-top:5px;}
+.redwarpnew  .exchangestep .stepinfo .titl{font-size:18px;}
+.redwarpnew  .exchange_btn.peasout{background:#dad7d6;}
+.redwarpnew  .exchange_btn.soldout{height:50px;background:#dad7d6;}
+.redwarpnew  .exchange_btn.tologinbtn{height:50px;background:#ff6046;}
+.redwarpnew  .descinfo .jxdesc{font-size:13px;color:#959595;margin-top:5px;}
+.redwarpnew  .descinfo .jxdesc:before{content:'●';clear:both;color:#F8865B;width:4px;height:4px;border-radius: 50%;display: inline-block;margin-right: 5px;}

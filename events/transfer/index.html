@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>变现功能新上线</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+    <meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+    <meta http-equiv="cleartype" content="on">
+    <meta name="apple-mobile-web-app-title" content="...">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="x-rim-auto-match" content="none">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <link href="../share.css" rel="stylesheet">
+    <style type="text/css">
+        html{font-size:62.5%;font-family:Arial,'Times New Roman','Microsoft YaHei',SimHei;}
+        body{padding:0;margin:0;}
+        img{display:block;border:0;width: 100%;background-size: 100%;margin-top: -1px;}
+		.transfer-active .shareBtn .iconShare{display: inline-block;width:60px;height:18px;position: absolute;background:url(./imgs/icon-share.png) no-repeat;background-size:100%;}
+		.transfer-active .shareBtn{/* display:none; */width: 54px;position: absolute;top: 20px;right: 16px;}
+		.transfer-active .checkBtn{height: 44px;background: url(./imgs/checkBtn.png) no-repeat;background-size: 100% 100%;position: fixed;bottom: 11px;left: 0.3%;width: 100%;}
+
+        @media screen and (width:320px){
+            .transfer-active .checkBtn{height: 41px;}
+        }  
+        @media screen and (width:360px){
+            .transfer-active .checkBtn{height: 43px;}
+        }   
+        @media screen and (width:412px){
+            .transfer-active .checkBtn{height: 46px;bottom: 15px;}
+        }
+        @media screen and (width:414px){
+            .transfer-active .checkBtn{height: 48px;bottom: 16px;}
+        }      
+    </style>
+</head>
+<body>
+	<div class="transfer-active">
+		<img src="./imgs/part1.jpg">
+		<img src="./imgs/part2.jpg">
+		<img src="./imgs/part3.jpg">
+		<img src="./imgs/part4.jpg">
+		<img src="./imgs/part5.jpg">
+		<img src="./imgs/part6.jpg">
+		<img src="./imgs/part7.jpg">
+		<div class="shareBtn" id="shareBtn"><span class="iconShare"></span></div>
+		<div class="checkBtn"></div>
+	</div>
+    <script type="text/javascript" src="../jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../jsBridge.js"></script>
+    <script type="text/javascript" src="../weChat.js"></script>
+    <script type="text/javascript">
+    	(function(){
+			var loginToken=localStorage.getItem('yw_user_loginToken');
+    		jsb.setShareInfo({
+    			title: '急用钱的解决方案，变现功能新上线',
+	            desc:'赚定期的收益，灵活如同活期',
+	            link: location.protocol+'//'+location.host+'/events/transfer/index.html',
+	            icon: 'https://file.91yaowang.com/yaowang/dist/transfer.jpg'
+    		});
+	        $('.shareBtn').click(function(){
+	        	if(loginToken){
+		        	jsb.share();
+	        	}else{
+	        		jsb.login();
+	        	}	        	
+	        });
+	        $('.checkBtn').click(function(){
+	        	jsb.transferList(); 	        	      	
+	        });
+    	})();
+    </script>
+</body>
+</html>

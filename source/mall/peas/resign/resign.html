@@ -1,0 +1,52 @@
+<div class="resignWrap">
+	<div class="resign">
+		<div class="container">
+			<ul>
+				<% if(!_.isEmpty(signInfo.signRecordList)){%>
+					<% _.each(signInfo.signRecordList,function(item){ %>
+					<li <%var today = ((new Date().getDate())<10?'0'+new Date().getDate():new Date().getDate())==((item.dateStr).substr(3,2)),before=((new Date().getDate())<10?'0'+new Date().getDate():new Date().getDate())<((item.dateStr).substr(3,2))%>>
+						<div class="leftBar"><span class="dot <%=today?'curDot':'dot1'%>"></span></div>
+						<span class="resignDate <%=today?'stress':''%>"><%=item.dateStr%><span class="tip stress"><%=today && item.bqFlag==0?'今日':before || item.bqFlag==0 ?'':'漏签'%></span></span>
+						<%if(!item.nodeType){%>
+						<span class="preSignInfo"><%=item.preSignInfo%></span>
+						<%}%>
+						<%if(item.nodeType){%>
+						<span class="rightTips"><%=item.bqFlag==1?'补签可得':''%>
+							<%if(item.nodeType=='01'){%>
+							<span class="icons <%=item.bqFlag==1 || today ?'beans':'invalideBean'%>">
+								<span class="getBeans <%=today|| item.bqFlag==1?'validBeans':'invalidBeans'%>">+<%=item.quantity%></span>
+							</span>
+							<%}else{%>
+							<span class="icons <%=item.bqFlag==1 && !history.todaySigned?'box':history.todaySigned?'hasbox':'validBox'%>"></span>
+							<%}%>
+						</span>
+						<%}%>
+					</li>
+					<%})%>
+				<%}%>
+			</ul>
+			<div class="wait">
+				<%if(signInfo.signTaskCompFlag==0){%>
+				<p class="pending">待完成</p>
+				<%}else{%>
+				<p class="complete">已完成</p>
+				<%}%>
+				<div>
+					<div class="left">
+						<span class="tips"><%=signInfo.signDesc%></span>
+						<%if(signInfo.jobType==2){%>
+						<span class="investAmount">今日已投<%=signInfo.todayInvestAmt?parseFloat(signInfo.todayInvestAmt).toFixed(2):'0.00'%>元</span>
+						<%}%>
+					</div>
+					<span class="<%=signInfo.jobType==1?'inviteBtn':'investBtn'%>"></span>
+				</div>
+			</div>
+			<div class="btn">
+				<!-- 重新签到 按钮 -->
+				<span class="signBtn signAgain"><span class="plusNum">+5</span></span>
+				<!-- 补签 按钮-->
+				<span class="signBtn resignBtn <%=signInfo.signTaskCompFlag==0?'invalid':''%>"></span>    
+			</div>
+		</div>
+	</div>
+</div>

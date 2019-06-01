@@ -1,0 +1,303 @@
+.security-guarantee {
+    position: absolute;
+    color: rgb(231, 221, 236);
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    overflow-x:hidden ;
+}
+
+.security-guarantee .swiper-slide{
+    height: 100%;
+    overflow-y:auto ;
+}
+.security-guarantee .swiper-wrapper {
+    height: 100%;
+}
+
+.security-guarantee {
+    background-image: url(./imgs/bg_safe.png);
+    background-size: 100% 100%;
+}
+
+#security-guarantee-pagination {
+    position: absolute;
+    bottom: 15px ;
+}
+#security-guarantee-pagination .swiper-pagination-bullet{
+     margin: 0 3px;
+ }
+.security-guarantee .swiper-pagination-banner{
+    z-index: 1;
+    text-align: center;
+}
+.security-guarantee .swiper-pagination-bullet{
+    background-color: rgba(61,52,85,1);
+    opacity: 1;
+    border-radius: 0;
+    height: 4px;
+    width: 10px;
+}
+.security-guarantee .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: rgba(14,181,255,1);
+    width: 30px;
+}
+.security-guarantee h1 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.security-guarantee .line1 {
+    margin-top: 34px;
+    margin-bottom: 18px;
+}
+
+.security-guarantee .gradienttxt {
+    color: rgb(14, 181, 255);
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgba(6, 221, 255, 1)), to(rgba(21, 145, 255, 1)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.security-guarantee .swiper-slide > div {
+    text-align: center;
+}
+
+.security-guarantee .organization {
+    padding-top: 16px;
+    font-size: 14px;
+    width: 306px;
+    height: 220px;
+    margin: 20px auto 14px auto;
+    position: relative;
+}
+
+.security-guarantee h2 {
+    margin-bottom: 15px;
+}
+
+.security-guarantee .corner-img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: url(./imgs/corner.png) no-repeat;
+    background-size: 241px 46px;
+}
+
+.security-guarantee .corner-img.top-left {
+    top: 0;
+    left: 0;
+    background-position: -8px -8px;
+}
+
+.security-guarantee .corner-img.top-right {
+    top: 0;
+    right: 0;
+    background-position: -38px -8px;
+}
+
+.security-guarantee .corner-img.bottom-left {
+    bottom: 0;
+    left: 0;
+    background-position: -112px -8px;
+}
+
+.security-guarantee .corner-img.bottom-right {
+    bottom: 0;
+    right: 0;
+    background-position: -74px -8px;
+}
+
+.security-guarantee .box {
+    border-radius: 4px;
+    background: linear-gradient(rgba(17, 12, 70, 1), rgba(45, 38, 82, 0.08));
+}
+
+.security-guarantee .ammout {
+    width: 320px;
+    height: 230px;
+    margin: 0 auto;
+    padding-top: 23px;
+
+}
+
+.security-guarantee .note {
+    color: rgb(152, 136, 163);
+    font-size: 12px;
+    margin-top: 7px;
+}
+
+.security-guarantee .investment-amount, .security-guarantee .registration {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.two-col .col {
+    float: left;
+    width: 50%;
+}
+
+.two-col:after {
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+}
+
+.security-guarantee .system {
+    float: right;
+    margin-right: 50px;
+}
+
+.security-guarantee .risk {
+    margin-top: 33px;
+    margin-bottom: 44px;
+}
+
+.security-guarantee .risk .icon {
+    margin-bottom: 6px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.security-guarantee .system .icon {
+    background-image: url(./imgs/risk_system.png);
+
+}
+.security-guarantee .process .icon {
+    background-image: url(./imgs/risk_process.png);
+
+}
+
+.security-guarantee .process {
+    float: left;
+    margin-left: 50px;
+}
+
+.security-guarantee .risk-d {
+    width: 325px;
+    height: 286px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.security-guarantee .risk-d .time-wrapper {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(14, 181, 255);
+}
+
+.security-guarantee .risk-d {
+    line-height: 25px;
+}
+
+.security-guarantee .risk-title {
+    font-size: 16px;
+    position: absolute;
+    top: 223px;
+    height: 36px;
+    padding: 8px 16px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.security-guarantee .risk-title:after, .security-guarantee .risk-title:before {
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    background: url(./imgs/corner.png) no-repeat;
+    background-size: 241px 46px;
+    content: '';
+    display: block;
+}
+
+.security-guarantee .risk-title:before {
+    left: 0;
+    top: -1px;
+    background-position: -175px -3px;
+}
+
+.security-guarantee .risk-title:after {
+    right: 0;
+    top: -1px;
+    background-position: -194px  -3px;
+}
+.security-guarantee  .safe{
+    margin: 25px auto 15px auto;
+    background: url("./imgs/img_safe_3.png") center center no-repeat;
+}
+.security-guarantee  .cunguan-logo{
+    width: 250px;
+    height: 65px;
+    margin: 25px auto 20px auto;
+    background: url("./imgs/cunguan-logo.png") center center no-repeat;
+    background-size: contain;
+}
+.security-guarantee .honor{
+    margin: 25px auto 20px auto;
+    background: url("./imgs/img_safe_4.png") center center no-repeat;
+}
+.security-guarantee  .safe ,.security-guarantee .honor{
+    width: 250px;
+    height: 125px;
+    background-size: cover;
+
+}
+.security-guarantee .safe-d{
+    width: 325px;
+    height: 186px;
+    padding:23px 19px 19px 19px;
+    color: rgba(152,136,163,1);
+    margin: 0 auto;
+}
+.security-guarantee .safe-d .detail{
+    line-height: 28px;
+    color: rgba(231,221,236,1);
+    margin-top: 6px;
+}
+.security-guarantee .page-honor .detail{
+    font-size: 14px;
+}
+.security-guarantee .page-honor .time{
+    color: rgba(152,136,163,1);
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.security-guarantee .prize{
+    position: relative;
+    display: inline-block;
+}
+.security-guarantee .item1 .top-left{
+    top: -23px;
+    left: -64px;
+}
+.security-guarantee .item1 .top-right{
+    top: -23px;
+    right: -64px;
+}
+
+.security-guarantee .item3 .bottom-left{
+    bottom: -16px;
+    left: -26px;
+}
+.security-guarantee .item3 .bottom-right{
+    bottom: -16px;
+    right: -26px;
+}
+.security-guarantee .vertical-line{
+    height: 10px;
+}
+.security-guarantee .investment-amount, .security-guarantee .registration,.security-guarantee .risk-d
+,.security-guarantee .safe-d .detail{
+     margin-bottom: 20px;
+ }
+.security-guarantee .prize.item3{
+    margin-bottom: 40px;
+}

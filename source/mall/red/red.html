@@ -1,0 +1,32 @@
+<div class="mall-red-wrapper">
+	<div class="mall-recharge-title">
+		<p class="title">兑礼券</p>
+	</div>
+	<% if(_.isEmpty(redlist)){%>
+	<p class='nodatetips'>暂无数据</p>
+	<%}else{%>
+	<div class="swiper-container redcontainer">
+		<div class="swiper-wrapper redlist">
+			<% _.each(redlist,function(item){%>
+			<div class="swiper-slide redinfo  <%= (item.couponType=='2')?'type-jx': (item.couponType=='1'?'type-fx':'type-dj')%>" data-id="<%= item.id %>">
+				<%if(item.couponType=='1'){%> <!-- 返现券 -->
+				<p class="fullinfo">满<%= item.amountMin %>可返</p>
+				<p class="denomination">￥<span><%= item.amount %></span></p>
+				<%}else if(item.couponType=='2'){%> <!-- 加息券 -->
+				<p class="fullinfo">满<%= item.amountMin %>可用</p>
+				<p class="denomination">+<span><%= item.interestAddVal%>%</span></p>
+				<%}else if(item.couponType=='4'){%> <!-- 代金券 -->
+				<p class="fullinfo">满<%= item.amountMin %>可减</p> 
+				<p class="denomination">￥<span><%= item.amount %></span></p>
+				<%}%>
+				<p class="costpeasnum"><%= item.isMember == 1 ? '<i class="zhe"></i>':''%><i class="dou"></i><%= item.needPoints %></p>
+				<% if(item.currentStock==0){%>
+				<div class="soldoutmask"><span class="soldout">已兑完</span></div>
+				<%}%>
+			</div>
+			<% }) %>
+		</div>
+	</div>
+	<%}%>
+</div>
+<img class="mall-want" src="../imgnew/img_wangjia_want@2x.png" alt="">

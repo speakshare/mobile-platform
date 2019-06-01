@@ -1,0 +1,22 @@
+<section class="pro-box">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <%_.each(luxuryList,function(item){%>
+            <div class="swiper-slide">
+                <div class="pro-slide" data-id="<%=item.productNo%>">
+                    <section class="<%=item.procuctStatus == '6' || item.investPercent == 100?'sale-wan':''%>">
+                        <i class="type-icon<%=item.minMemberLevel%>"></i>
+                        <p class="title"><%=item.productName%></p>
+                        <p class="num"><%=item.annualizedRate%><span class="col1">%</span><%=item.productAddonRate > 0 ? '<span class="col2">+'+item.productAddonRate+'%</span>':''%></p>
+                        <p class="time"><%=item.productDay%>天</p>
+                        <p class="mon"><span class="line-lef"></span><%=item.minPurchaseAmount%>起投<span class="line-rig"></span></p>
+                    </section>
+                    <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                    <i class="sale-wan-icon"></i>
+                    <%}%>
+                </div>
+            </div>
+            <%})%>
+        </div>
+    </div>
+</section>

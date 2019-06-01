@@ -1,0 +1,37 @@
+.yaoBao_Income1 p:first-child {
+    margin: 0;
+    padding: 10px 0 0 20px;
+    font-size: 14px;
+    color: rgb(51,51,51);
+}
+.yaoBao_Income1 p:last-child {
+    margin: 0;
+    padding: 5px 0 10px 20px;
+    font-size: 24px;
+    color: rgb(255,105,56);
+}
+.yaoBao_Income2 {
+    top: 0;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    font-size: 14px;
+    margin-top: -2px;
+}
+
+.yaoBao_Income2 span:first-child {
+    float: left;
+    padding: 15px 0 15px 20px;
+    color: rgb(51,51,51);
+}
+.yaoBao_Income2 span:last-child {
+    float: right;
+    padding: 15px 20px 15px 0;
+    color: rgb(255,105,56);
+}
+.yaoBao_Income1 {
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,54 @@
+<div class="MBA-wrap">
+<img src="<%= location.origin+'/events/baiNaFinacing/dist/mbaicon.jpg' %>"  style="display: none"  >
+	<div class="share"></div>
+	<img src="images/bg_01.jpg" />
+	<div class="recordwrap">
+		<img src="images/bg_02.jpg" />
+		<div class="recordbtn"><img src="images/recordbtn.png" /></div>
+	</div>
+	<img src="images/bg_03.jpg" />
+	<img src="images/bg_04.jpg" />
+	<img src="images/bg_05.jpg" />
+	<img src="images/bg_06.jpg" />
+	<img src="images/bg_07.jpg" />
+	<img src="images/bg_08.jpg" />
+	<img src="images/bg_09.jpg" />
+	<div class="more  konwmore">了解更多</div>
+	<div class="prowrap">
+		<img src="images/bg_10.jpg" />
+		<%if(baiNaActiProductList[0]&&baiNaActiProductList[0].goodsPromotionProductInfoSet[0]){%>
+		<div class="prodiv">
+			<div class="productbox">
+				<div class="tab title w220"><%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].productName%></div>
+				<div class="tab title w190">投资金额</div>
+				<div class="tab title w220">预计到期收益</div>
+			</div>
+			<div class="productbox nobt">
+				<div class="tab w220">期限<%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].procuctDay%>天</div>
+				<div class="tab w190"><%=baiNaActiProductList[0].productPrice%>元</div>
+				<div class="tab w220"><%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].preProfit%>元</div>
+			</div>
+			<p class="reminder">理财有风险，投资需谨慎</p>
+		</div>
+		<%}%>	
+	</div>
+	<%if(baiNaActiProductList[0]){%>
+	<div class="more  rulemore">活动规则</div>
+	<ol class="ruledesc">
+		<% var desc=baiNaActiProductList[0].notes.replace('\r','').split('\n') %>
+		<% _.each(desc,function(item){  %>
+		<li><%=item%></li>
+		<%})%>
+		<% if($.isIOS()){%>
+		<li>本活动与苹果公司无关</li>
+		<%}%>
+	</ol>
+	<%}%>	
+	<%if(dealForbiddenTimeFlag=='1'){%>
+	<div class="disable">23:00-6:00 系统维护时间</div>
+	<%}else if(!baiNaActiProductList[0].goodsPromotionProductInfoSet[0] || baiNaActiProductList[0].goodsPromotionProductInfoSet[0].procuctStatus=='6'||( baiNaActiProductList[0].goodsPromotionProductInfoSet[0].procuctAmount-baiNaActiProductList[0].goodsPromotionProductInfoSet[0].productAmountBuy< baiNaActiProductList[0].productPrice)){%>
+	<div class="disable">已领取完</div>
+	<%}else{%>
+	<div class="getbtn" data-code='<%=baiNaActiProductList[0].promotionCode%>' data-gid='<%=baiNaActiProductList[0].goodsId%>' data-pid='<%=baiNaActiProductList[0].goodsPromotionProductInfoSet[0].productNo%>'></div>
+	<%}%>
+</div>

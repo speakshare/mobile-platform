@@ -1,0 +1,15 @@
+<div class="my-asset">
+    <div class="asset-ring-wrap">
+        <div class="asset-ring-box">
+            <div class="asset-text">总资产(元)<br><span class="asset-text-num"><%=$.amountFormat(myAssets)%></span></div>
+            <div class="asset-chart"></div>
+            <div class="asset-note">总资产包含提现处理中的金额</div>
+        </div>
+    </div>
+    <div class="asset-chart-desc">
+        <p>定期资产(元)<span class="asset-num"><%=$.amountFormat(regularAssets)%></span></p>
+        <p>摇宝资产(元)<span class="asset-num"><%=$.amountFormat(currentAssets)%></span></p>
+        <p>余额(元)<span class="asset-num"><%=$.amountFormat(piggy)%></span></p>
+        <p>基金持仓资产(元)<span class="asset-num"><%=$.amountFormat(fundAssets)%></span></p>
+    </div>
+</div>

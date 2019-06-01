@@ -1,0 +1,32 @@
+<div class="htpanel">
+    <label>受托方</label>
+    <p><%=pd.loanName%>。受托方接受投资人委托，将投资人委托资金进行定向投资。定向投资标的为合作机构推荐的优质项目。</p>
+</div>
+
+<%if(pd.tradeType==1){%>
+<div class="htpanel">
+    <label>合作机构</label>
+    <p>GTSY保理（天津）有限公司。GTSY保理（天津）有限公司，以受让应收账款的方式提供贸易融资。此外，还提供应收账款的收付结算、管理与催收；销售分户（分类）账管理；与本公司业务相关的非商业性坏账担保；客户资信调查与评估等相关咨询服务。</p>
+</div>
+<%}%>
+<%if(pd.tradeType==2){%>
+<div class="htpanel">
+    <label>发行方</label>
+    <p><%=pd.fyfName %></p>
+</div>
+<%}%>
+<%if(pd.tradeType==2 && pd.jysName){%>
+<div class="htpanel">
+    <label>交易所</label>
+    <p><%=pd.jysName%></p>
+</div>
+<%}%>
+<div class="htpanel">
+    <label>风险提示</label>
+    <p>理财有风险，投资需谨慎；</p>
+</div>
+
+<div class="htpanel">
+    <label>定向投资标的简介</label>
+    <p>本定向投资标的为合作机构推荐的优质企业应收账款融资项目。该融资项目由GTSY保理（天津）有限公司进行严格风控审核。优质企业的应收账款融资主要用于满足企业在生产经营过程中正常的资金需求。</p>
+</div>

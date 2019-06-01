@@ -1,0 +1,38 @@
+<div class="invite-bg">
+	<div class="inviterule"></div>
+	<div class="myinvite">
+		<%if(lead){%>
+		<div class="pointergif"></div>
+		<%}%>
+	</div>
+	<div class="banner" style='height:<%= $(window).width()*0.7%>px'></div>
+	<div class="centercontent">
+		<div class="invitebtn"></div>
+		<div class="ewm" id="qrcode"></div>
+		<p class="ewmtext">
+      <%if(info.userType=='2'&& info.grade!='0'){%><%= $.starFormat(info.grade||0).star%><%= $.starFormat(info.grade||0).text%><%}%>您的专属邀请码： <span id="codeval"><%=info.inviteCode%></span></p>
+
+		<img class="fixed-margin" src="imgs/img_friend_bean.png" >
+		<img class="fixed-margin" src="imgs/img_friend_cash.png" >
+		<img src="imgs/img_friend_relation.png" >
+<!--			<div class="contbox box2">
+				<div class="condesc">
+					<p class="fs16">共享现金奖励<br/>平分<span>100元</span>现金</p>
+					<p class="fs11">好友注册后30天内投资任意产品(除变现产品)，邀请人和受邀人将共享60元现金红包，每人各获得20元返现券。</p>
+				</div>
+			</div>-->
+			<%if(info.userType=='0'){%>
+			<div class="palnnerguide">
+				<%if(info.isQualified=='0'){%>
+				<p class="invitetips">成为理财大使，赚钱就是这么简单</p>
+				<%}else{%>
+				<p class="invitetips">您已有资格成为理财大使，请进入我的邀请页面申请</p>
+				<%}%>
+				<div class="bannerbar" style='height:<%= $(window).width()*0.25%>px'></div>
+			</div>
+			<%}%>
+		</div>
+		<div class="share_mask">
+			<div class="shareimg"></div>
+		</div>
+	</div>

@@ -1,0 +1,14 @@
+<div class="order-list">
+    <% if(list && list.length){
+        _.each(list,function(n){ %>
+            <div class="order-one" data-id="<%=n.orderNo%>">
+                <p class="goods-name"><%=n.goodsName%></p>
+                <img src="<%=n.coverImg%>" class="goods-image">
+                <p>订单状态：<span class="<%=n.promotionOrderStatus==1?'order-stat':''%>"><%=n.promotionOrderStatusDesc%></span></p>
+                <p><span class="order-detail-btn">查看详情</span>申请时间：<%=n.appleDate%></p>
+            </div>
+        <% })
+    }else{ %>
+        <div class="order-empty"></div>
+    <% } %>
+</div>

@@ -1,0 +1,21 @@
+<div class="order-list">
+    <% if(list && list.length){
+        _.each(list,function(n){ %>
+            <div class="order-one">
+                <img src="<%=n.imgUrl%>" class="goods-image">
+                <p class="goods-name"><span class="goods-txt"><%=n.name%></span> <br>成功获取<%=n.count%>份</p>
+                <div class="addr-box">
+                    <p>收件人：<%=n.contacts%><span class="fr">手机号：<%=n.mobile%></span></p>
+                    <p>详细地址：<%=n.address%></p>
+                </div>
+            </div>
+        <% }) %>
+    <p class="o-tip">奖励会在活动结束后30个工作日内发放,详见规则说明。</p>
+    <% }else{ %>
+        <div class="order-empty">
+            您还没有获取任何奖品<br>
+            机会不多哦！
+            <div class="back-btn"></div>
+        </div>
+    <% } %>
+</div>

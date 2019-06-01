@@ -1,0 +1,41 @@
+<div class="acty214-landPage">
+	<div class="acty214-wrap">
+		<div class="logo"></div>
+		<div class="headimg" style="height:<%= $(window).width()*0.33 %>px"></div>
+		<div class="innerwarp" style="height:<%= $(window).width()*1.2 %>px">
+			<div class="content">
+				<div class="facebox clearfix">
+					<div class="mainface">
+						<div class="face">
+							<img src="<%=initInviterInfo.headImg?initInviterInfo.headImg:(location.origin+'/events/valentinesDay/dist/i2.png')%>" />
+							
+						</div>
+						<p class="name"><%=initInviterInfo.niceName%></p>
+					</div>
+					<div class="subface">
+						<div class="face">
+							<img src="" class="slaveHeadImg" />
+							<input type="file" class="upload-img"/>
+						</div>
+						<p class="name subname">上传你的美照吧</p>
+					</div>
+				</div>
+			</div>
+			<div class="dottedline"></div>
+			<div class="content">
+				<div class="inputbox"><input class="input inviteename" placeholder="请输入姓名"  maxlength="8"/></div>
+				<div class="inputbox"><input class="input inviteemobile" placeholder="请输入摇旺注册手机号"  maxlength="11" /></div>
+				<p class="tips">如尚未注册，注册时请使用本次输入手机号<br/>如果填写有误或者填写了无法注册的手机号后期得不到现金奖励与摇旺无关</p>
+			</div>
+			<div class="btnbox">
+				<div class="content">
+					<div class="bottombtn nobtn"></div>
+					<div class="bottombtn yesbtn"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="loading-box">
+		<div class="bounceball"></div>
+	</div>
+</div>

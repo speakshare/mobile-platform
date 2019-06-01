@@ -1,0 +1,64 @@
+﻿    <div class="top-banner" style="height:<%=$(window).width()/375*218%>px">
+        <% if(isLogin!=1){ %>
+        <div class="login-btn">登录</div>
+        <% } %>
+        <div class="b-title">背靠资邦金服</div>
+        <div class="b-left">迄今为止
+            <span class="h-color">历史完全兑付</span>
+        </div>
+        <div class="b-right">累计投资金额(元)
+            <span class="h-color"><%=platformData.investmentAmount%></span>
+        </div>
+    </div>
+    <div class="new-weal">
+        <% if(homePage.list && homePage.list.length){
+            _.each(homePage.list,function(n){
+                if(n.productType==10){%>
+                    <div class="weal-line weal-1" data-id="<%=n.productNo%>" style="height:<%=$(window).width()/750*273%>px">
+                        <div class="weal-title"><%=n.productName%></div>
+                        <div class="p-profit"><span class="p-num"><%=n.annualizedRate%></span>预期年化收益率</div>
+                        <div class="p-date"><span class="p-num"><%=n.productDay%></span>期限</div>
+                        <% if(n.productCanBuyFlag==1 || (sysTime[0]>=23 && sysTime[1]>=40 || sysTime[0]<6 )){ %>
+                            <div class="weal-btn disabled"><%=n.productCanBuyFlag==1?'即将开售':'6点开售'%></div>
+                        <% }else{ %>
+                            <div class="weal-btn">马上赚钱</div>
+                        <% } %>
+                    </div>
+                <% }
+            })
+        } %>
+        <div class="weal-line weal-2">
+            <% if(homePage.experienceAmtFlag!='1' || isLogin==0){%>
+                <div class="weal-btn2 arrow-right"><%=isLogin==0?'':homePage.experienceAmt<=0?'立即获得':'立即使用'%></div>
+            <% } %>
+            <div class="weal-title">注册摇体验金</div>
+            <% if(homePage.experienceAmt<=0){ %>
+                <div class="weal-desc"><span class="h-color">8888-88888元</span>体验金</div>
+            <% }else{ %>
+                <div class="weal-desc">您有<span class="h-color"><%=homePage.experienceAmt%>元</span>体验金
+                    <br><span class="grey">(有效期至<%=homePage.experienceAmtTime%>)</span></div>
+            <% } %>
+        </div>
+        <div class="weal-line weal-3">
+            <% if(isLogin==0){ %>
+            <div class="weal-btn2 arrow-right"></div>
+            <% } %>
+            <div class="weal-title">百元新手礼包</div>
+            <div class="weal-desc">
+                <% _.each(homePage.rewardList,function(n){ %>
+                    <span class="h-color"><%=n.ruleType==2?(n.interestAddVal+'%'):(n.amount+'元')%></span><%=n.rewardTxt%>
+                <% }) %>
+            </div>
+        </div>
+    </div>
+    <% if(banner && banner.length){ %>
+        <div class="event-box over-slider">
+            <h3 class="event-h3">正在进行的活动</h3>
+            <ul class="animate">
+                <% _.each(banner,function(n){ %>
+                    <li data-link="<%=n.actiLink%>"><img src="<%=n.actiImg%>"></li>
+                <% }) %>
+            </ul>
+        </div>
+    <% } %>
+    <div class="safe-tip">账户资金安全由银行、快钱支付以及太平财险共同保障</div>

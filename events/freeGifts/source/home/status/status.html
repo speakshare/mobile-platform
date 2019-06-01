@@ -1,0 +1,23 @@
+<div class="top-status" style="height:<%=Math.floor(930*$(window).width()/750)%>px">
+    <% if(isLogin==""){ %>
+        <p class="un-login-tip">您还没有登录，登录后赢取豪礼！</p>
+        <div class="login-btn"></div>
+    <% }else{ %>
+        <div class="my-value">
+            <div class="title myinvestval">我的投资值</div>
+            <span class="num"><%=investAmt%></span>
+          <!--   <div class="tip-txt">活动期间投资90天及以上产品每投资1元增加1个投资值</div> -->
+        </div>
+        <div class="my-value my-invite ">
+            <div class="title myinviteval">我的邀请值</div>
+            <span class="num"><%=inviteNum%></span>
+            <!-- <div class="tip-txt">活动期间每邀请1个新投资用户增加1个邀请值
+                <span class="grey">(好友需投资90天及以上产品大于等于1000元即算成功邀请)</span>
+            </div> -->
+        </div>
+        <div class="my-value go-product-btn"></div>
+        <div class="my-value go-invite-btn"></div>
+    <% } %>
+    <div class="share">分享</div>  
+</div>
+<div class="share_mask"></div>

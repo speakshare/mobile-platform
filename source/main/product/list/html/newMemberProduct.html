@@ -1,0 +1,34 @@
+<div class="title">
+    <span>新手专享</span>
+    <span>短期高收益优质产品</span>
+</div>
+<div class="product" data-id="<%=productNo%>">
+    <div class="pd-name limit">
+        <span><%=productName%></span>
+        <span class="tip">每人限购1万元</span>
+    </div>
+    <div class="pd-rate">
+        <div class="rate">
+            <div>
+                <span class="rate-data"><%=annualizedRate%></span>
+                <%if(productAddonRate!='0.00'){%><span class="f14 ml5"><%='+'+productAddonRate%>%</span><% } %>
+            </div>
+            <div class="rate-t">预期年化</div>
+        </div>
+        <div class="date">
+            <div class="rate-term"><%=productDay%>天</div>
+            <div class="rate-t">理财期限</div>
+           <!--  <% if(currentActivity){%>
+                <span class="activity-icon"><%=currentActivity%></span>
+            <%}%> -->
+        </div>
+    </div>
+    <div class="pd-process">
+        <div class="process">
+            <div class="process-bg">
+                <div class="cur" style="width:<%=investPercent%>%"></div>
+            </div>
+        </div>
+        <div class="cur-t"><%=investPercent%>%</div>
+    </div>
+</div>

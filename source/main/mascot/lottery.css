@@ -1,0 +1,113 @@
+.mascot-lottery{
+    position: fixed;
+    z-index:9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+}
+.mascot-lottery .close{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.mascot-lottery .close::after{
+    content: 'X';
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    position: absolute;
+    top: 2px;
+    left: 4px;
+
+}
+.mascot-lottery .find-dog{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.mascot-lottery h1{
+    color: #FFA233 ;
+    margin-bottom: 11px;
+    font-size: 16px;
+    text-align: center;
+}
+.mascot-lottery .note-frame{
+    padding-top: 25px;
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -27px;
+    background: url('./img/note-frame.png') no-repeat;
+    background-size: 100% 100%;
+    min-width: 300px;
+}
+.mascot-lottery .note{
+    color: #DADADA;
+    margin-left: 17px;
+    font-size: 14px;
+
+}
+.mascot-lottery .note li{
+    margin-top: 10px;
+}
+.mascot-lottery .find-diamond{
+    width: 120px;
+    margin: 0 auto ;
+    margin-top: 100px;
+}
+.mascot-lottery .find-opps{
+    width: 240px;
+    margin: 0 auto ;
+    margin-top: 100px;
+}
+.mascot-lottery .word-find{
+    width: 205px;
+    margin: 0 auto;
+}
+.mascot-lottery .lottery-ret-wrapper{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #ffffff;
+}
+.mascot-lottery .lottery-ret,.mascot-lottery .button{
+    margin-top: 15px;
+    color: #FFA233;
+
+}
+.mascot-lottery .button span{
+    display: inline-block;
+    padding: 3px 8px;
+    border: 1px solid #FFA233;
+}
+.mascot-lottery .effective-time{
+    margin-top: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.mascot-lottery .lottery-ret-wrapper,.mascot-lottery .button,.mascot-lottery .effective-time{
+    text-align: center;
+}
+.mascot-lottery .find-star{
+    width: 180px;
+
+}
+.mascot-lottery .find-bean{
+    width: 120px;
+
+}
+.mascot-lottery .find-ticket{
+    width: 100px;
+}
+.mascot-lottery #lottery-content .padding{
+    margin: 0 auto;
+    margin-top: 150px;
+}

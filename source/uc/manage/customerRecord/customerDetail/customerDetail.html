@@ -1,0 +1,48 @@
+<div class="manage investType">
+	<div class="info">
+		<div class="left">
+			<div class="name f16">
+			<span class="customer"><%=A.customer.customerName?A.customer.customerName:$.telHide(A.customer.phoneNum)%></span>
+			<%if(A.customer.riskType=='0'){%>
+				<span class="type">未评分</span>
+			<%}else {%>
+				<%if(A.customer.riskType=='A'){%>
+				<span class="type">保守型</span>
+				<%}else if(A.customer.riskType=='B'){%>
+				<span class="type">稳健型</span>
+				<%}else{%>
+				<span class="type">积极型</span>
+				<%}%>
+			<%}%>
+			<span class="tel" data-link="tel:<%=A.customer.phoneNum%>"></span>
+			</div>
+			<div class="time">注册时间 <%=$.dateFormat(A.customer.registerTime,'yyyy-MM-dd')%></div>
+		</div>
+		<div class="right">
+			<%if(A.customer.belongsFlag=='0'){%>
+				<%if(A.customer.customerName1){%>
+				<div class="from">来自<%=A.customer.customerName1%>的邀请</div>
+				<%}else{%>
+				<div class="from">来自尾号<%=(A.customer.phoneNum1).substr(7,4)%>的邀请</div>
+				<%}%>
+			<%}else{%><div class="from">来自我的邀请</div><%}%>
+			<div class="count">邀请人数：<%=A.customer.inviteCount%>人</div>
+		</div>
+	</div>
+	<div class="asset-profit">
+		<div class="profit-1"><%=(A.amount.investTotalAmount).toFixed(2)%><span class="cash-num">累计投资(元)</span></div>
+		<div class="profit-1 totalProfitAmt"><%=(A.amount.redPacketTotalAmount).toFixed(2)%><span class="cash-num">累计红包(元)</span></div>
+	</div>
+	<div class="order">
+		<div class="tab">
+			<span class="investing btn active">在投订单</span><span class="deadline btn">到期订单</span>
+		</div>
+		<ul>
+
+		</ul>
+		<div class="bottomLine hide">
+			<div class="line"></div>
+			<span class="title">没有更多结果了</span>
+		</div>
+	</div>
+</div>

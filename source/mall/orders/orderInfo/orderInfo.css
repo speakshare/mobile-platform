@@ -1,0 +1,13 @@
+/*物流信息*/
+.mall-orderinfo-wrapper .addresswrap{width:100%;min-height:80px;box-sizing: border-box;background:#ffffff url(../../images/letterline.png) bottom left  repeat-x;padding: 4%;}
+.mall-orderinfo-wrapper .addresswrap .username{font-size:16px;color:#333333;}
+.mall-orderinfo-wrapper .addresswrap .username .userTel{float:right;}
+.mall-orderinfo-wrapper .addresswrap .addrdetail{font-size:13px;line-height: 20px;color:#666666;margin-top:14px;word-break: break-word;}
+.mall-orderinfo-wrapper .haslogisticsinfo .logisticsinfo{padding: 0 4%;background:#ffffff;margin-top:9px;}
+.mall-orderinfo-wrapper .haslogisticsinfo .logisticsinfo .logistics-left{width:100%;height:45px;line-height:45px;color:#444444;font-size:15px;}
+.mall-orderinfo-wrapper .haslogisticsinfo .logisticsinfo .logistics-left .rightinfo{color:#999999;float: right;}
+.mall-orderinfo-wrapper .haslogisticsinfo .logisticsinfo .logistics-left .userselect{-webkit-user-select:initial;-moz-user-select: initial;-ms-user-select: initial;user-select: initial; }
+.mall-orderinfo-wrapper .haslogisticsinfo .logisticsinfo .logistics-left.hasbt{border-bottom:1px solid #f2f2f2; }
+.mall-orderinfo-wrapper .haslogisticsinfo .tips{position: fixed;width: 100%;bottom:30px; font-size:15px;color:#999999;text-align:center;display:block;}
+.mall-orderinfo-wrapper .withoutlogisticsinfo .noinfoicon{width:125px;height:125px;background:url(../../images/noinfo.png) center center no-repeat;margin: 20% auto 0px;background-size:100%;}
+.mall-orderinfo-wrapper .withoutlogisticsinfo .tips{margin-top:25px;font-size:15px;color:#999999;text-align:center;}

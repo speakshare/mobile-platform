@@ -1,0 +1,16 @@
+<div class="mall-goods mall-goodlist">
+	<div class="goodslist clearfix">	
+		<% _.each(list,function(item){  %>
+		<div class="goods" data-id="<%= item.id %>">
+			<span class="<%= item.isActivity?'activity':(item.isHot?'hot':'')%>"></span>
+			<div class="goodsimg"><img src="<%=item.coverImg %>" /><%= item.isMember == 1 ? '<i class="zhe"></i>':''%></div>
+			<p class="goodsdesc"><%= item.itemName %></p>
+			<p class="peaprice"><%= item.needPoints %></p>
+			<p class="goodpricestock">零售价<span class="cashprice">￥<%= item.itemPrice %><em></em></span><span class="stock">剩余库存:<%= item.currentStock%></span></p>
+			<%if(item.currentStock==0){%>
+			 <div class="soldoutmask"><span class="soldout">已兑完</span></div>
+			<%}%>
+		</div>
+		<% })%>	
+	</div>
+</div>

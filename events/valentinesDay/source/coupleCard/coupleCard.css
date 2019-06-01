@@ -1,0 +1,38 @@
+.acty214-couplecard{background:#FFEBC9;position: relative;top:0px;left:0px;width:100%;height:100%;}
+.acty214-couplecard .rightlead{width:70px;height:40px;float:right;margin-top: 20px;}
+.acty214-couplecard .sharebtn{background:url(./img/sharebtn.png) top right no-repeat;background-size:contain;}
+.acty214-couplecard .joinbtn{background:url(./img/jionbtn.png) top right no-repeat;background-size:contain;}
+.acty214-couplecard  .acty214-wrap{width:96%;height:100%;margin:0px auto;padding: 10px 0 20px;}
+.acty214-couplecard  .headimg{width:70%;background:url(./img/head.png) center bottom no-repeat;background-size:100%;margin:0 auto;position: relative;z-index: 99;}
+.acty214-couplecard  .innerwarp{width:100%;background:url(./img/boxbg.png)center top no-repeat;background-size:contain;position: relative;top:-17px;margin-bottom:30px;}
+.acty214-couplecard   .content{width:260px;/*height:100%;*/margin:0 auto;}
+.acty214-couplecard   .content .headtitle{font-size:24px;color:#F64976;text-align:center;padding: 15px 0px 5px;font-weight: bold;}
+.acty214-couplecard   .face{width:110px;height:110px;border:2px solid #F64976;border-radius:5px;margin:0 auto;}
+.acty214-couplecard   .face img{border-radius:3px}
+.acty214-couplecard   .mainface{float:left;}
+.acty214-couplecard   .subface{float:right;}
+.acty214-couplecard   .facebox{position: relative;}
+.acty214-couplecard   .facebox .lovestamp{position: absolute;bottom:-20px; width:110px;height:90px;background:url(./img/loverstamp.png) center center no-repeat;background-size:contain;left: 50%;margin-left: -55px;}
+.acty214-couplecard   .facebox .name{font-size:14px;color:#7D3145;text-align:center;margin-top:5px;font-weight: bold;}
+.acty214-couplecard   .content .carddesc{font-size:14px;color:#7D3145;margin: 5px 0px 0px;font-weight:bold;}
+.acty214-couplecard   .content .carddesc .username{font-size:20px;color:#F64976;}
+.acty214-couplecard   .content .source{font-size:12px;color:#7D3145;text-align:right;}
+.acty214-couplecard   .doshedline{border-top:2px dashed #FDDEDD;width:98%;margin:0 auto;position: absolute;top:58%;}
+.acty214-couplecard   .blessbox{position: absolute;top:58%;left:0px;width:100%;}
+.acty214-couplecard   .blessbox .blesstitle{font-size:15px;color:#F64976;text-align:center;margin-top:10px;font-weight: bold;}
+.acty214-couplecard   .blessbox .blesslist{text-align:left;height: 123px;overflow: scroll;}
+.acty214-couplecard   .blessbox .blesslist .blessinfo{font-size:12px;color:#AC2649;line-height: 20px;}
+.acty214-couplecard   .blessbox .blesslist .blessinfo:before{content:'';clear: both;width:12px;height:20px;background:url(./img/heart.png)left center no-repeat;background-size:contain;float: left;margin-right:5px;}
+.acty214-couplecard   .blessbox .sharetips{margin-top: 30px;font-size:20px;color: rgba(246,72,117,0.41);text-align:center;font-weight: bold;}
+.acty214-couplecard   .blessbtn{width:130px;height:55px;background:url(./img/sendblessbtn.png) center bottom no-repeat;background-size: contain;position: absolute;bottom: -11px;left: 50%;margin-left: -65px;}
+.acty214-couplecard  .share_mask{background:rgba(0,0,0,0.6)  url(./img/share.png)no-repeat 90% 20px;background-size:135px auto;}
+@media screen and (max-width:360px){
+	.acty214-couplecard .rightlead{width:60px;}
+	.acty214-couplecard  .content .headtitle{font-size:18px;padding: 13px 0px 2px;}
+	.acty214-couplecard  .face{width:100px;height:100px;}
+	.acty214-couplecard  .facebox{width:90%;margin:0 auto;}
+	.acty214-couplecard  .facebox .name{font-size:12px;}
+	.acty214-couplecard  .content .carddesc{font-size:12px;}
+	.acty214-couplecard  .content .carddesc .username{font-size:16px;}
+	.acty214-couplecard  .blessbtn{width:120px;height:45px;bottom:-17px;}
+}

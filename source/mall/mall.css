@@ -1,0 +1,28 @@
+.pb51{padding-bottom:51px;}
+.clearfix{*zoom:1;}
+.clearfix:after{display:block;content:"clear";height:0;clear:both;overflow:hidden;visibility:hidden;}
+.mt10{margin-top:10px;}
+.hasbt{border-bottom:1px solid #e6e6e6;}
+/*.mall-index-wrapper{padding-bottom:51px;}*/
+.mall-recharge-title{padding:4px 0px;border-bottom: 1px solid #f2f2f2;/*margin-bottom:1px;*/background: #ffffff;}
+.mall-recharge-title .title{height:22px;line-height:22px;border-left:3px solid #1b75ef;color:#444444;font-size:16px;padding-left: 14px;}
+.mall-recharge-title .title span{float:right;font-size:12px;color:#1b75ef;margin-right:15px;}
+
+.swiper-container {width: 100%;}
+.swiper-slide {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+/*20161216*/
+.mall-index-wrapper{background: #EEF3F9;}
+.mall-index-wrapper .mall-peas{width:100%;height:100%;background:url(./imgnew/bg_bean.png)top center no-repeat;background-size:100%;}
+.mall-index-wrapper .mall-recharge-title{padding: 15px 0px;border:none; background-color:inherit;text-align: center;}
+.mall-index-wrapper .mall-recharge-title .title{line-height:24px;border:none;color:#4F4F4F;font-size:17px;padding-left: 0px;font-weight: bold;letter-spacing: 0.58px;position: relative;}
+.mall-index-wrapper .mall-recharge-title .title span{font-size: 15px;color: #959595;margin-right: 15px;position: absolute; right: 0px;font-weight: normal;}
+.mall-index-wrapper .mall-recharge-title .title:after{content: '';clear:both;width:20px;border:1px solid #FF5532;display: block;left:50%;top: 25px;margin-left:-12px;position: absolute;}

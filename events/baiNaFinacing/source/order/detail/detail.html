@@ -1,0 +1,21 @@
+<div class="goods-detail">
+    <img class="goods-banner" src="<%=topImg%>">
+    <ul>
+        <li class="d-info"><span class="d-title">商品详情</span><span class="d-t-info"><%=goodsName%></span></li>
+        <li class="d-info"><span class="d-title">订单状态</span><span class="d-t-info"><%=promotionOrderStatusDesc%></span></li>
+        <li class="d-info"><span class="d-title">商品原价</span><span class="d-t-info"><%=$.amountFormat(investAmtSum)%>元</span></li>
+        <li class="d-info">
+            <span class="d-title">使用券</span>
+            <%if(rewardName){%>
+            <span class="d-t-info"><%=rewardName%></span>
+            <%}else{%>
+            <span class="d-t-info">无</span>
+            <%}%>
+        </li>
+        <li class="d-info"><span class="d-title">实际存入</span><span class="d-t-info"><%=$.amountFormat(realAmount)%>元</span></li>
+        <li class="d-info"><span class="d-title">预期额外收益</span><span class="d-t-info"><%=$.amountFormat(preReturnProfit)%>元</span></li>
+        <li class="d-info"><span class="d-title">预计到账金额</span><span class="d-t-info"><%=$.amountFormat(preReturnMoney)%>元</span></li>
+        <li class="d-info"><span class="d-title">本息预计返还时间</span><span class="d-t-info"><%=$.dateFormat(preReturnDate,'yyyy/MM/dd')%></span></li>
+    </ul>
+    <div class="common-btn" id="investDetail">查看投资详情</div>
+</div>

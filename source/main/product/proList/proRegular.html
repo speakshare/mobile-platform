@@ -1,0 +1,377 @@
+<%_.each(newsList,function(item){%>
+<section class="pro-box to-detail" data-id="<%=item.productNo%>">
+    <section class="pro-item1">
+        <section class="title">
+            <span><%=item.productName%></span>
+            <i class="new-icon"></i>
+            <%if(item.productRecommend == 'Y'){%>
+            <i class="hot-icon"></i>
+            <%}%>
+        </section>
+        <section class="progress-bar">
+            <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                <p class="hint-word0">抢光了</p>
+            <%}else{%>
+                <%if(dealTime == '0'){%>
+                    <section class="load-line">
+                        <section class="load-bar">
+                            <span class="counter <%=item.productNo+'counter'%>"></span>
+                            <section class="load-bar-inner <%=item.productNo+'inner'%>">
+                                <%if(item.procuctStatus == '1'){%>
+                                <%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',item.investPercent)%>
+                                <%}else if(item.procuctStatus == '6'){%>
+                                <%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',100)%>
+                                <%}%>
+                            </section>
+                        </section>
+                    </section>
+                <%}else if(dealTime == '1'){%>
+                    <%if(sysTime <= item.procuctStarttime){%>
+                        <%if(item.procuctStarttime-3600000 <= sysTime && sysTime <= item.procuctStarttime){%>
+                        <section class="count-down">
+                            <i></i><span class="<%=item.productNo+'time'%>" data-time="<%=item.procuctStarttime%>"><%=$.countdown(item.productNo+'time',item.procuctStarttime)%></span>
+                        </section>
+                        <%}else{%>
+                        <section class="count-time"><i></i><%=$.dateFormat(item.procuctStarttime,'hh:mm')%>开售</section>
+                        <%}%>
+                    <%}%>
+                <%}%>
+            <%}%>
+        </section>
+    </section>
+    <section class="pro-item2">
+        <section class="num">
+            <p class="yield"><%=item.annualizedRate%><span class="col1">%</span><%=item.productAddonRate > 0 ? '<span class="col2">+'+item.productAddonRate+'%</span>':''%></p>
+            <p class="word1">预期年化收益率</p>
+        </section>
+        <section class="time">
+            <p class="deadline"><%=item.productDay%><span>天</span></p>
+            <p class="word1">期限</p>
+        </section>
+        <section class="pro-but">
+            <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                <span class="sub-but">已售罄</span>
+            <%}else{%>
+                <%if(dealTime == '0'){%>
+                    <span class="buy-but">立即投资</span>
+                <%}else if(dealTime == '1'){%>
+                    <%if(item.tradeType == '2'){%>
+                        <span class="buy-but-fre">立即投资</span>
+                    <%}else{%>
+                        <span class="sale-hint">即将开售</span>
+                    <%}%>
+                <%}%>
+            <%}%>
+
+            <!--<%if(dealTime == '0'){%>-->
+                <!--<%if(item.procuctStatus == '6' || item.investPercent == 100){%>-->
+                    <!--<span class="sub-but">已售罄</span>-->
+                <!--<%}else{%>-->
+                    <!--<span class="buy-but">立即投资</span>-->
+                <!--<%}%>-->
+            <!--<%}else if(dealTime == '1'){%>-->
+                <!--<%if(item.procuctStatus == '6' || item.investPercent == 100){%>-->
+                    <!--<span class="sub-but">已售罄</span>-->
+                <!--<%}else{%>-->
+                    <!--<span class="sale-hint">即将开售</span>-->
+                <!--<%}%>-->
+            <!--<%}%>-->
+
+            <!--<%if(sysTime <= item.procuctStarttime){%>-->
+                <!--<%if(item.appointmentFlag == '0'){%>-->
+                    <!--<span class="sale-hint">开售提醒</span>-->
+                <!--<%}else if(item.appointmentFlag == '1'){%>-->
+                    <!--<span class="sub-but">已预约</span>-->
+                <!--<%}%>-->
+            <!--<%}else{%>-->
+                <!--<%if(item.procuctStatus == '6' || item.investPercent == 100){%>-->
+                    <!--<%if(item.appointmentFlag == '0'){%>-->
+                        <!--<span class="sale-hint">开售提醒</span>-->
+                    <!--<%}else if(item.appointmentFlag == '1'){%>-->
+                        <!--<span class="sub-but">已预约</span>-->
+                    <!--<%}%>-->
+                <!--<%}else{%>-->
+                    <!--<%if(dealTime == '0'){%>-->
+                        <!--<span class="buy-but">立即投资</span>-->
+                    <!--<%}else if(dealTime == '1'){%>-->
+                        <!--<%if(item.tradeType == 0 || item.tradeType == '1'){%>-->
+                            <!--<%if(item.appointmentFlag == '0'){%>-->
+                                <!--<span class="sale-hint">开售提醒</span>-->
+                            <!--<%}else if(item.appointmentFlag == '1'){%>-->
+                                <!--<span class="sub-but">已预约</span>-->
+                            <!--<%}%>-->
+                        <!--<%}else if(item.tradeType == '2'){%>-->
+                            <!--<span class="buy-but-fre">立即投资</span>-->
+                        <!--<%}%>-->
+                    <!--<%}%>-->
+                <!--<%}%>-->
+            <!--<%}%>-->
+        </section>
+    </section>
+    <%if(item.currentActivity || item.isTransfer == '0'){%>
+        <section class="pro-item3">
+            <%=item.currentActivity ? '<span>'+item.currentActivity+'</span>' : ''%>
+            <%=item.isTransfer == '0' ? '<span>满'+item.closePeriod+'天可变现</span>' : ''%>
+        </section>
+    <%}%>
+    <!--<section class="pro-item3">-->
+        <!--<%if(sysTime <= item.procuctStarttime){%>-->
+            <!--<%if(item.procuctStarttime-3600000 <= sysTime && sysTime <= item.procuctStarttime){%>-->
+                <!--<section class="count-down">-->
+                    <!--<i></i><span class="<%=item.productNo+'time'%>" data-time="<%=item.procuctStarttime%>"><%=$.countdown(item.productNo+'time',item.procuctStarttime)%></span>-->
+                <!--</section>-->
+            <!--<%}else{%>-->
+                <!--<section class="count-time"><i></i><%=$.dateFormat(item.procuctStarttime,'hh:mm')%>开抢</section>-->
+            <!--<%}%>-->
+        <!--<%}%>-->
+        <!--&lt;!&ndash;<%if(item.procuctStatus == '6' || item.investPercent == 100){%>&ndash;&gt;-->
+            <!--&lt;!&ndash;<%if(item.tradeType == 0 || item.tradeType == '1'){%>&ndash;&gt;-->
+                <!--&lt;!&ndash;<section class="word1">已售罄</section>&ndash;&gt;-->
+            <!--&lt;!&ndash;<%}else if(item.tradeType == '2'){%>&ndash;&gt;-->
+                <!--&lt;!&ndash;<section class="word2">募集结束</section>&ndash;&gt;-->
+            <!--&lt;!&ndash;<%}%>&ndash;&gt;-->
+        <!--&lt;!&ndash;<%}else{%>&ndash;&gt;-->
+            <!--&lt;!&ndash;<%if(sysTime <= item.procuctStarttime){%>&ndash;&gt;-->
+                <!--&lt;!&ndash;<%if(item.procuctStarttime-3600000 <= sysTime && sysTime <= item.procuctStarttime){%>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<section class="count-down">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<i></i><span class="<%=item.productNo+'time'%>" data-time="<%=item.procuctStarttime%>"><%=$.countdown(item.productNo+'time',item.procuctStarttime)%></span>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</section>&ndash;&gt;-->
+                <!--&lt;!&ndash;<%}else{%>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<section class="count-time"><i></i><%=$.dateFormat(item.procuctStarttime,'hh:mm')%>开抢</section>&ndash;&gt;-->
+                <!--&lt;!&ndash;<%}%>&ndash;&gt;-->
+            <!--&lt;!&ndash;<%}%>&ndash;&gt;-->
+        <!--&lt;!&ndash;<%}%>&ndash;&gt;-->
+    <!--</section>-->
+</section>
+<%})%>
+
+<%_.each(eventList,function(item){%>
+<%if(item.procuctStatus == '1' && item.investPercent < 100){%>
+<section class="pro-box to-detail" data-id="<%=item.productNo%>">
+    <section class="pro-item1">
+        <section class="title">
+            <span><%=item.productName%></span>
+            <%if(item.yiWangDouFlag == '1'){%>
+            <i class="wang-dou-icon"></i>
+            <%}else if(item.productRecommend == 'Y'){%>
+            <i class="hot-icon"></i>
+            <%}%>
+        </section>
+        <section class="progress-bar">
+            <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                <p class="hint-word0">抢光了</p>
+            <%}else{%>
+                <%if(dealTime == '0'){%>
+                    <section class="load-line">
+                        <section class="load-bar">
+                            <span class="counter <%=item.productNo+'counter'%>"></span>
+                            <section class="load-bar-inner <%=item.productNo+'inner'%>">
+                                <%if(item.procuctStatus == '1'){%>
+                                <%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',item.investPercent)%>
+                                <%}else if(item.procuctStatus == '6'){%>
+                                <%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',100)%>
+                                <%}%>
+                            </section>
+                        </section>
+                    </section>
+                <%}else if(dealTime == '1'){%>
+                    <%if(sysTime <= item.procuctStarttime){%>
+                        <%if(item.procuctStarttime-3600000 <= sysTime && sysTime <= item.procuctStarttime){%>
+                        <section class="count-down">
+                            <i></i><span class="<%=item.productNo+'time'%>" data-time="<%=item.procuctStarttime%>"><%=$.countdown(item.productNo+'time',item.procuctStarttime)%></span>
+                        </section>
+                        <%}else{%>
+                        <section class="count-time"><i></i><%=$.dateFormat(item.procuctStarttime,'hh:mm')%>开售</section>
+                        <%}%>
+                    <%}%>
+                <%}%>
+            <%}%>
+            <!--<section class="load-bar">-->
+                <!--<span class="counter <%=item.productNo+'counter'%>"></span>-->
+                <!--<section class="load-bar-inner <%=item.productNo+'inner'%>">-->
+                    <!--<%if(item.procuctStatus == '1'){%>-->
+                    <!--<%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',item.investPercent)%>-->
+                    <!--<%}else if(item.procuctStatus == '6'){%>-->
+                    <!--<%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',100)%>-->
+                    <!--<%}%>-->
+                <!--</section>-->
+            <!--</section>-->
+        </section>
+    </section>
+    <section class="pro-item2">
+        <section class="num">
+            <p class="yield"><%=item.annualizedRate%><span class="col1">%</span><%=item.productAddonRate > 0 ? '<span class="col2">+'+item.productAddonRate+'%</span>':''%></p>
+            <p class="word1">预期年化收益率</p>
+        </section>
+        <section class="time">
+            <p class="deadline"><%=item.productDay%><span>天</span></p>
+            <p class="word1">期限</p>
+        </section>
+        <section class="pro-but">
+            <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                <span class="sub-but">已售罄</span>
+            <%}else{%>
+                <%if(dealTime == '0'){%>
+                    <span class="buy-but">立即投资</span>
+                <%}else if(dealTime == '1'){%>
+                    <%if(item.tradeType == '2'){%>
+                        <span class="buy-but-fre">立即投资</span>
+                    <%}else{%>
+                        <span class="sale-hint">即将开售</span>
+                    <%}%>
+                <%}%>
+            <%}%>
+        </section>
+    </section>
+    <%if(item.currentActivity || item.isTransfer == '0'){%>
+    <section class="pro-item3">
+        <%=item.currentActivity ? '<span>'+item.currentActivity+'</span>' : ''%>
+        <%=item.isTransfer == '0' ? '<span>满'+item.closePeriod+'天可变现</span>' : ''%>
+    </section>
+    <%}%>
+    <!--<section class="pro-item3">-->
+        <!--<%=item.currentActivity ? '<span>'+item.currentActivity+'</span>' : ''%>-->
+        <!--<%=item.isTransfer == '0' ? '<span>满'+item.closePeriod+'天可变现</span>' : ''%>-->
+    <!--</section>-->
+</section>
+<%}%>
+<%})%>
+
+<%_.each(regularList,function(item){%>
+<section class="pro-box to-detail" data-id="<%=item.productNo%>">
+    <section class="pro-item1">
+        <section class="title">
+            <span><%=item.productName%></span>
+            <%if(item.productRecommend == 'Y'){%>
+            <i class="hot-icon"></i>
+            <%}%>
+        </section>
+        <section class="progress-bar">
+            <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                <p class="hint-word0">抢光了</p>
+            <%}else{%>
+                <%if(dealTime == '0'){%>
+                    <section class="load-line">
+                        <section class="load-bar">
+                            <span class="counter <%=item.productNo+'counter'%>"></span>
+                            <section class="load-bar-inner <%=item.productNo+'inner'%>">
+                                <%if(item.procuctStatus == '1'){%>
+                                <%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',item.investPercent)%>
+                                <%}else if(item.procuctStatus == '6'){%>
+                                <%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',100)%>
+                                <%}%>
+                            </section>
+                        </section>
+                    </section>
+                <%}else if(dealTime == '1'){%>
+                    <%if(sysTime <= item.procuctStarttime){%>
+                        <section class="time-hint">
+                            <%if(item.procuctStarttime-3600000 <= sysTime && sysTime <= item.procuctStarttime){%>
+                            <section class="count-down">
+                                <i></i><span class="<%=item.productNo+'time'%>" data-time="<%=item.procuctStarttime%>"><%=$.countdown(item.productNo+'time',item.procuctStarttime)%></span>
+                            </section>
+                            <%}else{%>
+                            <section class="count-time"><i></i><%=$.dateFormat(item.procuctStarttime,'hh:mm')%>开售</section>
+                            <%}%>
+                        </section>
+                    <%}%>
+                <%}%>
+            <%}%>
+
+            <!--<section class="load-bar">-->
+                <!--<span class="counter <%=item.productNo+'counter'%>"></span>-->
+                <!--<section class="load-bar-inner <%=item.productNo+'inner'%>">-->
+                    <!--<%if(item.procuctStatus == '1'){%>-->
+                    <!--<%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',item.investPercent)%>-->
+                    <!--<%}else if(item.procuctStatus == '6'){%>-->
+                    <!--<%=$.SetProgress(item.productNo+'counter',item.productNo+'inner',100)%>-->
+                    <!--<%}%>-->
+                <!--</section>-->
+            <!--</section>-->
+        </section>
+    </section>
+    <section class="pro-item2">
+        <section class="num">
+            <p class="yield"><%=item.annualizedRate%><span class="col1">%</span><%=item.productAddonRate > 0 ? '<span class="col2">+'+item.productAddonRate+'%</span>':''%></p>
+            <p class="word1">预期年化收益率</p>
+        </section>
+        <section class="time">
+            <p class="deadline"><%=item.productDay%><span>天</span></p>
+            <p class="word1">期限</p>
+        </section>
+        <section class="pro-but">
+            <%if(item.procuctStatus == '6' || item.investPercent == 100){%>
+                <span class="sub-but">已售罄</span>
+            <%}else{%>
+                <%if(dealTime == '0'){%>
+                    <span class="buy-but">立即投资</span>
+                <%}else if(dealTime == '1'){%>
+                    <%if(item.tradeType == '2'){%>
+                        <span class="buy-but-fre">立即投资</span>
+                    <%}else{%>
+                        <span class="sale-hint">即将开售</span>
+                    <%}%>
+                <%}%>
+            <%}%>
+            <!--<%if(sysTime <= item.procuctStarttime){%>-->
+                <!--<%if(item.appointmentFlag == '0'){%>-->
+                    <!--<span class="sale-hint">开售提醒</span>-->
+                <!--<%}else if(item.appointmentFlag == '1'){%>-->
+                    <!--<span class="sub-but">已预约</span>-->
+                <!--<%}%>-->
+            <!--<%}else{%>-->
+                <!--<%if(item.procuctStatus == '6' || item.investPercent == 100){%>-->
+                    <!--<%if(item.appointmentFlag == '0'){%>-->
+                        <!--<span class="sale-hint">开售提醒</span>-->
+                    <!--<%}else if(item.appointmentFlag == '1'){%>-->
+                        <!--<span class="sub-but">已预约</span>-->
+                    <!--<%}%>-->
+                <!--<%}else{%>-->
+                    <!--<%if(dealTime == '0'){%>-->
+                        <!--<span class="buy-but">立即投资</span>-->
+                    <!--<%}else if(dealTime == '1'){%>-->
+                        <!--<%if(item.tradeType == 0 || item.tradeType == '1'){%>-->
+                            <!--<%if(item.appointmentFlag == '0'){%>-->
+                                <!--<span class="sale-hint">开售提醒</span>-->
+                            <!--<%}else if(item.appointmentFlag == '1'){%>-->
+                                <!--<span class="sub-but">已预约</span>-->
+                            <!--<%}%>-->
+                        <!--<%}else if(item.tradeType == '2'){%>-->
+                            <!--<span class="buy-but-fre">立即投资</span>-->
+                        <!--<%}%>-->
+                    <!--<%}%>-->
+                <!--<%}%>-->
+            <!--<%}%>-->
+        </section>
+    </section>
+    <%if(item.currentActivity || item.isTransfer == '0'){%>
+        <section class="pro-item3">
+            <%=item.currentActivity ? '<span>'+item.currentActivity+'</span>' : ''%>
+            <%=item.isTransfer == '0' ? '<span>满'+item.closePeriod+'天可变现</span>' : ''%>
+        </section>
+    <%}%>
+    <!--<section class="pro-item3">-->
+        <!--<section class="pro-tally">-->
+            <!--<%=item.currentActivity ? '<span>'+item.currentActivity+'</span>' : ''%>-->
+            <!--<%=item.isTransfer == '0' ? '<span>满'+item.closePeriod+'天可变现</span>' : ''%>-->
+        <!--</section>-->
+        <!--<%if(item.procuctStatus == '6' || item.investPercent == 100){%>-->
+            <!--<%if(item.tradeType == '0' || item.tradeType == '1'){%>-->
+                <!--<section class="word1">已售罄</section>-->
+            <!--<%}else if(item.tradeType == '2'){%>-->
+                <!--<section class="word2">募集结束</section>-->
+            <!--<%}%>-->
+        <!--<%}else{%>-->
+            <!--<%if(sysTime <= item.procuctStarttime){%>-->
+                <!--<%if(item.procuctStarttime-3600000 <= sysTime && sysTime <= item.procuctStarttime){%>-->
+                    <!--<section class="count-down">-->
+                        <!--<i></i><span class="<%=item.productNo+'time'%>" data-time="<%=item.procuctStarttime%>"><%=$.countdown(item.productNo+'time',item.procuctStarttime)%></span>-->
+                    <!--</section>-->
+                <!--<%}else{%>-->
+                    <!--<section class="count-time"><i></i><%=$.dateFormat(item.procuctStarttime,'hh:mm')%>开售</section>-->
+                <!--<%}%>-->
+            <!--<%}%>-->
+        <!--<%}%>-->
+    <!--</section>-->
+</section>
+<%})%>

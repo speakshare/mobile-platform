@@ -1,0 +1,90 @@
+﻿<div class="myorders">
+    <% if(_.isEmpty(olist)){%>
+    <div class="nodata">您还没有投资，快去投资赚取收益哦~</div>
+    <%}else{%>
+    <% _.each(olist,function(item){ %>
+    <% var tempstr=item.investStateCode;
+    if(tempstr=="1"){
+        classtr = "purchasing";      //申购中
+    }else if(tempstr=="2"){
+        classtr = "interestbearing"; //计息中
+    }else if(tempstr=="3"){
+        classtr = "redempting";      //赎回中
+    }else if(tempstr=="4"){
+        classtr = "redemptionsuc";   //赎回成功
+    }else if(tempstr=="5"){
+        classtr = "buy-fail";   //购买失败
+    }else if(tempstr=="6"){
+        classtr = "pay-fail";   //支付失败
+    }else if(tempstr=="7"){
+     classtr = "order-cancel";      //订单取消
+    }else if(tempstr=="8"){
+        classtr = "interestbearing"; //转让中
+    }else if(tempstr=="9"){
+        classtr = "redemptionsuc";   //已转让
+    }else if(tempstr=="10"){
+        classtr = "subscribing";   //认购中
+    }else if(tempstr=="11"){
+        classtr = "raise-suc";   //募集成功
+    }else if(tempstr=="12"){
+        classtr = "raise-fail";   //募集失败
+    }
+    %>
+    <div class="orderitem clearfix" data-oid="<%= item.orderNo%>" data-pid="1" data-pType="<%= item.productType%>">
+        <div class="order-leftbar ocions <%= classtr%>"></div>
+        <div class="order-rightcont">
+            <section class="transfer-state">
+                <section class="productname"><%=item.productName%></section>
+                <%if(item.isTransfer == "0" && item.investStateCode=="2"){%>
+                    <section class="transfer"><span>可变现</span></section>
+                <%}else if(item.investStateCode=="8"){%>
+                    <section class="transfer"><span>变现中</span></section>
+                <%}else if(item.investStateCode=="9"){%>
+                    <section class="transfer"><span>变现完成</span></section>
+                <%}%>
+            </section>
+            <div class="productinfo">
+                <div class="flex"><p class="otextdesc">投资金额(元)</p>
+                    <p class="setval"><%=item.investAmtSum%></p></div>
+                <div class="flex">
+                    <%if(item.investStateCode=="9"){%>
+                        <p class="otextdesc">实际转让金额(元)</p>
+                        <p class="setval"><%=item.transferMoney%></p>
+                    <%}else{%>
+                        <p class="otextdesc">预期年化</p>
+                        <p class="setval"><%=item.procuctAroe%>%<% if(item.productAddonRate > 0){%>+<%=item.productAddonRate%>%<%}%></p>
+                    <%}%>
+                </div>
+                
+                <div class="flex nobr">
+                    <%if(item.investStateCode=="9"){%>
+                        <p class="otextdesc">转让日期</p>
+                        <p class="setval"><%=item.transferDate %></p>
+                    <%}else if(item.investStateCode=="10" || item.investStateCode=="11" ||item.investStateCode=="12" ){%>
+                        <p class="otextdesc">募集到期日</p>
+                        <p class="setval"><%=$.dateFormat(item.mujiEndTime,'yyyy/MM/dd')%></p>
+                    <%}else{%>
+                        <p class="otextdesc">到期日期</p>
+                        <p class="setval"><%=item.expireDate %></p>
+                    <%}%>
+                </div>
+            </div>
+            <%if(item.investStateCode=="9"){%>
+                <div class="earnings">实际到账金额(元)<span class="earningsnum"><%=item.realArrAmt%></span></div>
+            <%}else if(item.investStateCode=="4" || item.investStateCode=="3"){%>
+                <div class="earnings">到期收益(元)<span class="earningsnum"><%=item.profit%></span></div>
+            <%}else if(item.investStateCode=="11" || item.investStateCode=="2"){%>
+                <div class="earnings">预计到期收益(元)<span class="earningsnum"><%=item.expireProfit%></span></div>
+            <%}else if(item.investStateCode=="10" || item.investStateCode=="12"){%>
+            
+            <%}else{%>
+                <div class="earnings">预计到期总收益(元)<span class="earningsnum"><%=item.expireProfit%></span></div>
+            <%}%>
+        </div>
+    </div>
+    <%})%>
+    <div class="toinvestbtn">
+        <div>继续投资</div>
+    </div>
+    <%}%>
+</div>

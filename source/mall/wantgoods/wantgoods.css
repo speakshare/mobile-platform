@@ -1,0 +1,73 @@
+.pop_window .oneline-tips{
+    padding:5px 0;
+}
+.want-goods-wrapper .want-goods-form{
+    padding:0 30px;
+    background-color: #fff;
+    color: #4F4F4F;
+}
+.want-goods-wrapper .want-label{
+    font-size: 20px;
+    line-height:40px;
+    padding-left:30px;
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: 0 center;
+
+}
+.want-goods-wrapper .want-label-name{
+    background-image: url("../imgnew/icn_want_like@2x.png");
+}
+.want-goods-wrapper .want-label-way{
+    background-image: url("../imgnew/icn_want_how@2x.png");
+}
+.want-goods-form input{
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    padding:0 10px;
+
+    border: 1px solid #D4D4D4;
+}
+.want-goods-wrapper .want-input-wrapper{
+    position: relative;
+}
+.want-goods-wrapper .want-input-wrapper .note{
+    font-size: 12px;
+    color: #3B8BE8;
+    position: absolute;
+    top:48px;
+    left:8px;
+}
+.want-goods-wrapper .want-way-wrapper .note{
+    top:54px;
+    line-height: 18px;
+}
+.want-goods-wrapper  .form-btn{
+    margin-top: 80px;
+}
+.want-goods-wrapper .want-or{
+    font-size: 12px;
+    line-height:30px;
+    text-align: center;
+}
+.want-goods-wrapper .select-trigger{
+    border: 1px solid #D4D4D4;
+    line-height:44px;
+    color: #CBCBCB;
+}
+.want-goods-wrapper  #want-way{
+    padding: 0 10px;
+}
+.want-goods-wrapper .select-trigger.selected{
+    color: inherit;
+}
+.want-goods-wrapper .select-trigger .arrow{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 15px;
+    top: 16px;
+    background: url("../imgnew/btn_want@2x.png") no-repeat no-repeat center center;
+    background-size:contain;
+}

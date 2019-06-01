@@ -1,0 +1,27 @@
+.ux-load-box {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 100000;
+}
+
+.ux-load-times {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    background: url('../images/btn-out.png') 0 0 no-repeat transparent;
+    background-size: 30px 30px;
+}
+
+.ux-mask {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+}

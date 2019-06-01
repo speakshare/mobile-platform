@@ -1,0 +1,44 @@
+<div class="manage inviteRecord">
+	<div class="grade">
+		<div class="banner">
+			<div class="topLeft"><span class="calendar"></span><span class="title">本月业绩</span></div>
+			<div class="total-red">
+				<div class="redEnvelope red"><%=(amount.redPacketTotalAmount).toFixed(2)%></div>
+				<div class="tips">预计红包(元)<span class="redTips" data-idf='<%=identity.propertyFlag%>'></span></div>
+			</div>
+		</div>
+		<div class="asset-profit">
+			<div class="profit-1 total-invest"><span class="red"><%=(amount.investTotalAmount).toFixed(2)%></span><span class="cash-num">投资总额(元)</span></div>
+			<div class="profit-1 totalProfitAmt "><span class="red"><%=(amount.convertTotalAmount).toFixed(2)%></span><span class="cash-num questions">折标总额(元)</span><span class="cashNumTips"></span></div>
+		</div>
+	</div>
+	<div class="customerInfo">
+		<div class="title"><span>客户总数</span><span><%=numOfPeople.totalCount%>人</span></div>
+		<div class="asset-profit ">
+			<div class="profit-1 hasInvest"><span><%=numOfPeople.investCount%></span><span class="cash-num">已投资人数</span></div>
+			<div class="profit-1 totalProfitAmt notInvest"><span><%=numOfPeople.notInvestCount%></span><span class="cash-num">未投资人数</span></div>
+		</div>
+	</div>
+	<div class="recordBtn grade">投资记录</div>
+	
+	<% if(banner && banner.list.length){ %>
+	<div class="swiper-container-banner">
+	    <div class="swiper-wrapper">
+	        <%_.each(banner.list,function(item){%>
+	        <div class="swiper-slide">
+	            <% if(item.imageUrlHL&& item.imageUrlHL.length) {%>
+	            <a href="<%=item.imageUrlHL%>" class="bannerflag" data-id="<%=item.id%>">
+	                <img src="<%=item.imageUrl%>"/>
+	            </a>
+	            <%}else{%>
+	            <img src="<%=item.imageUrl%>">
+	            <%}%>
+	        </div>
+	        <%})%>
+	    </div>
+	    <div class="swiper-pagination-banner"></div>
+	</div>
+	<% }else{%>
+	<div class="picdefault"></div>
+	<%}%>
+</div>

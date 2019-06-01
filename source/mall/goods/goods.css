@@ -1,0 +1,68 @@
+/*商品兑换*/
+.mall-goods .goodslist{background:#ffffff;}
+.mall-goods .goodslist .goods{position: relative; width:50%;float:left;border-bottom: 1px solid #f2f2f2;border-right: 1px solid #f2f2f2;box-sizing: border-box;-webkit-box-sizing: border-box;background:#ffffff;}
+.mall-goods .goodslist .goods:nth-child(2n) {border-right:1px solid #ffffff;}
+.mall-goods .goodslist .goods:nth-last-child(1),.mall-goods .goodslist .goods:nth-last-child(2){/*border-bottom:1px solid #ffffff;*/}
+.mall-goods .goodslist .nodatetips{padding: 10px;text-align: center;font-size:14px;font-size:12px;}
+/*.mall-goods .goodslist .goods:nth-last-child(1){border-right:1px solid #ffffff;}*/
+.mall-goods .goodslist .goods .hot{position:absolute;background:url(../images/hot.png) center  center no-repeat;width: 46px;height: 48px;display:block;background-size: 46px auto;top: -5px;right: 0px;}
+.mall-goods .goodslist .goods .activity{position:absolute;background:url(../images/activity.png) center  center no-repeat;width: 46px;height: 48px;display:block;background-size: 46px auto;top: -5px;right: 0px;}
+.mall-goods .goodslist .goods .goodsimg{position:relative;width:83px;height: 83px;margin: 10px auto;box-sizing: border-box;}
+.mall-goods .goodslist .goods .goodsimg img{/*background-size:100%;*/width:100%;height:100%;}
+.mall-goods .goodslist .goods .goodsdesc{font-size:13px;color:#444444;line-height: 17px;text-align:center;padding: 0 15px;height: 34px;overflow: hidden;}
+.mall-goods .goodslist .goods .goodsprice{margin: 10px auto;text-align: center;}
+.mall-goods .goodslist .goods .peaprice{font-size:13px;color:#ff6046;background:url(../images/pea_s.png) 0px 1px no-repeat;width: 12px;height: 18px;background-size: 12px auto;padding-left: 16px}
+.mall-goods .goodslist .goods .realprice{text-decoration:line-through;font-size:11px;color:#999999;}
+
+/*20161216*/
+.mall-new-goodwrap{background:url(../imgnew/bg_good.png)top center no-repeat; background-size: 100%;padding-bottom: 2px;}
+.mall-new-goodwrap .mall-good-list{padding:0px 15px;}
+.mall-new-goodwrap .mall-good-list .goodinfo{position:relative; width:100%;background:#ffffff;border-radius: 5px;margin-bottom:10px;}
+.mall-new-goodwrap .mall-good-list .goodinfo .good-maintitle{font-size:18px;color:#4f4f4f;text-align:left;padding-top:16px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.mall-new-goodwrap .mall-good-list .goodinfo .good-maintitle.hot:before{content: '';clear: both;width:34px;height:19px;background:url(../imgnew/img_hot.png)left center no-repeat;background-size:100%;margin-right: 10px;display: inline-block;vertical-align: top;}
+.mall-new-goodwrap .mall-good-list .goodinfo .good-maintitle.activity:before{content: '';clear: both;width:34px;height:19px;background:url(../imgnew/img_active.png)left center no-repeat;background-size:100%;margin-right: 10px;display: inline-block;vertical-align: top;}
+.mall-new-goodwrap .mall-good-list .goodinfo .conterinner{padding:10px 20px 20px;}
+.mall-new-goodwrap .mall-good-list .goodinfo .gooddesc{font-size:13px;color:#B5B5B5;width: 63%;line-height: 18px;height: 38px;overflow: hidden;text-overflow: ellipsis;}
+.mall-new-goodwrap .mall-good-list .goodinfo .peasnum{font-size:1.5rem;color:#FF5532;background:url(../imgnew/bean.png)left center no-repeat;margin-top: 25px;padding-left: 23px;background-size: 20px auto;font-weight: bold;}
+.mall-new-goodwrap .mall-good-list .goodinfo .peasnum .zhe{display: inline-block;background:url(../imgnew/label-huiyuanzhekou@2x.png) no-repeat;background-size:100%;width:70px;height:20px}
+.mall-new-goodwrap .mall-good-list .goodinfo .goodpricestock{padding-left:22px;margin-top: 5px;}
+.mall-new-goodwrap .mall-good-list .goodinfo .goodpricestock .cashprice{position: relative; display:inline-block;font-size:17px;color:#7A7A7A;}
+.mall-new-goodwrap .mall-good-list .goodinfo .goodpricestock .cashprice em{position: absolute; width: 105%;height: 1px;background: #7A7A7A;display: block;transform: rotate(-3deg);top:7px;left: 1px;}
+.mall-new-goodwrap .mall-good-list .goodinfo .goodpricestock .stock{color: #B5B5B5;margin-left:13px;font-size:13px;}
+.mall-new-goodwrap .mall-good-list .goodinfo .mainimg{position: absolute; max-width: 36%;bottom:13px;right:13px;/* padding: 5px;*/}
+.mall-new-goodwrap .nodatetips{margin: 10px auto;text-align: center;font-size:14px;font-size:12px;}
+
+.pdl15{padding-left:15px;}
+/*list*/
+.mall-goodlist .goodslist{background:#EEF3F9;}
+.mall-goodlist .title{font-size: 17px;color: #4F4F4F;border-bottom:1px solid #ccc;padding:10px auto;background:#ffffff;}
+.mall-goodlist .goodslist .goods{width:49.5%;border:none;margin-bottom:1%;}
+.mall-goodlist .goodslist .goods:nth-child(2n) {margin-left:1%;}
+.mall-goodlist .goodslist .goods .goodsimg{width:120px;height: 120px;margin: 30px auto 0;box-sizing: border-box;}
+.mall-goodlist .goodslist .goods .goodsimg .zhe{position:absolute;top: 0;right: 0;display: inline-block;background:url(../imgnew/label-huiyuanzhekou@2x.png) no-repeat;background-size:100%;width:70px;height:20px}
+.mall-goodlist .goodslist .goods .goodsdesc{font-size: 15px;color: #4f4f4f;line-height: 17px;text-align:center;padding: 0 15px;max-height: 20px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.mall-goodlist .goodslist .goods .peaprice{font-size: 20px;color: #FF5532;background:url(../imgnew/img_bean.png) left center no-repeat;background-size: 15px auto;padding-left: 20px;height: 20px; margin: 5px 10px;/*font-weight: bold;*/}
+.mall-goodlist .goodslist .goods .goodpricestock{font-size:0.5rem;color:#B5B5B5;margin-left:10px;padding-bottom:10px;}
+.mall-goodlist .goodslist .goods .goodpricestock .cashprice{position: relative; display:inline-block;color:#B5B5B5;}
+.mall-goodlist .goodslist .goods .goodpricestock .cashprice em{position: absolute;width: 105%;height: 1px;background: #B5B5B5;display: block;transform: rotate(-5deg);top: 42%;left: 1px;}
+.mall-goodlist .goodslist .goods .goodpricestock .stock{color: #B5B5B5;margin-left:8px;}
+.mall-goodlist .goodslist .goods .hot{position:absolute;background:url(../imgnew/img_hot.png) center  center no-repeat;width: 34px;height: 19px;display:block;background-size: 34px auto;top:20px;left: 0px;z-index:1;}
+.mall-goodlist .goodslist .goods .activity{position:absolute;background:url(../imgnew/img_active.png) center  center no-repeat;width: 34px;height: 19px;display:block;background-size: 34px auto;top:20px;left: 0px; z-index:1;}
+.mall-goodlist .goodslist .goods .soldoutmask .soldout{font-size: 15px;border: 1px solid #7A7A7A;display: inline-block;padding: 2% 4%;border-radius: 5px;position: absolute;top: 35%;left: 50%;color:#7A7A7A;font-weight: bold;margin-left: -30px;}
+
+
+/*已兑完蒙层  通用*/
+.soldoutmask{position: absolute;width:100%;height:100%;top:0px;left:0px;background: #ffffff;opacity: 0.77;border-radius: 5px;}
+.soldoutmask .soldout{font-size: 15px;border: 1px solid #7A7A7A;display: inline-block;padding: 2% 4%;border-radius: 5px;position: absolute;top: 62%;left: 68%;color:#7A7A7A; font-weight: bold; }
+@media screen and (min-width:320px){
+	.soldoutmask .soldout{left: 65%;top: 60%;}
+}
+@media screen and (min-width:360px){
+	.soldoutmask .soldout{left: 67%;top: 59%;}
+}
+@media screen and (min-width:375px){
+	.soldoutmask .soldout{left: 67%;top: 58%;}
+}
+@media screen and (min-width:400px){
+	.soldoutmask .soldout{left: 68%;top: 57%;}
+}

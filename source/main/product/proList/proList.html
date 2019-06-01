@@ -1,0 +1,53 @@
+<section class="pro-list">
+    <header class="pro-head">
+        <nav class="head-tab active">理财</nav>
+        <nav class="head-tab">基金</nav>
+    </header>
+    <section class="por-list-box">
+        <%if(yaoBaoList){%>
+        <section class="pro-yaoBao" data-id="<%=yaoBaoList.productNo%>">
+            <section class="pro-yaoBao-lef">
+                <p class="num"><%=yaoBaoList.annualizedRate%><span>%</span></p>
+                <p class="word1">7日年化</p>
+            </section>
+            <section class="pro-yaoBao-rig">
+                <p class="word2">摇宝</p>
+                <p class="word3"><span>当日起息</span><span>实时到账</span></p>
+            </section>
+        </section>
+        <%}%>
+
+        <p class="hint1">理财有风险，投资需谨慎</p>
+
+        <%if(luxuryList.length > 0){%>
+        <section class="pro-mod">
+            <section class="pro-title">
+                <span class="word1">尊享产品</span><span class="word2">会员专享&nbsp;&nbsp;更高收益</span>
+            </section>
+            <section class="pro-luxury"></section>
+        </section>
+        <%}%>
+
+        <section class="pro-mod">
+            <section class="pro-title">
+                <span class="word1">定期产品</span><span class="word2">优质产品&nbsp;&nbsp;稳定收益</span><span class="word3 to-proOld">历史产品</span>
+            </section>
+            <%if(newsList.length == 0 && eventList.length == 0 && regularList.length == 0){%>
+            <section class="word-hint">暂无定期产品！</section>
+            <%}else{%>
+            <section class="pro-regular"></section>
+            <%}%>
+        </section>
+
+        <section class="pro-mod">
+            <section class="pro-title">
+                <span class="word1">变现产品</span><span class="word2">专属产品&nbsp;&nbsp;更高收益</span><span class="word3 to-transfer">更多</span>
+            </section>
+            <section class="pro-transfer"></section>
+            <!--<%if(transferList.length > 0){%>-->
+            <!--<section class="pro-transfer"></section>-->
+            <!--<%}%>-->
+        </section>
+    </section>
+    <section style="height:50px"></section>
+</section>
